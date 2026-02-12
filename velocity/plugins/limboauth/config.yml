@@ -326,4 +326,4 @@ database:
   user: "luckperms"
   password: "alAkKi424285"
   database: "voidmine"
-  connection-parameters: "?autoReconnect=true&initialTimeout=1&useSSL=false"
+  connection-parameters: "?autoReconnect=true&initialTimeout=1&useSSL=false&allowPublicKeyRetrieval=true"
