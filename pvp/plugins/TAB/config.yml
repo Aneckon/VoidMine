@@ -28,7 +28,7 @@ scoreboard:
       - ''
       - '  &c▛ &7Ранг: &8- &4%luckperms-suffix%'
       - '  &c▍'
-      - '  &c▍  &7У/С: §c%statistic_deaths%☠&7/&a%statistic_player_kills%⸸'
+      - '  &c▍  &7У/С: §c%bt_arena_deaths%☠&7/&a%bt_arena_kills%⸸'
       - '  &c▍'
       - '  &c▍  &7Баланс: &a%vault_eco_balance_formatted%⛃'
       - '  &c▍'
