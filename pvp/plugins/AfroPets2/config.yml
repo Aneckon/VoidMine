@@ -71,7 +71,7 @@ sqlite:
 mysql:
   host: '127.0.0.1'
   username: 'luckperms'
-  password: 'alAkKi424285*'
+  password: 'alAkKi424285'
   database: 'voidmine'
   table: 'afropets_playerdata'
   port: '3306'
