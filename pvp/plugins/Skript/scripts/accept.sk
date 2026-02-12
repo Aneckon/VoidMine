@@ -30,3 +30,16 @@ command /leave:
 			execute player command "arena leave"
 		else:
 			send "&c✖ Ты не находишься на арене!"
+
+command /lobby:
+    aliases: /hub, /l
+    trigger:
+        set {_world} to "%world of player%"
+        
+        # Перевіряємо чи гравець не на арені
+        if {_world} is "swamp" or "desert" or "mountain" or "river":
+            send "&c✖ Спочатку вийди з арени командою /leave!"
+            stop
+        
+        execute console command "server %player% hub"
+        send player action bar "&a▶ Підключення до HUB..."
