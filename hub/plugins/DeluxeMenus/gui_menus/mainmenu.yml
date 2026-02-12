@@ -61,10 +61,10 @@ items:
           type: string equals
           input: '%pinger_isonline_127.0.0.1:25568%'
           output: '&aOnline'
-        maintenance:
-          type: string equals
-          input: '%maintenance_server_survival%'
-          output: 'disabled'
+        # maintenance:
+        #   type: string equals
+        #   input: '%maintenance_server_survival%'
+        #   output: 'disabled'
     left_click_commands:
       - '[sound] BLOCK_NOTE_BLOCK_PLING'
       - '[connect] survival'
@@ -94,34 +94,34 @@ items:
       - '[message] §8§l┃ §fВыживание §8§l┃ §c⛔ Этот режим временно недоступен!'
       - '[close]'
 
-  anarchy_maintenance:
-    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTkzMDkzZDI4ZDFhN2VkMWQ3Zjk3YmExMzhlZjZhMWI3MmE4MzlkYjA2ZDhhYTc5OTE4MWNiZWEwZDQ5YTBhNSJ9fX0=
-    slot: 15
-    priority: 3
-    display_name: '§eВыживание §8(Тех. работа)'
-    lore:
-      - '§8❖ §7Свобода с риском'
-      - '§8⤷ §7Онлайн: §a%bungee_online_survival%'
-      - ' '
-      - '§c✔ PvP §7| §c✔ Гриферство'
-      - ' '
-      - '§7Статус: §eНа техническом обслуживании'
-      - ' '
-      - '§8⛔ §6Сервер в режиме обслуживания'
-    view_requirement:
-      requirements:
-        is_online:
-          type: string equals
-          input: '%pinger_isonline_127.0.0.1:25568%'
-          output: '&aOnline'
-        maintenance:
-          type: string equals
-          input: '%maintenance_server_survival%'
-          output: 'enabled'
-    left_click_commands:
-      - '[sound] BLOCK_ANVIL_LAND'
-      - '[message] §8§l┃ §Выживание §8§l┃ §e⛔ Сервер в режиме техобслуживания!'
-      - '[close]'
+  # anarchy_maintenance:
+  #   material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTkzMDkzZDI4ZDFhN2VkMWQ3Zjk3YmExMzhlZjZhMWI3MmE4MzlkYjA2ZDhhYTc5OTE4MWNiZWEwZDQ5YTBhNSJ9fX0=
+  #   slot: 15
+  #   priority: 3
+  #   display_name: '§eВыживание §8(Тех. работа)'
+  #   lore:
+  #     - '§8❖ §7Свобода с риском'
+  #     - '§8⤷ §7Онлайн: §a%bungee_online_survival%'
+  #     - ' '
+  #     - '§c✔ PvP §7| §c✔ Гриферство'
+  #     - ' '
+  #     - '§7Статус: §eНа техническом обслуживании'
+  #     - ' '
+  #     - '§8⛔ §6Сервер в режиме обслуживания'
+  #   view_requirement:
+  #     requirements:
+  #       is_online:
+  #         type: string equals
+  #         input: '%pinger_isonline_127.0.0.1:25568%'
+  #         output: '&aOnline'
+  #       maintenance:
+  #         type: string equals
+  #         input: '%maintenance_server_survival%'
+  #         output: 'enabled'
+  #   left_click_commands:
+  #     - '[sound] BLOCK_ANVIL_LAND'
+  #     - '[message] §8§l┃ §Выживание §8§l┃ §e⛔ Сервер в режиме техобслуживания!'
+  #     - '[close]'
 
   pvp_online:
     material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDFjODc0NTRmMWVlNTg1YjkwZmRiM2EzZTQwOTUyYTVjMmY4MGMwYTQ5ZGZlYzYyODcwZmRmZjE4Mzk2N2E4NCJ9fX0=
