@@ -1,0 +1,32 @@
+command /accept [<player>]:
+	trigger:
+		if arg-1 is set:
+			execute player command "arena duel accept %arg-1%"
+		else:
+			send "&cИспользование: /accept <игрок>"
+
+command /deny [<player>]:
+	trigger:
+		if arg-1 is set:
+			execute player command "arena duel deny %arg-1%"
+		else:
+			send "&cИспользование: /deny <игрок>"
+
+command /duel [<player>]:
+	trigger:
+		if arg-1 is set:
+			execute player command "arena duel %arg-1%"
+		else:
+			send "&cИспользование: /duel <игрок>"
+
+command /leave:
+	trigger:
+		set {_world} to "%world of player%"
+		
+		# Проверяем находится ли игрок на арене
+		if {_world} is "swamp" or "desert" or "mountain" or "river":
+			# Пытаемся выполнить обе команды (одна сработает)
+			execute player command "deathmatch leave"
+			execute player command "arena leave"
+		else:
+			send "&c✖ Ты не находишься на арене!"

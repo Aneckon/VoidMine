@@ -1,0 +1,81 @@
+options:
+  title: &8[&cVaults&8]
+
+command /pv [<number>] [<offline player>]:
+  trigger:
+    if arg 1 is not set:
+      set {_vaultsWithItems} to ""
+      loop 100 times:
+        if {vaults.item.%loop-number%.%player%::*} is set:
+          set {_vaultsWithItems} to {_vaultsWithItems} + "%loop-number%, "
+      if {_vaultsWithItems} is not "":
+        send "{@title}&aYou have the following vault(s): %{_vaultsWithItems}%"
+      else:
+        send "{@title}&cYou don't have any items in your vaults!"
+      
+    else if arg 1 is set:
+      set {_highestVault} to 0
+      loop 100 times:
+        if player has permission "vaults.%loop-number%":
+          set {_highestVault} to loop-number
+      if arg 1 is greater than {_highestVault}:
+        send "{@title}&cYou don't have permission to access vault #%arg 1%!"
+        stop
+      if arg 2 is set:
+        if player doesn't have permission "vaults.other":
+          send "{@title}&cYou don't have permission to view someone else's vault!"
+          stop
+        else:
+          set {vaults.open.%player%} to arg 1
+          set {vaults.open.else.%player%} to arg 2
+          open chest with 6 rows named "&c%arg 2%&7's vault ##%arg 1%" to player
+          wait 1 tick
+          set {_num} to 0
+          loop {vaults.item.%arg 1%.%arg 2%::*}:
+            set slot {_num} of player's current inventory to loop-value
+            add 1 to {_num}
+
+      else:
+        if player doesn't have permission "vaults.use":
+          send "{@title}&cYou don't have permission to use a vault!"
+          stop
+        else:
+          set {vaults.open.%player%} to arg 1
+          open chest with 6 rows named "&cVault &7##%arg 1%" to player
+          wait 1 tick
+          set {_num} to 0
+          loop {vaults.item.%arg 1%.%player%::*}:
+            set slot {_num} of player's current inventory to loop-value
+            add 1 to {_num}
+
+command /checkpv <offline player>:
+  trigger:
+    if arg 1 is set:
+      set {_player} to arg 1
+      set {_vaultsWithItems} to ""
+      loop 100 times:
+        if {vaults.item.%loop-number%.%{_player}%::*} is set:
+          set {_vaultsWithItems} to {_vaultsWithItems} + "%loop-number%, "
+      if {_vaultsWithItems} is not "":
+        send "{@title}&aPlayer %{_player}% has items in the following vault(s): %{_vaultsWithItems}%"
+      else:
+        send "{@title}&cPlayer %{_player}% has no items in any vault!"
+    else:
+      send "{@title}&cPlease specify a player to check!"
+
+on rightclick on chest:
+  if {vaults.open.%player%} is set:
+    cancel event
+    delete {vaults.open.%player%}
+
+on inventory close:
+  if {vaults.open.%player%} is set:
+    if {vaults.open.else.%player%} is set:
+      loop 54 times:
+        set {vaults.item.%{vaults.open.%player%}%.%{vaults.open.else.%player%}%::%loop-number - 1%} to slot (loop-number - 1) of event-inventory
+      delete {vaults.open.%player%}
+      delete {vaults.open.else.%player%}
+    else:
+      loop 54 times:
+        set {vaults.item.%{vaults.open.%player%}%.%player%::%loop-number - 1%} to slot (loop-number - 1) of event-inventory
+      delete {vaults.open.%player%}

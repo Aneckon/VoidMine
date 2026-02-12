@@ -1,0 +1,18 @@
+# ============================================
+# Економічна система через Vault (SkBee)
+# ============================================
+
+# Повертає баланс гравця
+function getPlayerBalance(p: player) :: number:
+    return balance of {_p}
+
+# Знімає гроші з гравця
+function withdrawBalance(p: player, amount: number) :: boolean:
+    if balance of {_p} >= {_amount}:
+        remove {_amount} from balance of {_p}
+        return true
+    return false
+
+# Додає гроші гравцю
+function addBalance(p: player, amount: number):
+    add {_amount} to balance of {_p}

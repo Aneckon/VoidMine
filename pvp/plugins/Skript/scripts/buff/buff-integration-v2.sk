@@ -1,0 +1,279 @@
+# ============================================
+# BUFF COMMANDS & ARENA INTEGRATION v2.0
+# ============================================
+
+# ===== КОМАНДИ =====
+
+command /buffshop:
+	aliases: /buffs, /bs
+	trigger:
+		set {_world} to "%world of player%"
+		if {_world} contains "ba-dynamic":
+			send "&c✖ Нельзя открыть магазин во время боя!" to player
+			bsPlayError(player)
+			stop
+		
+		openBuffShopMain(player)
+		bsPlayClick(player)
+
+command /mybuffs:
+	trigger:
+		if hasAnyBuff(player) is false:
+			send " " to player
+			send "&c✖ У вас ещё нет купленных баффов!" to player
+			send "&8❖ &7Используйте &f/buffshop &7чтобы купить баффы" to player
+			send " " to player
+			bsPlayError(player)
+			stop
+		
+		openMyBuffsMenu(player)
+		bsPlayClick(player)
+
+command /selectbuff:
+	aliases: /sb, /activatebuff
+	trigger:
+		set {_world} to "%world of player%"
+		if {_world} is not "world":
+			send "&c✖ Нельзя менять баффы во время боя!" to player
+			bsPlayError(player)
+			stop
+		
+		if hasAnyBuff(player) is false:
+			send " " to player
+			send "&c✖ У вас ещё нет купленных баффов!" to player
+			send "&8❖ &7Используйте &f/buffshop &7чтобы купить баффы" to player
+			send " " to player
+			bsPlayError(player)
+			stop
+		
+		openSelectBuffMenu(player)
+		bsPlayClick(player)
+
+command /buffstats:
+	trigger:
+		send "&c&l=== МОИ БАФФЫ ===" to player
+		send " " to player
+		
+		# Підрахунок куплених бафів
+		set {_owned} to 0
+		loop {buff::all::*}:
+			if isBuffUnlocked(player, loop-value) is true:
+				add 1 to {_owned}
+		
+		send "&8❖ &7Куплено баффов: &f%{_owned}%&8/&78" to player
+		
+		# Інформація про слоти
+		set {_maxSlots} to getMaxBuffSlots(player)
+		set {_usedSlots} to getActiveBuffSlotsCount(player)
+		send "&8❖ &7Слоты: &f%{_usedSlots}%&8/&f%{_maxSlots}%" to player
+		send " " to player
+		
+		# Активні бафи
+		send "&c&lАКТИВНЫЕ БАФФЫ:" to player
+		
+		if {buff.active.slot.%player%.speed} is set:
+			set {_name} to getBuffName({buff.active.slot.%player%.speed})
+			send "&8❖ &7Скорость: %{_name}%" to player
+		else:
+			send "&8❖ &7Скорость: &8не выбран" to player
+		
+		if {buff.active.slot.%player%.defense} is set:
+			set {_name} to getBuffName({buff.active.slot.%player%.defense})
+			send "&8❖ &7Защита: %{_name}%" to player
+		else:
+			send "&8❖ &7Защита: &8не выбран" to player
+		
+		if {buff.active.slot.%player%.kill} is set:
+			set {_name} to getBuffName({buff.active.slot.%player%.kill})
+			send "&8❖ &7Бонус: %{_name}%" to player
+		else:
+			send "&8❖ &7Бонус: &8не выбран" to player
+		
+		send " " to player
+		send "&8▶ &f/mybuffs &8- &7открыть полное меню" to player
+		send "&8▶ &f/selectbuff &8- &7выбрать активные баффы" to player
+
+# ===== АДМІН КОМАНДИ =====
+
+command /resetbuffs [<offline player>]:
+	permission: buffshop.admin
+	trigger:
+		if arg-1 is set:
+			delete {buff.unlocked.%arg-1%::*}
+			delete {buff.active.slot.%arg-1%::*}
+			send "&c✔ Баффы игрока %arg-1% сброшены" to player
+		else:
+			delete {buff.unlocked.%player%::*}
+			delete {buff.active.slot.%player%::*}
+			send "&c✔ Ваши баффы сброшены" to player
+
+command /resetactivebuffs [<offline player>]:
+	permission: buffshop.admin
+	trigger:
+		if arg-1 is set:
+			delete {buff.active.slot.%arg-1%::*}
+			send "&c✔ Активные баффы игрока %arg-1% сброшены" to player
+		else:
+			delete {buff.active.slot.%player%::*}
+			send "&c✔ Ваши активные баффы сброшены" to player
+
+command /checkbuffs [<offline player>]:
+	permission: buffshop.admin
+	trigger:
+		if arg-1 is set:
+			set {_target} to arg-1
+		else:
+			set {_target} to player
+		
+		send "&c&l=== БАФФЫ ИГРОКА %{_target}% ===" to player
+		send " " to player
+		
+		# Інформація про слоти
+		set {_maxSlots} to getMaxBuffSlots({_target})
+		set {_usedSlots} to getActiveBuffSlotsCount({_target})
+		send "&8❖ &7Слоты: &f%{_usedSlots}%&8/&f%{_maxSlots}%" to player
+		send " " to player
+		
+		send "&c&lКУПЛЕНЫ:" to player
+		loop {buff::all::*}:
+			if isBuffUnlocked({_target}, loop-value) is true:
+				send "&8❖ &c✔ %loop-value%" to player
+		
+		send " " to player
+		send "&c&lАКТИВНЫ:" to player
+		
+		if {buff.active.slot.%{_target}%.speed} is set:
+			send "&8❖ &7Speed: &f%{buff.active.slot.%{_target}%.speed}%" to player
+		else:
+			send "&8❖ &7Speed: &8не выбран" to player
+		
+		if {buff.active.slot.%{_target}%.defense} is set:
+			send "&8❖ &7Defense: &f%{buff.active.slot.%{_target}%.defense}%" to player
+		else:
+			send "&8❖ &7Defense: &8не выбран" to player
+		
+		if {buff.active.slot.%{_target}%.kill} is set:
+			send "&8❖ &7Kill: &f%{buff.active.slot.%{_target}%.kill}%" to player
+		else:
+			send "&8❖ &7Kill: &8не выбран" to player
+
+command /givebuffslot <offline player> <text>:
+	permission: buffshop.admin
+	trigger:
+		if arg-2 is "bunt":
+			execute console command "lp user %arg-1% permission set buffshop.bunt true"
+			send "&c✔ Игроку %arg-1% выдан Бунт (2 слота)" to player
+		else if arg-2 is "gnev":
+			execute console command "lp user %arg-1% permission set buffshop.gnev true"
+			send "&c✔ Игроку %arg-1% выдан Гнев (3 слота)" to player
+		else if arg-2 is "remove":
+			execute console command "lp user %arg-1% permission unset buffshop.bunt"
+			execute console command "lp user %arg-1% permission unset buffshop.gnev"
+			send "&c✔ У игрока %arg-1% убраны донат слоты" to player
+		else:
+			send "&c✖ Использование: /givebuffslot <игрок> <bunt/gnev/remove>" to player
+
+# ===== ІНТЕГРАЦІЯ З АРЕНАМИ =====
+
+# Автоматичне застосування бафів при вході в арену
+every 2 seconds:
+	loop all players:
+		set {_world} to "%world of loop-player%"
+		
+		# Гравець НЕ в world і не має активного статусу (увійшов в арену)
+		if {_world} is not "world":
+			if {buff.arena.active.%loop-player%} is not set:
+				set {buff.arena.active.%loop-player%} to true
+				applyAllActiveBuffs(loop-player)
+		
+		# Гравець В world і має активний статус (вийшов з арени)
+		if {_world} is "world":
+			if {buff.arena.active.%loop-player%} is set:
+				delete {buff.arena.active.%loop-player%}
+				removeAllBuffEffects(loop-player)
+
+# Застосування всіх активних бафів
+function applyAllActiveBuffs(p: player):
+	# SPEED баф
+	if {buff.active.slot.%{_p}%.speed} is set:
+		set {_buffId} to {buff.active.slot.%{_p}%.speed}
+		
+		if {_buffId} is "speed1":
+			apply potion of speed of tier 1 without particles to {_p} for 999 days
+			send "&8❖ &c⚡ Скорость I &7активирована!" to {_p}
+		else if {_buffId} is "speed2":
+			apply potion of speed of tier 2 without particles to {_p} for 999 days
+			send "&8❖ &c⚡ Скорость II &7активирована!" to {_p}
+		else if {_buffId} is "adrenaline":
+			# Адреналін активується при вбивстві
+			send "&8❖ &c⚡ Адреналин &7готов к активации!" to {_p}
+	
+	# DEFENSE баф
+	if {buff.active.slot.%{_p}%.defense} is set:
+		set {_buffId} to {buff.active.slot.%{_p}%.defense}
+		
+		if {_buffId} is "kb_resist":
+			apply potion of resistance of tier 1 without particles to {_p} for 999 days
+			send "&8❖ &c⚡ Сопротивление &7активировано!" to {_p}
+		else if {_buffId} is "bonus_hp":
+			set max health of {_p} to 24
+			set {_p}'s health to 24
+			send "&8❖ &c⚡ Бонус ХП &7(+2 сердца) активирован!" to {_p}
+		else if {_buffId} is "iron_skin":
+			apply potion of resistance of tier 2 without particles to {_p} for 999 days
+			send "&8❖ &c⚡ Железная кожа &7активирована!" to {_p}
+	
+	# KILL баф
+	if {buff.active.slot.%{_p}%.kill} is set:
+		set {_buffId} to {buff.active.slot.%{_p}%.kill}
+		set {_name} to getBuffName({_buffId})
+		send "&8❖ &c⚡ %{_name}% &7готов к активации!" to {_p}
+
+# Видалення всіх ефектів бафів
+function removeAllBuffEffects(p: player):
+	remove speed from {_p}
+	remove resistance from {_p}
+	remove regeneration from {_p}
+	set max health of {_p} to 20
+	if {_p}'s health > 20:
+		set {_p}'s health to 20
+
+# Обробка бонусів за вбивство
+on death:
+	attacker is a player
+	
+	set {_world} to "%world of attacker%"
+	if {_world} is "world":
+		stop
+	
+	# KILL баф
+	if {buff.active.slot.%attacker%.kill} is set:
+		set {_buffId} to {buff.active.slot.%attacker%.kill}
+		
+		if {_buffId} is "focus":
+			apply potion of regeneration of tier 2 to attacker for 5 seconds
+			send "&8❖ &c⚡ Фокус &7активирован! (Regeneration II 5s)" to attacker
+		else if {_buffId} is "second_wind":
+			heal attacker
+			set attacker's food level to 20
+			apply potion of regeneration of tier 5 to attacker for 3 seconds
+			send "&8❖ &c⚡ Второе дыхание &7активировано! (Full Heal + Regen V)" to attacker
+	
+	# SPEED баф - Адреналін
+	if {buff.active.slot.%attacker%.speed} is "adrenaline":
+		apply potion of speed of tier 3 to attacker for 10 seconds
+		send "&8❖ &c⚡ Адреналин &7активирован! (Speed III 10s)" to attacker
+
+# Очищення при виході з сервера
+on quit:
+	delete {buff.arena.active.%player%}
+	set {_world} to "%world of player%"
+	if {_world} is not "world":
+		removeAllBuffEffects(player)
+
+# Очищення при смерті (щоб баги не було)
+on respawn:
+	set {_world} to "%world of player%"
+	if {_world} is "world":
+		delete {buff.arena.active.%player%}
+		removeAllBuffEffects(player)

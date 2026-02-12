@@ -1,0 +1,112 @@
+# -----------------
+# Main configuration for the PVP tracker
+#
+# Documentation: https://docs.battleplugins.org/shelves/battletracker
+# Support: https://discord.gg/tMVPVJf
+# GitHub: https://github.com/BattlePlugins/BattleTracker
+# -----------------
+config-version: 2.0 # The config version, do not change!
+
+# The name of the tracker
+name: PvP
+# Recap options
+recap:
+  # Whether the damage recap should be enabled for this tracker
+  enabled: true
+  # The content to display in the recap
+  # - all: Displays all information about a player in the recap, including armor, inventory and damage
+  # - armor: Just shows the armor a player was wearing
+  # - recap: Just shows the damage recap of a player
+  display-content: armor
+  # Whether a damage recap should be shown when a player hovers over
+  # a player's death message.
+  hover-recap: true
+# The data this tracker wil track
+# - pvp: tracks player vs player statistics
+# - pve: tracks player vs enemy statistics
+# - world: tracks world statistics (i.e. damage due to lava, fall damage, etc.)
+tracked-statistics:
+  - pvp
+# Worlds that this tracker is disabled in.
+disabled-worlds: []
+# The rating calculator to use
+# - elo: the default rating calculator
+calculator: elo
+# Killstreaks
+# - A killstreak occurs when a player kills a certain number of players in a row without dying
+killstreaks:
+  enabled: true
+  minimum-kills: 5
+  killstreak-message-interval: 5
+  # The audience of the death messages
+  # - global: all players
+  # - world: only players in the same world
+  # - local: only the player and the target
+  # - arena: only players in the same arena (requires BattleArena)
+  audience: global
+  messages:
+    default: "<gray><red>%player%</red> набрал серию из <red>%kills%</red> убийств!</gray>"
+    10: "<gray><red>%player%</red> набрал безумную серию из <red>%kills%</red> убийств!</gray>"
+    20: "<gray><red>%player%</red> на <dark_red>неостановимой</dark_red> серии в <red>%kills%</red> убийств!</gray>"
+# Rampages
+# - A rampage occurs when a player kills a certain number of players in a short amount of time
+rampage:
+  enabled: true
+  rampage-time: 10
+  # The audience of the death messages
+  # - global: all players
+  # - world: only players in the same world
+  # - local: only the player and the target
+  # - arena: only players in the same arena (requires BattleArena)
+  audience: global
+  messages:
+    default: "<gray><red>%player%</red> устроил бойню!</gray>"
+    3: "<gray><red>%player%</red> устроил безумную бойню!</gray>"
+    4: "<gray><red>%player%</red> устроил <red>безумную</red> резню!</gray>"
+    5: "<gray><red>%player%</red> на <dark_red>неостановимой</dark_red> бойне!</gray>"
+# Whether death messages processed by this tracker should be enabled
+death-messages:
+  enabled: true
+  # The audience of the death messages
+  # - global: all players
+  # - world: only players in the same world
+  # - local: only the player and the target
+  # - arena: only players in the same arena (requires BattleArena)
+  audience: global
+  # World death messages
+  world:
+    # Disabled - see pve.yml
+    enabled: false
+  entity:
+    # Disabled - see pve.yml
+    enabled: false
+  player:
+    # Enabled - this is for processing deaths from players
+    enabled: true
+    messages:
+      bow:
+        - "<gray><red>%player%</red> изрешетил <red>%target%</red> стрелами из <white>%item%</white>!</gray>"
+        - "<gray>Стрелы <red>%player%</red> пронзили <red>%target%</red> из <white>%item%</white>!</gray>"
+      air:
+        - "<gray><red>%player%</red> избил <red>%target%</red> голыми руками!</gray>"
+        - "<gray><red>%target%</red> не смог противостоять боевым навыкам <red>%player%</red>!</gray>"
+        - "<gray><red>%player%</red> показал <red>%target%</red>, что кулаки тоже оружие!</gray>"
+        - "<gray>Кулаки <red>%player%</red> сломали <red>%target%</red>!</gray>"
+      "#swords":
+        - "<gray><red>%player%</red> разрубил <red>%target%</red> своим <white>%item%</white>!</gray>"
+        - "<gray><red>%player%</red> зарубил <red>%target%</red> используя <white>%item%</white>!</gray>"
+        - "<gray><red>%player%</red> показал <red>%target%</red> остроту своего <white>%item%</white>!</gray>"
+        - "<gray><red>%player%</red> изрубил <red>%target%</red> насмерть с помощью <white>%item%</white>!</gray>"
+      "#axes":
+        - "<gray><red>%player%</red> разрубил <red>%target%</red> с помощью <white>%item%</white>!</gray>"
+        - "<gray><red>%player%</red> использовал <red>%target%</red> как дрова!</gray>"
+        - "<gray><red>%player%</red> раскроил <red>%target%</red> с помощью <white>%item%</white>!</gray>"
+        - "<gray><red>%player%</red> разрубил <red>%target%</red> пополам с помощью <white>%item%</white>!</gray>"
+      default:
+        - "<gray><red>%player%</red> убил <red>%target%</red>!</gray>"
+        - "<gray><red>%player%</red> уничтожил <red>%target%</red>!</gray>"
+        - "<gray><red>%player%</red> победил <red>%target%</red>!</gray>"
+        - "<gray><red>%player%</red> ликвидировал <red>%target%</red>!</gray>"
+        - "<gray><red>%target%</red> был убит игроком <red>%player%</red>!</gray>"
+        - "<gray><red>%target%</red> пал от руки <red>%player%</red>!</gray>"
+        - "<gray><red>%target%</red> не смог противостоять <red>%player%</red>!</gray>"

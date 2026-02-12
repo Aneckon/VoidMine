@@ -1,0 +1,52 @@
+name: river
+arena: FFA
+type: dynamic
+world: river
+bounds:
+  min-x: -33
+  min-y: 14
+  min-z: -33
+  max-x: 32
+  max-y: 318
+  max-z: 32
+spawns:
+  waitroom:
+    x: -13.665165191096401
+    y: 79.0
+    z: 18.455735186801043
+    yaw: -110.91016
+    pitch: 17.111742
+  spectator:
+    x: -13.665165191096401
+    y: 79.0
+    z: 18.455735186801043
+    yaw: -110.91016
+    pitch: 17.111742
+  team-spawns:
+    Default:
+      spawns:
+      - x: -13.665165191096401
+        y: 79.0
+        z: 18.455735186801043
+        yaw: -110.91016
+        pitch: 17.111742
+      - x: -10.0
+        y: 79.0
+        z: 15.0
+        yaw: 0.0
+        pitch: 0.0
+      - x: -17.0
+        y: 79.0
+        z: 15.0
+        yaw: 90.0
+        pitch: 0.0
+      - x: -10.0
+        y: 79.0
+        z: 22.0
+        yaw: 180.0
+        pitch: 0.0
+      - x: -17.0
+        y: 79.0
+        z: 22.0
+        yaw: -90.0
+        pitch: 0.0

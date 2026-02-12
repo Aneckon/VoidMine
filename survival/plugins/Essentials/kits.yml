@@ -1,0 +1,50 @@
+# EssentialsX kit configuration
+# Конфігурація китів для вашого сервера
+
+kits:
+  # ─── Стартовий кит ───
+  starter:
+    delay: 172800  # 48 годин (48 * 60 * 60)
+    items:
+      - stonepickaxe 1
+      - stoneaxe 1
+      - bread 8
+
+  # ─── Бунт кит ───
+  bunt:
+    delay: 86400  # 24 години (24 * 60 * 60)
+    items:
+      - stonepickaxe 1
+      - stoneaxe 1
+      - stonesword 1
+      - bread 16
+      - leatherhelmet 1
+      - leatherchestplate 1
+      - leatherleggings 1
+      - leatherboots 1
+
+  # ─── Крах кит ───
+  krah:
+    delay: 64800  # 18 годин (18 * 60 * 60)
+    items:
+      - ironpickaxe 1
+      - ironaxe 1
+      - ironsword 1
+      - bread 32
+      - leatherhelmet 1
+      - leatherchestplate 1
+      - leatherleggings 1
+      - leatherboots 1
+
+  # ─── Гнев кит ───
+  gnev:
+    delay: 43200  # 12 годин (12 * 60 * 60)
+    items:
+      - ironpickaxe 1
+      - ironaxe 1
+      - ironsword 1
+      - bread 32
+      - ironhelmet 1
+      - ironchestplate 1
+      - ironleggings 1
+      - ironboots 1

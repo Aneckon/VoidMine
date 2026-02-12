@@ -1,0 +1,7 @@
+NPCS:
+  '4':
+    Commands:
+    - 1~~~arenalist~~~noPerm~~~BOTH~~~~~~false~~~false~~~false~~~0.0~~~0~~~0~~~false~~~true
+  '1':
+    Commands:
+    - 1~~~arenalist~~~noPerm~~~BOTH~~~~~~false~~~false~~~false~~~0.0~~~0~~~0~~~false~~~true

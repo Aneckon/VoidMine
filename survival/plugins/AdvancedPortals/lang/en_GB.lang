@@ -1,0 +1,87 @@
+messageprefix.positive=§8[§cПорталы§8]
+messageprefix.negative=§8[§7Порталы§8]
+
+logger.pluginenable=§a✔ Плагин &cAdvancedPortals &aактивирован!
+logger.plugindisable=§c✖ Плагин &7AdvancedPortals &cвыключен!
+logger.plugincrafterror=⛔ Версия CraftBukkit не поддерживается или произошла ошибка. Отправь это с версией: %1$s
+
+command.noargs=§c✖ Укажи подкоманду! Попробуй: §e/%1$s help
+command.subcommand.invalid=§c✖ Неизвестная подкоманда.
+
+command.help.header=§c▸ Помощь %1$s §8(Страница %2$s из %3$s)
+command.help.subcommandheader=§c▸ Помощь %1$s - %2$s
+command.help.invalidhelp=§c✖ Неверная страница или подкоманда: §e%1$s
+
+command.reload.help=Перезагрузить порталы
+command.reload.detailedhelp=Перезагружает все данные порталов из файлов
+command.reload.reloaded= §a✔ Все порталы перезагружены.
+
+command.create.help=Создать портал
+command.create.complete=§a✔ Портал успешно создан!
+command.create.error=§c⛔ Произошла ошибка при создании портала.
+command.create.portal.console=⛔ Консоль не может создать портал!
+command.create.detailedhelp=Формат: /portal create (название) [теги]
+
+command.create.destination.help=Создать точку назначения
+command.create.destination.complete=§a✔ Точка назначения создана!
+command.create.destination.console=⛔ Консоль не может создать назначение!
+command.create.destination.error=§c⛔ Ошибка создания назначения
+command.create.destination.detailedhelp=Формат: /desti create (название) [теги]
+
+command.portal.info.complete=§7Информация о портале §c%1$s§7:
+command.portal.info.notfound=§c✖ Портал §e%1$s §cне найден.
+command.portal.info.noname=⛔ Укажи название портала.
+
+command.playeronly=§c⛔ Только для игроков!
+
+command.portal.remove.noname=⛔ Укажи название портала.
+command.portal.remove.error=⛔ Ошибка удаления портала.
+command.portal.remove.complete=§a✔ Портал удален.
+command.portal.remove.invalidselection=⛔ Выделение недействительно.
+command.portal.remove.noselection=⛔ У тебя не выделен портал.
+
+command.portal.show.enabled=§a✔ Метки портала включены.
+command.portal.show.disabled=§e✖ Метки портала выключены.
+command.portal.show.unsupported=⛔ Метки не поддерживаются на этой версии.
+
+command.destination.remove.complete=§a✔ Назначение удалено.
+command.destination.remove.error=⛔ Ошибка удаления назначения.
+command.destination.noname=⛔ Назначение не найдено.
+
+command.destination.teleport.success=§a✔ Телепортирован к §e(@destiname)
+command.destination.teleport.error=§c✖ Не удалось телепортироваться к (@destiname)
+
+command.portal.list=§7Порталы:
+command.destination.list=§7Назначения:
+
+command.selector=§a✔ Выделитель портала выдан
+command.selector.help=Выделение области портала
+
+command.portal.import=⛔ Импорт: §e%1$s порталов §7и §e%2$s назначений. Введи §e/portal import confirm§7 для подтверждения.
+command.portal.import.confirm=✔ Импортируем...
+command.portal.import.complete=✔ Импортировано §e%1$s порталов §7и §e%2$s назначений.
+
+portal.error.invalidselection=⛔ Обе точки должны быть выбраны
+portal.error.takenname=⛔ Такое название уже существует!
+portal.error.selection.differentworlds=⛔ Обе точки должны быть в одном мире!
+portal.error.selection.missing=⛔ Выбери обе точки!
+portal.error.save=⛔ Ошибка сохранения портала
+portal.error.nopermission=⛔ Нет прав на использование портала
+
+portal.nobuild=⛔ Ты не можешь строить здесь!
+
+desti.info.noargs=⛔ Не указано ни одного тега
+
+command.error.noname=⛔ Не указано название: §e(name:название)
+command.error.notags=⛔ Не указано тегов. Нужен хотя бы §e(name:название)
+command.error.nametaken=⛔ Название §e%1$s §cуже занято
+
+time.second=секунда
+time.seconds=секунд
+portal.cooldown.join=⛔ Подожди &e%1$s %2$s &cперед входом
+portal.cooldown.individual=⛔ Повторная активация через &e%1$s %2$s
+
+items.selector.name=§cВыбор области портала
+items.selector.pos=Выбрано pos %1$s
+items.interact.left=ЛКМ
+items.interact.right=ПКМ

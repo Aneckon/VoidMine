@@ -1,0 +1,36 @@
+Bonet[/127.0.0.1:55576] logged in with entity id 103 at ([spawn]-0.3491549001686231, -20.0, 6.190827327884549)
+Bonet issued server command: /dmenu reload
+Bonet issued server command: /dmenu reload
+Bonet issued server command: /dmenu reload
+Bonet issued server command: /dmenu reload
+Bonet issued server command: /dmenu reload
+Bonet issued server command: /warp ah
+Bonet issued server command: /shop
+Bonet issued server command: /shop
+Bonet issued server command: /shop
+Bonet issued server command: /shop
+Bonet issued server command: /shop
+Bonet issued server command: /skript reload all
+Bonet issued server command: /skript reload all
+Bonet issued server command: /shop
+Bonet issued server command: /gamemode creative
+Bonet issued server command: /warp ah
+Bonet issued server command: /shop
+Bonet issued server command: /warp ah
+Bonet issued server command: /shop
+Bonet issued server command: /shop
+Bonet issued server command: /shop
+Bonet issued server command: /shop
+Bonet issued server command: /shop
+Bonet issued server command: /shop
+Bonet issued server command: /shop
+Bonet issued server command: /shop
+Bonet issued server command: /shop
+Bonet issued server command: /shop
+Bonet issued server command: /shop
+Bonet issued server command: /shop
+Bonet issued server command: /shop
+Bonet issued server command: /shop
+Bonet issued server command: /gamemode creative
+Bonet issued server command: /warp ah
+Bonet issued server command: /shop

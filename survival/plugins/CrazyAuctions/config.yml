@@ -1,0 +1,283 @@
+Settings:
+  Prefix: '&8[&cАукцион&8] &7➤ '
+  GUIName: '&cАукцион'
+  Players-Current-Items: '&cВаши активные лоты'
+  Cancelled/Expired-Items: '&cОтмененные / Истекшие'
+  Buying-Item: '&cКупить предмет?'
+  Bidding-On-Item: '&cСтавка на товар'
+  Categories: '&cКатегории товаров'
+  Sell-Time: 2d
+  Bid-Time: 2m 30s
+  Full-Expire-Time: 10d
+  Bid-Winner-Time: 20d
+  Minimum-Sell-Price: 10
+  Max-Beginning-Sell-Price: 1000000
+  Minimum-Bid-Price: 100
+  Max-Beginning-Bid-Price: 1000000
+  Allow-Damaged-Items: false
+  Category-Page-Opens-First: false
+  Feature-Toggle:
+    Selling: true
+    Bidding: true
+  Patches:
+    Macro-Dupe: true
+  Sounds:
+    Toggle: false
+    Sound: 'UI_BUTTON_CLICK'
+  Sold-Item-Sound: 'UI_BUTTON_CLICK'
+
+  GUISettings:
+    SellingItemLore:
+      - '&8━━━━━━━━━━━━━━'
+      - '&cНажми для покупки.'
+      - ''
+      - '&8Цена: &c$%price%'
+      - '&8Продавец: &c%seller%'
+      - '&8━━━━━━━━━━━━━━'
+
+    CurrentLore:
+      - '&8━━━━━━━━━━'
+      - '&cНажми, чтобы отменить.'
+      - ''
+      - '&8Цена: &c$%price%'
+      - '&8Осталось: &c%time%'
+      - '&8━━━━━━━━━━'
+
+    Cancelled/ExpiredLore:
+      - '&8━━━━━━'
+      - '&cНажми, чтобы вернуть.'
+      - ''
+      - '&8Общее время: &c%time%'
+      - '&8━━━━━━'
+
+    Bidding:
+      - '&8━━━━━━'
+      - '&cНажми, чтобы сделать ставку.'
+      - ''
+      - '&8Продавец: &c%seller%'
+      - '&8Ставка: &c$%topbid%'
+      - '&8Топ-ставщик: &c%topbidder%'
+      - '&8До конца: &c%time%'
+      - '&8━━━━━━'
+
+    Category-Settings:
+      Armor:
+        Item: 'GOLDEN_CHESTPLATE'
+        Toggle: true
+        Slot: 11
+        Name: '&cБроня'
+        Lore:
+          - '&8Все доступные предметы брони.'
+
+      Weapons:
+        Item: 'GOLDEN_SWORD'
+        Toggle: true
+        Slot: 12
+        Name: '&cОружие'
+        Lore:
+          - '&8Все, чем можно нанести урон.'
+
+      Tools:
+        Item: 'GOLDEN_PICKAXE'
+        Toggle: true
+        Slot: 13
+        Name: '&cИнструменты'
+        Lore:
+          - '&8Все для майнинга и добычи.'
+
+      Food:
+        Item: 'GOLDEN_APPLE'
+        Toggle: true
+        Slot: 14
+        Name: '&cЕда'
+        Lore:
+          - '&8Чтобы выжить в этом жестоком мире.'
+
+      Potions:
+        Item: 'POTION'
+        Toggle: true
+        Slot: 15
+        Name: '&cЗелья'
+        Lore:
+          - '&8Магическое преимущество над другими.'
+
+      Blocks:
+        Item: 'GRASS_BLOCK'
+        Toggle: true
+        Slot: 16
+        Name: '&cБлоки'
+        Lore:
+          - '&8Все для строительства и фарма.'
+
+      Other:
+        Item: 'GOLD_NUGGET'
+        Toggle: true
+        Slot: 17
+        Name: '&cПрочее'
+        Lore:
+          - '&8Все, что не вписалось в другое.'
+
+      None:
+        Item: 'BARRIER'
+        Toggle: true
+        Slot: 23
+        Name: '&cБез категории'
+        Lore:
+          - '&8Все другие предметы без категории.'
+
+    OtherSettings:
+      SellingItems:
+        Item: 'ENDER_CHEST'
+        Toggle: true
+        Slot: 46
+        Name: '&cВаши лоты'
+        Lore:
+          - '&8Нажми, чтобы увидеть свои лоты.'
+
+      Cancelled/ExpiredItems:
+        Item: 'BARRIER'
+        Toggle: true
+        Slot: 47
+        Name: '&cОтмененные/Истекшие'
+        Lore:
+          - '&8Нажми, чтобы вернуть все старые лоты.'
+
+      PreviousPage:
+        Item: 'DARK_OAK_BUTTON'
+        Toggle: true
+        Slot: 49
+        Name: '&c← Назад'
+      Refesh:
+        Item: 'SUNFLOWER'
+        Toggle: true
+        Slot: 50
+        Name: '&cОбновить'
+      NextPage:
+        Item: 'DARK_OAK_BUTTON'
+        Toggle: true
+        Slot: 51
+        Name: '&cДалее →'
+
+      Category1:
+        Item: 'CHEST'
+        Toggle: true
+        Slot: 52
+        Name: '&cКатегории'
+        Lore:
+          - '&8Текущая: &c%category%'
+          - '&8Выбери категорию товаров.'
+
+      Category2:
+        Item: 'CHEST'
+        Toggle: true
+        Slot: 48
+        Name: '&cКатегории'
+        Lore:
+          - '&8Просмотреть все категории товаров.'
+
+      Bidding/Selling:
+        Selling:
+          Item: 'SLIME_BALL'
+          Toggle: true
+          Slot: 53
+          Name: '&cПредметы на продажу'
+          Lore:
+            - '&8← Нажми, чтобы увидеть все, что продаешь.'
+        Bidding:
+          Item: 'MAGMA_CREAM'
+          Toggle: true
+          Slot: 53
+          Name: '&cПредметы для ставок'
+          Lore:
+            - '&8← Все, на что можно сделать ставку.'
+
+      WhatIsThis:
+        SellingShop:
+          Item: 'BOOK'
+          Toggle: true
+          Slot: 54
+          Name: '&cЧто это?'
+          Lore:
+            - '&8Это страница продажи предметов.'
+
+        BiddingShop:
+          Item: 'BOOK'
+          Toggle: true
+          Slot: 54
+          Name: '&cЧто это?'
+          Lore:
+            - '&8Это страница ставок на предметы.'
+
+        CurrentItems:
+          Item: 'BOOK'
+          Toggle: true
+          Slot: 54
+          Name: '&cЧто это?'
+          Lore:
+            - '&8Ваши активные лоты на аукционе.'
+
+        Cancelled/ExpiredItems:
+          Item: 'BOOK'
+          Toggle: true
+          Slot: 54
+          Name: '&cЧто это?'
+          Lore:
+            - '&8Предметы, которые были сняты или не проданы.'
+
+        Viewing:
+          Item: 'BOOK'
+          Toggle: true
+          Slot: 50
+          Name: '&cЧто это?'
+          Lore:
+            - '&8Общий список выставленных товаров.'
+
+        Categories:
+          Item: 'BOOK'
+          Toggle: true
+          Slot: 54
+          Name: '&cЧто это?'
+          Lore:
+            - '&8Выбор категорий товаров.'
+
+      Back:
+        Item: 'PAPER'
+        Slot: 46
+        Name: '&c← Назад'
+      Return:
+        Item: 'FLOWER_POT'
+        Slot: 50
+        Name: '&cВернуть все'
+        Lore:
+          - '&8Забрать все отмененные/истекшие лоты.'
+
+      Confirm:
+        Item: 'LIME_STAINED_GLASS_PANE'
+        Name: '&c✔ Подтвердить'
+      Cancel:
+        Item: 'RED_STAINED_GLASS_PANE'
+        Name: '&c✖ Отменить'
+      Your-Item:
+        Item: 'BARRIER'
+        Name: '&c⛔ Это ваш лот!'
+      Cant-Afford:
+        Item: 'BARRIER'
+        Name: '&c⛔ Недостаточно средств!'
+      Top-Bidder:
+        Item: 'BARRIER'
+        Name: '&c⛔ Вы уже топ!'
+      Bidding:
+        Item: 'BLACK_STAINED_GLASS_PANE'
+        Name: '&8Ставка'
+        Lore:
+          - '&8<-- &c+ &7| &c− &8-->'
+          - '&8Ваша ставка: &c$%Bid%'
+          - '&8Топ: &c$%topbid%'
+      Bid:
+        Item: 'LIGHT_BLUE_STAINED_GLASS_PANE'
+        Name: '&c▶ Поставить ставку'
+        Lore:
+          - '&8Нажми, чтобы сделать ставку.'
+  BlackList:
+    - 'BEDROCK'
+    - 'END_PORTAL_FRAME'

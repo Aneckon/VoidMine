@@ -1,0 +1,138 @@
+# The name or display name
+name: '&b⚡ Сфера Блискавки'
+# The material
+material: HEART_OF_THE_SEA
+# Item Glowing effect
+glow: true
+# The lore of the item
+lore:
+  - ''
+  - '&7Відчуваєш електрику в кістках...'
+  - ''
+  - '&8⯇ &cШвидкість II'
+  - '&8⯇ &cСтрибки II'
+  - '&8⯇ &cТимчасовий опір'
+  - '&8⯇ &cПовільне падіння'
+  - ''
+  - '&7Заряд блискавки не прощає помилок.'
+  - '&b⚡ Біжи, стрибай... але не падай.'
+
+# Disable the enchant glide effect
+disableEnchantGlide: false
+# Disable item stacking ?
+disableStack: false
+# Keep the item on death ?
+keepItemOnDeath: false
+# Can be used only by the owner
+# ⚠ Require Store item info on true
+canBeUsedOnlyByTheOwner: false
+# Cancel event if not owner
+cancelEventIfNotOwner: false
+# BlackListed Activators
+# (can be used by everyone even if
+# the only owner feature is set to true)
+onlyOwnerBlackListedActivators: []
+# Store item info ?
+# Store the item info like the owner
+storeItemInfo: false
+# Item unbreakable ?
+unbreakable: false
+# The usage features
+# Increase or Decrease this usage with
+# UsageModification in your activators
+usageFeatures:
+  # The usage of the item
+  # -1 = Infinite
+  # Increase or Decrease this usage with
+  # UsageModification in your activators
+  usage: -1
+  # Is refreshable clean
+  isRefreshableClean: true
+  # The usage limit of the item
+  # Usage can't be increased above this value
+  usageLimit: -1
+# The durability feature
+# will be ignored, and the usage
+# feature will be used as durability
+isDurabilityBasedOnUsage: false
+# The drop features
+dropOptions:
+  # Glow drop
+  glowDrop: false
+  # The color of the glow
+  glowDropColor: WHITE
+  # Display custom name above the item
+  displayNameDrop: false
+# The enchantments of the item
+enchantments: {}
+# The hiders features
+# Hiders to hide:
+# Attributes, Enchants, ...
+hiders:
+  # Hide enchantments
+  hideEnchantments: false
+  # Hide unbreakable
+  hideUnbreakable: false
+  # Hide attributes
+  hideAttributes: false
+  # Hide usage
+  hideUsage: false
+  # Hide destroys
+  hideDestroys: false
+  # Hide placed on
+  hidePlacedOn: false
+  # Hide dye
+  hideDye: false
+  # Hide armor trim
+  hideArmorTrim: false
+  # Hide additional tooltip
+  hideAdditionalTooltip: false
+  # Hide tool tip
+  hideToolTip: false
+# Enable the feature
+giveFirstJoin:
+  # Enable the feature
+  giveFirstJoin: false
+  # The amount to give
+  giveFirstJoinAmount: 1
+  # Slot between 0 and 8 includes
+  giveFirstJoinSlot: 0
+# The restrictions features
+restrictions:
+  # The item can't be
+  # moved of the inventory
+  locked-in-inventory: false
+# Cancel the event if the player has no permission
+cancelEventIfNoPermission: false
+# The whitelisted worlds features
+whitelistedWorlds: []
+# The variables
+# Variables are used to store data like kills / deaths ...
+variables: {}
+# The activators / triggers
+activators:
+  lightning-orb-hit:
+    name: '&eActivator'
+    option: PLAYER_HIT_PLAYER
+    usageModification: 0
+    cancelEvent: false
+    noActivatorRunIfTheEventIsCancelled: false
+    autoUpdateItem: false
+    globalCooldownOptions:
+      cooldown: 0
+    otherEICooldowns: {}
+    requiredItems: {}
+    requiredExecutableItems: {}
+    requiredMagics: {}
+    detailedSlots: []
+    commands:
+      - effect give %player% minecraft:speed 5 1 true
+      - effect give %player% minecraft:jump_boost 5 1 true
+      - effect give %player% minecraft:slow_falling 3 0 true
+      - effect give %player% minecraft:resistance 4 0 true
+    playerConditions: {}
+    worldConditions: {}
+    itemConditions: {}
+    customConditions: {}
+    placeholdersConditions: {}
+    variablesModification: {}

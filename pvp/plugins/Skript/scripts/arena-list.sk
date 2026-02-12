@@ -1,0 +1,130 @@
+
+# ============================================
+# ОНОВЛЕНА КОМАНДА /ARENALIST
+# ============================================
+command /arenalist:
+	trigger:
+		delete {arena.data::*}
+		delete {arena.players::*}
+		delete {arena.creator::*}
+		set {_slot} to 10
+		set {_found} to false
+		set {_shown::*} to "none"
+		
+		# Список основних світів які ігноруємо
+		set {_ignore::*} to "world", "world_nether", "world_the_end", "spawn", "lobby" and "hub"
+		
+		# ПОСТІЙНА АРЕНА - ЗАВЖДИ ПОКАЗУЄМО ПЕРШОЮ
+		if {permanent.arena.active} is true:
+			set {_permanentMap} to {permanent.arena.map}
+			set {_found} to true
+			set {arena.data::10} to {_permanentMap}
+			set {arena.creator::10} to "SERVER"  # Позначаємо що це серверна арена
+			
+			# Рахуємо гравців на постійній арені
+			set {_count} to 0
+			loop all players:
+				set {_w} to "%world of loop-player%"
+				if {_w} is {_permanentMap}:
+					add 1 to {_count}
+			set {arena.players::10} to {_count}
+			add {_permanentMap} to {_shown::*}
+			set {_slot} to 11
+		
+		# Збираємо дані про інші арени (дуелі тощо)
+		loop all players:
+			set {_world} to "%world of loop-player%"
+			if {_ignore::*} does not contain {_world}:
+				if {_shown::*} does not contain {_world}:
+					add {_world} to {_shown::*}
+					set {_found} to true
+					set {arena.data::%{_slot}%} to {_world}
+					set {arena.creator::%{_slot}%} to loop-player
+					
+					# Рахуємо гравців на арені
+					set {_count} to 0
+					loop all players:
+						set {_w2} to "%world of loop-player-2%"
+						if {_w2} is {_world}:
+							add 1 to {_count}
+					set {arena.players::%{_slot}%} to {_count}
+					
+					add 1 to {_slot}
+					if {_slot} >= 17:
+						stop loop
+		
+		# Створюємо GUI
+		open virtual chest inventory with 5 rows named "&c⚔ Активные Арены" to player
+		wait 1 tick
+		
+		# Декор - верхній ряд
+		set {_i} to 0
+		while {_i} < 9:
+			set slot {_i} of player's current inventory to black stained glass pane named " "
+			add 1 to {_i}
+		
+		# Декор - нижній ряд
+		set {_i} to 36
+		while {_i} < 45:
+			set slot {_i} of player's current inventory to black stained glass pane named " "
+			add 1 to {_i}
+		
+		# Декор - боки
+		set slot 9 of player's current inventory to black stained glass pane named " "
+		set slot 17 of player's current inventory to black stained glass pane named " "
+		set slot 18 of player's current inventory to black stained glass pane named " "
+		set slot 26 of player's current inventory to black stained glass pane named " "
+		set slot 27 of player's current inventory to black stained glass pane named " "
+		set slot 35 of player's current inventory to black stained glass pane named " "
+
+		set {_back} to head from value "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTBlMGE0ZDQ4Y2Q4MjlhNmQ1ODY4OTA5ZDY0M2ZhNGFmZmQzOWU4YWU2Y2FhZjZlYzc5NjA5Y2Y3NjQ5YjFjIn19fQ=="
+		set name of {_back} to "&c⮜ Назад"
+		set lore of {_back} to "&8❖ &7Вернуться в меню арен", " ", "&8▶ &fНажми, чтобы выйти"
+		set slot 40 of player's current inventory to {_back}
+		
+		# Показуємо арени
+		if {_found} is true:
+			set {_s} to 10
+			loop {arena.data::*}:
+				set {_num} to {_s} - 9
+				set {_players} to {arena.players::%{_s}%}
+				set {_mapName} to loop-value
+				
+				# Перевіряємо чи це постійна арена
+				if {arena.creator::%{_s}%} is "SERVER":
+					set {_head} to head from value "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjEyYTAzYTRjMTFiNGQ0NzI0NzJlN2U0NTkzZDJlMTI2YTYyNTllMzNjYzgxZjQ0ZWIwNWNmMDQyZDA3Njk2NyJ9fX0="
+					set slot {_s} of player's current inventory to {_head} named "&c⭐ Постоянная Deathmatch Арена" with lore "&8❖ &7Режим: &fFree For All", "&8⤷ &7Карта: &f%{_mapName}%", "&8⤷ &7Игроков: &f%{_players}% &8(8)", "&8⤷ &7Статус: &c✓ Всегда активна", " ", "&c▶ ЛКМ &8- &7Присоединиться"
+				else:
+					set {_creator} to {arena.creator::%{_s}%}
+					set {_creatorname} to name of {_creator}
+					set {_head} to skull of {_creator}
+					set slot {_s} of player's current inventory to {_head} named "&c⚔ Арена %{_creatorname}%" with lore "&8❖ &7Активный евент", "&8⤷ &7Создатель: &f%{_creatorname}%", "&8⤷ &7Игроков: &f%{_players}%", "&8⤷ &7Статус: &aВ бою", " ", "&a▶ ЛКМ &8- &7Присоединиться"
+				
+				add 1 to {_s}
+				if {_s} >= 17:
+					stop loop
+		else:
+			# Немає активних ігор (не повинно статися, бо постійна арена завжди активна)
+			set {_item} to head from value "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2VkMWFiYTczZjYzOWY0YmM0MmJkNDgxOTZjNzE1MTk3YmUyNzEyYzNiOTYyYzk3ZWJmOWU5ZWQ4ZWZhMDI1In19fQ=="
+			set name of {_item} to "&c✖ Нет активных евентов"
+			set lore of {_item} to "&8❖ &7Сейчас никто не играет"
+			set slot 22 of player's current inventory to {_item}
+
+
+# Обробка кліків
+on inventory click:
+	name of event-inventory is "&c⚔ Активные Арены"
+	cancel event
+	
+	# Кнопка Назад
+	if index of event-slot is 40:
+		play sound "ui.button.click" to player
+		close player's inventory
+		execute player command "arenamenu"
+	
+	# Клік по арені
+	if index of event-slot is between 10 and 16:
+		if name of event-item contains "Арена":
+			play sound "ui.button.click" to player
+			close player's inventory
+			execute player command "deathmatch join"

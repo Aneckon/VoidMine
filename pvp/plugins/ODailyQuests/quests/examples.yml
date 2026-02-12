@@ -1,0 +1,227 @@
+# ==============================================================
+#                   ДОПОЛНИТЕЛЬНЫЕ PVP КВЕСТЫ
+# ==============================================================
+quests:
+  1:
+    name: "&cПервопроходец"
+    menu_item: IRON_HELMET
+    description:
+      - "&8❖ &7Сложность: &cЛегкая"
+      - ""
+      - "&c⚔ &7Задание:"
+      - " &8⤷ &7Убить &c%required% &7игроков"
+      - ""
+      - "&c⚙ &7Прогресс: %status%"
+      - ""
+      - "&c⭐ &7Награда:"
+      - " &8⤷ &7300 монет"
+      - ""
+    quest_type: KILL
+    required: PLAYER
+    required_amount: 2
+    reward:
+      reward_type: MONEY
+      amount: 400
+
+  2:
+    name: "&cБоец-новичок"
+    menu_item: WOODEN_SWORD
+    description:
+      - "&8❖ &7Сложность: &cЛегкая"
+      - ""
+      - "&c⚔ &7Задание:"
+      - " &8⤷ &7Убить &c%required% &7игрока"
+      - ""
+      - "&c⚙ &7Прогресс: %status%"
+      - ""
+      - "&c⭐ &7Награда:"
+      - " &8⤷ &7300 монет"
+      - ""
+    quest_type: KILL
+    required: PLAYER
+    required_amount: 1
+    reward:
+      reward_type: MONEY
+      amount: 300
+
+  3:
+    name: "&cИскатель приключений"
+    menu_item: COMPASS
+    description:
+      - "&8❖ &7Сложность: &cЛегкая"
+      - ""
+      - "&c⚔ &7Задание:"
+      - " &8⤷ &7Убить &c%required% &7игроков"
+      - ""
+      - "&c⚙ &7Прогресс: %status%"
+      - ""
+      - "&c⭐ &7Награда:"
+      - " &8⤷ &7600 монет + 2 опыта"
+      - ""
+    quest_type: KILL
+    required: PLAYER
+    required_amount: 4
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "eco give %player% 600"
+        - "xp add %player% 2 levels"
+
+  4:
+    name: "&cСтрелок"
+    menu_item: BOW
+    description:
+      - "&8❖ &7Сложность: &cСредняя"
+      - ""
+      - "&c🏹 &7Задание:"
+      - " &8⤷ &7Убить &c%required% &7игроков"
+      - ""
+      - "&c⚙ &7Прогресс: %status%"
+      - ""
+      - "&c⭐ &7Награда:"
+      - " &8⤷ &7850 монет"
+      - ""
+    quest_type: KILL
+    required: PLAYER
+    required_amount: 6
+    reward:
+      reward_type: MONEY
+      amount: 850
+
+  5:
+    name: "&cМастер боя"
+    menu_item: GOLDEN_SWORD
+    description:
+      - "&8❖ &7Сложность: &cСредняя"
+      - ""
+      - "&c⚔ &7Задание:"
+      - " &8⤷ &7Убить &c%required% &7игроков"
+      - ""
+      - "&c⚙ &7Прогресс: %status%"
+      - ""
+      - "&c⭐ &7Награда:"
+      - " &8⤷ &7950 монет + 4 опыта"
+      - ""
+    quest_type: KILL
+    required: PLAYER
+    required_amount: 9
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "eco give %player% 950"
+        - "xp add %player% 4 levels"
+
+  6:
+    name: "&cВоин-ветеран"
+    menu_item: IRON_CHESTPLATE
+    description:
+      - "&8❖ &7Сложность: &cСредняя"
+      - ""
+      - "&c⚔ &7Задание:"
+      - " &8⤷ &7Убить &c%required% &7игроков"
+      - ""
+      - "&c⚙ &7Прогресс: %status%"
+      - ""
+      - "&c⭐ &7Награда:"
+      - " &8⤷ &71100 монет + 5 опыта"
+      - ""
+    quest_type: KILL
+    required: PLAYER
+    required_amount: 11
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "eco give %player% 1100"
+        - "xp add %player% 5 levels"
+
+  7:
+    name: "&cБеспощадный"
+    menu_item: DIAMOND_AXE
+    description:
+      - "&8❖ &7Сложность: &cСложная"
+      - ""
+      - "&c⚔ &7Задание:"
+      - " &8⤷ &7Убить &c%required% &7игроков"
+      - ""
+      - "&c⚙ &7Прогресс: %status%"
+      - ""
+      - "&c⭐ &7Награда:"
+      - " &8⤷ &71300 монет + 6 опыта"
+      - ""
+    quest_type: KILL
+    required: PLAYER
+    required_amount: 13
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "eco give %player% 1300"
+        - "xp add %player% 6 levels"
+
+  8:
+    name: "&cГладиатор"
+    menu_item: TRIDENT
+    description:
+      - "&8❖ &7Сложность: &cСложная"
+      - ""
+      - "&c⚔ &7Задание:"
+      - " &8⤷ &7Убить &c%required% &7игроков"
+      - ""
+      - "&c⚙ &7Прогресс: %status%"
+      - ""
+      - "&c⭐ &7Награда:"
+      - " &8⤷ &71600 монет + 7 опыта"
+      - ""
+    quest_type: KILL
+    required: PLAYER
+    required_amount: 17
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "eco give %player% 1600"
+        - "xp add %player% 7 levels"
+
+  9:
+    name: "&cЧемпион арены"
+    menu_item: GOLDEN_APPLE
+    description:
+      - "&8❖ &7Сложность: &cСложная"
+      - ""
+      - "&c⚔ &7Задание:"
+      - " &8⤷ &7Убить &c%required% &7игроков"
+      - ""
+      - "&c⚙ &7Прогресс: %status%"
+      - ""
+      - "&c⭐ &7Награда:"
+      - " &8⤷ &71800 монет + 8 опыта"
+      - ""
+    quest_type: KILL
+    required: PLAYER
+    required_amount: 22
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "eco give %player% 1800"
+        - "xp add %player% 8 levels"
+
+  10:
+    name: "&cБог войны"
+    menu_item: NETHER_STAR
+    description:
+      - "&8❖ &7Сложность: &4Экстремальная"
+      - ""
+      - "&c⚔ &7Задание:"
+      - " &8⤷ &7Убить &c%required% &7игроков"
+      - ""
+      - "&c⚙ &7Прогресс: %status%"
+      - ""
+      - "&c⭐ &7Награда:"
+      - " &8⤷ &73000 монет + 3 алмаза"
+      - ""
+    quest_type: KILL
+    required: PLAYER
+    required_amount: 30
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "eco give %player% 3000"
+        - "give %player% diamond 3"

@@ -1,0 +1,33 @@
+
+# Messages use MiniMessage formatting (https://docs.adventure.kyori.net/minimessage/format)
+messages:
+  prefix: 'CommandWhitelist > '
+  command_denied: Нет такой команды.
+  subcommand_denied: Вы не можете использовать этот подкоманду.
+  no_permission: <red>У вас нет прав на эту команду.
+  no_such_subcommand: <red>Нет подкоманды с таким именем.
+  config_reloaded: <yellow>Конфигурация перезагружена.
+  added_to_whitelist: <yellow>Команда <gold>%s <yellow>добавлена для права <gold>%s
+  removed_from_whitelist: <yellow>Команда <gold>%s <yellow>удалена из права <gold>%s
+  group_doesnt_exist: <red>Группа не существует или произошла ошибка
+
+# Valid message types are CHAT and ACTIONBAR. Does nothing on velocity.
+message_type: CHAT
+groups:
+  default:
+    commands:
+    - msg
+    - tpdeny
+    - tpa
+    - pay
+    - bal
+    - baltop
+    - tpahere
+    - tpaccept
+    - help
+    - r
+    - spawn
+    - balance
+    - warp
+    subcommands:
+    - help about

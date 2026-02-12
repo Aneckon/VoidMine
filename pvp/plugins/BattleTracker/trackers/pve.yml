@@ -1,0 +1,85 @@
+# -----------------
+# Основная конфигурация трекера PvP
+#
+# Документация: https://docs.battleplugins.org/shelves/battletracker
+# Поддержка: https://discord.gg/tMVPVJf
+# GitHub: https://github.com/BattlePlugins/BattleTracker
+# -----------------
+config-version: 2.0 # Версия конфигурации, не изменять!
+
+name: PvE
+recap:
+  enabled: true
+  display-content: armor
+  hover-recap: true
+tracked-statistics:
+  - pve
+  - world
+disabled-worlds: []
+calculator: elo
+killstreaks:
+  enabled: false
+rampage:
+  enabled: false
+death-messages:
+  enabled: true
+  audience: global
+  world:
+    enabled: true
+    messages:
+      fire:
+        - "§7§c%player% сгорел дотла."
+        - "§7§c%player% умер от огня."
+      fire_tick:
+        - "§7§c%player% пытался потушить огонь, но не смог."
+      lava:
+        - "§7§c%player% не справился с лавой."
+        - "§7§c%player% стал частью лавы."
+      fall:
+        - "§7§c%player% проверил, что чувствует земля."
+        - "§7§c%player% упал с большой высоты."
+      contact:
+        - "§7§c%player% научился не прыгать на кактусы."
+      block_explosion:
+        - "§7§c%player% был разнесен взрывом блока."
+      suffocation:
+        - "§7§c%player% задохнулся."
+      starvation:
+        - "§7§c%player% умер от голода."
+      lightning:
+        - "§7§c%player% был поражён молнией."
+      suicide:
+        - "§7§c%player% покончил с собой."
+      kill:
+        - "§7§c%player% убил сам себя."
+      drowning:
+        - "§7§c%player% утонул."
+      magic:
+        - "§7§c%player% пострадал от магии."
+      void:
+        - "§7§c%player% упал в пустоту."
+      world_border:
+        - "§7§c%player% был вытолкнут мировым краем."
+      entity_attack:
+        - "§7§c%player% был убит существом."
+      projectile:
+        - "§7§c%player% был поражён снарядом."
+      default:
+        - "§7§c%player% умер!"
+  entity:
+    enabled: true
+    messages:
+      creeper:
+        - "§7§c%player% взорван крипером!"
+      zombie:
+        - "§7§c%player% был съеден зомби!"
+      skeleton:
+        - "§7§c%player% поражён стрелой скелета."
+      spider:
+        - "§7§c%player% пойман пауком."
+      blaze:
+        - "§7§c%player% сгорел от блейза!"
+      magma_cube:
+        - "§7§c%player% был поглощён магмой!"
+      default:
+        - "§7§c%player% был убит."

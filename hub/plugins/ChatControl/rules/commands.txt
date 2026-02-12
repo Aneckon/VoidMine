@@ -1,0 +1,30 @@
+# -------------------------------------------------------------------------------
+# Этот файл управляет правилами команд и подключает правила из rules.txt.
+# Примеры ниже можно безопасно изменить или удалить.
+# -------------------------------------------------------------------------------
+
+match ^/op\b
+ignore perm chatcontrol.bypass.rules
+id /op
+then warn &8[&7Система&8] &cРаздаём OP? Серьёзно? На что ты рассчитывал?
+then notify chatcontrol.notify.rulesalert &8[&7ID {ruleID}&8] &7{player}: &c{message}
+then deny
+then log
+
+match ^/(gm|gamemode)
+ignore perm chatcontrol.bypass.rules
+id /gm
+then warn &8[&7Система&8] &cБыло бы неплохо, правда?
+then notify chatcontrol.notify.rulesalert &8[&7ID {ruleID}&8] &7{player}: &c{message}
+then deny
+then log
+
+match ^/(heal)
+ignore perm essentials.heal
+then warn &8[&7Система&8] &cСлишком сложно играть?
+then deny
+
+match ^/trade
+ignore gamemode survival
+then warn &8[&7Система&8] &cЭта команда доступна только в режиме выживания!
+then deny

@@ -1,0 +1,56 @@
+Bonet[/127.0.0.1:60929] logged in with entity id 79 at ([world]34.69999998807907, 115.0, 20.07499998807907)
+Bonet issued server command: /profilemenu
+Bonet issued server command: /mykits
+Bonet issued server command: /createarena
+Bonet issued server command: /quests
+Bonet issued server command: /arenalist
+Bonet issued server command: /buffshop
+Bonet issued server command: /arenalist
+Bonet issued server command: /createarena
+Bonet issued server command: /skript reload all
+Bonet issued server command: /createarena
+Bonet issued server command: /arenalist
+Bonet issued server command: /skript reload all
+Bonet issued server command: /arenalist
+Bonet issued server command: /deathmatch leave
+Bonet issued server command: /arenalist
+Bonet issued server command: /skript reload all
+Bonet issued server command: /arenalist
+Bonet issued server command: /profilemenu
+Bonet issued server command: /mybuffs
+Bonet issued server command: /quests
+Bonet issued server command: /afropets
+Bonet issued server command: /buffshop
+Bonet issued server command: /profilemenu
+Bonet issued server command: /mykits
+Bonet issued server command: /createarena
+Bonet issued server command: /createarena
+Bonet issued server command: /profilemenu
+Bonet issued server command: /mykits
+Bonet issued server command: /arenalist
+Bonet issued server command: /deathmatch leave
+Bonet issued server command: /skript reload all
+Bonet issued server command: /createarena
+Bonet issued server command: /skript reload all
+Bonet issued server command: /leave
+Bonet issued server command: /skript reload all
+Bonet issued server command: /createarena
+Bonet issued server command: /arenalist
+Bonet issued server command: /le
+Bonet issued server command: /le
+Bonet issued server command: /leave
+Bonet issued server command: /arenalist
+Bonet issued server command: /arenalist
+Bonet issued server command: /leave
+Bonet issued server command: /arenalist
+Bonet issued server command: /skript reload all
+Bonet issued server command: /arenalist
+Bonet issued server command: /leave
+Bonet issued server command: /arenalist
+Bonet issued server command: /skript reload all
+Bonet issued server command: /skript reload all
+Bonet issued server command: /createarena
+Bonet issued server command: /arenalist
+Bonet issued server command: /skript reload all
+Bonet issued server command: /battlearena reload
+Bonet issued server command: /buffshop

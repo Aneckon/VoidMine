@@ -1,0 +1,134 @@
+pets:
+  lion:
+    permission: "afropets.pet.lion"
+    menu_name: "<red>🦁 Лев"
+    displayname: "<red>Легендарный Лев {PLAYER}"
+    show_displayname: true
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmMzZjk2N2I0ZTRlMmE5MmVhNjA4ZDY4Y2RhZWVkNDUzOWI2OGM3MzY5NWQ5Y2MwMGZmNGExYjQwNmYyYjgzZiJ9fX0="
+    lore:
+      - "<dark_gray>❖ <gray>Уникальность: <red><bold>ЛЕГЕНДАРНЫЙ"
+      - "<dark_gray>❖ <gray>Символ силы и власти"
+      - "<dark_gray>❖ <gray>Коллекционный питомец"
+      - " "
+      - "<dark_gray>▶ <gray>Нажмите, чтобы выбрать"
+    description: "<gray>Редчайший зверь, признающий лишь достойных."
+    lockDescription: "<dark_gray>Легендарный лев ещё не доверяет вам..."
+    appearance:
+      scale: 1.2
+      displayname:
+        background_color: "BLACK"
+        background_opacity: 50
+
+  dog:
+    group: "example_group"
+    permission: "afropets.pet.dog"
+    menu_name: "<red>🐕 Собака"
+    displayname: "<red>Собака {PLAYER}"
+    show_displayname: true
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjQ2YjU3NzE5ZTQ4NTg0MTg5Y2M1ZDI2NTFhNTFlYjRiYWNlMWIzZTY4YmEwYjc3N2RhMTlkMDg2M2I0ZGQyOSJ9fX0="
+    lore:
+      - "<dark_gray>❖ <gray>Уникальность: <blue>НЕОБЫЧНЫЙ"
+      - "<dark_gray>❖ <gray>Верный спутник игроков"
+      - "<dark_gray>❖ <gray>Популярен среди новичков"
+      - " "
+      - "<dark_gray>▶ <gray>Нажмите, чтобы выбрать"
+
+  cat:
+    permission: "afropets.pet.cat"
+    menu_name: "<red>🐈 Кошка"
+    displayname: "<red>Кошка {PLAYER}"
+    show_displayname: true
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGE1ZDRhYmE3MDEwNjQzMWRjZDBjMTQxZGNiZDk5MWUzNDY5MjZmZWE4MTJmOTdiYWM4MWNhNzYwNzVjNTNkNiJ9fX0="
+    lore:
+      - "<dark_gray>❖ <gray>Уникальность: <blue>НЕОБЫЧНЫЙ"
+      - "<dark_gray>❖ <gray>Грация и независимость"
+      - "<dark_gray>❖ <gray>Любимец эстетов"
+      - " "
+      - "<dark_gray>▶ <gray>Нажмите, чтобы выбрать"
+
+  rabbit:
+    permission: "afropets.pet.rabbit"
+    menu_name: "<red>🐰 Кролик"
+    displayname: "<red>Кролик {PLAYER}"
+    show_displayname: true
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGVlODFjMGI2Y2Q4ZjE4YWRiNDcxOWZhNTlkYTI5Mzc4ODI4MmE0YzlmMWZmYzExNWIyMzk3ZmI1YjVmY2ZhNyJ9fX0="
+    lore:
+      - "<dark_gray>❖ <gray>Уникальность: <blue>НЕОБЫЧНЫЙ"
+      - "<dark_gray>❖ <gray>Милый и редковстречающийся"
+      - "<dark_gray>❖ <gray>Коллекционный питомец"
+      - " "
+      - "<dark_gray>▶ <gray>Нажмите, чтобы выбрать"
+
+  parrot:
+    permission: "afropets.pet.parrot"
+    menu_name: "<red>🦜 Попугай"
+    displayname: "<red>Попугай {PLAYER}"
+    show_displayname: true
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWI2MDg2YWI5NmUxZjgxMTYyMWE0NGRmZjc0YTVlNjg4ZjczMTgyODQ4MGUzYzY5YTdhNTBlNWVmZTRhYzVjMSJ9fX0="
+    lore:
+      - "<dark_gray>❖ <gray>Уникальность: <dark_purple>РЕДКИЙ"
+      - "<dark_gray>❖ <gray>Экзотический питомец"
+      - "<dark_gray>❖ <gray>Яркий и заметный"
+      - " "
+      - "<dark_gray>▶ <gray>Нажмите, чтобы выбрать"
+
+  fox:
+    permission: "afropets.pet.fox"
+    menu_name: "<red>🦊 Лиса"
+    displayname: "<red>Лиса {PLAYER}"
+    show_displayname: true
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2U1MDJjNzU1MmY0NzY1NmU2MjNlYzBlOTU1ZmMwNTBkZTI1ZTZjNGUzYzc5ODI5NjIzMDI4Zjc2M2Q1MThhYiJ9fX0="
+    lore:
+      - "<dark_gray>❖ <gray>Уникальность: <dark_purple>РЕДКИЙ"
+      - "<dark_gray>❖ <gray>Хитрый и стильный питомец"
+      - " "
+      - "<dark_gray>▶ <gray>Нажмите, чтобы выбрать"
+
+  frog:
+    permission: "afropets.pet.frog"
+    menu_name: "<red>🐸 Лягушка"
+    displayname: "<red>Лягушка {PLAYER}"
+    show_displayname: true
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGU5ZmVhNTMxZTA3ZjdhYTc3NjIwNjA3ZjgxODBmZGQxYTA5ODZiYzYwN2MyYWRiNWQ1NzdhYmYwNGUxY2Y5OSJ9fX0="
+    lore:
+      - "<dark_gray>❖ <gray>Уникальность: <gray>ОБЫЧНЫЙ"
+      - "<dark_gray>❖ <gray>Простой, но харизматичный"
+      - " "
+      - "<dark_gray>▶ <gray>Нажмите, чтобы выбрать"
+
+  bear:
+    permission: "afropets.pet.bear"
+    menu_name: "<red>🐻 Медведь"
+    displayname: "<red>Медведь {PLAYER}"
+    show_displayname: true
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2RiNjZjZjlmMTdlMTQ4OTMxMGM3YWNjNjgxMDE2MDUxMTk2YTg0OGUwNzZkYjZmYzA5MzkxYjkyODcyYTc3NyJ9fX0="
+    lore:
+      - "<dark_gray>❖ <gray>Уникальность: <red>ЭПИЧЕСКИЙ"
+      - "<dark_gray>❖ <gray>Мощный и внушительный"
+      - "<dark_gray>❖ <gray>Редко встречается"
+      - " "
+      - "<dark_gray>▶ <gray>Нажмите, чтобы выбрать"
+
+  cow:
+    permission: "afropets.pet.cow"
+    menu_name: "<red>🐄 Корова"
+    displayname: "<red>Корова {PLAYER}"
+    show_displayname: true
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTU5NDk1OTU2MGVlOWRjMDM2MWU4YmFiYjcwYzVkYzM5ZjM0YmZkNmE3YWJlYjA1NzRmNDcxMjI2NDY4M2NhOSJ9fX0="
+    lore:
+      - "<dark_gray>❖ <gray>Уникальность: <gray>ОБЫЧНЫЙ"
+      - "<dark_gray>❖ <gray>Классический фермерский питомец"
+      - " "
+      - "<dark_gray>▶ <gray>Нажмите, чтобы выбрать"
+
+  chicken:
+    permission: "afropets.pet.chicken"
+    menu_name: "<red>🐔 Курица"
+    displayname: "<red>Курица {PLAYER}"
+    show_displayname: true
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTNjYTgwNzgxZjZmMmU3MzQ2NGE3ZTUzYmJiNTE2MDliMmY1ZGI1MTg5NDQzMWMzOTI5M2NkNTFhZjMzYzE5YiJ9fX0="
+    lore:
+      - "<dark_gray>❖ <gray>Уникальность: <gray>ОБЫЧНЫЙ"
+      - "<dark_gray>❖ <gray>Самый простой питомец"
+      - " "
+      - "<dark_gray>▶ <gray>Нажмите, чтобы выбрать"

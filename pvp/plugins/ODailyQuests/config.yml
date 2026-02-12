@@ -1,0 +1,195 @@
+# если плагин работает не так, как ожидалось, установите debug в true и отправьте лог разработчику
+debug: false
+
+# проверять обновления плагина и выводить сообщение в консоль, если есть новая версия
+check_for_update: true
+
+# никогда не трогайте эти строки, используются системой автообновления плагина
+version: 3.0.2
+database_version: 4
+
+# префикс, который будет отображаться перед каждым сообщением из messages.yml
+prefix: '&c[&7VoidMine&c] '
+
+# отключить логи при загрузке или сохранении квестов игрока
+disable_logs: false
+
+# режим хранения квестов и прогресса
+# ДОСТУПНЫЕ МОДЫ: YAML, MySQL, SQLite
+# РЕКОМЕНДУЕМЫЙ: SQLite
+storage_mode: MySQL
+
+# Настройки подключения к MySQL
+database:
+  name: voidmine
+  host: 127.0.0.1
+  user: luckperms
+  password: 'admin'
+  port: 3306
+
+# Задержка в секундах перед загрузкой данных игрока после входа
+player_data_load_delay: 0.5
+
+# Включено: плагин не загрузится, если категории не имеют достаточного количества квестов без разрешений
+safety_mode: true
+
+# Количество квестов на игрока по категориям
+quests_per_category:
+  easy: 3
+  medium: 3
+  hard: 3
+
+# Режим времени обновления квестов
+timestamp_mode: 1
+
+# Время обновления квестов (формат: "00:00", "3AM", "15:30" и т.д.)
+renew_time: 00:00
+renew_time_zone: SystemDefault
+
+# Интервал обновления квестов
+renew_interval: 1d
+
+# Задержка перед выводом сообщения при входе игрока
+join_message_delay: 1.0
+
+# Отправлять сообщения игрокам при обновлении квестов
+send_reload_message: true
+
+# Инициалы для плейсхолдеров времени
+temporality_initials:
+  days: d
+  hours: h
+  minutes: m
+  few_seconds: Несколько секунд
+
+# Глобальная награда за выполнение всех ежедневных квестов
+global_reward:
+  enabled: true
+  reward_type: COMMAND
+  commands:
+  - eco give %player% 2000
+
+# Награды за категории
+categories_rewards:
+  easy:
+    enabled: true
+    reward_type: COMMAND
+    commands:
+    - eco give %player% 750
+  medium:
+    enabled: true
+    reward_type: COMMAND
+    commands:
+    - eco give %player% 1000
+  hard:
+    enabled: true
+    reward_type: COMMAND
+    commands:
+    - eco give %player% 1500
+
+# Настройка титулов при завершении квеста
+title:
+  enabled: true
+  fadeIn: 10
+  stay: 70
+  fadeOut: 20
+  text: '&cОтлично, %player%'
+  subtitle: '&cТы завершил квест %questName%!'
+
+# Настройка toast-уведомлений
+toast:
+  enabled: false
+  frame: TASK
+  icon: DIAMOND
+  text: |-
+    &cКвест выполнен!
+    %questName%
+# Сообщение в actionbar при выполнении квеста
+actionbar:
+  enabled: true
+  text: '&cТы завершил квест %questName%!'
+
+# Прогресс квеста
+progression_message:
+  enabled: true
+  text: '%progressBar% &7(&c%progress%&7/&c%required% &7- &c%questName%&7)'
+  type: BOSSBAR
+  bossbar:
+    color: PURPLE
+    style: SEGMENTED_6
+
+# Настройка progress bar
+progress_bar:
+  symbol: '|'
+  amount_of_symbols: 20
+  completed_color: '&c'
+  remaining_color: '&7'
+
+# АНТИ-ГЛИТЧ
+store_placed_blocks: false
+store_dropped_items: false
+store_broken_blocks: false
+
+# ПОДДЕРЖКА КАСТОМНЫХ ПРЕДМЕТОВ
+use_itemsadder: false
+use_oraxen: false
+use_nexo: false
+use_custom_furnace_results: false
+
+# КАСТОМНЫЕ ТИПЫ КВЕСТОВ
+custom_types:
+- COMPLETE_DUNGEON
+- KILL_BOSS
+- BUY_VIP
+- DEATHMATCH_KILL
+
+# ИНТЕРФЕЙСЫ
+interfaces:
+  next_item_name: '&c&lСледующая страница'
+  previous_item_name: '&c&lПредыдущая страница'
+  examples:
+    inventory_name: Квесты - Примеры
+    empty_item: BLACK_STAINED_GLASS_PANE
+  easy:
+    inventory_name: Квесты - Легкие
+    empty_item: GRAY_STAINED_GLASS_PANE
+  medium:
+    inventory_name: Квесты - Средние
+    empty_item: GRAY_STAINED_GLASS_PANE
+  hard:
+    inventory_name: Квесты - Сложные
+    empty_item: GRAY_STAINED_GLASS_PANE
+
+# Отключение квестов в некоторых мирах
+disabled_worlds: []
+
+# NPC
+npcs:
+  player: '&cКвесты игрока'
+  examples: '&cПримеры квестов'
+  easy: '&cЛегкие квесты'
+  medium: '&cСредние квесты'
+  hard: '&cСложные квесты'
+
+# Плейсхолдеры
+placeholders:
+  status_achieved: '&c✓'
+  status_not_achieved: '&c✗'
+
+synchronised_progression: false
+disable_spawners_progression: false
+take_items_for_get_quests: false
+complete_only_on_click: false
+reroll_only_if_not_achieved: false
+reroll_maximum: -1
+shared_mobs: false
+use_wildstacker: false
+use_rosestacker: false
+
+# Алиасы команд
+command_aliases: []
+subcommand_aliases:
+  me: []
+  show: []
+  reroll: []
+keep_only_aliases_in_completion: false

@@ -1,0 +1,19 @@
+args:
+  bungee:
+  - anarchy-one
+  name:
+  - portalRtpTwo
+  triggerblock:
+  - AIR
+  command:  
+  - "rtp world world"
+maxLoc:
+  posX: 75
+  posY: -64
+  posZ: 75
+  worldName: spawn
+minLoc:
+  posX: -75
+  posY: -64
+  posZ: -75
+  worldName: spawn

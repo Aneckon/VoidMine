@@ -1,0 +1,124 @@
+menu_title: '§8Меню Китов'
+size: 45
+open_command:
+  - kitmenu
+update_interval: 1
+
+items:
+  # ─── Рамка ───
+  deco_top:
+    material: BLACK_STAINED_GLASS_PANE
+    slots: [0, 1, 2, 3, 4, 5, 6, 7, 8]
+    display_name: ' '
+  deco_bottom:
+    material: BLACK_STAINED_GLASS_PANE
+    slots: [36, 37, 38, 39, 40, 41, 42, 43, 44]
+    display_name: ' '
+
+  # ─── Стартовый кит ───
+  kit_starter:
+    material: STONE_PICKAXE
+    slot: 19
+    display_name: '§7Стартовый Кит'
+    lore:
+      - '§8▸ §7Минимальный набор'
+      - '§8▸ §7Доступен всем игрокам'
+      - ' '
+      - '§8▸ §fСодержимое:'
+      - '§8  • §71x Каменная кирка'
+      - '§8  • §71x Каменный топор'
+      - '§8  • §78x Хлеб'
+      - ' '
+      - '§8▸ §7Задержка: §c48 часов'
+      - ' '
+      - '§8▶ §cКликни для получения'
+    left_click_commands:
+      - '[player] kit starter'
+      - '[sound] ENTITY_ITEM_PICKUP'
+      - '[close]'
+
+  # ─── bunt кит ───
+  kit_bunt:
+    material: LEATHER_CHESTPLATE
+    slot: 21
+    display_name: '§cБунт Кит'
+    lore:
+      - '§8▸ §7Скромная помощь'
+      - '§8▸ §cТребуется донат: Бунт'
+      - ' '
+      - '§8▸ §fСодержимое:'
+      - '§8  • §71x Каменная кирка'
+      - '§8  • §71x Каменный топор'
+      - '§8  • §71x Каменный меч'
+      - '§8  • §716x Хлеб'
+      - '§8  • §7Кожаная броня'
+      - ' '
+      - '§8▸ §7Задержка: §c24 часа'
+      - ' '
+      - '§8▶ §cКликни для получения'
+    left_click_commands:
+      - '[player] kit bunt'
+      - '[sound] ENTITY_ITEM_PICKUP'
+      - '[close]'
+
+  # ─── krah кит ───
+  kit_krah:
+    material: IRON_PICKAXE
+    slot: 23
+    display_name: '§cКрах Кит'
+    lore:
+      - '§8▸ §7Базовые инструменты'
+      - '§8▸ §cТребуется донат: Крах'
+      - ' '
+      - '§8▸ §fСодержимое:'
+      - '§8  • §71x Железная кирка'
+      - '§8  • §71x Железный топор'
+      - '§8  • §71x Железный меч'
+      - '§8  • §732x Хлеб'
+      - '§8  • §7Кожаная броня'
+      - ' '
+      - '§8▸ §7Задержка: §c18 часов'
+      - ' '
+      - '§8▶ §cКликни для получения'
+    left_click_commands:
+      - '[player] kit krah'
+      - '[sound] ENTITY_ITEM_PICKUP'
+      - '[close]'
+
+  # ─── ELITE кит ───
+  kit_gnev:
+    material: IRON_CHESTPLATE
+    slot: 25
+    display_name: '§cГнев Кит'
+    lore:
+      - '§8▸ §7Улучшенные ресурсы'
+      - '§8▸ §cТребуется донат: Гнев'
+      - ' '
+      - '§8▸ §fСодержимое:'
+      - '§8  • §71x Железная кирка'
+      - '§8  • §71x Железный топор'
+      - '§8  • §71x Железный меч'
+      - '§8  • §732x Хлеб'
+      - '§8  • §7Железная броня'
+      - ' '
+      - '§8▸ §7Задержка: §c12 часов'
+      - ' '
+      - '§8▶ §cКликни для получения'
+    left_click_commands:
+      - '[player] kit gnev'
+      - '[sound] ENTITY_ITEM_PICKUP'
+      - '[close]'
+
+  # ─── Назад ───
+  back:
+    material: BARRIER
+    slot: 40
+    display_name: '§cНазад'
+    lore:
+      - '§8▸ §7Вернуться в главное меню'
+      - ' '
+      - '§8▶ §cКликни для возврата'
+    left_click_commands:
+      - '[player] anarchymenu'
+      - '[sound] BLOCK_CHEST_CLOSE'
+      - '[close]'

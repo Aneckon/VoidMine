@@ -1,0 +1,67 @@
+header: "<gray>------------------<gold>[</gold> <bold><yellow>{}</yellow></bold> <gold>]</gold>------------------</gray>"
+
+combat-log-entered-combat: "<red>Вы вступили в бой!</red>"
+combat-log-exited-combat: "<green>Вы больше не в бою!</green>"
+combat-log-remaining-time: "<yellow>До выхода из боя осталось <gold>{}</gold>!</yellow>"
+combat-log-cannot-run-command: "<red>Вы не можете использовать эту команду во время боя!</red>"
+combat-log-cannot-join-arena: "<red>Вы не можете зайти на арену во время боя!</red>"
+
+command-must-be-player: "<red>Эту команду может выполнить только игрок!</red>"
+command-no-permission: "<red>У вас нет прав для выполнения этой команды!</red>"
+command-player-not-found: "<red>Игрок <gold>{}</gold> не найден!</red>"
+command-usage: "<red>Неверный синтаксис! Использование: {}</red>"
+
+date-format: "dd.MM.yyyy HH:mm:ss"
+
+leaderboard: "<gold>#%ranking%</gold> <yellow>%player%</yellow> <gray>-</gray> <aqua>%rating%</aqua> <red>Убийства: <gold>%kills%</gold> Смерти: <gold>%deaths%</gold></red>"
+leaderboard-arena: "<gold>#%ranking%</gold> <yellow>%player%</yellow> <gray>-</gray> <aqua>%rating%</aqua> <red>Победы: <gold>%wins%</gold> Поражения: <gold>%losses%</gold></red>"
+leaderboard-no-entries: "<red>В этом рейтинге нет записей!</red>"
+
+player-has-no-record: "<red>У игрока <gold>{}</gold> нет статистики!</red>"
+player-has-no-tally: "<red>У игроков <gold>{}</gold> и <gold>{}</gold> нет общей статистики!</red>"
+
+rank: "<gold>%player%</gold> <gray>-</gray> <aqua>%rating%</aqua> <yellow>(Макс. рейтинг: %max_rating%)</yellow> <red>Убийства: <gold>%kills%</gold> Смерти: <gold>%deaths%</gold> KDR: <gold>%kd_ratio%</gold></red>"
+rank-arena: "<gold>%player%</gold> <gray>-</gray> <aqua>%rating%</aqua> <yellow>(Макс. рейтинг: %max_rating%)</yellow> <red>Победы: <gold>%wins%</gold> Поражения: <gold>%losses%</gold> Убийства: <gold>%kills%</gold> Смерти: <gold>%deaths%</gold> KDR: <gold>%kd_ratio%</gold></red>"
+rank-arena-stats: "<yellow>Статистика арены:</yellow>"
+
+recap: "Сводка"
+recap-damage-log: "<gold>Журнал урона:</gold>"
+recap-click-for-more: "<aqua>Нажмите для подробной информации...</aqua>"
+
+recap-footer-pvp: "<gray>-----------</gray><gold>[</gold> <bold><red><click:run_command:/%tracker% recap %player% player>Игроки</click></red> <green><click:run_command:/%tracker% recap %player% entity>Существа</click></green> <aqua><click:run_command:/%tracker% recap %player% item>Предметы</click></aqua> <yellow><click:run_command:/%tracker% recap %player% cause>Причина</click></yellow></bold> <gold>]</gold><gray>-----------</gray>"
+recap-footer-pve: "<gray>---------------</gray><gold>[</gold> <bold><green><click:run_command:/%tracker% recap %player% entity>Существа</click></green> <aqua><click:run_command:/%tracker% recap %player% item>Предметы</click></aqua> <yellow><click:run_command:/%tracker% recap %player% cause>Причина</click></yellow></bold> <gold>]</gold><gray>---------------</gray>"
+
+recap-damage-entity: "Сводка по существам"
+recap-damage-item: "Сводка по предметам"
+recap-damage-cause: "Сводка по причине"
+recap-damage-player: "Сводка по игрокам"
+
+recap-death-time: "<gray>Время смерти:</gray> <yellow>{} назад</yellow>"
+recap-info: "<gold>Информация о смерти:</gold>"
+
+recap-log: " %health% <yellow>(%time%)</yellow> <aqua>%damage_cause%</aqua>"
+recap-log-cause: "<yellow>%cause%:</yellow> <red>Срабатываний:</red> <gold>%hits%</gold> <red>Урон:</red> <gold>%damage%</gold>"
+recap-log-general: "<yellow>Длительность записи: <aqua>%time%</aqua>. Восстановлено здоровья: <green>%health%</green>. Получено урона: <red>%damage%</red></yellow>"
+recap-log-item: "<yellow>%item%:</yellow> <red>Попаданий:</red> <gold>%hits%</gold> <red>Урон:</red> <gold>%damage%</gold>"
+recap-log-entity: "<yellow>%entity%:</yellow> <red>Попаданий:</red> <gold>%hits%</gold> <red>Урон:</red> <gold>%damage%</gold>"
+recap-log-player: "<yellow>%player%:</yellow> <red>Попаданий:</red> <gold>%hits%</gold> <red>Урон:</red> <gold>%damage%</gold>"
+
+recap-no-recap: "<red>Нет доступной сводки для последней смерти этого игрока!</red>"
+recap-not-enabled: "<red>Сводки отключены для этого трекера!</red>"
+recap-starting-health: "<gray>Начальное здоровье:</gray> <green>{}</green>"
+
+util-hour: "час"
+util-hours: "часов"
+util-millisecond: "миллисекунда"
+util-milliseconds: "миллисекунд"
+util-minute: "минута"
+util-minutes: "минут"
+util-second: "секунда"
+util-seconds: "секунд"
+
+versus: "<gold>%player%</gold> <gray>-</gray> <aqua>%player_rating%</aqua> <yellow>против</yellow> <gold>%target%</gold> <gray>-</gray> <aqua>%target_rating%</aqua>"
+versus-compare: "<gold>%player%</gold> <yellow>убил</yellow> <gold>%target%</gold> <aqua>%kills%</aqua> <yellow>раз и был убит</yellow> <aqua>%deaths%</aqua> <yellow>раз!</yellow>"
+versus-history: "<gold>История:</gold>"
+versus-history-entry-win: "<gray>-</gray> <gold>%player%</gold> <aqua>победил</aqua> <gold>%target%</gold> <yellow>дата:</yellow> <red>%date%</red>"
+versus-history-entry-loss: "<gray>-</gray> <gold>%player%</gold> <yellow>был <red>побеждён</red> игроком</yellow> <gold>%target%</gold> <yellow>дата:</yellow> <red>%date%</red>"
+versus-tally: "Статистика противостояния"

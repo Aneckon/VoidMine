@@ -1,0 +1,246 @@
+# ============================================
+# Головна команда створення арени
+# ============================================
+command /createarena:
+	trigger:
+		openMainMenu(player)
+
+# ============================================
+# ОДИН ОБРОБНИК ДЛЯ ВСІХ КЛІКІВ
+# ============================================
+on inventory click:
+	set {_invName} to name of event-inventory
+
+	if {_invName} is "&c⚔ Создание Арены" or "&c⚔ Выбор Карты" or "&c⚔ Выбор Сета" or "&c⚔ Выбор Противника" or "&c⚔ Подтверждение":
+		cancel event
+
+	if name of event-item is "&c⮜ Назад":
+		
+		# З меню вибору карти → на головне меню
+		if {_invName} is "&c⚔ Выбор Карты":
+			playClickSound(player)
+			close player's inventory
+			wait 2 ticks
+			openMainMenu(player)
+		
+		# З меню вибору кіта → на меню карти
+		else if {_invName} is "&c⚔ Выбор Сета":
+			playClickSound(player)
+			close player's inventory
+			wait 2 ticks
+			openMapMenu(player)
+		
+		# З меню вибору гравця → на меню кіта
+		else if {_invName} is "&c⚔ Выбор Противника":
+			playClickSound(player)
+			close player's inventory
+			wait 2 ticks
+			openKitMenu(player)
+		
+		# З меню підтвердження → залежить від типу
+		else if {_invName} is "&c⚔ Подтверждение":
+			playClickSound(player)
+			close player's inventory
+			wait 2 ticks
+			if {arena.create.%player%.type} is "duel":
+				openPlayerMenu(player)
+			else:
+				openKitMenu(player)
+		
+		# З головного меню → закрити
+		else if {_invName} is "&c⚔ Создание Арены":
+			playClickSound(player)
+			close player's inventory
+		stop
+	
+	# ===== ГОЛОВНЕ МЕНЮ СТВОРЕННЯ АРЕНИ =====
+	if {_invName} is "&c⚔ Создание Арены":
+		cancel event
+		set {_slot} to index of event-slot
+		
+		if {_slot} is 20:
+			if player does not have permission "battlearena.command.deathmatch.create":
+				playErrorSound(player)
+				send "&c✖ Deathmatch доступен только донатерам!"
+				stop
+			playClickSound(player)
+			set {arena.create.%player%.type} to "deathmatch"
+			close player's inventory
+			wait 2 ticks
+			openMapMenu(player)
+		else if {_slot} is 24:
+			playClickSound(player)
+			set {arena.create.%player%.type} to "duel"
+			close player's inventory
+			wait 2 ticks
+			openMapMenu(player)
+		else if {_slot} is 40:
+			playClickSound(player)
+			close player's inventory
+			execute player command "arenamenu"
+		stop
+	
+	# ===== МЕНЮ ВИБОРУ КАРТИ =====
+	if {_invName} is "&c⚔ Выбор Карты":
+		cancel event
+		set {_slot} to index of event-slot
+		
+		set {_maps::20} to "swamp"
+		if {arena.create.%player%.type} is "duel":
+			set {_maps::22} to "river"
+		else:
+			set {_maps::22} to "desert"
+		set {_maps::24} to "mountain"
+		
+		if {_maps::%{_slot}%} is set:
+			playClickSound(player)
+			set {arena.create.%player%.map} to {_maps::%{_slot}%}
+			close player's inventory
+			wait 2 ticks
+
+			# ▶ перевіряємо активний сет з профілю
+			if {player.active.kit.%player%} is set:
+				set {arena.create.%player%.kit} to {player.active.kit.%player%}
+
+				# Duel → одразу вибір гравця
+				if {arena.create.%player%.type} is "duel":
+					openPlayerMenu(player)
+				else:
+					# Deathmatch → одразу підтвердження
+					openConfirmMenu(player)
+			else:
+				# якщо активного сету немає — відкриваємо меню
+				openKitMenu(player)
+		stop
+	
+	# ===== МЕНЮ ВИБОРУ СЕТА =====
+	if {_invName} is "&c⚔ Выбор Сета":
+		cancel event
+		set {_slot} to index of event-slot
+		
+		# Стандартні кіти
+		set {_kits::10} to "iron"
+		set {_kits::11} to "archer"
+		set {_kits::12} to "netherite"
+		
+		if {custom.kits.%player%::*} is set:
+			set {_customSlot} to 12
+			loop {custom.kits.%player%::*}:
+				set {_kits::%{_customSlot}%} to "custom_%loop-value%"
+				add 1 to {_customSlot}
+				if {_customSlot} >= 26:
+					stop loop
+		
+		if {_kits::%{_slot}%} is set:
+			playClickSound(player)
+			set {arena.create.%player%.kit} to {_kits::%{_slot}%}
+			close player's inventory
+			wait 2 ticks
+			if {arena.create.%player%.type} is "duel":
+				openPlayerMenu(player)
+			else:
+				openConfirmMenu(player)
+		else if {_slot} is 40:
+			playClickSound(player)
+			close player's inventory
+			wait 2 ticks
+			openMapMenu(player)
+		stop
+	
+	# ===== МЕНЮ ВИБОРУ ГРАВЦЯ =====
+	if {_invName} is "&c⚔ Выбор Противника":
+		cancel event
+		set {_slot} to index of event-slot
+		
+		if {_slot} is between 10 and 34:
+			if name of event-item contains "⚔":
+				playClickSound(player)
+				set {_name} to name of event-item
+				replace all "&c⚔ " with "" in {_name}
+				set {arena.create.%player%.target} to {_name}
+				close player's inventory
+				wait 2 ticks
+				openConfirmMenu(player)
+		else if {_slot} is 40:
+			playClickSound(player)
+			close player's inventory
+			wait 2 ticks
+			openKitMenu(player)
+		stop
+	
+	# ===== МЕНЮ ПІДТВЕРДЖЕННЯ =====
+	if {_invName} is "&c⚔ Подтверждение":
+		cancel event
+		set {_slot} to index of event-slot
+		
+		if {_slot} is 29:
+			playSuccessSound(player)
+			close player's inventory
+			
+			set {_type} to {arena.create.%player%.type}
+			set {_kit} to {arena.create.%player%.kit}
+			set {_target} to {arena.create.%player%.target}
+			
+			# Зберігаємо кіт
+			set {arena.pending.kit.%player%} to {_kit}
+			set {arena.kit.given.%player%} to false
+			set {arena.global.kit} to {_kit}
+			
+			if {_type} is "deathmatch":
+				set {_map} to {arena.create.%player%.map}
+				send "&a⚔ Создаю Deathmatch арену на карте %{_map}%..."
+				execute player command "/deathmatch join %{_map}%"
+			else:
+				send "&a⚔ Отправляю вызов игроку %{_target}%..."
+				set {arena.duel.kit.%{_target}%} to {_kit}
+				execute player command "/arena duel %{_target}%"
+		else if {_slot} is 33:
+			playClickSound(player)
+			close player's inventory
+			execute player command "arenamenu"
+		stop
+
+
+# ============================================
+# Видача кітів
+# ============================================
+on respawn:
+	wait 10 ticks
+	set {_world} to "%world of player%"
+	
+	if {_world} is "swamp" or "desert" or "mountain" or "river":
+		if {arena.pending.kit.%player%} is set:
+			giveKit(player, {arena.pending.kit.%player%})
+		else if {arena.global.kit} is set:
+			giveKit(player, {arena.global.kit})
+
+on join:
+	wait 1 second
+	set {_world} to "%world of player%"
+	
+	if {_world} is "swamp" or "desert" or "mountain" or "river":
+		if {arena.pending.kit.%player%} is set:
+			giveKit(player, {arena.pending.kit.%player%})
+		else if {arena.global.kit} is set:
+			giveKit(player, {arena.global.kit})
+
+on world change:
+	wait 10 ticks
+	set {_world} to "%event-world%"
+	
+	if {_world} is "swamp" or "desert" or "mountain" or "river":
+		if {arena.pending.kit.%player%} is set:
+			giveKit(player, {arena.pending.kit.%player%})
+		else if {arena.global.kit} is set:
+			giveKit(player, {arena.global.kit})
+	else:
+		clearPlayerData(player)
+
+on command:
+	command starts with "deathmatch leave" or "arena leave":
+		wait 5 ticks
+		if checkArenaEmpty() is "yes":
+			delete {arena.global.kit}
+
+on quit:
+	clearPlayerData(player)

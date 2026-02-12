@@ -1,0 +1,8 @@
+# You can edit the placeholder messages here.
+# Placeholders are %maintenance_status% and %maintenance_server_<server>%, where <server> is the name of the proxied server to check.
+# IMPORTANT: This does NOT support legacy text, but only the same format the main Maintenance configs use!
+
+maintenance-on: "enabled"
+maintenance-off: "disabled"
+single-maintenance-on: "enabled"
+single-maintenance-off: "disabled"

@@ -1,0 +1,19 @@
+on join:
+	if world of player is "world":
+		wait 1 tick
+		set slot 0 of player's inventory to book named "§cМеню" with lore "§7ПКМ для открытия меню"
+
+on respawn:
+	if world of player is "world":
+		wait 1 tick
+		set slot 0 of player's inventory to book named  "§cМеню" with lore "§7ПКМ для открытия меню"
+
+on rightclick:
+	if name of player's tool is "§cМеню":
+		cancel event
+		execute console command "dmenu open mainmenu %player%"
+
+on join:
+	wait 1 tick
+	if {cba.player.%player%} is not set:
+		teleport player to location(0.5, 110, 0.5, world "world", -133.9, -1.8)

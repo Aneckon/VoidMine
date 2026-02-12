@@ -1,0 +1,1214 @@
+[квітня 07, 2025 08:54:03.933дп EEST]  PlayerPreTagEvent was triggered on Bonet by Невідомий with type DAMAGE, reason UNKNOWN, and cancelled true.
+[квітня 07, 2025 08:58:04.502дп EEST]  PlayerPreTagEvent was triggered on Bonet by Невідомий with type DAMAGE, reason UNKNOWN, and cancelled true.
+[квітня 07, 2025 08:59:58.634дп EEST]  PlayerPreTagEvent was triggered on Bonet by Невідомий with type DAMAGE, reason UNKNOWN, and cancelled true.
+[квітня 07, 2025 09:06:23.097дп EEST]  PlayerPreTagEvent was triggered on Bonet by Невідомий with type DAMAGE, reason UNKNOWN, and cancelled true.
+[квітня 07, 2025 09:06:26.697дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 09:06:26.703дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKED, and cancelled true.
+[квітня 07, 2025 09:06:27.024дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 09:06:27.027дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKED, and cancelled true.
+[квітня 07, 2025 09:06:27.648дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 09:06:27.649дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKED, and cancelled true.
+[квітня 07, 2025 09:06:28.645дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 09:06:28.647дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKED, and cancelled true.
+[квітня 07, 2025 09:06:29.660дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 09:06:29.661дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKED, and cancelled true.
+[квітня 07, 2025 09:06:30.651дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 09:06:30.654дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKED, and cancelled true.
+[квітня 07, 2025 09:06:31.660дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 09:06:31.661дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKED, and cancelled true.
+[квітня 07, 2025 09:06:32.386дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet, damager ARROW Arrow and cancelled false.
+[квітня 07, 2025 09:06:32.389дп EEST]  PlayerPreTagEvent was triggered on Bonet by Skeleton with type MOB, reason ATTACKED, and cancelled true.
+[квітня 07, 2025 09:06:32.655дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 09:06:32.657дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKED, and cancelled true.
+[квітня 07, 2025 09:06:34.046дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 09:06:34.049дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKED, and cancelled true.
+[квітня 07, 2025 09:06:34.994дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet, damager ARROW Arrow and cancelled false.
+[квітня 07, 2025 09:06:34.999дп EEST]  PlayerPreTagEvent was triggered on Bonet by Skeleton with type MOB, reason ATTACKED, and cancelled true.
+[квітня 07, 2025 09:06:36.183дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 09:06:36.188дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKED, and cancelled true.
+[квітня 07, 2025 09:06:37.047дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 09:06:37.051дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKED, and cancelled true.
+[квітня 07, 2025 09:06:37.959дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager ARROW Arrow and cancelled false.
+[квітня 07, 2025 09:06:40.838дп EEST]  EntityDamageByEntityEvent was triggered by damaged SKELETON Skeleton, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 09:06:40.967дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager ARROW Arrow and cancelled false.
+[квітня 07, 2025 09:06:43.646дп EEST]  EntityDamageByEntityEvent was triggered by damaged SKELETON Skeleton, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 09:06:44.638дп EEST]  EntityDamageByEntityEvent was triggered by damaged SKELETON Skeleton, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 09:06:45.987дп EEST]  EntityDamageByEntityEvent was triggered by damaged SKELETON Skeleton, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 09:06:47.015дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager ARROW Arrow and cancelled false.
+[квітня 07, 2025 09:06:49.440дп EEST]  EntityDamageByEntityEvent was triggered by damaged SKELETON Skeleton, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 09:06:49.956дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager ARROW Arrow and cancelled false.
+[квітня 07, 2025 09:06:51.492дп EEST]  EntityDamageByEntityEvent was triggered by damaged SKELETON Skeleton, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 09:06:52.699дп EEST]  EntityDamageByEntityEvent was triggered by damaged SKELETON Skeleton, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 09:06:59.214дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet, damager ARROW Arrow and cancelled false.
+[квітня 07, 2025 09:06:59.217дп EEST]  PlayerPreTagEvent was triggered on Bonet by Skeleton with type MOB, reason ATTACKED, and cancelled true.
+[квітня 07, 2025 09:12:49.664дп EEST]  PlayerPreTagEvent was triggered on Bonet by Невідомий with type DAMAGE, reason UNKNOWN, and cancelled true.
+[квітня 07, 2025 09:25:11.705дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet, damager ARROW Arrow and cancelled false.
+[квітня 07, 2025 09:25:11.713дп EEST]  PlayerPreTagEvent was triggered on Bonet by Skeleton with type MOB, reason ATTACKED, and cancelled true.
+[квітня 07, 2025 09:25:17.733дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet, damager ARROW Arrow and cancelled false.
+[квітня 07, 2025 09:25:17.734дп EEST]  PlayerPreTagEvent was triggered on Bonet by Skeleton with type MOB, reason ATTACKED, and cancelled true.
+[квітня 07, 2025 09:25:20.483дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet, damager ARROW Arrow and cancelled false.
+[квітня 07, 2025 09:25:20.484дп EEST]  PlayerPreTagEvent was triggered on Bonet by Skeleton with type MOB, reason ATTACKED, and cancelled true.
+[квітня 07, 2025 09:25:23.482дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet, damager ARROW Arrow and cancelled false.
+[квітня 07, 2025 09:25:23.483дп EEST]  PlayerPreTagEvent was triggered on Bonet by Skeleton with type MOB, reason ATTACKED, and cancelled true.
+[квітня 07, 2025 09:25:26.483дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet, damager ARROW Arrow and cancelled false.
+[квітня 07, 2025 09:25:26.485дп EEST]  PlayerPreTagEvent was triggered on Bonet by Skeleton with type MOB, reason ATTACKED, and cancelled true.
+[квітня 07, 2025 09:25:29.486дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet, damager ARROW Arrow and cancelled false.
+[квітня 07, 2025 09:25:29.486дп EEST]  PlayerPreTagEvent was triggered on Bonet by Skeleton with type MOB, reason ATTACKED, and cancelled true.
+[квітня 07, 2025 09:25:40.133дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet, damager ARROW Arrow and cancelled false.
+[квітня 07, 2025 09:25:40.134дп EEST]  PlayerPreTagEvent was triggered on Bonet by Skeleton with type MOB, reason ATTACKED, and cancelled true.
+[квітня 07, 2025 09:26:31.502дп EEST]  EntityDamageByEntityEvent was triggered by damaged SKELETON Skeleton, damager WOLF Wolf and cancelled false.
+[квітня 07, 2025 09:26:34.945дп EEST]  EntityDamageByEntityEvent was triggered by damaged SKELETON Skeleton, damager WOLF Wolf and cancelled false.
+[квітня 07, 2025 09:26:35.937дп EEST]  EntityDamageByEntityEvent was triggered by damaged SKELETON Skeleton, damager WOLF Wolf and cancelled false.
+[квітня 07, 2025 09:26:36.937дп EEST]  EntityDamageByEntityEvent was triggered by damaged SKELETON Skeleton, damager WOLF Wolf and cancelled false.
+[квітня 07, 2025 09:26:37.936дп EEST]  EntityDamageByEntityEvent was triggered by damaged SKELETON Skeleton, damager WOLF Wolf and cancelled false.
+[квітня 07, 2025 09:26:48.330дп EEST]  EntityDamageByEntityEvent was triggered by damaged SKELETON Skeleton, damager WOLF Wolf and cancelled false.
+[квітня 07, 2025 09:26:49.643дп EEST]  EntityDamageByEntityEvent was triggered by damaged SKELETON Skeleton, damager WOLF Wolf and cancelled false.
+[квітня 07, 2025 09:26:52.391дп EEST]  EntityDamageByEntityEvent was triggered by damaged SKELETON Skeleton, damager WOLF Wolf and cancelled false.
+[квітня 07, 2025 09:26:53.385дп EEST]  EntityDamageByEntityEvent was triggered by damaged SKELETON Skeleton, damager WOLF Wolf and cancelled false.
+[квітня 07, 2025 09:26:54.336дп EEST]  EntityDamageByEntityEvent was triggered by damaged SKELETON Skeleton, damager WOLF Wolf and cancelled false.
+[квітня 07, 2025 09:29:28.453дп EEST]  PlayerPreTagEvent was triggered on Bonet by Невідомий with type DAMAGE, reason UNKNOWN, and cancelled true.
+[квітня 07, 2025 09:29:38.944дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 09:29:38.947дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKED, and cancelled true.
+[квітня 07, 2025 09:29:40.235дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 09:29:40.235дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKED, and cancelled true.
+[квітня 07, 2025 09:29:40.938дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 09:29:40.961дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKED, and cancelled true.
+[квітня 07, 2025 09:35:29.947дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 09:35:29.954дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKED, and cancelled true.
+[квітня 07, 2025 09:35:30.941дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 09:35:30.942дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKED, and cancelled true.
+[квітня 07, 2025 09:49:04.079дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet, damager SPIDER Spider and cancelled false.
+[квітня 07, 2025 09:49:04.126дп EEST]  PlayerPreTagEvent was triggered on Bonet by Spider with type MOB, reason ATTACKED, and cancelled true.
+[квітня 07, 2025 09:49:05.030дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet, damager SPIDER Spider and cancelled false.
+[квітня 07, 2025 09:49:05.032дп EEST]  PlayerPreTagEvent was triggered on Bonet by Spider with type MOB, reason ATTACKED, and cancelled true.
+[квітня 07, 2025 09:49:06.030дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet, damager SPIDER Spider and cancelled false.
+[квітня 07, 2025 09:49:06.031дп EEST]  PlayerPreTagEvent was triggered on Bonet by Spider with type MOB, reason ATTACKED, and cancelled true.
+[квітня 07, 2025 09:49:07.032дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet, damager SPIDER Spider and cancelled false.
+[квітня 07, 2025 09:49:07.033дп EEST]  PlayerPreTagEvent was triggered on Bonet by Spider with type MOB, reason ATTACKED, and cancelled true.
+[квітня 07, 2025 09:49:08.030дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet, damager SPIDER Spider and cancelled false.
+[квітня 07, 2025 09:49:08.031дп EEST]  PlayerPreTagEvent was triggered on Bonet by Spider with type MOB, reason ATTACKED, and cancelled true.
+[квітня 07, 2025 09:49:09.030дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet, damager SPIDER Spider and cancelled false.
+[квітня 07, 2025 09:49:09.031дп EEST]  PlayerPreTagEvent was triggered on Bonet by Spider with type MOB, reason ATTACKED, and cancelled true.
+[квітня 07, 2025 09:49:10.033дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet, damager SPIDER Spider and cancelled false.
+[квітня 07, 2025 09:49:10.035дп EEST]  PlayerPreTagEvent was triggered on Bonet by Spider with type MOB, reason ATTACKED, and cancelled true.
+[квітня 07, 2025 09:49:11.030дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet, damager SPIDER Spider and cancelled false.
+[квітня 07, 2025 09:49:11.030дп EEST]  PlayerPreTagEvent was triggered on Bonet by Spider with type MOB, reason ATTACKED, and cancelled true.
+[квітня 07, 2025 09:55:49.620дп EEST]  EntityDamageByEntityEvent was triggered by damaged CREEPER Creeper, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 09:55:49.682дп EEST]  PlayerPreTagEvent was triggered on Bonet by Creeper with type MOB, reason ATTACKER, and cancelled true.
+[квітня 07, 2025 09:55:50.332дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet, damager CREEPER Creeper and cancelled false.
+[квітня 07, 2025 09:55:50.333дп EEST]  PlayerPreTagEvent was triggered on Bonet by Creeper with type MOB, reason ATTACKED, and cancelled true.
+[квітня 07, 2025 09:55:54.160дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 09:55:54.163дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKED, and cancelled true.
+[квітня 07, 2025 09:55:58.422дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 09:55:58.423дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKED, and cancelled true.
+[квітня 07, 2025 09:58:06.071дп EEST]  EntityDamageByEntityEvent was triggered by damaged COW Cow, damager LIGHTNING_BOLT Lightning Bolt and cancelled false.
+[квітня 07, 2025 09:59:08.452дп EEST]  PlayerPreTagEvent was triggered on Bonet by Невідомий with type DAMAGE, reason UNKNOWN, and cancelled true.
+[квітня 07, 2025 09:59:14.926дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager LLAMA_SPIT Llama Spit and cancelled false.
+[квітня 07, 2025 09:59:21.671дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager LLAMA_SPIT Llama Spit and cancelled false.
+[квітня 07, 2025 09:59:23.666дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager LLAMA_SPIT Llama Spit and cancelled false.
+[квітня 07, 2025 09:59:25.620дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager LLAMA_SPIT Llama Spit and cancelled false.
+[квітня 07, 2025 09:59:27.610дп EEST]  EntityDamageByEntityEvent was triggered by damaged TRADER_LLAMA Trader Llama, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 09:59:27.613дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager LLAMA_SPIT Llama Spit and cancelled false.
+[квітня 07, 2025 09:59:30.909дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 09:59:30.910дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKED, and cancelled true.
+[квітня 07, 2025 09:59:31.811дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 09:59:31.813дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKED, and cancelled true.
+[квітня 07, 2025 09:59:32.810дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 09:59:32.810дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKED, and cancelled true.
+[квітня 07, 2025 09:59:33.370дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 09:59:33.371дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKED, and cancelled true.
+[квітня 07, 2025 09:59:33.870дп EEST]  EntityDamageByEntityEvent was triggered by damaged TRADER_LLAMA Trader Llama, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 09:59:35.420дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 09:59:35.420дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKED, and cancelled true.
+[квітня 07, 2025 09:59:36.665дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 09:59:36.666дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKED, and cancelled true.
+[квітня 07, 2025 09:59:37.319дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 09:59:37.320дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKED, and cancelled true.
+[квітня 07, 2025 09:59:38.225дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 09:59:38.226дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKED, and cancelled true.
+[квітня 07, 2025 09:59:38.916дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 09:59:38.919дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKED, and cancelled true.
+[квітня 07, 2025 09:59:40.272дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 09:59:40.274дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKED, and cancelled true.
+[квітня 07, 2025 09:59:41.605дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 09:59:41.614дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKED, and cancelled true.
+[квітня 07, 2025 09:59:42.600дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 09:59:42.603дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKED, and cancelled true.
+[квітня 07, 2025 10:08:00.245дп EEST]  PlayerPreTagEvent was triggered on Bonet by Невідомий with type DAMAGE, reason UNKNOWN, and cancelled true.
+[квітня 07, 2025 10:09:42.466дп EEST]  EntityDamageByEntityEvent was triggered by damaged SHEEP Sheep, damager TNT Primed TNT and cancelled false.
+[квітня 07, 2025 10:09:42.484дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet, damager TNT Primed TNT and cancelled false.
+[квітня 07, 2025 10:09:42.486дп EEST]  PlayerPreTagEvent was triggered on Bonet by Primed TNT with type MOB, reason ATTACKED, and cancelled true.
+[квітня 07, 2025 10:09:42.519дп EEST]  EntityDamageByEntityEvent was triggered by damaged SHEEP Sheep, damager TNT Primed TNT and cancelled false.
+[квітня 07, 2025 10:12:27.967дп EEST]  EntityDamageByEntityEvent was triggered by damaged VILLAGER Farmer, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 10:13:11.507дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet, damager TNT Primed TNT and cancelled false.
+[квітня 07, 2025 10:13:11.509дп EEST]  PlayerPreTagEvent was triggered on Bonet by Primed TNT with type MOB, reason ATTACKED, and cancelled true.
+[квітня 07, 2025 10:13:12.757дп EEST]  PlayerPreTagEvent was triggered on Bonet by Невідомий with type DAMAGE, reason UNKNOWN, and cancelled true.
+[квітня 07, 2025 10:13:19.816дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet, damager SPIDER Spider and cancelled false.
+[квітня 07, 2025 10:13:19.817дп EEST]  PlayerPreTagEvent was triggered on Bonet by Spider with type MOB, reason ATTACKED, and cancelled true.
+[квітня 07, 2025 10:13:20.825дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet, damager SPIDER Spider and cancelled false.
+[квітня 07, 2025 10:13:20.826дп EEST]  PlayerPreTagEvent was triggered on Bonet by Spider with type MOB, reason ATTACKED, and cancelled true.
+[квітня 07, 2025 10:36:10.316дп EEST]  EntityDamageByEntityEvent was triggered by damaged WANDERING_TRADER Wandering Trader, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 10:36:10.684дп EEST]  EntityDamageByEntityEvent was triggered by damaged WANDERING_TRADER Wandering Trader, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 10:36:11.520дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager LLAMA_SPIT Llama Spit and cancelled false.
+[квітня 07, 2025 10:36:11.716дп EEST]  EntityDamageByEntityEvent was triggered by damaged WANDERING_TRADER Wandering Trader, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 10:36:12.308дп EEST]  EntityDamageByEntityEvent was triggered by damaged TRADER_LLAMA Trader Llama, damager LLAMA_SPIT Llama Spit and cancelled false.
+[квітня 07, 2025 10:36:12.761дп EEST]  EntityDamageByEntityEvent was triggered by damaged WANDERING_TRADER Wandering Trader, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 10:36:12.770дп EEST]  EntityDamageByEntityEvent was triggered by damaged TRADER_LLAMA Trader Llama, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 10:36:13.950дп EEST]  EntityDamageByEntityEvent was triggered by damaged WANDERING_TRADER Wandering Trader, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 10:36:14.604дп EEST]  EntityDamageByEntityEvent was triggered by damaged TRADER_LLAMA Trader Llama, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 10:36:14.619дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager LLAMA_SPIT Llama Spit and cancelled false.
+[квітня 07, 2025 10:36:16.422дп EEST]  EntityDamageByEntityEvent was triggered by damaged WANDERING_TRADER Wandering Trader, damager LLAMA_SPIT Llama Spit and cancelled false.
+[квітня 07, 2025 10:36:17.970дп EEST]  EntityDamageByEntityEvent was triggered by damaged TRADER_LLAMA Trader Llama, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 10:36:18.066дп EEST]  EntityDamageByEntityEvent was triggered by damaged TRADER_LLAMA Trader Llama, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 10:36:18.574дп EEST]  EntityDamageByEntityEvent was triggered by damaged TRADER_LLAMA Trader Llama, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 10:36:19.627дп EEST]  EntityDamageByEntityEvent was triggered by damaged TRADER_LLAMA Trader Llama, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 10:36:20.566дп EEST]  EntityDamageByEntityEvent was triggered by damaged TRADER_LLAMA Trader Llama, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 10:36:21.575дп EEST]  EntityDamageByEntityEvent was triggered by damaged TRADER_LLAMA Trader Llama, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 10:36:22.569дп EEST]  EntityDamageByEntityEvent was triggered by damaged WANDERING_TRADER Wandering Trader, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 10:36:23.665дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager LLAMA_SPIT Llama Spit and cancelled false.
+[квітня 07, 2025 10:36:23.763дп EEST]  EntityDamageByEntityEvent was triggered by damaged WANDERING_TRADER Wandering Trader, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 10:36:25.371дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager LLAMA_SPIT Llama Spit and cancelled false.
+[квітня 07, 2025 10:36:27.389дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager LLAMA_SPIT Llama Spit and cancelled false.
+[квітня 07, 2025 10:36:27.426дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager LLAMA_SPIT Llama Spit and cancelled false.
+[квітня 07, 2025 10:36:29.377дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager LLAMA_SPIT Llama Spit and cancelled false.
+[квітня 07, 2025 10:36:31.373дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager LLAMA_SPIT Llama Spit and cancelled false.
+[квітня 07, 2025 10:36:31.416дп EEST]  EntityDamageByEntityEvent was triggered by damaged TRADER_LLAMA Trader Llama, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 10:36:32.558дп EEST]  EntityDamageByEntityEvent was triggered by damaged TRADER_LLAMA Trader Llama, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 10:36:33.331дп EEST]  EntityDamageByEntityEvent was triggered by damaged TRADER_LLAMA Trader Llama, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 10:36:34.162дп EEST]  EntityDamageByEntityEvent was triggered by damaged TRADER_LLAMA Trader Llama, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 10:36:34.863дп EEST]  EntityDamageByEntityEvent was triggered by damaged TRADER_LLAMA Trader Llama, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 10:36:35.528дп EEST]  EntityDamageByEntityEvent was triggered by damaged TRADER_LLAMA Trader Llama, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 10:36:36.170дп EEST]  EntityDamageByEntityEvent was triggered by damaged TRADER_LLAMA Trader Llama, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 10:41:55.987дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet, damager PLAYER Bonet2 and cancelled true.
+[квітня 07, 2025 10:41:56.730дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet, damager PLAYER Bonet2 and cancelled true.
+[квітня 07, 2025 10:41:57.307дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet, damager PLAYER Bonet2 and cancelled true.
+[квітня 07, 2025 10:42:04.369дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet, damager PLAYER Bonet2 and cancelled true.
+[квітня 07, 2025 10:42:05.673дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet, damager PLAYER Bonet2 and cancelled true.
+[квітня 07, 2025 10:42:06.125дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet, damager PLAYER Bonet2 and cancelled true.
+[квітня 07, 2025 10:48:08.365дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled true.
+[квітня 07, 2025 10:48:08.368дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled true.
+[квітня 07, 2025 10:48:08.744дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 10:48:08.987дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled true.
+[квітня 07, 2025 10:48:08.988дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled true.
+[квітня 07, 2025 10:48:08.990дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 10:48:16.325дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet, damager PLAYER Bonet2 and cancelled true.
+[квітня 07, 2025 10:48:17.772дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet, damager PLAYER Bonet2 and cancelled true.
+[квітня 07, 2025 10:48:17.971дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet, damager PLAYER Bonet2 and cancelled true.
+[квітня 07, 2025 10:49:52.379дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKER, and cancelled true.
+[квітня 07, 2025 10:49:52.381дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKED, and cancelled true.
+[квітня 07, 2025 10:49:52.383дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet, damager PLAYER Bonet2 and cancelled false.
+[квітня 07, 2025 10:49:59.500дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled true.
+[квітня 07, 2025 10:49:59.508дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled true.
+[квітня 07, 2025 10:49:59.512дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 10:51:22.236дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled true.
+[квітня 07, 2025 10:51:22.245дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled true.
+[квітня 07, 2025 10:51:22.246дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 10:51:51.529дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled true.
+[квітня 07, 2025 10:51:51.530дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled true.
+[квітня 07, 2025 10:51:51.531дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 10:51:52.628дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled true.
+[квітня 07, 2025 10:51:52.628дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled true.
+[квітня 07, 2025 10:51:52.630дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 10:51:55.671дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKER, and cancelled true.
+[квітня 07, 2025 10:51:55.672дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKED, and cancelled true.
+[квітня 07, 2025 10:51:55.673дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet, damager PLAYER Bonet2 and cancelled false.
+[квітня 07, 2025 10:52:20.329дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled true.
+[квітня 07, 2025 10:52:20.329дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled true.
+[квітня 07, 2025 10:52:20.330дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 10:54:11.100дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled true.
+[квітня 07, 2025 10:54:11.104дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled true.
+[квітня 07, 2025 10:54:11.109дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 10:54:54.775дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled true.
+[квітня 07, 2025 10:54:54.776дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled true.
+[квітня 07, 2025 10:54:54.778дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:08:45.054дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:08:45.148дп EEST]  PlayerTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:08:45.189дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:08:45.192дп EEST]  PlayerTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:08:45.201дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:08:47.729дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:08:47.730дп EEST]  PlayerReTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:08:47.731дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:08:47.732дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:08:47.733дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:08:53.627дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:08:53.627дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:08:53.629дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:08:53.629дп EEST]  PlayerReTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:08:53.631дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet, damager PLAYER Bonet2 and cancelled false.
+[квітня 07, 2025 11:09:24.024дп EEST]  PlayerPunishEvent was triggered on Bonet2 with reason EXPIRE and cancelled true.
+[квітня 07, 2025 11:09:24.026дп EEST]  PlayerUntagEvent was triggered on Bonet2 with reason EXPIRE and expire set to true.
+[квітня 07, 2025 11:09:24.028дп EEST]  PlayerPunishEvent was triggered on Bonet with reason EXPIRE and cancelled true.
+[квітня 07, 2025 11:09:24.030дп EEST]  PlayerUntagEvent was triggered on Bonet with reason EXPIRE and expire set to true.
+[квітня 07, 2025 11:09:48.779дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:09:48.781дп EEST]  PlayerTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:09:48.783дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:09:48.784дп EEST]  PlayerTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:09:48.785дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:09:53.428дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager LLAMA_SPIT Llama Spit and cancelled false.
+[квітня 07, 2025 11:09:54.227дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:09:54.228дп EEST]  PlayerReTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:09:54.229дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:09:54.230дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:09:54.231дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:09:54.830дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:09:54.830дп EEST]  PlayerReTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:09:54.832дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:09:54.832дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:09:54.832дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:09:55.422дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager LLAMA_SPIT Llama Spit and cancelled false.
+[квітня 07, 2025 11:09:57.424дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager LLAMA_SPIT Llama Spit and cancelled false.
+[квітня 07, 2025 11:09:59.559дп EEST]  EntityDamageByEntityEvent was triggered by damaged TRADER_LLAMA Trader Llama, damager LLAMA_SPIT Llama Spit and cancelled false.
+[квітня 07, 2025 11:09:59.765дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager LLAMA_SPIT Llama Spit and cancelled false.
+[квітня 07, 2025 11:10:03.311дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager LLAMA_SPIT Llama Spit and cancelled false.
+[квітня 07, 2025 11:10:05.325дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager LLAMA_SPIT Llama Spit and cancelled false.
+[квітня 07, 2025 11:10:07.258дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager LLAMA_SPIT Llama Spit and cancelled false.
+[квітня 07, 2025 11:10:08.923дп EEST]  EntityDamageByEntityEvent was triggered by damaged TRADER_LLAMA Trader Llama, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 11:10:09.516дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager LLAMA_SPIT Llama Spit and cancelled false.
+[квітня 07, 2025 11:10:09.622дп EEST]  EntityDamageByEntityEvent was triggered by damaged PIG Pig, damager LLAMA_SPIT Llama Spit and cancelled false.
+[квітня 07, 2025 11:10:11.562дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager LLAMA_SPIT Llama Spit and cancelled false.
+[квітня 07, 2025 11:10:12.821дп EEST]  EntityDamageByEntityEvent was triggered by damaged TRADER_LLAMA Trader Llama, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 11:10:13.524дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager LLAMA_SPIT Llama Spit and cancelled false.
+[квітня 07, 2025 11:10:15.517дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager LLAMA_SPIT Llama Spit and cancelled false.
+[квітня 07, 2025 11:10:17.222дп EEST]  EntityDamageByEntityEvent was triggered by damaged TRADER_LLAMA Trader Llama, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 11:10:17.520дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager LLAMA_SPIT Llama Spit and cancelled false.
+[квітня 07, 2025 11:10:18.622дп EEST]  EntityDamageByEntityEvent was triggered by damaged TRADER_LLAMA Trader Llama, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 11:10:19.526дп EEST]  EntityDamageByEntityEvent was triggered by damaged TRADER_LLAMA Trader Llama, damager LLAMA_SPIT Llama Spit and cancelled false.
+[квітня 07, 2025 11:10:19.611дп EEST]  EntityDamageByEntityEvent was triggered by damaged TRADER_LLAMA Trader Llama, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 11:10:20.615дп EEST]  EntityDamageByEntityEvent was triggered by damaged TRADER_LLAMA Trader Llama, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 11:10:21.466дп EEST]  EntityDamageByEntityEvent was triggered by damaged TRADER_LLAMA Trader Llama, damager LLAMA_SPIT Llama Spit and cancelled false.
+[квітня 07, 2025 11:10:21.623дп EEST]  EntityDamageByEntityEvent was triggered by damaged TRADER_LLAMA Trader Llama, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 11:10:23.123дп EEST]  EntityDamageByEntityEvent was triggered by damaged TRADER_LLAMA Trader Llama, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 11:10:24.366дп EEST]  EntityDamageByEntityEvent was triggered by damaged TRADER_LLAMA Trader Llama, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 11:10:25.019дп EEST]  PlayerPunishEvent was triggered on Bonet2 with reason EXPIRE and cancelled true.
+[квітня 07, 2025 11:10:25.020дп EEST]  PlayerUntagEvent was triggered on Bonet2 with reason EXPIRE and expire set to true.
+[квітня 07, 2025 11:10:25.023дп EEST]  PlayerPunishEvent was triggered on Bonet with reason EXPIRE and cancelled true.
+[квітня 07, 2025 11:10:25.025дп EEST]  PlayerUntagEvent was triggered on Bonet with reason EXPIRE and expire set to true.
+[квітня 07, 2025 11:10:25.366дп EEST]  EntityDamageByEntityEvent was triggered by damaged TRADER_LLAMA Trader Llama, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 11:10:27.718дп EEST]  EntityDamageByEntityEvent was triggered by damaged TRADER_LLAMA Trader Llama, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 11:10:29.071дп EEST]  EntityDamageByEntityEvent was triggered by damaged TRADER_LLAMA Trader Llama, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 11:10:30.161дп EEST]  EntityDamageByEntityEvent was triggered by damaged TRADER_LLAMA Trader Llama, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 11:10:31.158дп EEST]  EntityDamageByEntityEvent was triggered by damaged TRADER_LLAMA Trader Llama, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 11:10:32.666дп EEST]  EntityDamageByEntityEvent was triggered by damaged WANDERING_TRADER Wandering Trader, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 11:10:34.624дп EEST]  EntityDamageByEntityEvent was triggered by damaged WANDERING_TRADER Wandering Trader, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 11:10:40.416дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 11:10:40.420дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Zombie with type MOB, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:10:40.423дп EEST]  PlayerTagEvent was triggered on Bonet2 by Zombie with type MOB and reason ATTACKED.
+[квітня 07, 2025 11:10:41.928дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 11:10:41.929дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Zombie with type MOB, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:10:41.931дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Zombie with type MOB and reason ATTACKED.
+[квітня 07, 2025 11:10:42.574дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 11:10:42.575дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Zombie with type MOB, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:10:42.577дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Zombie with type MOB and reason ATTACKED.
+[квітня 07, 2025 11:10:43.618дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 11:10:43.619дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Zombie with type MOB, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:10:43.621дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Zombie with type MOB and reason ATTACKED.
+[квітня 07, 2025 11:10:44.160дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 11:10:44.160дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Zombie with type MOB, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:10:44.161дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Zombie with type MOB and reason ATTACKED.
+[квітня 07, 2025 11:10:45.309дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 11:10:45.310дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Zombie with type MOB, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:10:45.311дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Zombie with type MOB and reason ATTACKED.
+[квітня 07, 2025 11:10:46.325дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 11:10:46.326дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Zombie with type MOB, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:10:46.327дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Zombie with type MOB and reason ATTACKED.
+[квітня 07, 2025 11:10:47.672дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 11:10:47.673дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Zombie with type MOB, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:10:47.674дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Zombie with type MOB and reason ATTACKED.
+[квітня 07, 2025 11:10:47.835дп EEST]  PlayerPunishEvent was triggered on Bonet2 with reason SELF_DEATH and cancelled true.
+[квітня 07, 2025 11:10:47.836дп EEST]  PlayerUntagEvent was triggered on Bonet2 with reason SELF_DEATH and expire set to true.
+[квітня 07, 2025 11:12:22.519дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 11:12:22.524дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Zombie with type MOB, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:12:22.526дп EEST]  PlayerTagEvent was triggered on Bonet2 by Zombie with type MOB and reason ATTACKED.
+[квітня 07, 2025 11:12:23.175дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 11:12:23.176дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Zombie with type MOB, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:12:23.177дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Zombie with type MOB and reason ATTACKED.
+[квітня 07, 2025 11:12:23.944дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:12:23.946дп EEST]  PlayerTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:12:23.948дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:12:23.948дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:12:23.951дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:12:24.167дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 11:12:24.168дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Zombie with type MOB, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:12:24.168дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Zombie with type MOB and reason ATTACKED.
+[квітня 07, 2025 11:12:24.529дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:12:24.534дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:12:24.537дп EEST]  PlayerReTagEvent was triggered on Bonet by Zombie with type MOB and reason ATTACKER.
+[квітня 07, 2025 11:12:25.282дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:12:25.284дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:12:25.286дп EEST]  PlayerReTagEvent was triggered on Bonet by Zombie with type MOB and reason ATTACKER.
+[квітня 07, 2025 11:12:25.317дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 11:12:25.318дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Zombie with type MOB, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:12:25.319дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Zombie with type MOB and reason ATTACKED.
+[квітня 07, 2025 11:12:25.857дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:12:25.864дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:12:25.866дп EEST]  PlayerReTagEvent was triggered on Bonet by Zombie with type MOB and reason ATTACKER.
+[квітня 07, 2025 11:12:26.225дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:12:26.228дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:12:26.230дп EEST]  PlayerReTagEvent was triggered on Bonet by Zombie with type MOB and reason ATTACKER.
+[квітня 07, 2025 11:12:28.028дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:12:28.029дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:12:28.030дп EEST]  PlayerReTagEvent was triggered on Bonet by Zombie with type MOB and reason ATTACKER.
+[квітня 07, 2025 11:12:28.781дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:12:28.783дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:12:28.785дп EEST]  PlayerReTagEvent was triggered on Bonet by Zombie with type MOB and reason ATTACKER.
+[квітня 07, 2025 11:12:30.177дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:12:30.178дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:12:30.179дп EEST]  PlayerReTagEvent was triggered on Bonet by Zombie with type MOB and reason ATTACKER.
+[квітня 07, 2025 11:12:31.745дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:12:31.748дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:12:31.768дп EEST]  PlayerReTagEvent was triggered on Bonet by Zombie with type MOB and reason ATTACKER.
+[квітня 07, 2025 11:12:32.129дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:12:32.130дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:12:32.131дп EEST]  PlayerReTagEvent was triggered on Bonet by Zombie with type MOB and reason ATTACKER.
+[квітня 07, 2025 11:12:32.314дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:12:32.316дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:12:32.317дп EEST]  PlayerReTagEvent was triggered on Bonet by Zombie with type MOB and reason ATTACKER.
+[квітня 07, 2025 11:12:32.497дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:12:32.498дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:12:32.500дп EEST]  PlayerReTagEvent was triggered on Bonet by Zombie with type MOB and reason ATTACKER.
+[квітня 07, 2025 11:12:33.144дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:12:33.145дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:12:33.185дп EEST]  PlayerReTagEvent was triggered on Bonet by Zombie with type MOB and reason ATTACKER.
+[квітня 07, 2025 11:12:33.195дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 11:12:33.196дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Zombie with type MOB, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:12:33.197дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Zombie with type MOB and reason ATTACKED.
+[квітня 07, 2025 11:12:34.225дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:12:34.227дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:12:34.228дп EEST]  PlayerReTagEvent was triggered on Bonet by Zombie with type MOB and reason ATTACKER.
+[квітня 07, 2025 11:12:35.318дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 11:12:35.319дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Zombie with type MOB, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:12:35.325дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Zombie with type MOB and reason ATTACKED.
+[квітня 07, 2025 11:12:35.778дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:12:35.779дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:12:35.779дп EEST]  PlayerReTagEvent was triggered on Bonet by Zombie with type MOB and reason ATTACKER.
+[квітня 07, 2025 11:12:35.810дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 11:12:35.811дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Zombie with type MOB, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:12:35.812дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Zombie with type MOB and reason ATTACKED.
+[квітня 07, 2025 11:12:35.975дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:12:35.976дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:12:35.977дп EEST]  PlayerReTagEvent was triggered on Bonet by Zombie with type MOB and reason ATTACKER.
+[квітня 07, 2025 11:12:36.331дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:12:36.332дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:12:36.332дп EEST]  PlayerReTagEvent was triggered on Bonet by Zombie with type MOB and reason ATTACKER.
+[квітня 07, 2025 11:12:36.832дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:12:36.833дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:12:36.834дп EEST]  PlayerReTagEvent was triggered on Bonet by Zombie with type MOB and reason ATTACKER.
+[квітня 07, 2025 11:12:37.032дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:12:37.033дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:12:37.035дп EEST]  PlayerReTagEvent was triggered on Bonet by Zombie with type MOB and reason ATTACKER.
+[квітня 07, 2025 11:12:37.378дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:12:37.379дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:12:37.380дп EEST]  PlayerReTagEvent was triggered on Bonet by Zombie with type MOB and reason ATTACKER.
+[квітня 07, 2025 11:12:37.575дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:12:37.576дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:12:37.577дп EEST]  PlayerReTagEvent was triggered on Bonet by Zombie with type MOB and reason ATTACKER.
+[квітня 07, 2025 11:12:37.874дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:12:37.875дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:12:37.876дп EEST]  PlayerReTagEvent was triggered on Bonet by Zombie with type MOB and reason ATTACKER.
+[квітня 07, 2025 11:12:38.081дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:12:38.082дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:12:38.084дп EEST]  PlayerReTagEvent was triggered on Bonet by Zombie with type MOB and reason ATTACKER.
+[квітня 07, 2025 11:12:38.376дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:12:38.378дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:12:38.379дп EEST]  PlayerReTagEvent was triggered on Bonet by Zombie with type MOB and reason ATTACKER.
+[квітня 07, 2025 11:12:39.260дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 11:12:39.261дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Zombie with type MOB, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:12:39.261дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Zombie with type MOB and reason ATTACKED.
+[квітня 07, 2025 11:12:40.468дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 11:12:40.469дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Zombie with type MOB, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:12:40.470дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Zombie with type MOB and reason ATTACKED.
+[квітня 07, 2025 11:12:41.489дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:12:41.491дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:12:41.492дп EEST]  PlayerReTagEvent was triggered on Bonet by Zombie with type MOB and reason ATTACKER.
+[квітня 07, 2025 11:12:41.599дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:12:41.600дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:12:41.602дп EEST]  PlayerReTagEvent was triggered on Bonet by Zombie with type MOB and reason ATTACKER.
+[квітня 07, 2025 11:12:42.779дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:12:42.781дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:12:42.781дп EEST]  PlayerReTagEvent was triggered on Bonet by Zombie with type MOB and reason ATTACKER.
+[квітня 07, 2025 11:12:54.025дп EEST]  PlayerPunishEvent was triggered on Bonet2 with reason EXPIRE and cancelled true.
+[квітня 07, 2025 11:12:54.026дп EEST]  PlayerUntagEvent was triggered on Bonet2 with reason EXPIRE and expire set to true.
+[квітня 07, 2025 11:12:54.028дп EEST]  PlayerPunishEvent was triggered on Bonet with reason EXPIRE and cancelled true.
+[квітня 07, 2025 11:12:54.029дп EEST]  PlayerUntagEvent was triggered on Bonet with reason EXPIRE and expire set to true.
+[квітня 07, 2025 11:13:16.530дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:13:16.531дп EEST]  PlayerTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:13:16.543дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:13:16.546дп EEST]  PlayerTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:13:16.548дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:13:47.015дп EEST]  PlayerPunishEvent was triggered on Bonet2 with reason EXPIRE and cancelled true.
+[квітня 07, 2025 11:13:47.016дп EEST]  PlayerUntagEvent was triggered on Bonet2 with reason EXPIRE and expire set to true.
+[квітня 07, 2025 11:13:47.019дп EEST]  PlayerPunishEvent was triggered on Bonet with reason EXPIRE and cancelled true.
+[квітня 07, 2025 11:13:47.019дп EEST]  PlayerUntagEvent was triggered on Bonet with reason EXPIRE and expire set to true.
+[квітня 07, 2025 11:15:10.440дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:15:10.448дп EEST]  PlayerTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:15:10.453дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:15:10.455дп EEST]  PlayerTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:15:10.457дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:15:40.518дп EEST]  PlayerPunishEvent was triggered on Bonet2 with reason EXPIRE and cancelled true.
+[квітня 07, 2025 11:15:40.577дп EEST]  PlayerUntagEvent was triggered on Bonet2 with reason EXPIRE and expire set to true.
+[квітня 07, 2025 11:15:40.582дп EEST]  PlayerPunishEvent was triggered on Bonet with reason EXPIRE and cancelled true.
+[квітня 07, 2025 11:15:40.582дп EEST]  PlayerUntagEvent was triggered on Bonet with reason EXPIRE and expire set to true.
+[квітня 07, 2025 11:16:20.142дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:16:20.166дп EEST]  PlayerTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:16:20.167дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:16:20.169дп EEST]  PlayerTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:16:20.172дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:16:22.983дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:16:22.985дп EEST]  PlayerReTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:16:22.986дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:16:22.987дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:16:22.987дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:16:23.579дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:16:23.580дп EEST]  PlayerReTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:16:23.581дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:16:23.581дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:16:23.582дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:16:24.595дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Невідомий with type DAMAGE, reason UNKNOWN, and cancelled false.
+[квітня 07, 2025 11:16:24.602дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Невідомий with type DAMAGE and reason UNKNOWN.
+[квітня 07, 2025 11:16:54.012дп EEST]  PlayerPunishEvent was triggered on Bonet with reason EXPIRE and cancelled true.
+[квітня 07, 2025 11:16:54.016дп EEST]  PlayerUntagEvent was triggered on Bonet with reason EXPIRE and expire set to true.
+[квітня 07, 2025 11:16:55.015дп EEST]  PlayerPunishEvent was triggered on Bonet2 with reason EXPIRE and cancelled true.
+[квітня 07, 2025 11:16:55.017дп EEST]  PlayerUntagEvent was triggered on Bonet2 with reason EXPIRE and expire set to true.
+[квітня 07, 2025 11:17:07.073дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Невідомий with type DAMAGE, reason UNKNOWN, and cancelled false.
+[квітня 07, 2025 11:17:07.078дп EEST]  PlayerTagEvent was triggered on Bonet2 by Невідомий with type DAMAGE and reason UNKNOWN.
+[квітня 07, 2025 11:17:07.622дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Невідомий with type DAMAGE, reason UNKNOWN, and cancelled false.
+[квітня 07, 2025 11:17:07.623дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Невідомий with type DAMAGE and reason UNKNOWN.
+[квітня 07, 2025 11:17:38.010дп EEST]  PlayerPunishEvent was triggered on Bonet2 with reason EXPIRE and cancelled true.
+[квітня 07, 2025 11:17:38.011дп EEST]  PlayerUntagEvent was triggered on Bonet2 with reason EXPIRE and expire set to true.
+[квітня 07, 2025 11:18:08.383дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:18:08.386дп EEST]  PlayerTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:18:08.389дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:18:08.391дп EEST]  PlayerTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:18:08.396дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:18:11.424дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:18:11.427дп EEST]  PlayerReTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:18:11.427дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:18:11.427дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:18:11.428дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:18:20.977дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:18:20.979дп EEST]  PlayerReTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:18:20.980дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:18:20.981дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:18:20.983дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:18:51.022дп EEST]  PlayerPunishEvent was triggered on Bonet2 with reason EXPIRE and cancelled true.
+[квітня 07, 2025 11:18:51.032дп EEST]  PlayerUntagEvent was triggered on Bonet2 with reason EXPIRE and expire set to true.
+[квітня 07, 2025 11:18:51.033дп EEST]  PlayerPunishEvent was triggered on Bonet with reason EXPIRE and cancelled true.
+[квітня 07, 2025 11:18:51.035дп EEST]  PlayerUntagEvent was triggered on Bonet with reason EXPIRE and expire set to true.
+[квітня 07, 2025 11:20:03.939дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:20:03.945дп EEST]  PlayerTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:20:03.954дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:20:03.956дп EEST]  PlayerTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:20:03.961дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:20:05.825дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:20:05.826дп EEST]  PlayerReTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:20:05.826дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:20:05.827дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:20:05.831дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:20:07.279дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:20:07.280дп EEST]  PlayerReTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:20:07.281дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:20:07.281дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:20:07.282дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:20:31.080дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:20:31.105дп EEST]  PlayerReTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:20:31.108дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:20:31.112дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:20:31.123дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:20:33.853дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:20:33.858дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:20:33.880дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:20:34.991дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:20:34.996дп EEST]  PlayerReTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:20:34.998дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:20:35.002дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:20:35.005дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:21:05.016дп EEST]  PlayerPunishEvent was triggered on Bonet2 with reason EXPIRE and cancelled true.
+[квітня 07, 2025 11:21:05.020дп EEST]  PlayerUntagEvent was triggered on Bonet2 with reason EXPIRE and expire set to true.
+[квітня 07, 2025 11:21:05.022дп EEST]  PlayerPunishEvent was triggered on Bonet with reason EXPIRE and cancelled true.
+[квітня 07, 2025 11:21:05.023дп EEST]  PlayerUntagEvent was triggered on Bonet with reason EXPIRE and expire set to true.
+[квітня 07, 2025 11:21:07.594дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:21:07.596дп EEST]  PlayerTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:21:07.597дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:21:07.599дп EEST]  PlayerTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:21:07.601дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:21:08.777дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:21:08.779дп EEST]  PlayerReTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:21:08.779дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:21:08.780дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:21:08.781дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:21:09.877дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:21:09.878дп EEST]  PlayerReTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:21:09.879дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:21:09.880дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:21:09.881дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:21:14.078дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:21:14.079дп EEST]  PlayerReTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:21:14.081дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:21:14.082дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:21:14.084дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:21:14.825дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:21:14.826дп EEST]  PlayerReTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:21:14.827дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:21:14.828дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:21:14.830дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:21:15.330дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:21:15.331дп EEST]  PlayerReTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:21:15.331дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:21:15.331дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:21:15.333дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:21:16.476дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:21:16.476дп EEST]  PlayerReTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:21:16.476дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:21:16.478дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:21:16.478дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:21:46.506дп EEST]  PlayerPunishEvent was triggered on Bonet2 with reason EXPIRE and cancelled true.
+[квітня 07, 2025 11:21:46.506дп EEST]  PlayerUntagEvent was triggered on Bonet2 with reason EXPIRE and expire set to true.
+[квітня 07, 2025 11:21:46.508дп EEST]  PlayerPunishEvent was triggered on Bonet with reason EXPIRE and cancelled true.
+[квітня 07, 2025 11:21:46.508дп EEST]  PlayerUntagEvent was triggered on Bonet with reason EXPIRE and expire set to true.
+[квітня 07, 2025 11:24:03.891дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled true.
+[квітня 07, 2025 11:24:04.379дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled true.
+[квітня 07, 2025 11:24:04.827дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled true.
+[квітня 07, 2025 11:24:05.326дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled true.
+[квітня 07, 2025 11:24:06.334дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled true.
+[квітня 07, 2025 11:24:07.076дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled true.
+[квітня 07, 2025 11:24:07.927дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled true.
+[квітня 07, 2025 11:24:11.578дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:24:11.580дп EEST]  PlayerTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:24:11.582дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:24:11.583дп EEST]  PlayerTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:24:11.585дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:24:42.014дп EEST]  PlayerPunishEvent was triggered on Bonet2 with reason EXPIRE and cancelled true.
+[квітня 07, 2025 11:24:42.017дп EEST]  PlayerUntagEvent was triggered on Bonet2 with reason EXPIRE and expire set to true.
+[квітня 07, 2025 11:24:42.020дп EEST]  PlayerPunishEvent was triggered on Bonet with reason EXPIRE and cancelled true.
+[квітня 07, 2025 11:24:42.020дп EEST]  PlayerUntagEvent was triggered on Bonet with reason EXPIRE and expire set to true.
+[квітня 07, 2025 11:25:43.336дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled true.
+[квітня 07, 2025 11:25:45.326дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:25:45.336дп EEST]  PlayerTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:25:45.340дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:25:45.342дп EEST]  PlayerTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:25:45.344дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:25:45.978дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:25:45.980дп EEST]  PlayerReTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:25:45.981дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:25:45.982дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:25:45.983дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:25:46.825дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:25:46.827дп EEST]  PlayerReTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:25:46.829дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:25:46.830дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:25:46.832дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:25:47.483дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:25:47.486дп EEST]  PlayerReTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:25:47.490дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:25:47.493дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:25:47.495дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:25:48.077дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:25:48.078дп EEST]  PlayerReTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:25:48.079дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:25:48.080дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:25:48.081дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:25:48.730дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:25:48.730дп EEST]  PlayerReTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:25:48.732дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:25:48.732дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:25:48.734дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:26:19.006дп EEST]  PlayerPunishEvent was triggered on Bonet2 with reason EXPIRE and cancelled true.
+[квітня 07, 2025 11:26:19.015дп EEST]  PlayerUntagEvent was triggered on Bonet2 with reason EXPIRE and expire set to true.
+[квітня 07, 2025 11:26:19.017дп EEST]  PlayerPunishEvent was triggered on Bonet with reason EXPIRE and cancelled true.
+[квітня 07, 2025 11:26:19.017дп EEST]  PlayerUntagEvent was triggered on Bonet with reason EXPIRE and expire set to true.
+[квітня 07, 2025 11:26:27.125дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:26:27.132дп EEST]  PlayerTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:26:27.134дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:26:27.135дп EEST]  PlayerTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:26:27.136дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:26:29.579дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled true.
+[квітня 07, 2025 11:26:30.781дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:26:30.788дп EEST]  PlayerReTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:26:30.790дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:26:30.790дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:26:30.790дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:26:31.627дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:26:31.629дп EEST]  PlayerReTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:26:31.629дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:26:31.630дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:26:31.630дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:26:32.480дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:26:32.482дп EEST]  PlayerReTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:26:32.483дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:26:32.483дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:26:32.485дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:26:33.125дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:26:33.126дп EEST]  PlayerReTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:26:33.127дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:26:33.127дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:26:33.128дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:26:33.775дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:26:33.775дп EEST]  PlayerReTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:26:33.778дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:26:33.779дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:26:33.781дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:26:34.425дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:26:34.425дп EEST]  PlayerReTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:26:34.426дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:26:34.427дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:26:34.428дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:26:35.028дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:26:35.029дп EEST]  PlayerReTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:26:35.030дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:26:35.030дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:26:35.030дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:27:05.032дп EEST]  PlayerPunishEvent was triggered on Bonet with reason EXPIRE and cancelled true.
+[квітня 07, 2025 11:27:05.036дп EEST]  PlayerUntagEvent was triggered on Bonet with reason EXPIRE and expire set to true.
+[квітня 07, 2025 11:27:05.522дп EEST]  PlayerPunishEvent was triggered on Bonet2 with reason EXPIRE and cancelled true.
+[квітня 07, 2025 11:27:05.523дп EEST]  PlayerUntagEvent was triggered on Bonet2 with reason EXPIRE and expire set to true.
+[квітня 07, 2025 11:27:37.490дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled true.
+[квітня 07, 2025 11:27:38.474дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled true.
+[квітня 07, 2025 11:27:39.526дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled true.
+[квітня 07, 2025 11:27:40.578дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled true.
+[квітня 07, 2025 11:27:41.495дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled true.
+[квітня 07, 2025 11:27:42.378дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled true.
+[квітня 07, 2025 11:27:45.331дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled true.
+[квітня 07, 2025 11:27:46.280дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled true.
+[квітня 07, 2025 11:27:47.778дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled true.
+[квітня 07, 2025 11:27:48.427дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled true.
+[квітня 07, 2025 11:27:49.076дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled true.
+[квітня 07, 2025 11:27:49.674дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled true.
+[квітня 07, 2025 11:27:50.685дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled true.
+[квітня 07, 2025 11:27:51.478дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled true.
+[квітня 07, 2025 11:27:52.376дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled true.
+[квітня 07, 2025 11:27:53.831дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled true.
+[квітня 07, 2025 11:27:54.429дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled true.
+[квітня 07, 2025 11:27:55.031дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled true.
+[квітня 07, 2025 11:27:55.630дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled true.
+[квітня 07, 2025 11:27:56.174дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled true.
+[квітня 07, 2025 11:27:56.777дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled true.
+[квітня 07, 2025 11:27:57.335дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled true.
+[квітня 07, 2025 11:27:57.981дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled true.
+[квітня 07, 2025 11:28:06.780дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled true.
+[квітня 07, 2025 11:28:07.729дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled true.
+[квітня 07, 2025 11:28:08.277дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled true.
+[квітня 07, 2025 11:28:09.225дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled true.
+[квітня 07, 2025 11:28:09.781дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled true.
+[квітня 07, 2025 11:28:12.681дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:28:12.683дп EEST]  PlayerTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:28:12.689дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:28:12.690дп EEST]  PlayerTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:28:12.691дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:28:43.013дп EEST]  PlayerPunishEvent was triggered on Bonet2 with reason EXPIRE and cancelled true.
+[квітня 07, 2025 11:28:43.017дп EEST]  PlayerUntagEvent was triggered on Bonet2 with reason EXPIRE and expire set to true.
+[квітня 07, 2025 11:28:43.019дп EEST]  PlayerPunishEvent was triggered on Bonet with reason EXPIRE and cancelled true.
+[квітня 07, 2025 11:28:43.020дп EEST]  PlayerUntagEvent was triggered on Bonet with reason EXPIRE and expire set to true.
+[квітня 07, 2025 11:30:29.393дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:30:29.400дп EEST]  PlayerTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:30:29.405дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:30:29.406дп EEST]  PlayerTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:30:29.410дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:30:30.233дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:30:30.235дп EEST]  PlayerReTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:30:30.236дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:30:30.237дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:30:30.237дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:30:30.931дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:30:30.933дп EEST]  PlayerReTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:30:30.934дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:30:30.935дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:30:30.936дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:31:01.007дп EEST]  PlayerPunishEvent was triggered on Bonet2 with reason EXPIRE and cancelled true.
+[квітня 07, 2025 11:31:01.007дп EEST]  PlayerUntagEvent was triggered on Bonet2 with reason EXPIRE and expire set to true.
+[квітня 07, 2025 11:31:01.009дп EEST]  PlayerPunishEvent was triggered on Bonet with reason EXPIRE and cancelled true.
+[квітня 07, 2025 11:31:01.009дп EEST]  PlayerUntagEvent was triggered on Bonet with reason EXPIRE and expire set to true.
+[квітня 07, 2025 11:31:07.429дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:31:07.430дп EEST]  PlayerTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:31:07.432дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:31:07.432дп EEST]  PlayerTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:31:07.433дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:31:11.281дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:31:11.282дп EEST]  PlayerReTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:31:11.282дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:31:11.283дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:31:11.285дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:31:11.303дп EEST]  PlayerPunishEvent was triggered on Bonet2 with reason SELF_DEATH and cancelled true.
+[квітня 07, 2025 11:31:11.304дп EEST]  PlayerUntagEvent was triggered on Bonet2 with reason SELF_DEATH and expire set to true.
+[квітня 07, 2025 11:31:11.310дп EEST]  PlayerPunishEvent was triggered on Bonet with reason ENEMY_DEATH and cancelled true.
+[квітня 07, 2025 11:31:11.311дп EEST]  PlayerUntagEvent was triggered on Bonet with reason ENEMY_DEATH and expire set to true.
+[квітня 07, 2025 11:31:35.566дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager IRON_GOLEM Iron Golem and cancelled false.
+[квітня 07, 2025 11:31:35.578дп EEST]  EntityDamageByEntityEvent was triggered by damaged IRON_GOLEM Iron Golem, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 11:35:27.108дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:35:27.113дп EEST]  PlayerTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:35:27.122дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:35:27.125дп EEST]  PlayerTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:35:27.129дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:35:37.928дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:35:37.929дп EEST]  PlayerReTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:35:37.930дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:35:37.930дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:35:37.931дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:35:41.130дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:35:41.131дп EEST]  PlayerReTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:35:41.131дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:35:41.133дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:35:41.133дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:35:44.230дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:35:44.231дп EEST]  PlayerReTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:35:44.232дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:35:44.233дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:35:44.236дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:35:56.831дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:35:56.832дп EEST]  PlayerReTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:35:56.832дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:35:56.834дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:35:56.835дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:35:59.933дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:35:59.934дп EEST]  PlayerReTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:35:59.936дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:35:59.938дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:35:59.939дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:36:02.982дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:36:02.984дп EEST]  PlayerReTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:36:02.985дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:36:02.986дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:36:02.987дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:36:33.023дп EEST]  PlayerPunishEvent was triggered on Bonet2 with reason EXPIRE and cancelled true.
+[квітня 07, 2025 11:36:33.041дп EEST]  PlayerUntagEvent was triggered on Bonet2 with reason EXPIRE and expire set to true.
+[квітня 07, 2025 11:36:33.046дп EEST]  PlayerPunishEvent was triggered on Bonet with reason EXPIRE and cancelled true.
+[квітня 07, 2025 11:36:33.047дп EEST]  PlayerUntagEvent was triggered on Bonet with reason EXPIRE and expire set to true.
+[квітня 07, 2025 11:37:39.511дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:37:39.523дп EEST]  PlayerTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:37:39.533дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:37:39.534дп EEST]  PlayerTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:37:39.539дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:37:44.882дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:37:44.883дп EEST]  PlayerReTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:37:44.886дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:37:44.888дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:37:44.890дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:38:15.014дп EEST]  PlayerPunishEvent was triggered on Bonet2 with reason EXPIRE and cancelled true.
+[квітня 07, 2025 11:38:15.018дп EEST]  PlayerUntagEvent was triggered on Bonet2 with reason EXPIRE and expire set to true.
+[квітня 07, 2025 11:38:15.027дп EEST]  PlayerPunishEvent was triggered on Bonet with reason EXPIRE and cancelled true.
+[квітня 07, 2025 11:38:15.028дп EEST]  PlayerUntagEvent was triggered on Bonet with reason EXPIRE and expire set to true.
+[квітня 07, 2025 11:39:25.942дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:39:25.948дп EEST]  PlayerTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:39:25.954дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:39:25.956дп EEST]  PlayerTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:39:25.960дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:39:26.582дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:39:26.583дп EEST]  PlayerReTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:39:26.585дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:39:26.585дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:39:26.586дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:39:26.614дп EEST]  PlayerPunishEvent was triggered on Bonet2 with reason SELF_DEATH and cancelled true.
+[квітня 07, 2025 11:39:26.615дп EEST]  PlayerUntagEvent was triggered on Bonet2 with reason SELF_DEATH and expire set to true.
+[квітня 07, 2025 11:39:26.616дп EEST]  PlayerPunishEvent was triggered on Bonet with reason ENEMY_DEATH and cancelled true.
+[квітня 07, 2025 11:39:26.617дп EEST]  PlayerUntagEvent was triggered on Bonet with reason ENEMY_DEATH and expire set to true.
+[квітня 07, 2025 11:41:20.242дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:41:20.247дп EEST]  PlayerTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:41:20.255дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:41:20.257дп EEST]  PlayerTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:41:20.259дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:41:25.433дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:41:25.440дп EEST]  PlayerReTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:41:25.443дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:41:25.460дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:41:25.464дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:41:55.513дп EEST]  PlayerPunishEvent was triggered on Bonet2 with reason EXPIRE and cancelled true.
+[квітня 07, 2025 11:41:55.515дп EEST]  PlayerUntagEvent was triggered on Bonet2 with reason EXPIRE and expire set to true.
+[квітня 07, 2025 11:41:55.518дп EEST]  PlayerPunishEvent was triggered on Bonet with reason EXPIRE and cancelled true.
+[квітня 07, 2025 11:41:55.518дп EEST]  PlayerUntagEvent was triggered on Bonet with reason EXPIRE and expire set to true.
+[квітня 07, 2025 11:41:55.839дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:41:55.840дп EEST]  PlayerTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:41:55.842дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:41:55.843дп EEST]  PlayerTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:41:55.847дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:42:26.018дп EEST]  PlayerPunishEvent was triggered on Bonet2 with reason EXPIRE and cancelled true.
+[квітня 07, 2025 11:42:26.021дп EEST]  PlayerUntagEvent was triggered on Bonet2 with reason EXPIRE and expire set to true.
+[квітня 07, 2025 11:42:26.022дп EEST]  PlayerPunishEvent was triggered on Bonet with reason EXPIRE and cancelled true.
+[квітня 07, 2025 11:42:26.023дп EEST]  PlayerUntagEvent was triggered on Bonet with reason EXPIRE and expire set to true.
+[квітня 07, 2025 11:42:29.493дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:42:29.498дп EEST]  PlayerTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:42:29.501дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:42:29.502дп EEST]  PlayerTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:42:29.506дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:42:30.259дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:42:30.262дп EEST]  PlayerReTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:42:30.264дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:42:30.267дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:42:30.270дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:42:30.828дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:42:30.829дп EEST]  PlayerReTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:42:30.831дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:42:30.832дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:42:30.834дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:42:42.675дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:42:42.676дп EEST]  PlayerReTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:42:42.676дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:42:42.677дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:42:42.679дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:42:43.277дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:42:43.278дп EEST]  PlayerReTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:42:43.279дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:42:43.282дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:42:43.282дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:42:43.826дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:42:43.827дп EEST]  PlayerReTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:42:43.828дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:42:43.829дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:42:43.830дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:42:44.485дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:42:44.487дп EEST]  PlayerReTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:42:44.488дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:42:44.489дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:42:44.490дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:42:47.428дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:42:47.429дп EEST]  PlayerReTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:42:47.430дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:42:47.432дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:42:47.434дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:42:48.083дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:42:48.084дп EEST]  PlayerReTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:42:48.084дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:42:48.085дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:42:48.087дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:42:48.680дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:42:48.681дп EEST]  PlayerReTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:42:48.682дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:42:48.683дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:42:48.683дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:42:49.827дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:42:49.830дп EEST]  PlayerReTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:42:49.831дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:42:49.833дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:42:49.834дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:42:50.478дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:42:50.479дп EEST]  PlayerReTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:42:50.481дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:42:50.481дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:42:50.482дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:42:51.133дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:42:51.134дп EEST]  PlayerReTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:42:51.136дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:42:51.137дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:42:51.138дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:42:51.880дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:42:51.881дп EEST]  PlayerReTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:42:51.881дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:42:51.882дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:42:51.883дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:42:52.453дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:42:52.456дп EEST]  PlayerReTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:42:52.456дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:42:52.457дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:42:52.458дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:42:52.487дп EEST]  PlayerPunishEvent was triggered on Bonet2 with reason SELF_DEATH and cancelled true.
+[квітня 07, 2025 11:42:52.488дп EEST]  PlayerUntagEvent was triggered on Bonet2 with reason SELF_DEATH and expire set to true.
+[квітня 07, 2025 11:42:52.490дп EEST]  PlayerPunishEvent was triggered on Bonet with reason ENEMY_DEATH and cancelled true.
+[квітня 07, 2025 11:42:52.491дп EEST]  PlayerUntagEvent was triggered on Bonet with reason ENEMY_DEATH and expire set to true.
+[квітня 07, 2025 11:52:46.044дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:52:46.048дп EEST]  PlayerTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:52:46.054дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:52:46.055дп EEST]  PlayerTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:52:46.057дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:52:50.125дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:52:50.126дп EEST]  PlayerReTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:52:50.127дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:52:50.128дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:52:50.128дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:52:51.062дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 11:52:51.063дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Zombie with type MOB, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:52:51.064дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Zombie with type MOB and reason ATTACKED.
+[квітня 07, 2025 11:52:51.918дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 11:52:51.918дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Zombie with type MOB, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:52:51.919дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Zombie with type MOB and reason ATTACKED.
+[квітня 07, 2025 11:52:52.025дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:52:52.027дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:52:52.027дп EEST]  PlayerReTagEvent was triggered on Bonet by Zombie with type MOB and reason ATTACKER.
+[квітня 07, 2025 11:52:52.721дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 11:52:52.722дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Zombie with type MOB, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:52:52.723дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Zombie with type MOB and reason ATTACKED.
+[квітня 07, 2025 11:52:53.717дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 11:52:53.717дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Zombie with type MOB, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:52:53.718дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Zombie with type MOB and reason ATTACKED.
+[квітня 07, 2025 11:52:53.975дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:52:53.976дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:52:53.984дп EEST]  PlayerReTagEvent was triggered on Bonet by Zombie with type MOB and reason ATTACKER.
+[квітня 07, 2025 11:52:54.572дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:52:54.573дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:52:54.574дп EEST]  PlayerReTagEvent was triggered on Bonet by Zombie with type MOB and reason ATTACKER.
+[квітня 07, 2025 11:52:54.707дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 11:52:54.709дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Zombie with type MOB, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:52:54.709дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Zombie with type MOB and reason ATTACKED.
+[квітня 07, 2025 11:52:55.073дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:52:55.074дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:52:55.075дп EEST]  PlayerReTagEvent was triggered on Bonet by Zombie with type MOB and reason ATTACKER.
+[квітня 07, 2025 11:52:55.726дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:52:55.726дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:52:55.727дп EEST]  PlayerReTagEvent was triggered on Bonet by Zombie with type MOB and reason ATTACKER.
+[квітня 07, 2025 11:52:55.969дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 11:52:55.970дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Zombie with type MOB, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:52:55.971дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Zombie with type MOB and reason ATTACKED.
+[квітня 07, 2025 11:52:56.374дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:52:56.375дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:52:56.377дп EEST]  PlayerReTagEvent was triggered on Bonet by Zombie with type MOB and reason ATTACKER.
+[квітня 07, 2025 11:52:56.926дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:52:56.926дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:52:56.928дп EEST]  PlayerReTagEvent was triggered on Bonet by Zombie with type MOB and reason ATTACKER.
+[квітня 07, 2025 11:52:57.067дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 11:52:57.068дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Zombie with type MOB, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:52:57.068дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Zombie with type MOB and reason ATTACKED.
+[квітня 07, 2025 11:52:57.476дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:52:57.476дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:52:57.476дп EEST]  PlayerReTagEvent was triggered on Bonet by Zombie with type MOB and reason ATTACKER.
+[квітня 07, 2025 11:52:57.961дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 11:52:57.962дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Zombie with type MOB, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:52:57.963дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Zombie with type MOB and reason ATTACKED.
+[квітня 07, 2025 11:52:58.172дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:52:58.172дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:52:58.173дп EEST]  PlayerReTagEvent was triggered on Bonet by Zombie with type MOB and reason ATTACKER.
+[квітня 07, 2025 11:52:58.676дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:52:58.677дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:52:58.678дп EEST]  PlayerReTagEvent was triggered on Bonet by Zombie with type MOB and reason ATTACKER.
+[квітня 07, 2025 11:52:58.817дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 11:52:58.817дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Zombie with type MOB, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:52:58.819дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Zombie with type MOB and reason ATTACKED.
+[квітня 07, 2025 11:52:59.808дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 11:52:59.808дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Zombie with type MOB, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:52:59.810дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Zombie with type MOB and reason ATTACKED.
+[квітня 07, 2025 11:52:59.973дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:52:59.974дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:52:59.974дп EEST]  PlayerReTagEvent was triggered on Bonet by Zombie with type MOB and reason ATTACKER.
+[квітня 07, 2025 11:53:00.575дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:53:00.575дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:53:00.576дп EEST]  PlayerReTagEvent was triggered on Bonet by Zombie with type MOB and reason ATTACKER.
+[квітня 07, 2025 11:53:00.661дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 11:53:00.661дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Zombie with type MOB, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:53:00.662дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Zombie with type MOB and reason ATTACKED.
+[квітня 07, 2025 11:53:01.560дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager ZOMBIE Zombie and cancelled false.
+[квітня 07, 2025 11:53:01.562дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Zombie with type MOB, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:53:01.562дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Zombie with type MOB and reason ATTACKED.
+[квітня 07, 2025 11:53:01.587дп EEST]  PlayerPunishEvent was triggered on Bonet2 with reason SELF_DEATH and cancelled true.
+[квітня 07, 2025 11:53:01.588дп EEST]  PlayerUntagEvent was triggered on Bonet2 with reason SELF_DEATH and expire set to true.
+[квітня 07, 2025 11:53:01.873дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:53:01.874дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:53:01.875дп EEST]  PlayerReTagEvent was triggered on Bonet by Zombie with type MOB and reason ATTACKER.
+[квітня 07, 2025 11:53:02.474дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:53:02.475дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:53:02.477дп EEST]  PlayerReTagEvent was triggered on Bonet by Zombie with type MOB and reason ATTACKER.
+[квітня 07, 2025 11:53:03.073дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:53:03.074дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:53:03.075дп EEST]  PlayerReTagEvent was triggered on Bonet by Zombie with type MOB and reason ATTACKER.
+[квітня 07, 2025 11:53:03.675дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:53:03.676дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:53:03.677дп EEST]  PlayerReTagEvent was triggered on Bonet by Zombie with type MOB and reason ATTACKER.
+[квітня 07, 2025 11:53:04.221дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:53:04.223дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:53:04.223дп EEST]  PlayerReTagEvent was triggered on Bonet by Zombie with type MOB and reason ATTACKER.
+[квітня 07, 2025 11:53:04.825дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:53:04.826дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:53:04.827дп EEST]  PlayerReTagEvent was triggered on Bonet by Zombie with type MOB and reason ATTACKER.
+[квітня 07, 2025 11:53:05.422дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:53:05.423дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:53:05.424дп EEST]  PlayerReTagEvent was triggered on Bonet by Zombie with type MOB and reason ATTACKER.
+[квітня 07, 2025 11:53:06.573дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:53:06.574дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:53:06.575дп EEST]  PlayerReTagEvent was triggered on Bonet by Zombie with type MOB and reason ATTACKER.
+[квітня 07, 2025 11:53:07.872дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:53:07.873дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:53:07.876дп EEST]  PlayerReTagEvent was triggered on Bonet by Zombie with type MOB and reason ATTACKER.
+[квітня 07, 2025 11:53:08.473дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:53:08.474дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:53:08.475дп EEST]  PlayerReTagEvent was triggered on Bonet by Zombie with type MOB and reason ATTACKER.
+[квітня 07, 2025 11:53:09.623дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:53:09.624дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:53:09.626дп EEST]  PlayerReTagEvent was triggered on Bonet by Zombie with type MOB and reason ATTACKER.
+[квітня 07, 2025 11:53:10.172дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:53:10.174дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:53:10.176дп EEST]  PlayerReTagEvent was triggered on Bonet by Zombie with type MOB and reason ATTACKER.
+[квітня 07, 2025 11:53:10.922дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:53:10.923дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:53:10.926дп EEST]  PlayerReTagEvent was triggered on Bonet by Zombie with type MOB and reason ATTACKER.
+[квітня 07, 2025 11:53:11.571дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:53:11.572дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:53:11.573дп EEST]  PlayerReTagEvent was triggered on Bonet by Zombie with type MOB and reason ATTACKER.
+[квітня 07, 2025 11:53:12.171дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:53:12.172дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:53:12.172дп EEST]  PlayerReTagEvent was triggered on Bonet by Zombie with type MOB and reason ATTACKER.
+[квітня 07, 2025 11:53:12.724дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:53:12.726дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:53:12.727дп EEST]  PlayerReTagEvent was triggered on Bonet by Zombie with type MOB and reason ATTACKER.
+[квітня 07, 2025 11:53:13.323дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:53:13.324дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:53:13.325дп EEST]  PlayerReTagEvent was triggered on Bonet by Zombie with type MOB and reason ATTACKER.
+[квітня 07, 2025 11:53:14.772дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:53:14.773дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:53:14.774дп EEST]  PlayerReTagEvent was triggered on Bonet by Zombie with type MOB and reason ATTACKER.
+[квітня 07, 2025 11:53:40.280дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:53:40.283дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:53:40.285дп EEST]  PlayerReTagEvent was triggered on Bonet by Zombie with type MOB and reason ATTACKER.
+[квітня 07, 2025 11:53:40.830дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:53:40.831дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:53:40.832дп EEST]  PlayerReTagEvent was triggered on Bonet by Zombie with type MOB and reason ATTACKER.
+[квітня 07, 2025 11:53:41.382дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:53:41.383дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:53:41.385дп EEST]  PlayerReTagEvent was triggered on Bonet by Zombie with type MOB and reason ATTACKER.
+[квітня 07, 2025 11:53:42.039дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:53:42.041дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:53:42.043дп EEST]  PlayerReTagEvent was triggered on Bonet by Zombie with type MOB and reason ATTACKER.
+[квітня 07, 2025 11:53:43.373дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:53:43.374дп EEST]  PlayerPreTagEvent was triggered on Bonet by Zombie with type MOB, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:53:43.375дп EEST]  PlayerReTagEvent was triggered on Bonet by Zombie with type MOB and reason ATTACKER.
+[квітня 07, 2025 11:54:13.509дп EEST]  PlayerPunishEvent was triggered on Bonet with reason EXPIRE and cancelled true.
+[квітня 07, 2025 11:54:13.511дп EEST]  PlayerUntagEvent was triggered on Bonet with reason EXPIRE and expire set to true.
+[квітня 07, 2025 11:54:16.682дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled true.
+[квітня 07, 2025 11:54:18.093дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:54:18.094дп EEST]  PlayerTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:54:18.097дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:54:18.098дп EEST]  PlayerTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:54:18.102дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:54:19.250дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:54:19.252дп EEST]  PlayerReTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:54:19.253дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:54:19.254дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:54:19.255дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:54:21.577дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:54:21.579дп EEST]  PlayerReTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:54:21.580дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:54:21.580дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:54:21.581дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:54:23.475дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:54:23.478дп EEST]  PlayerReTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:54:23.479дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:54:23.480дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:54:23.481дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:54:24.584дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:54:24.585дп EEST]  PlayerReTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:54:24.586дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:54:24.586дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:54:24.587дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:54:25.774дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:54:25.776дп EEST]  PlayerReTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:54:25.777дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:54:25.777дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:54:25.779дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:54:27.432дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:54:27.433дп EEST]  PlayerReTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:54:27.434дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:54:27.434дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:54:27.434дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:54:51.080дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:54:51.082дп EEST]  PlayerReTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:54:51.083дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:54:51.084дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:54:51.085дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:54:53.433дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:54:53.435дп EEST]  PlayerReTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:54:53.435дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:54:53.436дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:54:53.438дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:54:57.082дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:54:57.083дп EEST]  PlayerReTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:54:57.084дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:54:57.084дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:54:57.085дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:54:59.679дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:54:59.680дп EEST]  PlayerReTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:54:59.681дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:54:59.681дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:54:59.683дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:55:01.633дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:55:01.635дп EEST]  PlayerReTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:55:01.635дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:55:01.636дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:55:01.638дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:55:03.926дп EEST]  PlayerPreTagEvent was triggered on Bonet by Bonet2 with type PLAYER, reason ATTACKER, and cancelled false.
+[квітня 07, 2025 11:55:03.928дп EEST]  PlayerReTagEvent was triggered on Bonet by Bonet2 with type PLAYER and reason ATTACKER.
+[квітня 07, 2025 11:55:03.929дп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Bonet with type PLAYER, reason ATTACKED, and cancelled false.
+[квітня 07, 2025 11:55:03.929дп EEST]  PlayerReTagEvent was triggered on Bonet2 by Bonet with type PLAYER and reason ATTACKED.
+[квітня 07, 2025 11:55:03.934дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled false.
+[квітня 07, 2025 11:55:34.027дп EEST]  PlayerPunishEvent was triggered on Bonet2 with reason EXPIRE and cancelled true.
+[квітня 07, 2025 11:55:34.028дп EEST]  PlayerUntagEvent was triggered on Bonet2 with reason EXPIRE and expire set to true.
+[квітня 07, 2025 11:55:34.031дп EEST]  PlayerPunishEvent was triggered on Bonet with reason EXPIRE and cancelled true.
+[квітня 07, 2025 11:55:34.031дп EEST]  PlayerUntagEvent was triggered on Bonet with reason EXPIRE and expire set to true.
+[квітня 07, 2025 11:56:11.960дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager LLAMA_SPIT Llama Spit and cancelled false.
+[квітня 07, 2025 11:56:13.871дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager LLAMA_SPIT Llama Spit and cancelled false.
+[квітня 07, 2025 11:56:15.818дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager LLAMA_SPIT Llama Spit and cancelled false.
+[квітня 07, 2025 11:56:17.721дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager LLAMA_SPIT Llama Spit and cancelled false.
+[квітня 07, 2025 11:56:18.975дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager LLAMA_SPIT Llama Spit and cancelled false.
+[квітня 07, 2025 11:56:19.719дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager LLAMA_SPIT Llama Spit and cancelled false.
+[квітня 07, 2025 11:56:21.014дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager LLAMA_SPIT Llama Spit and cancelled false.
+[квітня 07, 2025 11:56:21.715дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager LLAMA_SPIT Llama Spit and cancelled false.
+[квітня 07, 2025 11:56:23.021дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager LLAMA_SPIT Llama Spit and cancelled false.
+[квітня 07, 2025 11:56:23.772дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager LLAMA_SPIT Llama Spit and cancelled false.
+[квітня 07, 2025 11:56:25.016дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager LLAMA_SPIT Llama Spit and cancelled false.
+[квітня 07, 2025 11:56:25.774дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager LLAMA_SPIT Llama Spit and cancelled false.
+[квітня 07, 2025 11:56:27.075дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager LLAMA_SPIT Llama Spit and cancelled false.
+[квітня 07, 2025 11:56:27.783дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager LLAMA_SPIT Llama Spit and cancelled false.
+[квітня 07, 2025 11:56:29.069дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager LLAMA_SPIT Llama Spit and cancelled false.
+[квітня 07, 2025 11:56:29.796дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager LLAMA_SPIT Llama Spit and cancelled false.
+[квітня 07, 2025 11:56:31.067дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager LLAMA_SPIT Llama Spit and cancelled false.
+[квітня 07, 2025 11:56:31.816дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager LLAMA_SPIT Llama Spit and cancelled false.
+[квітня 07, 2025 11:56:33.064дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager LLAMA_SPIT Llama Spit and cancelled false.
+[квітня 07, 2025 11:56:33.773дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager LLAMA_SPIT Llama Spit and cancelled false.
+[квітня 07, 2025 11:56:35.065дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager LLAMA_SPIT Llama Spit and cancelled false.
+[квітня 07, 2025 11:56:35.769дп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager LLAMA_SPIT Llama Spit and cancelled false.
+[квітня 07, 2025 11:57:28.095дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled true.
+[квітня 07, 2025 11:58:34.977дп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled true.
+[квітня 07, 2025 12:01:36.572пп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled true.
+[квітня 07, 2025 12:01:36.758пп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Невідомий with type DAMAGE, reason UNKNOWN, and cancelled false.
+[квітня 07, 2025 12:01:36.799пп EEST]  PlayerTagEvent was triggered on Bonet2 by Невідомий with type DAMAGE and reason UNKNOWN.
+[квітня 07, 2025 12:01:37.175пп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Невідомий with type DAMAGE, reason UNKNOWN, and cancelled false.
+[квітня 07, 2025 12:01:37.178пп EEST]  PlayerReTagEvent was triggered on Bonet2 by Невідомий with type DAMAGE and reason UNKNOWN.
+[квітня 07, 2025 12:01:37.764пп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Невідомий with type DAMAGE, reason UNKNOWN, and cancelled false.
+[квітня 07, 2025 12:01:37.766пп EEST]  PlayerReTagEvent was triggered on Bonet2 by Невідомий with type DAMAGE and reason UNKNOWN.
+[квітня 07, 2025 12:01:38.369пп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Невідомий with type DAMAGE, reason UNKNOWN, and cancelled false.
+[квітня 07, 2025 12:01:38.370пп EEST]  PlayerReTagEvent was triggered on Bonet2 by Невідомий with type DAMAGE and reason UNKNOWN.
+[квітня 07, 2025 12:01:38.979пп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Невідомий with type DAMAGE, reason UNKNOWN, and cancelled false.
+[квітня 07, 2025 12:01:38.979пп EEST]  PlayerReTagEvent was triggered on Bonet2 by Невідомий with type DAMAGE and reason UNKNOWN.
+[квітня 07, 2025 12:01:39.568пп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Невідомий with type DAMAGE, reason UNKNOWN, and cancelled false.
+[квітня 07, 2025 12:01:39.569пп EEST]  PlayerReTagEvent was triggered on Bonet2 by Невідомий with type DAMAGE and reason UNKNOWN.
+[квітня 07, 2025 12:01:40.176пп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Невідомий with type DAMAGE, reason UNKNOWN, and cancelled false.
+[квітня 07, 2025 12:01:40.178пп EEST]  PlayerReTagEvent was triggered on Bonet2 by Невідомий with type DAMAGE and reason UNKNOWN.
+[квітня 07, 2025 12:01:40.777пп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Невідомий with type DAMAGE, reason UNKNOWN, and cancelled false.
+[квітня 07, 2025 12:01:40.779пп EEST]  PlayerReTagEvent was triggered on Bonet2 by Невідомий with type DAMAGE and reason UNKNOWN.
+[квітня 07, 2025 12:01:41.377пп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Невідомий with type DAMAGE, reason UNKNOWN, and cancelled false.
+[квітня 07, 2025 12:01:41.378пп EEST]  PlayerReTagEvent was triggered on Bonet2 by Невідомий with type DAMAGE and reason UNKNOWN.
+[квітня 07, 2025 12:01:41.967пп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Невідомий with type DAMAGE, reason UNKNOWN, and cancelled false.
+[квітня 07, 2025 12:01:41.969пп EEST]  PlayerReTagEvent was triggered on Bonet2 by Невідомий with type DAMAGE and reason UNKNOWN.
+[квітня 07, 2025 12:01:42.568пп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Невідомий with type DAMAGE, reason UNKNOWN, and cancelled false.
+[квітня 07, 2025 12:01:42.569пп EEST]  PlayerReTagEvent was triggered on Bonet2 by Невідомий with type DAMAGE and reason UNKNOWN.
+[квітня 07, 2025 12:01:43.174пп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Невідомий with type DAMAGE, reason UNKNOWN, and cancelled false.
+[квітня 07, 2025 12:01:43.175пп EEST]  PlayerReTagEvent was triggered on Bonet2 by Невідомий with type DAMAGE and reason UNKNOWN.
+[квітня 07, 2025 12:01:43.774пп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Невідомий with type DAMAGE, reason UNKNOWN, and cancelled false.
+[квітня 07, 2025 12:01:43.775пп EEST]  PlayerReTagEvent was triggered on Bonet2 by Невідомий with type DAMAGE and reason UNKNOWN.
+[квітня 07, 2025 12:01:44.362пп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Невідомий with type DAMAGE, reason UNKNOWN, and cancelled false.
+[квітня 07, 2025 12:01:44.363пп EEST]  PlayerReTagEvent was triggered on Bonet2 by Невідомий with type DAMAGE and reason UNKNOWN.
+[квітня 07, 2025 12:01:44.969пп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Невідомий with type DAMAGE, reason UNKNOWN, and cancelled false.
+[квітня 07, 2025 12:01:44.971пп EEST]  PlayerReTagEvent was triggered on Bonet2 by Невідомий with type DAMAGE and reason UNKNOWN.
+[квітня 07, 2025 12:01:45.572пп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Невідомий with type DAMAGE, reason UNKNOWN, and cancelled false.
+[квітня 07, 2025 12:01:45.572пп EEST]  PlayerReTagEvent was triggered on Bonet2 by Невідомий with type DAMAGE and reason UNKNOWN.
+[квітня 07, 2025 12:01:46.161пп EEST]  PlayerPreTagEvent was triggered on Bonet2 by Невідомий with type DAMAGE, reason UNKNOWN, and cancelled false.
+[квітня 07, 2025 12:01:46.162пп EEST]  PlayerReTagEvent was triggered on Bonet2 by Невідомий with type DAMAGE and reason UNKNOWN.
+[квітня 07, 2025 12:02:16.566пп EEST]  PlayerPunishEvent was triggered on Bonet2 with reason EXPIRE and cancelled true.
+[квітня 07, 2025 12:02:16.571пп EEST]  PlayerUntagEvent was triggered on Bonet2 with reason EXPIRE and expire set to true.
+[квітня 07, 2025 12:03:54.491пп EEST]  EntityDamageByEntityEvent was triggered by damaged PLAYER Bonet2, damager PLAYER Bonet and cancelled true.
+[квітня 07, 2025 12:12:03.234пп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager LLAMA_SPIT Llama Spit and cancelled false.
+[квітня 07, 2025 12:12:03.970пп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager LLAMA_SPIT Llama Spit and cancelled false.
+[квітня 07, 2025 12:12:05.161пп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager LLAMA_SPIT Llama Spit and cancelled false.
+[квітня 07, 2025 12:12:05.975пп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager LLAMA_SPIT Llama Spit and cancelled false.
+[квітня 07, 2025 12:12:07.167пп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager LLAMA_SPIT Llama Spit and cancelled false.
+[квітня 07, 2025 12:12:09.163пп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager LLAMA_SPIT Llama Spit and cancelled false.
+[квітня 07, 2025 12:12:09.969пп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager LLAMA_SPIT Llama Spit and cancelled false.
+[квітня 07, 2025 12:12:13.020пп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager LLAMA_SPIT Llama Spit and cancelled false.
+[квітня 07, 2025 12:12:14.975пп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager LLAMA_SPIT Llama Spit and cancelled false.
+[квітня 07, 2025 12:12:15.866пп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager LLAMA_SPIT Llama Spit and cancelled false.
+[квітня 07, 2025 12:12:17.028пп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager LLAMA_SPIT Llama Spit and cancelled false.
+[квітня 07, 2025 12:12:17.867пп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager LLAMA_SPIT Llama Spit and cancelled false.
+[квітня 07, 2025 12:12:19.062пп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager LLAMA_SPIT Llama Spit and cancelled false.
+[квітня 07, 2025 12:12:21.759пп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager LLAMA_SPIT Llama Spit and cancelled false.
+[квітня 07, 2025 12:12:22.972пп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager LLAMA_SPIT Llama Spit and cancelled false.
+[квітня 07, 2025 12:12:23.816пп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager LLAMA_SPIT Llama Spit and cancelled false.
+[квітня 07, 2025 12:12:25.017пп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager LLAMA_SPIT Llama Spit and cancelled false.
+[квітня 07, 2025 12:12:26.979пп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager LLAMA_SPIT Llama Spit and cancelled false.
+[квітня 07, 2025 12:12:27.874пп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager LLAMA_SPIT Llama Spit and cancelled false.
+[квітня 07, 2025 12:12:29.023пп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager LLAMA_SPIT Llama Spit and cancelled false.
+[квітня 07, 2025 12:12:29.865пп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager LLAMA_SPIT Llama Spit and cancelled false.
+[квітня 07, 2025 12:12:31.011пп EEST]  EntityDamageByEntityEvent was triggered by damaged ZOMBIE Zombie, damager LLAMA_SPIT Llama Spit and cancelled false.

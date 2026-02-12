@@ -1,0 +1,296 @@
+# Экономическая система - Покупка и продажа блоков
+# Версия: 2.5 - Final Fixed
+# ЛКМ - ПРОДАТЬ | ПКМ - КУПИТЬ
+
+
+# === ЦЕНЫ НА БЛОКИ (можно изменять) ===
+on load:
+    # Обычные блоки (цена продажи | цена покупки)
+    set {sell::stone} to 1
+    set {buy::stone} to 2
+    
+    set {sell::cobblestone} to 0.5
+    set {buy::cobblestone} to 1
+    
+    set {sell::dirt} to 0.3
+    set {buy::dirt} to 0.6
+    
+    set {sell::oak log} to 2
+    set {buy::oak log} to 4
+    
+    set {sell::spruce log} to 2
+    set {buy::spruce log} to 4
+    
+    set {sell::birch log} to 2
+    set {buy::birch log} to 4
+    
+    # Руды
+    set {sell::coal} to 5
+    set {buy::coal} to 10
+    
+    set {sell::raw iron} to 10
+    set {buy::raw iron} to 20
+    
+    set {sell::raw gold} to 15
+    set {buy::raw gold} to 30
+    
+    set {sell::diamond} to 50
+    set {buy::diamond} to 100
+    
+    set {sell::emerald} to 40
+    set {buy::emerald} to 80
+    
+    # Прочее
+    set {sell::wheat} to 2
+    set {buy::wheat} to 4
+    
+    set {sell::carrot} to 1.5
+    set {buy::carrot} to 3
+    
+    set {sell::potato} to 1.5
+    set {buy::potato} to 3
+    
+    set {sell::apple} to 3
+    set {buy::apple} to 6
+
+
+# === GUI МЕНЮ МАГАЗИНА ===
+command /shop:
+    aliases: /магазин
+    trigger:
+        open_main_shop_menu(player)
+
+function open_main_shop_menu(p: player):
+    open chest inventory with 3 rows named "&c⚡ МАГАЗИН" to {_p}
+    
+    # Категория: Блоки
+    set {_blocks} to stone named "&c🧱 Обычные блоки" with lore "&7Нажмите для открытия", "", "&8• &7Камень", "&8• &7Булыжник", "&8• &7Земля", "&8• &7Бревна", "" and "&8ЛКМ &7- открыть категорию"
+    set slot 11 of {_p}'s current inventory to {_blocks}
+    
+    # Категория: Руды
+    set {_ores} to diamond named "&c💎 Руды и металлы" with lore "&7Нажмите для открытия", "", "&8• &7Уголь", "&8• &7Сырое железо", "&8• &7Сырое золото", "&8• &7Алмазы", "&8• &7Изумруды", "" and "&8ЛКМ &7- открыть категорию"
+    set slot 13 of {_p}'s current inventory to {_ores}
+    
+    # Категория: Ресурсы
+    set {_resources} to wheat named "&c🌾 Сельское хозяйство" with lore "&7Нажмите для открытия", "", "&8• &7Пшеница", "&8• &7Морковь", "&8• &7Картофель", "&8• &7Яблоки", "" and "&8ЛКМ &7- открыть категорию"
+    set slot 15 of {_p}'s current inventory to {_resources}
+    
+    # Информация (баланс через Vault)
+    set {_money} to balance of {_p}
+    set {_balance} to head from value "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzRjY2I1Mjc1MGU5N2U4MzBhZWJmYThhMjFkNWRhMGQzNjRkMGZkYWQ5ZmIwY2MyMjBmZTJjYTg0MTE4NDJjMyJ9fX0="
+    set name of {_balance} to "&c💰 Баланс"
+    set line 1 of lore of {_balance} to "&8❖ &7Ваш баланс:"
+    set line 2 of lore of {_balance} to "&8⤷ &f%{_money}% &7монет"
+    set slot 4 of {_p}'s current inventory to {_balance}
+    
+    # Закрыть
+    set {_close} to head from value "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTBlMGE0ZDQ4Y2Q4MjlhNmQ1ODY4OTA5ZDY0M2ZhNGFmZmQzOWU4YWU2Y2FhZjZlYzc5NjA5Y2Y3NjQ5YjFjIn19fQ=="
+    set name of {_close} to "&c❌ Закрыть"
+    set line 1 of lore of {_close} to "&8❖ &7Закрыть меню"
+    set slot 26 of {_p}'s current inventory to {_close}
+
+function open_blocks_menu(p: player):
+    open chest inventory with 4 rows named "&c🧱 БЛОКИ" to {_p}
+    
+    # Камень
+    set {_amount} to amount of stone in {_p}'s inventory
+    set slot 10 of {_p}'s current inventory to stone named "&7Камень" with lore "", "&8Продажа: &c%{sell::stone}% &7монет", "&8Покупка: &c%{buy::stone}% &7монет", "", "&8У вас: &7%{_amount}%шт", "", "&8ЛКМ &7- продать 1шт", "&8ПКМ &7- купить 1шт" and "&8Shift+ЛКМ &7- продать все"
+    
+    # Булыжник
+    set {_amount} to amount of cobblestone in {_p}'s inventory
+    set slot 11 of {_p}'s current inventory to cobblestone named "&7Булыжник" with lore "", "&8Продажа: &c%{sell::cobblestone}% &7монет", "&8Покупка: &c%{buy::cobblestone}% &7монет", "", "&8У вас: &7%{_amount}%шт", "", "&8ЛКМ &7- продать 1шт", "&8ПКМ &7- купить 1шт" and "&8Shift+ЛКМ &7- продать все"
+    
+    # Земля
+    set {_amount} to amount of dirt in {_p}'s inventory
+    set slot 12 of {_p}'s current inventory to dirt named "&7Земля" with lore "", "&8Продажа: &c%{sell::dirt}% &7монет", "&8Покупка: &c%{buy::dirt}% &7монет", "", "&8У вас: &7%{_amount}%шт", "", "&8ЛКМ &7- продать 1шт", "&8ПКМ &7- купить 1шт" and "&8Shift+ЛКМ &7- продать все"
+    
+    # Дубовое бревно
+    set {_amount} to amount of oak log in {_p}'s inventory
+    set slot 13 of {_p}'s current inventory to oak log named "&7Дубовое бревно" with lore "", "&8Продажа: &c%{sell::oak log}% &7монет", "&8Покупка: &c%{buy::oak log}% &7монет", "", "&8У вас: &7%{_amount}%шт", "", "&8ЛКМ &7- продать 1шт", "&8ПКМ &7- купить 1шт" and "&8Shift+ЛКМ &7- продать все"
+    
+    # Еловое бревно
+    set {_amount} to amount of spruce log in {_p}'s inventory
+    set slot 14 of {_p}'s current inventory to spruce log named "&7Еловое бревно" with lore "", "&8Продажа: &c%{sell::spruce log}% &7монет", "&8Покупка: &c%{buy::spruce log}% &7монет", "", "&8У вас: &7%{_amount}%шт", "", "&8ЛКМ &7- продать 1шт", "&8ПКМ &7- купить 1шт" and "&8Shift+ЛКМ &7- продать все"
+    
+    # Березовое бревно
+    set {_amount} to amount of birch log in {_p}'s inventory
+    set slot 15 of {_p}'s current inventory to birch log named "&7Березовое бревно" with lore "", "&8Продажа: &c%{sell::birch log}% &7монет", "&8Покупка: &c%{buy::birch log}% &7монет", "", "&8У вас: &7%{_amount}%шт", "", "&8ЛКМ &7- продать 1шт", "&8ПКМ &7- купить 1шт" and "&8Shift+ЛКМ &7- продать все"
+    
+    # Назад
+    set {_close} to head from value "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTBlMGE0ZDQ4Y2Q4MjlhNmQ1ODY4OTA5ZDY0M2ZhNGFmZmQzOWU4YWU2Y2FhZjZlYzc5NjA5Y2Y3NjQ5YjFjIn19fQ=="
+    set name of {_close} to "&c❌ Закрыть"
+    set line 1 of lore of {_close} to "&8❖ &7Вернуться в главное меню"
+    set slot 31 of {_p}'s current inventory to {_close}
+
+function open_ores_menu(p: player):
+    open chest inventory with 4 rows named "&c💎 РУДЫ" to {_p}
+    
+    # Уголь
+    set {_amount} to amount of coal in {_p}'s inventory
+    set slot 10 of {_p}'s current inventory to coal named "&7Уголь" with lore "", "&8Продажа: &c%{sell::coal}% &7монет", "&8Покупка: &c%{buy::coal}% &7монет", "", "&8У вас: &7%{_amount}%шт", "", "&8ЛКМ &7- продать 1шт", "&8ПКМ &7- купить 1шт" and "&8Shift+ЛКМ &7- продать все"
+    
+    # Сырое железо
+    set {_amount} to amount of raw iron in {_p}'s inventory
+    set slot 11 of {_p}'s current inventory to raw iron named "&7Сырое железо" with lore "", "&8Продажа: &c%{sell::raw iron}% &7монет", "&8Покупка: &c%{buy::raw iron}% &7монет", "", "&8У вас: &7%{_amount}%шт", "", "&8ЛКМ &7- продать 1шт", "&8ПКМ &7- купить 1шт" and "&8Shift+ЛКМ &7- продать все"
+    
+    # Сырое золото
+    set {_amount} to amount of raw gold in {_p}'s inventory
+    set slot 12 of {_p}'s current inventory to raw gold named "&7Сырое золото" with lore "", "&8Продажа: &c%{sell::raw gold}% &7монет", "&8Покупка: &c%{buy::raw gold}% &7монет", "", "&8У вас: &7%{_amount}%шт", "", "&8ЛКМ &7- продать 1шт", "&8ПКМ &7- купить 1шт" and "&8Shift+ЛКМ &7- продать все"
+    
+    # Алмаз
+    set {_amount} to amount of diamond in {_p}'s inventory
+    set slot 13 of {_p}'s current inventory to diamond named "&7Алмаз" with lore "", "&8Продажа: &c%{sell::diamond}% &7монет", "&8Покупка: &c%{buy::diamond}% &7монет", "", "&8У вас: &7%{_amount}%шт", "", "&8ЛКМ &7- продать 1шт", "&8ПКМ &7- купить 1шт" and "&8Shift+ЛКМ &7- продать все"
+    
+    # Изумруд
+    set {_amount} to amount of emerald in {_p}'s inventory
+    set slot 14 of {_p}'s current inventory to emerald named "&7Изумруд" with lore "", "&8Продажа: &c%{sell::emerald}% &7монет", "&8Покупка: &c%{buy::emerald}% &7монет", "", "&8У вас: &7%{_amount}%шт", "", "&8ЛКМ &7- продать 1шт", "&8ПКМ &7- купить 1шт" and "&8Shift+ЛКМ &7- продать все"
+    
+    # Назад
+    set {_close} to head from value "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTBlMGE0ZDQ4Y2Q4MjlhNmQ1ODY4OTA5ZDY0M2ZhNGFmZmQzOWU4YWU2Y2FhZjZlYzc5NjA5Y2Y3NjQ5YjFjIn19fQ=="
+    set name of {_close} to "&c❌ Закрыть"
+    set line 1 of lore of {_close} to "&8❖ &7Вернуться в главное меню"
+    set slot 31 of {_p}'s current inventory to {_close}
+
+function open_farming_menu(p: player):
+    open chest inventory with 4 rows named "&c🌾 РЕСУРСЫ" to {_p}
+    
+    # Пшеница
+    set {_amount} to amount of wheat in {_p}'s inventory
+    set slot 11 of {_p}'s current inventory to wheat named "&7Пшеница" with lore "", "&8Продажа: &c%{sell::wheat}% &7монет", "&8Покупка: &c%{buy::wheat}% &7монет", "", "&8У вас: &7%{_amount}%шт", "", "&8ЛКМ &7- продать 1шт", "&8ПКМ &7- купить 1шт" and "&8Shift+ЛКМ &7- продать все"
+    
+    # Морковь
+    set {_amount} to amount of carrot in {_p}'s inventory
+    set slot 12 of {_p}'s current inventory to carrot named "&7Морковь" with lore "", "&8Продажа: &c%{sell::carrot}% &7монет", "&8Покупка: &c%{buy::carrot}% &7монет", "", "&8У вас: &7%{_amount}%шт", "", "&8ЛКМ &7- продать 1шт", "&8ПКМ &7- купить 1шт" and "&8Shift+ЛКМ &7- продать все"
+    
+    # Картофель
+    set {_amount} to amount of potato in {_p}'s inventory
+    set slot 13 of {_p}'s current inventory to potato named "&7Картофель" with lore "", "&8Продажа: &c%{sell::potato}% &7монет", "&8Покупка: &c%{buy::potato}% &7монет", "", "&8У вас: &7%{_amount}%шт", "", "&8ЛКМ &7- продать 1шт", "&8ПКМ &7- купить 1шт" and "&8Shift+ЛКМ &7- продать все"
+    
+    # Яблоко
+    set {_amount} to amount of apple in {_p}'s inventory
+    set slot 14 of {_p}'s current inventory to apple named "&7Яблоко" with lore "", "&8Продажа: &c%{sell::apple}% &7монет", "&8Покупка: &c%{buy::apple}% &7монет", "", "&8У вас: &7%{_amount}%шт", "", "&8ЛКМ &7- продать 1шт", "&8ПКМ &7- купить 1шт" and "&8Shift+ЛКМ &7- продать все"
+    
+    # Назад
+    set {_close} to head from value "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTBlMGE0ZDQ4Y2Q4MjlhNmQ1ODY4OTA5ZDY0M2ZhNGFmZmQzOWU4YWU2Y2FhZjZlYzc5NjA5Y2Y3NjQ5YjFjIn19fQ=="
+    set name of {_close} to "&c❌ Закрыть"
+    set line 1 of lore of {_close} to "&8❖ &7Вернуться в главное меню"
+    set slot 31 of {_p}'s current inventory to {_close}
+
+# === ОБРАБОТКА КЛИКОВ В GUI ===
+on inventory click:
+    if name of player's current inventory contains "&c":
+        cancel event
+        
+        # Главное меню
+        if name of player's current inventory is "&c⚡ МАГАЗИН":
+            if index of event-slot is 11:
+                open_blocks_menu(player)
+            else if index of event-slot is 13:
+                open_ores_menu(player)
+            else if index of event-slot is 15:
+                open_farming_menu(player)
+            else if index of event-slot is 26:
+                close player's inventory
+        
+        # Меню блоков
+        else if name of player's current inventory is "&c🧱 БЛОКИ":
+            if index of event-slot is 31:
+                open_main_shop_menu(player)
+            else if index of event-slot is 10:
+                handle_trade(player, stone, click type)
+            else if index of event-slot is 11:
+                handle_trade(player, cobblestone, click type)
+            else if index of event-slot is 12:
+                handle_trade(player, dirt, click type)
+            else if index of event-slot is 13:
+                handle_trade(player, oak log, click type)
+            else if index of event-slot is 14:
+                handle_trade(player, spruce log, click type)
+            else if index of event-slot is 15:
+                handle_trade(player, birch log, click type)
+        
+        # Меню руд
+        else if name of player's current inventory is "&c💎 РУДЫ":
+            if index of event-slot is 31:
+                open_main_shop_menu(player)
+            else if index of event-slot is 10:
+                handle_trade(player, coal, click type)
+            else if index of event-slot is 11:
+                handle_trade(player, raw iron, click type)
+            else if index of event-slot is 12:
+                handle_trade(player, raw gold, click type)
+            else if index of event-slot is 13:
+                handle_trade(player, diamond, click type)
+            else if index of event-slot is 14:
+                handle_trade(player, emerald, click type)
+        
+        # Меню фермы
+        else if name of player's current inventory is "&c🌾 РЕСУРСЫ":
+            if index of event-slot is 31:
+                open_main_shop_menu(player)
+            else if index of event-slot is 11:
+                handle_trade(player, wheat, click type)
+            else if index of event-slot is 12:
+                handle_trade(player, carrot, click type)
+            else if index of event-slot is 13:
+                handle_trade(player, potato, click type)
+            else if index of event-slot is 14:
+                handle_trade(player, apple, click type)
+
+# === ФУНКЦИЯ ОБРАБОТКИ ПОКУПКИ/ПРОДАЖИ ===
+function handle_trade(p: player, item: item type, click: click type):
+    # Конвертируем item type в строку для использования в ключе
+    set {_itemname} to "%{_item}%"
+    
+    # ЛКМ - ПРОДАТЬ 1шт
+    if {_click} is left mouse button:
+        set {_amount} to amount of {_item} in {_p}'s inventory
+        
+        if {_amount} is 0:
+            send "&cУ вас нет этого предмета!" to {_p}
+            play sound "entity.villager.no" to {_p}
+            stop
+        
+        set {_price} to {sell::%{_itemname}%}
+        
+        remove 1 of {_item} from {_p}'s inventory
+        add {_price} to balance of {_p}
+        
+        set {_newbalance} to balance of {_p}
+        send "&7Вы продали &c1x %{_item}% &7за &c%{_price}% &7монет" to {_p}
+        send "&7Баланс: &c%{_newbalance}% &7монет" to {_p}
+        play sound "entity.experience_orb.pickup" to {_p}
+        
+        wait 3 ticks
+        refresh_current_menu({_p})
+    
+    # ПКМ - КУПИТЬ 1шт
+    if {_click} is right mouse button:
+        set {_price} to {buy::%{_itemname}%}
+        set {_balance} to balance of {_p}
+        
+        if {_balance} < {_price}:
+            send "&cУ вас недостаточно денег!" to {_p}
+            send "&7Нужно: &c%{_price}% &7монет | У вас: &c%{_balance}% &7монет" to {_p}
+            play sound "entity.villager.no" to {_p}
+            stop
+        
+        give 1 of {_item} to {_p}
+        remove {_price} from balance of {_p}
+        
+        set {_newbalance} to balance of {_p}
+        send "&7Вы купили &c1x %{_item}% &7за &c%{_price}% &7монет" to {_p}
+        send "&7Баланс: &c%{_newbalance}% &7монет" to {_p}
+        play sound "entity.experience_orb.pickup" to {_p}
+        
+        wait 3 ticks
+        refresh_current_menu({_p})
+
+# === ОБНОВЛЕНИЕ ТЕКУЩЕГО МЕНЮ ===
+function refresh_current_menu(p: player):
+    if name of {_p}'s current inventory is "&c🧱 БЛОКИ":
+        open_blocks_menu({_p})
+    else if name of {_p}'s current inventory is "&c💎 РУДЫ":
+        open_ores_menu({_p})
+    else if name of {_p}'s current inventory is "&c🌾 РЕСУРСЫ":
+        open_farming_menu({_p})

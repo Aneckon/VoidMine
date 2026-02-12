@@ -1,0 +1,23 @@
+on break:
+	set {_world} to "%world of player%"
+	if {_world} contains "ba-dynamic":
+		set {_x} to x-coordinate of block
+		set {_z} to z-coordinate of block
+		if {_x} >= -2:
+			if {_x} <= 2:
+				if {_z} >= -2:
+					if {_z} <= 2:
+						cancel event
+						send "&cТут нельзя ломать блоки!" to player
+
+on place:
+	set {_world} to "%world of player%"
+	if {_world} contains "ba-dynamic":
+		set {_x} to x-coordinate of block
+		set {_z} to z-coordinate of block
+		if {_x} >= -2:
+			if {_x} <= 2:
+				if {_z} >= -2:
+					if {_z} <= 2:
+						cancel event
+						send "&cТут нельзя ставить блоки!" to player

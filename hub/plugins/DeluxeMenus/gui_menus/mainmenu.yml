@@ -1,0 +1,325 @@
+menu_title: '§cРежимы'
+size: 27
+open_command:
+  - mainmenu
+update_interval: 1
+items:
+  deco_0:
+    material: BLACK_STAINED_GLASS_PANE
+    slot: 0
+    display_name: ' '
+  deco_1:
+    material: BLACK_STAINED_GLASS_PANE
+    slot: 13
+    display_name: ' '
+  deco_2:
+    material: BLACK_STAINED_GLASS_PANE
+    slot: 18
+    display_name: ' '
+  deco_3:
+    material: BLACK_STAINED_GLASS_PANE
+    slot: 8
+    display_name: ' '
+  deco_4:
+    material: BLACK_STAINED_GLASS_PANE
+    slot: 9
+    display_name: ' '
+  deco_5:
+    material: BLACK_STAINED_GLASS_PANE
+    slot: 22
+    display_name: ' '
+  deco_6:
+    material: BLACK_STAINED_GLASS_PANE
+    slot: 26
+    display_name: ' '
+  deco_7:
+    material: BLACK_STAINED_GLASS_PANE
+    slot: 4
+    display_name: ' '
+  deco_8:
+    material: BLACK_STAINED_GLASS_PANE
+    slot: 17
+    display_name: ' '
+
+  anarchy_online:
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTkzMDkzZDI4ZDFhN2VkMWQ3Zjk3YmExMzhlZjZhMWI3MmE4MzlkYjA2ZDhhYTc5OTE4MWNiZWEwZDQ5YTBhNSJ9fX0=
+    slot: 15
+    priority: 0
+    display_name: '§4Выживание'
+    lore:
+      - '§8❖ §7Свобода с риском'
+      - '§8⤷ §7Онлайн: §a%bungee_online_anarchy%'
+      - ' '
+      - '§c✔ PvP §7| §c✔ Гриферство'
+      - ' '
+      - '§7Статус: §aОнлайн'
+      - ' '
+      - '§8▶ §7Нажми, чтобы войти'
+    view_requirement:
+      requirements:
+        is_online:
+          type: string equals
+          input: '%pinger_isonline_127.0.0.1:25569%'
+          output: '&aOnline'
+        maintenance:
+          type: string equals
+          input: '%maintenance_server_survival%'
+          output: 'disabled'
+    left_click_commands:
+      - '[sound] BLOCK_NOTE_BLOCK_PLING'
+      - '[connect] survival'
+      - '[close]'
+
+  anarchy_offline:
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTkzMDkzZDI4ZDFhN2VkMWQ3Zjk3YmExMzhlZjZhMWI3MmE4MzlkYjA2ZDhhYTc5OTE4MWNiZWEwZDQ5YTBhNSJ9fX0=
+    slot: 15
+    priority: 1
+    display_name: '§7Выживание §8(Офлайн)'
+    lore:
+      - '§8❖ §7Свобода с риском'
+      - ' '
+      - '§c✔ PvP §7| §c✔ Гриферство'
+      - ' '
+      - '§7Статус: §cОфлайн'
+      - ' '
+      - '§8⛔ §cЭтот режим временно недоступен'
+    view_requirement:
+      requirements:
+        is_offline:
+          type: string equals
+          input: '%pinger_isonline_127.0.0.1:25569%'
+          output: '&cOffline'
+    left_click_commands:
+      - '[sound] BLOCK_ANVIL_LAND'
+      - '[message] §8§l┃ §fВыживание §8§l┃ §c⛔ Этот режим временно недоступен!'
+      - '[close]'
+
+  anarchy_maintenance:
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTkzMDkzZDI4ZDFhN2VkMWQ3Zjk3YmExMzhlZjZhMWI3MmE4MzlkYjA2ZDhhYTc5OTE4MWNiZWEwZDQ5YTBhNSJ9fX0=
+    slot: 15
+    priority: 3
+    display_name: '§eВыживание §8(Тех. работа)'
+    lore:
+      - '§8❖ §7Свобода с риском'
+      - '§8⤷ §7Онлайн: §a%bungee_online_survival%'
+      - ' '
+      - '§c✔ PvP §7| §c✔ Гриферство'
+      - ' '
+      - '§7Статус: §eНа техническом обслуживании'
+      - ' '
+      - '§8⛔ §6Сервер в режиме обслуживания'
+    view_requirement:
+      requirements:
+        is_online:
+          type: string equals
+          input: '%pinger_isonline_127.0.0.1:25569%'
+          output: '&aOnline'
+        maintenance:
+          type: string equals
+          input: '%maintenance_server_survival%'
+          output: 'enabled'
+    left_click_commands:
+      - '[sound] BLOCK_ANVIL_LAND'
+      - '[message] §8§l┃ §Выживание §8§l┃ §e⛔ Сервер в режиме техобслуживания!'
+      - '[close]'
+
+  pvp_online:
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDFjODc0NTRmMWVlNTg1YjkwZmRiM2EzZTQwOTUyYTVjMmY4MGMwYTQ5ZGZlYzYyODcwZmRmZjE4Mzk2N2E4NCJ9fX0=
+    slot: 11
+    priority: 0
+    display_name: '§4ПВП'
+    lore:
+      - '§8❖ §7Свобода с риском'
+      - '§8⤷ §7Онлайн: §a%bungee_pvp%'
+      - ' '
+      - '§c✔ PvP'
+      - ' '
+      - '§7Статус: §aОнлайн'
+      - ' '
+      - '§8▶ §7Нажми, чтобы войти'
+    view_requirement:
+      requirements:
+        is_online:
+          type: string equals
+          input: '%pinger_isonline_127.0.0.1:25568%'
+          output: '&aOnline'
+        # maintenance:
+        #   type: string equals
+        #   input: '%maintenance_server_pvp%'
+        #   output: 'disabled'
+    left_click_commands:
+      - '[sound] BLOCK_NOTE_BLOCK_PLING'
+      - '[connect] pvp'
+      - '[close]'
+  
+  pvp_offline:
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDFjODc0NTRmMWVlNTg1YjkwZmRiM2EzZTQwOTUyYTVjMmY4MGMwYTQ5ZGZlYzYyODcwZmRmZjE4Mzk2N2E4NCJ9fX0=
+    slot: 11
+    priority: 1
+    display_name: '§7ПВП §8(Офлайн)'
+    lore:
+      - '§8❖ §7Свобода с риском'
+      - ' '
+      - '§c✔ PvP'
+      - ' '
+      - '§7Статус: §cОфлайн'
+      - ' '
+      - '§8⛔ §cЭтот режим временно недоступен'
+    view_requirement:
+      requirements:
+        is_offline:
+          type: string equals
+          input: '%pinger_isonline_127.0.0.1:25568%'
+          output: '&cOffline'
+    left_click_commands:
+      - '[sound] BLOCK_ANVIL_LAND'
+      - '[message] §8§l┃ §fПВП §8§l┃ §c⛔ Этот режим временно недоступен!'
+      - '[close]'
+
+
+  # pvp_maintenance:
+  #   material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDFjODc0NTRmMWVlNTg1YjkwZmRiM2EzZTQwOTUyYTVjMmY4MGMwYTQ5ZGZlYzYyODcwZmRmZjE4Mzk2N2E4NCJ9fX0=
+  #   slot: 11
+  #   priority: 2
+  #   display_name: '§e ПВП §8(Тех. работа)'
+  #   lore:
+  #     - '§8❖ §7Свобода с риском'
+  #     - '§8⤷ §7Онлайн: §a%bungee_online_pvp%'
+  #     - ' '
+  #     - '§c✔ PvP'
+  #     - ' '
+  #     - '§7Статус: §eНа техническом обслуживании'
+  #     - ' '
+  #     - '§8⛔ §6Сервер в режиме обслуживания'
+  #   view_requirement:
+  #     requirements:
+  #       is_online:
+  #         type: string equals
+  #         input: '%pinger_isonline_127.0.0.1:25568%'
+  #         output: '&aOnline'
+  #       maintenance:
+  #         type: string equals
+  #         input: '%maintenance_server_pvp%'
+  #         output: 'enabled'
+  #   left_click_commands:
+  #     - '[sound] BLOCK_ANVIL_LAND'
+  #     - '[message] §8§l┃ §fПВП §8§l┃ §e⛔ Сервер в режиме техобслуживания!'
+  #     - '[close]'
+
+  # anarchy_maintenance_admin: 
+  #   material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTkzMDkzZDI4ZDFhN2VkMWQ3Zjk3YmExMzhlZjZhMWI3MmE4MzlkYjA2ZDhhYTc5OTE4MWNiZWEwZDQ5YTBhNSJ9fX0=
+  #   slot: 11
+  #   priority: 2
+  #   display_name: '§eАнархия §8(Тех. работа)'
+  #   lore:
+  #     - '§8❖ §7Свобода с риском'
+  #     - '§8⤷ §7Онлайн: §a%bungee_online_survival%'
+  #     - ' '
+  #     - '§c✔ PvP §7| §c✔ Гриферство'
+  #     - ' '
+  #     - '§7Статус: §eНа техническом обслуживании'
+  #     - ' '
+  #     - '§8⛔ §6Сервер в режиме обслуживания'
+  #   view_requirement:
+  #     requirements:
+  #       is_online:
+  #         type: string equals
+  #         input: '%pinger_isonline_127.0.0.1:25567%'
+  #         output: '&aOnline'
+  #       maintenance:
+  #         type: string equals
+  #         input: '%maintenance_server_survival%'
+  #         output: 'enabled'
+  #       permission:
+  #         type: has permission
+  #         permission: deluxemenus.admin
+  #   left_click_commands:
+  #     - '[sound] BLOCK_NOTE_BLOCK_PLING'
+  #     - '[connect] survival'
+  #     - '[close]'
+
+  # test_anarchy_online:
+  #   material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDFjODc0NTRmMWVlNTg1YjkwZmRiM2EzZTQwOTUyYTVjMmY4MGMwYTQ5ZGZlYzYyODcwZmRmZjE4Mzk2N2E4NCJ9fX0=
+  #   slot: 15
+  #   priority: 0
+  #   display_name: '§e🔒 Тестовая анархия'
+  #   lore:
+  #     - '§8❖ §7Технический режим'
+  #     - '§8⤷ §7Онлайн: §a%bungee_online_anarchy4%'
+  #     - ' '
+  #     - '§7Статус: §a%pinger_online_127.0.0.1:25568%'
+  #     - ' '
+  #     - '§c⛔ Закрыто для игроков'
+  #   view_requirement:
+  #     requirements:
+  #       is_online:
+  #         type: string equals
+  #         input: '%pinger_isonline_127.0.0.1:25568%'
+  #         output: '&aOnline'
+  #       maintenance:
+  #         type: string equals
+  #         input: '%maintenance_server_anarchy4%'
+  #         output: 'enabled'
+  #       permission:
+  #         type: has permission
+  #         permission: deluxemenus.admin
+  #   left_click_commands:
+  #     - '[sound] BLOCK_ANVIL_LAND'
+  #     - '[message] §8§l┃ §fТестовый режим §8§l┃ §c⛔ Только для администрации!'
+  #     - '[close]'
+  
+  # test_anarchy_admin:
+  #   material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDFjODc0NTRmMWVlNTg1YjkwZmRiM2EzZTQwOTUyYTVjMmY4MGMwYTQ5ZGZlYzYyODcwZmRmZjE4Mzk2N2E4NCJ9fX0=
+  #   slot: 15
+  #   priority: 1
+  #   display_name: '§e🔒 Тестовая анархия'
+  #   lore:
+  #     - '§8❖ §7Технический режим'
+  #     - '§8⤷ §7Онлайн: §a%bungee_online_anarchy4%'
+  #     - ' '
+  #     - '§7Статус: §a%pinger_online_127.0.0.1:25568%'
+  #     - ' '
+  #     - '§c⛔ Закрыто для игроков'
+  #   view_requirement:
+  #     requirements:
+  #       is_online:
+  #         type: string equals
+  #         input: '%pinger_isonline_127.0.0.1:25568%'
+  #         output: '&aOnline'
+  #       maintenance:
+  #         type: string equals
+  #         input: '%maintenance_server_anarchy4%'
+  #         output: 'enabled'
+  #       permission:
+  #         type: has permission
+  #         permission: deluxemenus.admin
+  #   left_click_commands:
+  #     - '[sound] BLOCK_NOTE_BLOCK_PLING'
+  #     - '[connect] anarchy4'
+  #     - '[close]'
+
+  # test_anarchy_offline:
+  #   material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDFjODc0NTRmMWVlNTg1YjkwZmRiM2EzZTQwOTUyYTVjMmY4MGMwYTQ5ZGZlYzYyODcwZmRmZjE4Mzk2N2E4NCJ9fX0=
+  #   slot: 15
+  #   priority: 2
+  #   display_name: '§e🔒 Тестовая анархия'
+  #   lore:
+  #     - '§8❖ §7Технический режим'
+  #     - ' '
+  #     - '§7Статус: §a%pinger_online_127.0.0.1:25568%'
+  #     - ' '
+  #     - '§c⛔ Закрыто для игроков'
+  #   view_requirement:
+  #     requirements:
+  #       is_offline:
+  #         type: string equals
+  #         input: '%pinger_isonline_127.0.0.1:25568%'
+  #         output: '&cOffline'
+  #       maintenance:
+  #         type: string equals
+  #         input: '%maintenance_server_anarchy4%'
+  #         output: 'disabled' 
+  #   left_click_commands:
+  #     - '[message] §8§l┃ §fАнархия §8§l┃ §c⛔ Этот режим временно недоступен!'
+  #     - '[sound] ENTITY_VILLAGER_NO'
+  #     - '[close]'

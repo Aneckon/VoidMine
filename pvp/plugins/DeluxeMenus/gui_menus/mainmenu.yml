@@ -1,0 +1,181 @@
+
+menu_title: '§c⚔ Меню Арен'
+size: 45
+open_command:
+  - arenamenu
+update_interval: 1
+
+items:
+  deco_0:
+    material: BLACK_STAINED_GLASS_PANE
+    slot: 0
+    display_name: ' '
+  deco_1:
+    material: BLACK_STAINED_GLASS_PANE
+    slot: 1
+    display_name: ' '
+  deco_2:
+    material: BLACK_STAINED_GLASS_PANE
+    slot: 2
+    display_name: ' '
+  deco_3:
+    material: BLACK_STAINED_GLASS_PANE
+    slot: 3
+    display_name: ' '
+  deco_4:
+    material: BLACK_STAINED_GLASS_PANE
+    slot: 4
+    display_name: ' '
+  deco_5:
+    material: BLACK_STAINED_GLASS_PANE
+    slot: 5
+    display_name: ' '
+  deco_6:
+    material: BLACK_STAINED_GLASS_PANE
+    slot: 6
+    display_name: ' '
+  deco_7:
+    material: BLACK_STAINED_GLASS_PANE
+    slot: 7
+    display_name: ' '
+  deco_8:
+    material: BLACK_STAINED_GLASS_PANE
+    slot: 8
+    display_name: ' '
+
+  deco_36:
+    material: BLACK_STAINED_GLASS_PANE
+    slot: 36
+    display_name: ' '
+  deco_37:
+    material: BLACK_STAINED_GLASS_PANE
+    slot: 37
+    display_name: ' '
+  deco_38:
+    material: BLACK_STAINED_GLASS_PANE
+    slot: 38
+    display_name: ' '
+  deco_39:
+    material: BLACK_STAINED_GLASS_PANE
+    slot: 39
+    display_name: ' '
+  deco_40:
+    material: BLACK_STAINED_GLASS_PANE
+    slot: 40
+    display_name: ' '
+  deco_41:
+    material: BLACK_STAINED_GLASS_PANE
+    slot: 41
+    display_name: ' '
+  deco_42:
+    material: BLACK_STAINED_GLASS_PANE
+    slot: 42
+    display_name: ' '
+  deco_43:
+    material: BLACK_STAINED_GLASS_PANE
+    slot: 43
+    display_name: ' '
+  deco_44:
+    material: BLACK_STAINED_GLASS_PANE
+    slot: 44
+    display_name: ' '
+
+  arena_list:
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmQ4MjEwOTJjZTVlNzU1NzQ1MWM3MjNhMDM0MWU5MGI5M2UwNTY0ZTJiMDE0ODFkZTgxZWVhMjcxZjA0YzViNiJ9fX0=
+    slot: 11
+    display_name: '§c⚔ Список Арен'
+    lore:
+      - '§8❖ §7Посмотри все активные арены'
+      - '§8⤷ §7Присоединись к бою!'
+      - ' '
+      - '§8▶ §fНажми чтобы открыть'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] arenalist'
+
+  create_arena:
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2VkZDIwYmU5MzUyMDk0OWU2Y2U3ODlkYzRmNDNlZmFlYjI4YzcxN2VlNmJmY2JiZTAyNzgwMTQyZjcxNiJ9fX0=
+    slot: 22
+    display_name: '§c✚ Создать Арену'
+    lore:
+      - '§8❖ §7Создай арену'
+      - '§8⤷ §7Для игры с друзьями'
+      - ' '
+      - '§8▶ §fНажми чтобы создать'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] createarena'
+
+  profile:
+    material: PLAYER_HEAD
+    slot: 4
+    display_name: '§c⚔ §lМой Профиль'
+    lore:
+      - '§8❖ §7Твой игровой профиль'
+      - '§8⤷ §7Просмотри свою информацию'
+      - ' '
+      - '§8▶ §fНажми чтобы открыть'
+    left_click_commands:
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[sound] UI_BUTTON_CLICK' 
+      - '[player] profilemenu'
+    owner_head: true
+  
+  quests_menu:
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGYzOWJkMTBiMjM2OWFmNjk5YTMxYTdiZjdkMTQ1MzlmM2MxMjUyMTZmZDgzOTVlZjlhNTBlOTk0MTJjNzVjNSJ9fX0=
+    slot: 15
+    display_name: '§c📜 Квести'
+    lore:
+      - '§8❖ §7Выполняй ежедневные задания'
+      - '§8⤷ §7Получай награды и опыт'
+      - ' '
+      - '§8▶ §fНажми чтобы открыть'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] quests'
+
+  buff_shop: 
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzRjY2I1Mjc1MGU5N2U4MzBhZWJmYThhMjFkNWRhMGQzNjRkMGZkYWQ5ZmIwY2MyMjBmZTJjYTg0MTE4NDJjMyJ9fX0= 
+    slot: 29
+    display_name: '§c🛒 Магазин Баффов' 
+    lore: 
+      - '§8❖ §7Приобретай баффы для арены' 
+      - '§8⤷ §7Улучши свои возможности в бою' 
+      - ' ' 
+      - '§8▶ §fНажми чтобы открыть' 
+    left_click_commands: 
+      - '[sound] UI_BUTTON_CLICK' 
+      - '[player] buffshop'
+
+  pets_menu:
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGY2NTZjMDZlOGE1Y2I0NjkyNTY0ZWUyMTc0OGJkZGVjOWQ3ODVkMTgzNDI4NGFhYTE0Mzk2MDFiYmE0N2Q2YiJ9fX0=
+    slot: 33
+    display_name: '§c🐾 Меню Питомцев'
+    lore:
+      - '§8❖ §7Просмотри всех доступных питомцев'
+      - '§8⤷ §7Выбери своего верного спутника'
+      - ' '
+      - '§8▶ §fНажми чтобы открыть'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] afropets' 
+
+  server_info:
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTNhNjljM2NhYTMxMzA0ZTk5NTIzMjhjNzJjZWUwYjU3YjJhMmJkNDZjZTljNWNiODhjMDdkMTI2NjI3N2Q2YSJ9fX0=
+    slot: 40
+    display_name: '§cℹ Информация о сервере'
+    lore:
+      - '§8❖ §7PVP-сервер с аренами'
+      - '§8⤷ §7Сражайся с другими игроками'
+      - ' '
+      - '§8❖ §cАрены:'
+      - '§8⤷ §7Создай арену через меню'
+      - '§8⤷ §7Или прими приглашение:'
+      - '§8⤷ §f/accept <ник>'
+      - ' '
+      - '§8❖ §cСоцсети:'
+      - '§8⤷ §7Telegram сервера:'
+      - '§8⤷ §b@YourTelegram'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+

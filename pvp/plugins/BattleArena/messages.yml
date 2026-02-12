@@ -1,0 +1,147 @@
+arena-advanced-phase: <red>Перешли на следующую фазу!</red>
+arena-already-in-arena: <red>Вы уже находитесь на арене!</red>
+arena-already-on-this-team: <red>Вы уже в команде!</red>
+arena-arena-with-name: <red>Арены с таким названием не существует!</red>
+arena-cannot-join-arena-member-in-arena: <red>Вы не можете присоединиться к арене,
+  пока участник группы находится на арене!</red>
+arena-cannot-join-arena-not-party-leader: <red>Вы должны быть лидером группы, чтобы
+  присоединиться к арене!</red>
+arena-cannot-join-team-solo: <red>Вы не можете присоединиться к команде в одиночной
+  арене!</red>
+arena-cannot-kick-self: <red>Вы не можете выгнать себя с арены! Используйте /leave
+  чтобы покинуть арену.</red>
+arena-error: <red>Произошла ошибка при входе на арену!</red>
+arena-fight: <red>O---[{==========> Бой \<==========}]---O</red>
+arena-full: <red>Эта арена заполнена!</red>
+arena-joined: <red>Вы присоединились к арене!</red>
+arena-kicked: <red>Вы выгнали игрока с арены!</red>
+arena-kicked-player: <red>Вас выгнали с арены!</red>
+arena-left: <red>Вы покинули арену!</red>
+arena-manual-event-message: <gray>[VoidMine] Начинается событие! Введите <red>/join</red>
+  чтобы присоединиться!</gray>
+arena-no-open-arenas: <red>Нет доступных арен!</red>
+arena-no-open-maps-for-arena: <red>На этой арене нет доступных карт!</red>
+arena-no-phases: <red>Нет фаз для перехода!</red>
+arena-no-running competitions: <red>Нет активных соревнований.</red>
+arena-no-team-with-name: <red>Нет команды с таким названием!</red>
+arena-no-teams: <red>На этой арене нет команд!</red>
+arena-not-event: <red>Указанная арена не является событием!</red>
+arena-not-in-arena: <red>Вы не находитесь на арене!</red>
+arena-not-joinable: <red>К этой арене нельзя присоединиться!</red>
+arena-not-on-team: <red>Вы не в команде!</red>
+arena-not-spectatable: <red>Эту арену нельзя наблюдать!</red>
+arena-phase: <red>Фаза.</red>
+arena-players: <red>Игроки:.</red>
+arena-removed: <red>Арена была удалена!</red>
+arena-restoration-failed-to-create-schematic: <red>Не удалось создать схему! Проверьте
+  консоль.</red>
+arena-restoration-no-bounds: <red>Сначала необходимо установить границы карты перед
+  выполнением этой команды!</red>
+arena-restoration-schematic-created: <red>Схема создана для карты.</red>
+arena-spectate: <red>Вы наблюдаете за ареной!</red>
+arena-starts-cancelled: <red>Обратный отсчёт отменён, недостаточно игроков для старта!</red>
+arena-starts-in: <red>Событие начнётся скоро!</red>
+arena-team-full: <red>Команда заполнена!</red>
+arena-team-joined: <red>Вы присоединились к команде!</red>
+arena-team-left: <red>Вы покинули команду!</red>
+arena-team-selection-not-available: <red>Выбор команды сейчас недоступен!</red>
+cannot-leave-arena: <red>Вы не можете покинуть арену!</red>
+command-an-error-occurred: <red>Произошла ошибка при выполнении команды!</red>
+command-arena-does-not-exist: <red>Арены с таким названием не существует!</red>
+command-click-to-prepare: <red>Нажмите для подготовки!</red>
+command-invalid-position: <red>Указанная позиция недействительна!</red>
+command-invalid-type: <red>Указанный тип не является допустимым!</red>
+command-must-be-player: <red>Вы должны быть игроком, чтобы использовать эту команду!</red>
+command-no-permission: <red>У вас нет прав для выполнения этой команды!</red>
+command-player-not-found: <red>Игрок не найден!</red>
+command-unknown-error: <red>Произошла неизвестная ошибка при выполнении команды!</red>
+command-usage: <red>Неверный синтаксис команды!</red>
+duel-accepted-request: <red>Принят запрос на дуэль! Дуэль начнётся через 5 секунд!</red>
+duel-cancelled-request: <red>Запрос на дуэль отменён!</red>
+duel-cannot-duel-self: <red>Вы не можете вызвать себя на дуэль!</red>
+duel-denied-request: <red>Запрос на дуэль отклонён!</red>
+duel-no-requests: <red>У вас нет запросов на дуэль!</red>
+duel-pending-request: <red>У вас есть ожидающий запрос на дуэль! Введите <red>/{}
+  duel cancel</red> чтобы отменить.</red>
+duel-request-accepted: <gray>Вы приняли запрос на дуэль от <gold>{}</gold>! Дуэль
+  начнётся через <gold>5 секунд</gold>!</gray>
+duel-request-already-sent: <red>У вас уже есть исходящий запрос на дуэль! Введите
+  <red>/{} duel cancel</red> чтобы отменить.</red>
+duel-request-cancelled: <gray>Вы отменили запрос на дуэль игроку <gold>{}</gold>!</gray>
+duel-request-cancelled-quit: <gray>Ваш запрос на дуэль от <gold>{}</gold> был отменён,
+  так как игрок покинул сервер.</gray>
+duel-request-denied: <gray>Вы отклонили запрос на дуэль от <gold>{}</gold>!</gray>
+duel-request-received: <gray>Вы получили запрос на дуэль от <gold>{}</gold>! Введите
+  <red>/{} duel accept {}</red> чтобы принять или <red>/{} duel deny {}</red> чтобы
+  отклонить.</gray>
+duel-request-sent: <gray>Запрос на дуэль отправлен игроку <gold>{}</gold>!</gray>
+duel-user-did-not-request: <red><gold>{}</gold> не отправлял вам запрос на дуэль!
+  Вы можете принять запросы только от того, кто их отправил.</red>
+editor-entered: <red>Вы вошли в редактор мастера.</red>
+editor-error-already-in-editor: <red>Вы уже находитесь в редакторе мастера!</red>
+editor-error-occurred-applying-changes: <red>Произошла ошибка при применении изменений!</red>
+editor-map-add-team-spawn: <yellow>Введите "spawn" чтобы добавить точку спавна для
+  команды. Когда закончите добавлять точки спавна, введите "done". Если хотите очистить
+  все точки спавна для определённой команды и начать заново, введите "clear".</yellow>
+editor-map-add-team-spawn-added: <green>Добавлена точка спавна для команды <gold>{}</gold>!</green>
+editor-map-add-team-spawn-cleared: <green>Очищены все точки спавна для команды <gold>{}</gold>!</green>
+editor-map-add-team-spawn-team: <yellow>Введите название команды, для которой хотите
+  добавить точку спавна. Введите "cancel" для отмены.</yellow>
+editor-map-clear-team-spawn-team: <yellow>Введите название команды, для которой хотите
+  очистить все точки спавна. Введите "cancel" для отмены.</yellow>
+editor-map-create-name: <yellow>Введите название для карты! Введите "cancel" для отмены.</yellow>
+editor-map-created: <green>Карта <gold>{}</gold> для {} успешно создана!</green>
+editor-map-edited: <green>Карта <gold>{}</gold> успешно отредактирована!</green>
+editor-map-exists: <red>Карта с таким названием уже существует!</red>
+editor-map-failed-to-save: <red>Произошла ошибка при сохранении карты <gold>{}</gold>!
+  Проверьте консоль на наличие ошибок.</red>
+editor-map-missing-team-spawns: '<red>Необходимо добавить хотя бы одну точку спавна
+  для каждой команды! Команды без точек спавна: <gold>{}</gold></red>'
+editor-map-set-max-position: <yellow>Кликните по блоку, чтобы установить максимальную
+  (вторую) позицию региона карты.</yellow>
+editor-map-set-min-position: <yellow>Кликните по блоку, чтобы установить минимальную
+  (первую) позицию региона карты.</yellow>
+editor-map-set-spectator-spawn: <yellow>Введите "spectator" чтобы установить точку
+  спавна наблюдателей, или "cancel" для отмены.</yellow>
+editor-map-set-type: |-
+  <yellow>Введите тип карты. Допустимые варианты: <gold>static, dynamic</gold>.
+
+  <gray>-</gray> <gold>static</gold>: Карта, которая всегда находится в одном месте (например, мир выживания) и поддерживает только одну игру одновременно.
+  <gray>-</gray> <gold>dynamic</gold>: Карта, которая создаётся заново в отдельном мире по требованию. Эта карта может поддерживать несколько игр одновременно. Требуется WorldEdit!
+  </yellow>
+editor-map-set-waitroom-spawn: <yellow>Введите "waitroom" чтобы установить точку спавна
+  комнаты ожидания, или "cancel" для отмены.</yellow>
+editor-wizard-closed: <green>Мастер закрыт!</green>
+header: <gray>------------------<gold>[</gold> <bold><yellow>{}</yellow></bold> <gold>]</gold>------------------</gray>
+prefix: <gold>[</gold><yellow>BattleArena</yellow><gold>]</gold>
+util-backup-created: <green>Резервная копия для игрока <gold>{}</gold> успешно создана!</green>
+util-backup-info: Резервная копия <gold>{}</gold>
+util-backup-not-found: <red>Резервная копия с этим индексом не найдена!</red>
+util-backup-restored: <green>Резервная копия для игрока <gold>{}</gold> успешно восстановлена!</green>
+util-click-to-select: <yellow>Нажмите для выбора!</yellow>
+util-day: день
+util-days: дней
+util-debug-mode-set-to: <green>Режим отладки установлен на <gold>{}</gold>!</green>
+util-disabled: <red>отключено</red>
+util-enabled: <green>включено</green>
+util-hour: час
+util-hours: часов
+util-invalid-input: '<red>Недопустимый ввод! Допустимые варианты: <gold>{}</gold></red>'
+util-invalid-inventory-cancelling: <red>Взаимодействие с чужим инвентарём... отмена
+  выбора предмета!</red>
+util-invalid-team-valid-teams: '<red>Недопустимая команда! Допустимые команды: <gold>{}</gold>.</red>'
+util-inventory-backups: Резервные копии
+util-millisecond: миллисекунда
+util-milliseconds: миллисекунд
+util-minute: минута
+util-minutes: минут
+util-module: <gray>-</gray> <gold>{}:</gold> {}
+util-modules: Модули
+util-no-backups: <red>Резервные копии для игрока <gold>{}</gold> не найдены!</red>
+util-reload-complete: <red>Перезагрузка завершена за <gold>{}</gold>!</red>
+util-reload-failed: <red>Перезагрузка не удалась! Проверьте консоль для получения
+  дополнительной информации.</red>
+util-second: секунда
+util-seconds: секунд
+util-starting-reload: <red>Перезагрузка BattleArena...</red>
+util-valid-teams: '<red>Допустимые команды: <gold>{}</gold></red>'

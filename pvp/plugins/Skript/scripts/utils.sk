@@ -1,0 +1,97 @@
+# ============================================
+# GUI Helper Functions
+# ============================================
+
+function createBorder(inv: inventory):
+	set {_borders::*} to 0, 1, 2, 3, 4, 5, 6, 7, 8, 36, 37, 38, 39, 40, 41, 42, 43, 44, 9, 17, 18, 26, 27 and 35
+	loop {_borders::*}:
+		set slot loop-value of {_inv} to black stained glass pane named " "
+
+function playClickSound(p: player):
+	play sound "ui.button.click" to {_p}
+
+function playErrorSound(p: player):
+	play sound "entity.villager.no" to {_p}
+
+function playSuccessSound(p: player):
+	play sound "entity.player.levelup" to {_p}
+
+# ============================================
+# Скидання даних створення арени
+# ============================================
+function resetArenaCreation(p: player):
+	delete {arena.create.%{_p}%.type}
+	delete {arena.create.%{_p}%.map}
+	delete {arena.create.%{_p}%.kit}
+	delete {arena.create.%{_p}%.target}
+
+# ============================================
+# Очистка даних гравця
+# ============================================
+function clearPlayerData(p: player):
+	delete {arena.pending.kit.%{_p}%}
+	delete {arena.kit.given.%{_p}%}
+	delete {arena.player.%{_p}%}
+	delete {arena.team.%{_p}%}
+	delete {arena.spectator.%{_p}%}
+	resetArenaCreation({_p})
+
+# ============================================
+# Перевірка чи є гравці в конкретній арені
+# ============================================
+function isArenaEmpty(arenaId: text) :: boolean:
+	loop all players:
+		if {arena.player.%loop-player%} is {_arenaId}:
+			return false
+	return true
+
+# ============================================
+# Перевірка чи лишився хтось в будь-якій арені
+# ============================================
+function checkArenaEmpty() :: text:
+	loop all players:
+		set {_world} to "%world of loop-player%"
+		# Перевірка для динамічних арен
+		if {_world} contains "ba-dynamic":
+			return "no"
+		# Перевірка для статичних арен
+		if {arena.player.%loop-player%} is set:
+			return "no"
+	return "yes"
+
+# ============================================
+# Скидання арени (очистка всіх гравців)
+# ============================================
+function resetArena(arenaId: text):
+	loop all players:
+		if {arena.player.%loop-player%} is {_arenaId}:
+			# Телепортуємо в лобі або спавн
+			execute console command "/spawn %loop-player%"
+			clearPlayerData(loop-player)
+			send "&cВас було виключено з арени через скидання" to loop-player
+	
+	# Очищаємо дані арени
+	delete {arena.status.%{_arenaId}%}
+	delete {arena.players.%{_arenaId}%::*}
+	delete {arena.teams.%{_arenaId}%::*}
+
+# ============================================
+# Видалення гравця з арени
+# ============================================
+function removePlayerFromArena(p: player):
+	set {_arenaId} to {arena.player.%{_p}%}
+	if {_arenaId} is set:
+		# Видаляємо з команди
+		if {arena.team.%{_p}%} is set:
+			set {_playerTeam} to {arena.team.%{_p}%}
+			remove {_p} from {arena.teams.%{_arenaId}%.%{_playerTeam}%::*}
+		
+		# Видаляємо зі списку гравців
+		remove {_p} from {arena.players.%{_arenaId}%::*}
+		
+		# Очищаємо дані гравця
+		clearPlayerData({_p})
+		
+		# Перевіряємо чи арена порожня
+		if isArenaEmpty({_arenaId}) is true:
+			resetArena({_arenaId})

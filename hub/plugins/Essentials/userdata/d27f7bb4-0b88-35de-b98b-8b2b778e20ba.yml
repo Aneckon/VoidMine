@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 127.0.0.1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1766431857787
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1766927673089
+  login: 1766926636901
+money: '0'
+last-account-name: Bonet1
+lastlocation:
+  world: c83d3d46-a846-4163-ad52-bb3cf09f6943
+  world-name: swamp
+  x: 3.983720317738663
+  y: 80.0
+  z: 7.170626581368503
+  yaw: -177.8809356689453
+  pitch: 13.620676040649414
+logoutlocation:
+  world: 94b0a8f9-6d31-449f-8593-b4bcaf7388e3
+  world-name: world
+  x: -6.48654899044927
+  y: -21.0
+  z: -3.5515229072083807
+  yaw: 70.190185546875
+  pitch: 34.141395568847656

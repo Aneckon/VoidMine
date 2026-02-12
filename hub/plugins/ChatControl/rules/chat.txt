@@ -1,0 +1,65 @@
+# -------------------------------------------------------------------------------
+# Этот файл управляет правилами в чате (не в командах) и включает правила из rules.txt.
+#
+# По умолчанию файл содержит примеры, которые можно безопасно удалить или изменить.
+#
+# Для помощи смотрите notes в файле rules.txt
+# -------------------------------------------------------------------------------
+
+# -------- Основные исправления грамматики
+match \bdis\b
+then replace this
+
+match \bwanna\b
+then replace want to
+
+match \bgonna\b
+then replace going to
+
+# -------- Запрет на вопросы про ранг
+match (can|may|would you like if) i (have|be|become|get|has) (op|admin|mod|builder)
+then warn &cВ данный момент мы не ищем новых сотрудников.
+then deny
+
+match (do|are) you (need|wish|looking for) (any|some|one|good) (op|ops|operators|admins|mods|builders|new people|ateam)
+then warn &cВ данный момент мы не ищем новых сотрудников.
+then deny
+
+# -------- Запрет на оскорбления сервера
+# Обратите внимание на id, оно может быть строкой и использоваться несколько раз
+match this server (is (bad|crappy|shitty)|suck)
+id ServerHate
+then rewrite Мне нравится этот фильтр!|Я не могу себя вести из-за проблем с мозгом!|Мои манеры были исправлены сервером.
+then notify chatcontrol.notify.rulesalert &8[&7ID {ruleID}&8] &7{player}: &f{message}
+then console kick {player} &cВаша оценка будет обработана нашими сотрудниками. \nСпасибо и добро пожаловать обратно!
+
+match ((admin|op|ateam|server|owner) (is|are)) + *(dick|cock|duck|noob|kid)
+id ServerHate
+then console kick {player} &cНе думаю, что это правда.
+then deny
+then log
+
+# -------- Пример использования юникода - смайлики
+match :\)
+then replace ☺
+
+match :-\)
+then replace ☺
+
+match :\(
+then replace ☹
+
+match :-\(
+then replace ☹
+
+match ;\)
+then replace ㋡
+
+match ;-\)
+then replace ㋡
+
+match \:star\:
+then replace ★
+
+match <3\b
+then replace ❤

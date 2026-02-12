@@ -1,0 +1,57 @@
+prefix: "<gray><bold>VoidMine<red><reset>"
+no_permission_command: "<gray>У вас недостаточно прав для использования этой команды!"
+no_permission_pet: "<gray>У вас нет прав для использования этого питомца!"
+player_command: "<gray>Эту команду могут использовать только игроки!"
+reload: "<gray>Плагин перезагружен"
+no_pets_available: "<gray>В конфигурации нет доступных питомцев!"
+pet_selected: "<gray>Вы выбрали питомца: <red>{pet_name}<gray>!"
+pet_despawn: "<gray>Питомец был скрыт!"
+target_offline: "<gray>Игрок не найден!"
+pet_not_exists: "<gray>Питомец не найден!"
+pet_set: "<gray>Питомец <red>{pet_name}<gray> установлен для игрока <red>{target}<gray>!"
+pet_remove: "<gray>Питомец удалён у игрока <red>{target}<gray>!"
+target_no_pet: "<gray>У этого игрока нет питомца!"
+player_no_pet: "<gray>У вас нет активного питомца!"
+player_pet_show: "<gray>Питомец <red>{pet_name}<gray> выбран!"
+player_pet_hide: "<gray>Питомец скрыт!"
+usage: "<gray>Правильное использование: <red>{usage}"
+
+usage_list:
+  pets: "<red>/afropets <gray><menu|help|hide|about|admin>"
+  pets-show: "<red>/afropets show <gray><pet_name>"
+  admin: "<red>/afropets admin <gray><set|about|remove|reload>"
+  admin-set: "<red>/afropets admin set <gray><player> <pet_name>"
+  admin-remove: "<red>/afropets admin remove <gray><player>"
+
+update: "<gray>Доступна новая версия плагина! Ваша версия: <red>%current% <gray>| Новая версия: <red>%latest%<gray>! <red><bold><click:open_url:https://www.spigotmc.org/resources/afropets.122242>[Скачать]</click>"
+
+help:
+  - "<gray><bold>VoidMine<red> <dark_gray>| <gray>Список команд"
+  - "<dark_gray>» <click:suggest_command:/afropets><red>/afropets <gray>- Открыть меню питомцев</click>"
+  - "<dark_gray>» <click:suggest_command:/afropets menu><red>/afropets menu <gray>- Открыть меню питомцев</click>"
+  - "<dark_gray>» <click:suggest_command:/afropets about><red>/afropets about <gray>- Информация о плагине</click>"
+  - "<dark_gray>» <click:suggest_command:/afropets hide><red>/afropets hide <gray>- Скрыть текущего питомца</click>"
+  - "<dark_gray>» <click:suggest_command:/afropets show><red>/afropets show <gray>- Показать питомца</click>"
+
+admin-about:
+  - "<gray><bold>VoidMine<red> <dark_gray>| <gray>Информация для администратора"
+  - "<dark_gray>» <gray>Автор: <red>Afrodyzjak"
+  - "<dark_gray>» <gray>Документация: <red><click:open_url:https://afroplugins.gitbook.io/afroplugins-docs/afropets2/afropets2-home>[Открыть]</click>"
+  - "<dark_gray>» <gray>Страница плагина: <red><click:open_url:https://www.spigotmc.org/resources/afropets.122242>[Открыть]</click>"
+  - "<dark_gray>» <gray>Тип базы данных: <red>%storage%"
+  - "<dark_gray>» <gray>Версия плагина: <red>%current_version%"
+  - "<dark_gray>» <gray>Последняя версия: <red>%latest_version%"
+  - "<dark_gray>» <gray>Версия сервера: <red>%server_version%"
+  - "<dark_gray>» <gray>Тип сервера: <red>%server_type%"
+
+admin-about-values:
+  storage: ""
+  update-not: ""
+  filler-name: ""
+
+admin-help:
+  - "<gray><bold>AfroPets<red><dark_gray>| <gray>Команды администратора"
+  - "<dark_gray>» <click:suggest_command:/afropets admin reload><red>/afropets admin reload <gray>- Перезагрузить плагин</click>"
+  - "<dark_gray>» <click:suggest_command:/afropets admin set><red>/afropets admin set <gray>{player} {pet} <gray>- Назначить питомца игроку</click>"
+  - "<dark_gray>» <click:suggest_command:/afropets admin remove><red>/afropets admin remove <gray>{player} <gray>- Удалить питомца у игрока</click>"
+  - "<dark_gray>» <click:suggest_command:/afropets admin about><red>/afropets admin about <gray>- Информация о плагине</click>"

@@ -1,0 +1,120 @@
+name: FFA
+aliases: [freeforall]
+mode: Arena
+type: Event
+team-options:
+  named-teams: false
+  team-size: 1
+  team-amount: 2+
+  team-selection: none
+modules:
+  - arena-restoration
+  - classes
+  - scoreboards
+lives:
+  enabled: false
+victory-conditions:
+  teams-alive:
+    amount: 1
+  time-limit:
+    time-limit: 30m
+events:
+  on-join:
+    - apply-scoreboard{scoreboard=waiting}
+    - store{types=all}
+    - change-gamemode{gamemode=survival}
+    - flight{enabled=false}
+    - teleport{location=waitroom}
+  on-spectate:
+    - store{types=all}
+    - change-gamemode{gamemode=spectator}
+    - flight{enabled=true}
+    - teleport{location=spectator}
+  on-leave:
+    - clear-effects
+    - restore{types=all}
+    - remove-scoreboard
+  on-death:
+    - clear-inventory
+    - respawn
+    - delay{ticks=1}
+    - teleport{location=spectator}
+    - change-gamemode{gamemode=spectator}
+options:
+  - block-break{enabled=true}
+  - block-place{enabled=true}
+  - block-interact{enabled=true}
+  - damage-entities{option=always}
+  - keep-inventory{enabled=false}
+  - keep-experience{enabled=false}
+  - class-equip-only-selects{enabled=true}
+initial-phase: waiting
+phases:
+  waiting:
+    allow-join: true
+    allow-spectate: true
+    next-phase: countdown
+    options:
+      - damage-players{option=never}
+      - block-break{enabled=false}
+      - block-place{enabled=false}
+      - class-equipping{enabled=true}
+    events:
+      on-start:
+        - apply-scoreboard{scoreboard=waiting}
+      on-join:
+        - delay{ticks=1}
+        - apply-scoreboard{scoreboard=waiting}
+  countdown:
+    allow-join: true
+    allow-spectate: true
+    revert-phase: true
+    next-phase: ingame
+    countdown-time: 5s
+    options:
+      - damage-players{option=never}
+      - block-break{enabled=false}
+      - block-place{enabled=false}
+      - class-equipping{enabled=true}
+    events:
+      on-start:
+        - apply-scoreboard{scoreboard=countdown}
+      on-join:
+        - delay{ticks=1}
+        - apply-scoreboard{scoreboard=countdown}
+  ingame:
+    allow-join: false
+    allow-spectate: true
+    next-phase: victory
+    options:
+      - damage-players{option=always}
+      - block-break{enabled=true}
+      - block-place{enabled=true}
+      - block-interact{enabled=true}
+    events:
+      on-start:
+        - equip-class{class=warrior}
+        - teleport{location=team_spawn}
+        - give-effects{effects=[speed{duration=300;amplifier=1}]}
+        - play-sound{sound=block.note_block.pling;pitch=2;volume=1}
+        - apply-scoreboard{scoreboard=ingame-list-alive}
+  victory:
+    allow-join: false
+    allow-spectate: false
+    next-phase: waiting
+    duration: 5s
+    events:
+      on-complete:
+        - leave
+        - teardown
+        - restore-arena
+        - remove-scoreboard
+      on-victory:
+        - send-message{message=<green>Вітаю, ти переміг!</green>}
+        - play-sound{sound=entity.player.levelup;pitch=1;volume=1}
+      on-lose:
+        - send-message{message=<red>На жаль, ти програв!</red>}
+        - play-sound{sound=block.anvil.place;pitch=0;volume=1}
+      on-draw:
+        - send-message{message=<yellow>Нічия!</yellow>}
+        - play-sound{sound=block.beacon.deactivate;pitch=0;volume=1}

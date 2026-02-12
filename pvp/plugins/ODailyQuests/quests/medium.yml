@@ -1,0 +1,72 @@
+# ==============================================================
+#                        СРЕДНИЕ КВЕСТЫ
+# ==============================================================
+quests:
+  1:
+    name: "&cВоин арены"
+    menu_item: DIAMOND_SWORD
+    description:
+      - "&8❖ &7Сложность: &cСредняя"
+      - ""
+      - "&c⚔ &7Задание:"
+      - " &8⤷ &7Убить &c%required% &7игроков"
+      - ""
+      - "&c⚙ &7Прогресс: %status%"
+      - ""
+      - "&c⭐ &7Награда:"
+      - " &8⤷ &7340 монет"
+      - ""
+    quest_type: KILL
+    required: PLAYER
+    required_amount: 8
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "eco give %player% 800"
+        - "xp add %player% 3 levels"
+
+  2:
+    name: "&cМастер дуэлей"
+    menu_item: IRON_CHESTPLATE
+    description:
+      - "&8❖ &7Сложность: &cСредняя"
+      - ""
+      - "&c⚔ &7Задание:"
+      - " &8⤷ &7Убить &c%required% &7игроков"
+      - ""
+      - "&c⚙ &7Прогресс: %status%"
+      - ""
+      - "&c⭐ &7Награда:"
+      - " &8⤷ &7425 монет"
+      - ""
+    quest_type: KILL
+    required: PLAYER
+    required_amount: 10
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "eco give %player% 900"
+        - "xp add %player% 4 levels"
+
+  3:
+    name: "&cКороль Deathmatch"
+    menu_item: NETHERITE_SWORD
+    description:
+      - "&8❖ &7Сложность: &cСредняя"
+      - ""
+      - "&c⚔ &7Задание:"
+      - " &8⤷ &7Убить &c%required% &7игроков на Deathmatch"
+      - ""
+      - "&c⚙ &7Прогресс: %status%"
+      - ""
+      - "&c⭐ &7Награда:"
+      - " &8⤷ &7250 монет"
+      - ""
+    quest_type: KILL
+    required: PLAYER
+    required_amount: 10
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "eco give %player% 1200"
+        - "xp add %player% 6 levels"

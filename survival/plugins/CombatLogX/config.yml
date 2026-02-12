@@ -1,0 +1,56 @@
+# CombatLogX Configuration File
+generated-by-version: "11.5.1.0.1275"
+debug-mode: false
+
+broadcast:
+  on-load: true
+  on-enable: true
+  on-disable: true
+
+# Список світів, де плагін НЕ працює (порожній — працює всюди).
+disabled-world-list: [ ]
+disabled-world-list-inverted: false
+
+# Лінкування тварин, стріл, рибальського гачка, TNT — усе true, бо анархія.
+link-pets: true
+link-projectiles: true
+ignored-projectiles:
+  - EGG
+  - ENDER_PEARL
+  - SNOWBALL
+link-fishing-rod: true
+link-tnt: true
+
+timer:
+  # GLOBAL означає один час бою для всіх гравців.
+  type: GLOBAL
+  # 30 секунд
+  default-timer: 30
+
+# bypass-permission: Якщо гравець має combatlogx.bypass, його не тегатимуть.
+bypass-permission: "combatlogx.bypass"
+
+# Не тегати, якщо гравець сам вистрелив у себе.
+self-combat: false
+
+# Коли гравець або його ворог помирає, припиняти бій?
+untag-on-death: true
+untag-on-enemy-death: true
+
+# При вході/телепорті прибирати “invulnerability”?
+remove-no-damage-cooldown: true
+
+# Запити на пробачення (forgive):
+forgive-request-cooldown: 30
+forgive-request-expire: 10
+
+# Мінімальний TPS для тегу
+minimum-tps: 15.0
+
+# Які причини тегу дозволені?
+# Якщо ти не хочеш тегатися від падіння, НЕ включай "FALL".
+# Замість "*" використовуй список. Нижче поширені PvP-рейзони:
+enabled-tag-reasons:
+  - "*" 
+
+# Кінець config.yml

@@ -1,0 +1,276 @@
+# Код мови для цього файлу.
+language-name: "uk_ua"
+
+# Формат десяткових чисел.
+decimal-format: "0.00"
+
+# Префікс для CombatLogX, який з’являється перед усіма НЕбойовими повідомленнями (наприклад, команда /clx).
+prefix: "<dark_gray>⛧</dark_gray> <red>Test</red> <dark_gray>⛧</dark_gray>"
+
+broadcast:
+  on-load: "<dark_gray>⛧</dark_gray> <red>Test</red> <dark_gray>⛧</dark_gray> <gray>завантажено.</gray>"
+  on-enable: "<dark_gray>⛧</dark_gray> <red>Test</red> <dark_gray>⛧</dark_gray> <gray>активовано.</gray>"
+  on-disable: "<dark_gray>⛧</dark_gray> <red>Test</red> <dark_gray>⛧</dark_gray> <red>вимкнено.</red>"
+
+placeholder:
+  time-left-zero: "0"
+  unknown-enemy: "<gray>Невідомий</gray>"
+  status:
+    fighting: "<red>У бою</red>"
+    in-combat: "<red>Так</red>"
+    idle: "<gray>Спокійний</gray>"
+    not-in-combat: "<gray>Ні</gray>"
+  toggle:
+    enabled: "<red>Увімкнено</red>"
+    disabled: "<gray>Вимкнено</gray>"
+  pvp-status:
+    enabled: "<red>Увімкнено</red>"
+    disabled: "<gray>Вимкнено</gray>"
+
+# ----------------------------
+#   Бойові повідомлення
+#   (без префікса Test)
+# ----------------------------
+combat-timer:
+  expire: "<gray>Бій вільний.</gray>"
+  enemy-death: "<gray>Бій закінчено — ворог помер.</gray>"
+  self-death: "<gray>Бій закінчено — ви загинули.</gray>"
+
+tagged:
+  unknown:
+    player: "<red>Ви в бою з</red> <white>{enemy}</white><red>. Не виходьте!</red>"
+    mob: "<red>Бій з істотою</red> <white>{enemy}</white><red>. Не виходьте!</red>"
+    mythic_mob: "<red>Бій із</red> <white>{mob_type}</white><red>. Не виходьте!</red>"
+    damage: "<red>Отримано шкоду — бій. Не виходьте!</red>"
+    unknown: "<red>Вас занесено у бій без причини. Не виходьте!</red>"
+  attacked:
+    player: "<red>На вас напав</red> <white>{enemy}</white><red>. Не виходьте!</red>"
+    mob: "<red>На вас напала істота</red> <white>{mob_type}</white><red>. Не виходьте!</red>"
+    mythic_mob: "<red>На вас напав</red> <white>{enemy}</white><red>. Не виходьте!</red>"
+    damage: "<red>Ви у бою через шкоду. Не виходьте!</red>"
+    unknown: "<red>На вас напала невідома сила. Не виходьте!</red>"
+  attacker:
+    player: "<red>Ви атакуєте</red> <white>{enemy}</white><red>. Не виходьте!</red>"
+    mob: "<red>Ви атакуєте</red> <white>{mob_type}</white><red>. Не виходьте!</red>"
+    mythic_mob: "<red>Ви атакуєте</red> <white>{enemy}</white><red>. Не виходьте!</red>"
+    damage: "<red>Ви в бою через атаку. Не виходьте!</red>"
+    unknown: "<red>Ви в бою з невідомою силою. Не виходьте!</red>"
+
+# ----------------------------
+#   Повідомлення про помилки,
+#   команди та інше - з префіксом.
+# ----------------------------
+error:
+  player-only: "<red>Лише для гравців!</red>"
+  console-only: "<red>Доступно тільки з консолі.</red>"
+  invalid-target: "<red><gray>{target}</gray> не знайдено.</red>"
+  invalid-integer: "<red><gray>{value}</gray> — не число.</red>"
+  no-permission: "<red>Без прав:</red> <gray>{permission}</gray>"
+  disabled-world: "<red>У цьому вимірі заборонено.</red>"
+  target-not-in-combat: "<red><gray>{target}</gray> не в бою.</red>"
+  self-not-in-combat: "<red>Ви не в бою.</red>"
+  unknown-expansion: "<red><gray>{target}</gray> — невідоме розширення.</red>"
+  forgive-not-enemy: "<red><gray>{target}</gray> не є вашим ворогом.</red>"
+  enemy-not-forgiving: "<red>Ворог не погоджується пробачити.</red>"
+
+command:
+  combatlogx:
+    help-message-list:
+      - ""
+      - "<dark_gray>⛧</dark_gray> <red>Довідка CombatLogX</red> <dark_gray>⛧</dark_gray>"
+      - "<gray>/combatlogx help</gray> <dark_gray>-</dark_gray> <gray>Ця довідка</gray>"
+      - "<gray>/combatlogx reload</gray> <dark_gray>-</dark_gray> <gray>Перезавантажити конфігурацію</gray>"
+      - "<gray>/combatlogx about &lt;expansion&gt;</gray> <dark_gray>-</dark_gray> <gray>Інформація про розширення</gray>"
+      - "<gray>/combatlogx tag &lt;player&gt; [seconds]</gray> <dark_gray>-</dark_gray> <gray>Занести у бій</gray>"
+      - "<gray>/combatlogx toggle bossbar/actionbar/scoreboard</gray> <dark_gray>-</dark_gray> <gray>Увім/Вим оповіщення</gray>"
+      - "<gray>/combatlogx untag &lt;player&gt;</gray> <dark_gray>-</dark_gray> <gray>Вивести з бою</gray>"
+      - "<gray>/combatlogx version</gray> <dark_gray>-</dark_gray> <gray>Версія CombatLogX</gray>"
+      - "<gray>/combatlogx forgive request &lt;player&gt;</gray> <dark_gray>-</dark_gray> <gray>Запит на пробачення</gray>"
+      - "<gray>/combatlogx forgive accept &lt;player&gt;</gray> <dark_gray>-</dark_gray> <gray>Погодитись</gray>"
+      - "<gray>/combatlogx forgive reject &lt;player&gt;</gray> <dark_gray>-</dark_gray> <gray>Відхилити</gray>"
+      - "<gray>/combatlogx forgive toggle</gray> <dark_gray>-</dark_gray> <gray>Увім/Вим пробачення</gray>"
+      - ""
+    reload-success:
+      - "<dark_gray>⛧</dark_gray> <red>Test</red> <dark_gray>⛧</dark_gray> <gray>Всі конфіги перезавантажено.</gray>"
+      - "<gray>Мовні файли оновлено.</gray>"
+      - "<gray>Розширення перезавантажено.</gray>"
+    reload-failure:
+      - "<red>Помилка під час перезавантаження.</red>"
+      - "<red>Перевірте лог та виправте.</red>"
+    tag-player: "<gray>Успішно занесено</gray> <red>{target}</red> <gray>у бій.</gray>"
+    tag-failure: "<red>Не вдалося занести</red> <gray>{target}</gray> <red>у бій.</red>"
+    untag-player: "<gray>Успішно виведено</gray> <red>{target}</red> <gray>з бою.</gray>"
+    toggle-bossbar: "<gray>Boss Bar:</gray> {status}"
+    toggle-actionbar: "<gray>Action Bar:</gray> {status}"
+    toggle-scoreboard: "<gray>Scoreboard:</gray> {status}"
+    expansion-information:
+      - ""
+      - "<gray>Інформація про розширення для</gray> <red>{name}</red><gray>:</gray>"
+      - "<gray>Назва:</gray> <white>{prefix}</white>"
+      - "<gray>Версія:</gray> <white>{version}</white>"
+      - "<gray>Статус:</gray> <white>{state}</white>"
+      - ""
+      - "<gray>Опис:</gray> <white>{description}</white>"
+      - "<gray>Сайт:</gray> <white>{website}</white>"
+      - "<gray>Автори:</gray> <white>{authors}</white>"
+    forgive:
+      toggle-disable: "<gray>Більше не приймаєте запити на пробачення.</gray>"
+      toggle-enable: "<gray>Тепер приймаєте запити на пробачення.</gray>"
+      request-sent: "<gray>Запит на пробачення відправлено</gray> <red>{target}</red><gray>.</gray>"
+      request-receive:
+        - "<gray>{player}</gray> <red>попросив пробачення.</red>"
+        - "<gray>Введіть</gray> <white>/combatlogx forgive accept</white> <gray>або</gray> <white>/combatlogx forgive reject</white>"
+
+combat-timer:
+  expire: "<gray>Бій вільний.</gray>"
+  time-left-self: "<gray>У вас лишилося</gray> <red>{time_left}</red> <gray>секунд.</gray>"
+  time-left-other: "<gray>Гравець</gray> <red>{target}</red> <gray>має</gray> <red>{time_left}</red> <gray>секунд.</gray>"
+
+# ----------------------------
+#   EXPANSIONS
+#   (Без префікса "Test")
+# ----------------------------
+expansion:
+  angel-chest:
+    prevent-opening: "<red>Заборонено відкривати ангельські скрині в бою.</red>"
+    prevent-breaking: "<red>Заборонено ламати ангельські скрині в бою.</red>"
+    prevent-fast-looting: "<red>Швидке обшукування заборонено під час бою.</red>"
+  action-bar:
+    timer: "<dark_gray>⛧</dark_gray> <red>Бій</red> <dark_gray>⛧</dark_gray> <gray>{bars} <red>{combatlogx_time_left}</red> с.</gray>"
+    ended: "<dark_gray>⛧</dark_gray> <red>Бій</red> <dark_gray>⛧</dark_gray> <gray>Ви більше не у бою.</gray>"
+  boss-bar:
+    timer: "<dark_gray>⛧</dark_gray> <red>Бій</red> <dark_gray>⛧</dark_gray> <gray>{combatlogx_time_left} с.</gray>"
+    ended: "<dark_gray>⛧</dark_gray> <red>Бій</red> <dark_gray>⛧</dark_gray> <gray>Завершено.</gray>"
+  scoreboard:
+    title: "<dark_gray>⛧</dark_gray> <red>Test</red> <dark_gray>⛧</dark_gray>"
+    lines:
+      - " "
+      - "   <red>Статистика бою:</red>"
+      - " "
+      - "   <red>▛ </red><gray>Час:</gray> <red>{combatlogx_time_left} ⏱</red>    "
+      - "   <red>▍ </red><gray>Супротивники:</gray> <red>{combatlogx_enemy_count}</red>   "
+      - "   <red>▙ </red><gray>Стан:</gray> <red>{combatlogx_status} ⚔</red>    "
+      - " "
+      - "   <red>Супротивники:</red>"
+      - " "
+      - "   <red>▛</red> <gray>{combatlogx_specific_enemy_1_name}</gray>    "
+      - "   <red>▍</red> <gray>{combatlogx_specific_enemy_2_name}</gray>    "
+      - "   <red>▙</red> <gray>{combatlogx_specific_enemy_3_name}</gray>    "
+      - " "
+  cheat-prevention:
+    command-blocked: "<red>Заборонено використовувати</red> <gray>{command}</gray> <red>у бою.</red>"
+    no-riptide: "<red>Ріптайд вимкнено в бою.</red>"
+    no-totem: "<red>Тотеми безсмертя не працюють у бою.</red>"
+    no-entity-interaction: "<red>Взаємодія з істотами заборонена в бою.</red>"
+    no-chat: "<red>Чат недоступний під час бою.</red>"
+    game-mode:
+      force-switch: "<red>Ваш режим гри змінено на</red> <gray>{game_mode}</gray><red>.</red>"
+      no-switch: "<red>Не можна змінювати гейммод під час бою.</red>"
+    flight:
+      force-disabled: "<red>Політ вимкнено.</red>"
+      no-flying: "<red>Заборонено літати в бою.</red>"
+    elytra:
+      force-disabled: "<red>Елітру знято.</red>"
+      no-gliding: "<red>Заборонено планувати в бою.</red>"
+    teleportation:
+      block-portal: "<red>Використання порталу заблоковано під час бою.</red>"
+      block-pearl: "<red>Енд перли заборонені у бою.</red>"
+      block-other: "<red>Телепорт недоступний у бою.</red>"
+    inventory:
+      force-closed: "<red>Ваш інвентар закрито.</red>"
+      no-opening: "<red>Не відкривайте інвентар у бою.</red>"
+    blocks:
+      prevent-breaking: "<red>Не ламайте блоки в бою.</red>"
+      prevent-placing: "<red>Не ставте блоки в бою.</red>"
+      prevent-interaction: "<red>Взаємодія з блоками заборонена.</red>"
+      prevent-portal-creation: "<red>Портали створювати не можна під час бою.</red>"
+    items:
+      no-pickup: "<red>Не підбирайте предмети в бою.</red>"
+      no-dropping: "<red>Заборонено викидати предмети в бою.</red>"
+    buckets:
+      no-empty: "<red>Не виливайте відро в бою.</red>"
+      no-fill: "<red>Не набирайте відро в бою.</red>"
+  damage-tagger:
+    unknown-damage: "<red>Ви поранені! Не виходьте!</red>"
+    damage-type:
+      block-explosion: "<red>Вибух блоку. Не виходьте!</red>"
+      contact: "<red>Укол колючок. Не виходьте!</red>"
+      cramming: "<red>Тиснява! Не виходьте!</red>"
+      custom: "<red>Особлива шкода. Не виходьте!</red>"
+      drowning: "<red>Ви тонете! Не виходьте!</red>"
+      dryout: "<red>Засуха. Не виходьте!</red>"
+      entity-explosion: "<red>Вибух Ендер-Кристала. Не виходьте!</red>"
+      fall: "<red>Падіння. Не виходьте!</red>"
+      falling-block: "<red>На вас впав блок! Не виходьте!</red>"
+      fire: "<red>Вогонь! Не виходьте!</red>"
+      fire-tick: "<red>Горите! Не виходьте!</red>"
+      fly-into-wall: "<red>Врізалися у стіну. Не виходьте!</red>"
+      freeze: "<red>Замерзаєте. Не виходьте!</red>"
+      hot-floor: "<red>Підлога — лава! Не виходьте!</red>"
+      lava: "<red>Лава! Не виходьте!</red>"
+      lightning: "<red>Блискавка! Не виходьте!</red>"
+      magic: "<red>Магічна атака! Не виходьте!</red>"
+      melting: "<red>Танете. Не виходьте!</red>"
+      poison: "<red>Отрута! Не виходьте!</red>"
+      starvation: "<red>Голод! Не виходьте!</red>"
+      suffocation: "<red>Задуха у стіні! Не виходьте!</red>"
+      void: "<red>Безодня! Не виходьте!</red>"
+      wither: "<red>Зів'ялість. Не виходьте!</red>"
+      world-border: "<red>Кордон світу! Не виходьте!</red>"
+  newbie-helper:
+    togglepvp:
+      self: "<gray>PVP: {status}</gray>"
+      admin: "<gray>Змінено PVP гравця</gray> <red>{target}</red> <gray>на {status}.</gray>"
+      cooldown: "<red>Зачекайте</red> <gray>{time_left}</gray> <red>с, щоб спробувати знову.</red>"
+    no-pvp:
+      self: "<red>Не можна бити гравця з вимкненим PVP!</red>"
+      other: "<red>Цей гравець вимкнув PVP.</red>"
+      protected: "<red>Гравець під захистом, заборонено атакувати!</red>"
+    protection-disabled:
+      attacker: "<red>Ви атакували когось, ваш захист новачка вимкнено.</red>"
+      expired: "<red>Захист новачка завершився.</red>"
+    check-format:
+      - "<gray>Інформація про</gray> <red>{target}</red><gray>:</gray>"
+      - "<gray>Захист:</gray> <red>{protected}</red>"
+      - "<gray>PVP:</gray> <red>{pvp}</red>"
+  loot-protection:
+    enemy-died: "<gray>{enemy}</gray> <red>помер. Лут захищено на</red> <gray>{time}</gray> <red>с.</red>"
+    protected: "<red>Цей лут ще захищено. Зачекайте</red> <gray>{time}</gray> <red>с.</red>"
+
+  citizens-compatibility:
+    prevent-join: "<red>Не можна заходити, поки ваш NPC не знищено.</red>"
+  disguise-compatibility:
+    remove-disguise: "<red>Маскування знято.</red>"
+  essentials-compatibility:
+    prevent-teleport-request-self: "<red>TPA заборонено в бою.</red>"
+    prevent-teleport-request-other: "<red>Гравець у бою, TPA неможливе.</red>"
+  marriagemaster-compatibility:
+    prevent-teleport-self: "<red>Не можна TPA до партнера під час бою.</red>"
+    prevent-teleport-partner: "<red>Ваш партнер у бою, телепорт заборонено.</red>"
+  huskhomes-compatibility:
+    prevent-teleport: "<red>Телепортація заборонена у бою.</red>"
+  region-protection:
+    default-no-entry: "<red>Вам заборонено заходити сюди, поки ви в бою.</red>"
+    factions-no-entry: "<red>Сюди не зайти — ви в бою.</red>"
+    griefdefender-no-entry: "<red>Цей регіон недоступний у бою.</red>"
+    griefprevention-no-entry: "<red>Заборонено входити, доки ви в бою.</red>"
+    kingdomsx-no-entry: "<red>Королівство закрите для вас, бо ви в бою.</red>"
+    konquest-no-entry: "<red>Не можна зайти, поки триває бій.</red>"
+    redprotect-no-entry: "<red>Зона закрита під час бою.</red>"
+    residence-no-entry: "<red>Вхід у цю резиденцію заборонено.</red>"
+    towny-no-entry: "<red>Місто недоступне для вас у бою.</red>"
+    husktowns-no-entry: "<red>Не можна зайти в це місто, ви в бою.</red>"
+    ultimateclaims-no-entry: "<red>Регіон закрито для вас у бою.</red>"
+    protectionstones:
+      prevent-area-creation: "<red>Не можна створювати регіон у бою.</red>"
+      no-entry: "<red>Вхід заборонено, ви в бою.</red>"
+    preciousstones:
+      prevent-field-creation: "<red>Заборонено створювати поля в бою.</red>"
+      no-entry: "<red>Не можна входити в це поле під час бою.</red>"
+    worldguard:
+      no-entry-mob-combat: "<red>Тут заборонені бої з істотами, вхід закрито.</red>"
+      no-entry-player-combat: "<red>Тут заборонений PvP, не можна зайти.</red>"
+      no-entry-unknown-combat: "<red>Вхід заборонено під час бою.</red>"
+    lands:
+      no-entry: "<red>Ви не можете зайти в ці землі, бо в бою.</red>"
+      war-disable-newbie-protection: "<red>Оголошено війну: захист новачка знято, PvP увімкнено.</red>"

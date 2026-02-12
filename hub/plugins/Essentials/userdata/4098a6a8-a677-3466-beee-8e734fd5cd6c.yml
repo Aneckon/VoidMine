@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 127.0.0.1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1744016733624
+  login: 1744011691663
+money: '0'
+last-account-name: Bonet2
+lastlocation:
+  world: 94b0a8f9-6d31-449f-8593-b4bcaf7388e3
+  world-name: spawn
+  x: 0.44383290894909233
+  y: -20.0
+  z: 0.47384364032203247
+  yaw: 68.61163330078125
+  pitch: -0.40356501936912537
+logoutlocation:
+  world: fc74c3ef-f739-4901-8e44-8b20457be945
+  world-name: world
+  x: -770.0292761351708
+  y: 98.0
+  z: 566.9784371742555
+  yaw: 40.019134521484375
+  pitch: 31.494245529174805

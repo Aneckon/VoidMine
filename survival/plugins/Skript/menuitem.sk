@@ -1,0 +1,14 @@
+on join:
+	if spawn of player is "spawn":
+		wait 1 tick
+		set slot 0 of player's inventory to book named "§cРежимы" with lore "§7ПКМ для открытия меню"
+
+on respawn:
+	if spawn of player is "spawn":
+		wait 1 tick
+		set slot 0 of player's inventory to book named  "§cРежимы" with lore "§7ПКМ для открытия меню"
+
+on rightclick:
+	if name of player's tool is "§cРежимы":
+		cancel event
+		execute console command "dm open mainmenu %player%"

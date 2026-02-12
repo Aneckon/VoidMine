@@ -1,0 +1,137 @@
+###################################
+#   Зілля Переможця (Winner's Potion) - Updated Durations
+###################################
+id: WINNER_POTION
+config_5: true
+config_update: false
+
+name: '&6⸸ Зілля Переможця'
+material: SPLASH_POTION
+glow: true
+
+lore:
+- ''
+- '&7Зілля, яким нагороджують тріумфаторів'
+- ''
+- '&8⯇ &eСила I &7(1 хв)'
+- '&8⯇ &eШвидкість I &7(20 сек)'
+- '&8⯇ &eАбсорбція I &7(40 сек)'
+- ''
+- '&6⛧ Ті, хто вистояв до кінця,'
+- '&6п’ють із цієї чаші слави.'
+
+disableEnchantGlide: false
+disableStack: false
+keepItemOnDeath: false
+canBeUsedOnlyByTheOwner: false
+cancelEventIfNotOwner: false
+onlyOwnerBlackListedActivators: []
+storeItemInfo: false
+unbreakable: false
+isDurabilityBasedOnUsage: false
+cancelEventIfNoPermission: false
+whitelistedWorlds: []
+glider: false
+keepDefaultAttributes: false
+ignoreKeepDefaultAttributesFeature: true
+
+usageFeatures:
+  usage: 1
+  isRefreshableClean: true
+  usageLimit: -1
+
+dropOptions:
+  glowDrop: false
+  glowDropColor: WHITE
+  displayNameDrop: false
+
+enchantments: {}
+
+hiders:
+  hideEnchantments: true
+  hideUnbreakable: true
+  hideAttributes: true
+  hideUsage: true
+  hideDestroys: true
+  hidePlacedOn: true
+  hideDye: true
+  hideArmorTrim: true
+  hideAdditionalTooltip: true
+  hideToolTip: false
+
+giveFirstJoin:
+  giveFirstJoin: false
+  giveFirstJoinAmount: 1
+  giveFirstJoinSlot: 0
+
+restrictions:
+  locked-in-inventory: false
+
+variables: {}
+
+activators: {}
+
+displayConditions:
+  playerConditions: {}
+  worldConditions: {}
+  itemConditions: {}
+  placeholdersConditions: {}
+  enableFeature: false
+
+food:
+  nutrition: 1
+  saturation: 1
+  isMeat: false
+  canAlwaysEat: false
+
+consumableFeatures:
+  enable: false
+  animation: EAT
+  hasConsumeParticles: false
+  consumeSeconds: 3
+
+itemRarity:
+  enableRarity: false
+  rarity: COMMON
+
+repairableFeatures:
+  enable: false
+  repairCost: 2
+
+equippableFeatures:
+  enable: false
+  slot: BODY
+  enableSound: false
+  sound: ITEM.ARMOR.EQUIP_DIAMOND
+  damageableOnHurt: false
+  dispensable: true
+  swappable: true
+  allowedEntities:
+    - PLAYER
+
+potionSettings:
+  potionType: WATER
+  potionEffects:
+    strengthEffect:
+      potionEffectType: INCREASE_DAMAGE
+      isAmbient: false
+      duration: 1200    # 1 хвилина = 60 сек (60*20 = 1200 тік)
+      amplifier: 0     # Сила I
+      hasParticles: true
+      hasIcon: true
+    speedEffect:
+      potionEffectType: SPEED
+      isAmbient: false
+      duration: 400     # 20 секунд (20*20 = 400 тік)
+      amplifier: 0     # Швидкість I
+      hasParticles: true
+      hasIcon: true
+    absorptionEffect:
+      potionEffectType: ABSORPTION
+      isAmbient: false
+      duration: 800     # 10 секунд (10*20 = 200 тік)
+      amplifier: 0     # Абсорбція I
+      hasParticles: true
+      hasIcon: true
+
+attributes: {}

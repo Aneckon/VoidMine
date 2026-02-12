@@ -1,0 +1,217 @@
+# ============================================
+# GUI Меню
+# ============================================
+
+# Головне меню вибору типу арени
+function openMainMenu(p: player):
+	resetArenaCreation({_p})
+	
+	open virtual chest inventory with 5 rows named "&c⚔ Создание Арены" to {_p}
+	wait 1 tick
+	
+	createBorder({_p}'s current inventory)
+	
+	# Deathmatch
+	set {_deathmatch} to head from value "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjEyYTAzYTRjMTFiNGQ0NzI0NzJlN2U0NTkzZDJlMTI2YTYyNTllMzNjYzgxZjQ0ZWIwNWNmMDQyZDA3Njk2NyJ9fX0="
+	
+	if {_p} has permission "battlearena.command.deathmatch.create":
+		set name of {_deathmatch} to "&c⚔ Deathmatch"
+		set lore of {_deathmatch} to "&8❖ &7Режим: &fFree For All", "&8⤷ &7Все против всех", "&8⤷ &7Побеждает сильнейший", " " and "&8▶ &fНажми чтобы выбрать"
+	else:
+		set name of {_deathmatch} to "&8✖ Deathmatch"
+		set lore of {_deathmatch} to "&8❖ &7Режим: &fFree For All", "&8⤷ &cДоступно только донатерам", " " and "&c⛔ У тебя нет доступа"
+	
+	set slot 20 of {_p}'s current inventory to {_deathmatch}
+	
+	# Duel
+	set {_duel} to head from value "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmQ4MjEwOTJjZTVlNzU1NzQ1MWM3MjNhMDM0MWU5MGI5M2UwNTY0ZTJiMDE0ODFkZTgxZWVhMjcxZjA0YzViNiJ9fX0="
+	set name of {_duel} to "&c⚔ Дуэль 1 на 1"
+	set lore of {_duel} to "&8❖ &7Режим: &fDuel", "&8⤷ &7Один на один", "&8⤷ &7Вызови противника на бой", " " and "&8▶ &fНажми чтобы выбрать"
+	set slot 24 of {_p}'s current inventory to {_duel}
+	
+	# Back
+	set {_back} to head from value "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTBlMGE0ZDQ4Y2Q4MjlhNmQ1ODY4OTA5ZDY0M2ZhNGFmZmQzOWU4YWU2Y2FhZjZlYzc5NjA5Y2Y3NjQ5YjFjIn19fQ=="
+	set name of {_back} to "&c⮜ Назад"
+	set lore of {_back} to "&8❖ &7Вернуться в меню арен", " " and "&8▶ &fНажми, чтобы выйти"
+	set slot 40 of {_p}'s current inventory to {_back}
+
+# Меню вибору карти
+function openMapMenu(p: player):
+	open virtual chest inventory with 5 rows named "&c⚔ Выбор Карты" to {_p}
+	wait 1 tick
+	
+	createBorder({_p}'s current inventory)
+	
+	if {arena.create.%{_p}%.type} is "duel":
+		# Тільки River для дуелі
+		set {_river} to head from value "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2E1ZjExZGIwMTEyNzc0Njc2NDY2ZGI1ODFkYjg2NjhmYjRiZTYzYjJmNzRhOWY1YzMwNmM4MTdhMDhkNzQ1ZiJ9fX0="
+		set name of {_river} to "&c⚔ River"
+		set lore of {_river} to "&8❖ &7Речная арена", "&8⤷ &7Дуэль 1 на 1", " " and "&8▶ &fНажми чтобы выбрать"
+		set slot 22 of {_p}'s current inventory to {_river}
+	else:
+		# Всі карти для Deathmatch
+		set {_maps::*} to "swamp::20", "desert::22" and "mountain::24"
+		set {_names::swamp} to "Swamp"
+		set {_names::desert} to "Desert"
+		set {_names::mountain} to "Mountain"
+		set {_desc::swamp} to "Болотная"
+		set {_desc::desert} to "Пустынная"
+		set {_desc::mountain} to "Горная"
+		set {_size::swamp} to "Средняя"
+		set {_size::desert} to "Большая"
+		set {_size::mountain} to "Маленькая"
+		set {_textures::swamp} to "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2E1ZjExZGIwMTEyNzc0Njc2NDY2ZGI1ODFkYjg2NjhmYjRiZTYzYjJmNzRhOWY1YzMwNmM4MTdhMDhkNzQ1ZiJ9fX0="
+		set {_textures::desert} to "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzIwOTQwYjJlY2UyYzAzYmRmOTMxOThlZWIwNDM3ZDI1ZDVlNDk0MGI1MjAxZWMzZGQ0ZDA0ZDNlMjBkOWRlOCJ9fX0="
+		set {_textures::mountain} to "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjM1YmIzMDkxYmNjZTIyMTRmNzA2NWZjMTFkNDU0MGEyYjZkYmYxNDRmYzJiZDZjODMyMzUwNjZmMWJiYzFiZCJ9fX0="
+		
+		loop {_maps::*}:
+			set {_data::*} to loop-value split at "::"
+			set {_map} to {_data::1}
+			set {_slot} to {_data::2} parsed as integer
+			
+			set {_item} to head from value {_textures::%{_map}%}
+			set name of {_item} to "&c⚔ %{_names::%{_map}%}%"
+			set lore of {_item} to "&8❖ &7%{_desc::%{_map}%}% арена", "&8⤷ &7Размер: &f%{_size::%{_map}%}%", " " and "&8▶ &fНажми чтобы выбрать"
+			set slot {_slot} of {_p}'s current inventory to {_item}
+	
+	# Back button
+	set {_back} to head from value "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTBlMGE0ZDQ4Y2Q4MjlhNmQ1ODY4OTA5ZDY0M2ZhNGFmZmQzOWU4YWU2Y2FhZjZlYzc5NjA5Y2Y3NjQ5YjFjIn19fQ=="
+	set name of {_back} to "&c⮜ Назад"
+	set lore of {_back} to "&8❖ &7Вернуться к выбору типа", " " and "&8▶ &fНажми, чтобы выйти"
+	set slot 40 of {_p}'s current inventory to {_back}
+
+# Меню вибору кіта (ОНОВЛЕНЕ З КАСТОМНИМИ КІТАМИ)
+function openKitMenu(p: player):
+	open virtual chest inventory with 5 rows named "&c⚔ Выбор Сета" to {_p}
+	wait 1 tick
+	
+	createBorder({_p}'s current inventory)
+	
+	# СТАНДАРТНІ КІТИ (перший ряд - слоти 10-16)
+	set {_kits::*} to "iron::10", "archer::11" and "netherite::12"
+	set {_textures::iron} to "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzQzZTgzNTg4ZTk2NWM4MzU5ZTY0YmJjN2ZlNTNmNDgxY2NhNGY3ZmM2YzI3NzE0ZTRlYWNlOWY1ZTliMDhiZCJ9fX0="
+	set {_textures::archer} to "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTU3MmY4ZjY0OGI3Y2RjYmYxOTAzZWQ0YjE1MWE0ZjI2NWI3NjQyNjI2NzRkMmI5NjE2MjExNTkzMjY1YTBkMCJ9fX0="
+	set {_textures::netherite} to "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTViMzE3MjM2MDNjYjA3YzE1MGUzNGQ2NWJlODhlNWE2MWFhNDY0NGFhNjI2Y2RlNTI0ZjNiZDg2MTRmY2QyOSJ9fX0="
+	
+	loop {_kits::*}:
+		set {_data::*} to loop-value split at "::"
+		set {_kit} to {_data::1}
+		set {_slot} to {_data::2} parsed as integer
+		
+		set {_item} to head from value {_textures::%{_kit}%}
+		
+		# Перевірка чи активний
+		if {player.active.kit.%{_p}%} is {_kit}:
+			set name of {_item} to "&a✓ %{kit::%{_kit}%::display}% &7(Активен)"
+		else:
+			set name of {_item} to "&c⚔ %{kit::%{_kit}%::display}%"
+		
+		set lore of {_item} to {kit::%{_kit}%::lore::*}
+		add "" to lore of {_item}
+		add "&8▶ &fНажми чтобы выбрать" to lore of {_item}
+		set slot {_slot} of {_p}'s current inventory to {_item}
+	
+	if {custom.kits.%{_p}%::*} is set:
+		set {_slot} to 13
+		loop {custom.kits.%{_p}%::*}:
+			set {_customKit} to loop-value
+			set {_item} to {custom.kit.%{_p}%.%{_customKit}%::display.item}
+			
+			# Перевірка чи активний
+			if {player.active.kit.%{_p}%} is "custom_%{_customKit}%":
+				set name of {_item} to "&a✓ %{_customKit}% &7(Активен)"
+			else:
+				set name of {_item} to "&6⚔ %{_customKit}%"
+			
+			set lore of {_item} to "&8❖ &7Пользовательский кит"
+			add "&8▶ &fНажми чтобы выбрать" to lore of {_item}
+			
+			set slot {_slot} of {_p}'s current inventory to {_item}
+			add 1 to {_slot}
+			
+			if {_slot} >= 26:
+				stop loop
+	
+	# Back button
+	set {_back} to head from value "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTBlMGE0ZDQ4Y2Q4MjlhNmQ1ODY4OTA5ZDY0M2ZhNGFmZmQzOWU4YWU2Y2FhZjZlYzc5NjA5Y2Y3NjQ5YjFjIn19fQ=="
+	set name of {_back} to "&c⮜ Назад"
+	set lore of {_back} to "&8❖ &7Вернуться к выбору карты", " " and "&8▶ &fНажми, чтобы вернуться"
+	set slot 40 of {_p}'s current inventory to {_back}
+
+# Меню вибору гравця
+function openPlayerMenu(p: player):
+	open virtual chest inventory with 5 rows named "&c⚔ Выбор Противника" to {_p}
+	wait 1 tick
+	
+	createBorder({_p}'s current inventory)
+	
+	set {_slot} to 10
+	set {_found} to false
+	
+	loop all players:
+		if loop-player is not {_p}:
+			set {_found} to true
+			set slot {_slot} of {_p}'s current inventory to skull of loop-player named "&c⚔ %name of loop-player%" with lore "&8❖ &7Игрок онлайн", " " and "&8▶ &fНажми чтобы вызвать"
+			add 1 to {_slot}
+			if {_slot} is 17:
+				set {_slot} to 19
+			else if {_slot} is 26:
+				set {_slot} to 28
+			if {_slot} >= 35:
+				stop loop
+	
+	if {_found} is false:
+		set {_noPlayers} to head from value "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2VkMWFiYTczZjYzOWY0YmM0MmJkNDgxOTZjNzE1MTk3YmUyNzEyYzNiOTYyYzk3ZWJmOWU5ZWQ4ZWZhMDI1In19fQ=="
+		set name of {_noPlayers} to "&c✖ Нет игроков"
+		set lore of {_noPlayers} to "&8❖ &7Сейчас никого нет онлайн"
+		set slot 22 of {_p}'s current inventory to {_noPlayers}
+	
+	# Back button
+	set {_back} to head from value "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTBlMGE0ZDQ4Y2Q4MjlhNmQ1ODY4OTA5ZDY0M2ZhNGFmZmQzOWU4YWU2Y2FhZjZlYzc5NjA5Y2Y3NjQ5YjFjIn19fQ=="
+	set name of {_back} to "&c⮜ Назад"
+	set lore of {_back} to "&8❖ &7Вернуться к выбору карты", " " and "&8▶ &fНажми, чтобы вернуться"
+	set slot 40 of {_p}'s current inventory to {_back}
+
+# Меню підтвердження# МЕНЮ ПІДТВЕРДЖЕННЯ (ОНОВЛЕНЕ)
+function openConfirmMenu(p: player):
+	set {_type} to {arena.create.%{_p}%.type}
+	set {_map} to {arena.create.%{_p}%.map}
+	set {_kit} to {arena.create.%{_p}%.kit}
+	set {_target} to {arena.create.%{_p}%.target}
+	
+	open virtual chest inventory with 5 rows named "&c⚔ Подтверждение" to {_p}
+	wait 1 tick
+	
+	createBorder({_p}'s current inventory)
+	
+	# Визначаємо назву кіта
+	if {_kit} starts with "custom_":
+		set {_kitName} to {_kit}
+		replace all "custom_" with "" in {_kitName}
+		set {_kitDisplay} to {_kitName}
+	else:
+		set {_kitDisplay} to {kit::%{_kit}%::display}
+	
+	# Інформація про налаштування
+	if {_type} is "deathmatch":
+		set {_info} to head from value "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzQ5ODlkODQ2ODYyOTUyZjhhYzg0NGFiYmQ0YzFmNzdiZjg1ZTkyNGMyYmY5ODIzNmY4ZDkyNTM2MjRkODc5ZiJ9fX0="
+		set name of {_info} to "&c⚔ Deathmatch"
+		set lore of {_info} to "&8❖ &7Режим: &fFree For All", "&8⤷ &7Карта: &f%{_map}%", "&8⤷ &7Сет: &f%{_kitDisplay}%"
+	else:
+		set {_info} to head from value "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTU3MmY4ZjY0OGI3Y2RjYmYxOTAzZWQ0YjE1MWE0ZjI2NWI3NjQyNjI2NzRkMmI5NjE2MjExNTkzMjY1YTBkMCJ9fX0="
+		set name of {_info} to "&c⚔ Дуэль 1 на 1"
+		set lore of {_info} to "&8❖ &7Режим: &fDuel", "&8⤷ &7Карта: &f%{_map}%", "&8⤷ &7Сет: &f%{_kitDisplay}%", "&8⤷ &7Противник: &f%{_target}%"
+	
+	set slot 13 of {_p}'s current inventory to {_info}
+	
+	# Confirm
+	set {_confirm} to head from value "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTc5YTVjOTVlZTE3YWJmZWY0NWM4ZGMyMjQxODk5NjQ5NDRkNTYwZjE5YTQ0ZjE5ZjhhNDZhZWYzZmVlNDc1NiJ9fX0="
+	set name of {_confirm} to "&a✔ Создать"
+	set lore of {_confirm} to "&8❖ &7Нажми чтобы создать арену"
+	set slot 29 of {_p}'s current inventory to {_confirm}
+	
+	# Cancel
+	set {_cancel} to head from value "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmViNTg4YjIxYTZmOThhZDFmZjRlMDg1YzU1MmRjYjA1MGVmYzljYWI0MjdmNDYwNDhmMThmYzgwMzQ3NWY3In19fQ=="
+	set name of {_cancel} to "&c✖ Отмена"
+	set lore of {_cancel} to "&8❖ &7Нажми чтобы отменить"
+	set slot 33 of {_p}'s current inventory to {_cancel}

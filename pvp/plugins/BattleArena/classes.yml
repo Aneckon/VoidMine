@@ -1,0 +1,130 @@
+# -----------------
+# Classes configuration for BattleArena
+# -----------------
+config-version: 1.0
+
+require-permission: false
+
+classes:
+  # ============================================
+  # Залізний сет
+  # ============================================
+  iron:
+    name: "&7⚔ Железный сет"
+    items:
+      - iron_sword
+      - bow
+      - arrow{amount=16}
+      - cooked_beef{amount=16}
+      - golden_apple{amount=3}
+    equipment:
+      helmet: iron_helmet
+      chestplate: iron_chestplate
+      leggings: iron_leggings
+      boots: iron_boots
+      offhand: shield
+
+  # ============================================
+  # Алмазний сет
+  # ============================================
+  diamond:
+    name: "&b⚔ Алмазный сет"
+    items:
+      - diamond_sword
+      - bow
+      - arrow{amount=32}
+      - cooked_beef{amount=16}
+      - golden_apple{amount=5}
+      - ender_pearl{amount=2}
+    equipment:
+      helmet: diamond_helmet
+      chestplate: diamond_chestplate
+      leggings: diamond_leggings
+      boots: diamond_boots
+      offhand: shield
+
+  # ============================================
+  # Незеритовий сет
+  # ============================================
+  netherite:
+    name: "&8⚔ Незеритовый сет"
+    items:
+      - netherite_sword
+      - bow
+      - arrow{amount=64}
+      - cooked_beef{amount=16}
+      - golden_apple{amount=8}
+      - enchanted_golden_apple{amount=1}
+      - ender_pearl{amount=4}
+    equipment:
+      helmet: netherite_helmet
+      chestplate: netherite_chestplate
+      leggings: netherite_leggings
+      boots: netherite_boots
+      offhand: totem_of_undying
+
+  # ============================================
+  # Лучник
+  # ============================================
+  archer:
+    name: "&a⚔ Лучник"
+    items:
+      - stone_sword
+      - bow
+      - arrow{amount=128}
+      - cooked_beef{amount=16}
+      - golden_apple{amount=3}
+    equipment:
+      helmet: chainmail_helmet
+      chestplate: chainmail_chestplate
+      leggings: chainmail_leggings
+      boots: chainmail_boots
+      offhand: arrow{amount=64}
+
+  # ============================================
+  # Танк
+  # ============================================
+  tank:
+    name: "&c⚔ Танк"
+    items:
+      - iron_sword
+      - cooked_beef{amount=32}
+      - golden_apple{amount=5}
+    equipment:
+      helmet: diamond_helmet
+      chestplate: netherite_chestplate
+      leggings: diamond_leggings
+      boots: diamond_boots
+      offhand: shield
+
+  # ============================================
+  # Берсерк
+  # ============================================
+  berserker:
+    name: "&4⚔ Берсерк"
+    items:
+      - diamond_axe
+      - cooked_beef{amount=16}
+      - golden_apple{amount=3}
+    equipment:
+      helmet: leather_helmet
+      chestplate: leather_chestplate
+      leggings: leather_leggings
+      boots: leather_boots
+      offhand: shield
+
+  # ============================================
+  # Стандартний (warrior)
+  # ============================================
+  warrior:
+    name: "&e⚔ Воин"
+    items:
+      - iron_sword
+      - cooked_beef{amount=16}
+      - golden_apple{amount=2}
+    equipment:
+      helmet: iron_helmet
+      chestplate: iron_chestplate
+      leggings: iron_leggings
+      boots: iron_boots
+      offhand: shield

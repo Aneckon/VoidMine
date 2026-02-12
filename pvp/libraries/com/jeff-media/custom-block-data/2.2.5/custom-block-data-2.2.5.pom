@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <!-- This module was also published with a richer model, Gradle metadata,  -->
+  <!-- which should be used instead. Do not delete the following line which  -->
+  <!-- is to indicate to Gradle or any Gradle module metadata file consumer  -->
+  <!-- that they should prefer consuming it instead. -->
+  <!-- do_not_remove: published-with-gradle-metadata -->
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.jeff-media</groupId>
+  <artifactId>custom-block-data</artifactId>
+  <version>2.2.5</version>
+  <name>CustomBlockData</name>
+  <description>Bukkit API Library to add PersistentDataContainers to blocks</description>
+  <url>https://github.com/JEFF-Media-GbR/CustomBlockData/</url>
+  <inceptionYear>2021</inceptionYear>
+  <licenses>
+    <license>
+      <name>GPL-3.0-or-later</name>
+      <url>https://www.gnu.org/licenses/gpl-3.0-standalone.html</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <id>mfnalex</id>
+      <name>Alexander Majka</name>
+      <email>mfnalex@jeff-media.com</email>
+    </developer>
+  </developers>
+  <scm>
+    <connection>scm:git:git://github.com/JEFF-Media-GbR/CustomBlockData.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/JEFF-Media-GbR/CustomBlockData.git</developerConnection>
+    <url>https://github.com/JEFF-Media-GbR/CustomBlockData/</url>
+  </scm>
+</project>

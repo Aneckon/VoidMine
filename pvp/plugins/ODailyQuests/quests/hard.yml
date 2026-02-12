@@ -1,0 +1,72 @@
+# ==============================================================
+#                        СЛОЖНЫЕ КВЕСТЫ
+# ==============================================================
+quests:
+  1:
+    name: "&cЛегенда арены"
+    menu_item: NETHERITE_SWORD
+    description:
+      - "&8❖ &7Сложность: &cСложная"
+      - ""
+      - "&c⚔ &7Задание:"
+      - " &8⤷ &7Убить &c%required% &7игроков"
+      - ""
+      - "&c⚙ &7Прогресс: %status%"
+      - ""
+      - "&c⭐ &7Награда:"
+      - " &8⤷ &7400 монет"
+      - ""
+    quest_type: KILL
+    required: PLAYER
+    required_amount: 15
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "eco give %player% 1500"
+        - "xp add %player% 10 levels"
+
+  2:
+    name: "&cНепобедимый"
+    menu_item: DIAMOND_CHESTPLATE
+    description:
+      - "&8❖ &7Сложность: &cСложная"
+      - ""
+      - "&c⚔ &7Задание:"
+      - " &8⤷ &7Убить &c%required% &7игроков"
+      - ""
+      - "&c⚙ &7Прогресс: %status%"
+      - ""
+      - "&c⭐ &7Награда:"
+      - " &8⤷ &7500 монет"
+      - ""
+    quest_type: KILL
+    required: PLAYER
+    required_amount: 20
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "eco give %player% 2000"
+        - "give %player% diamond 1"
+
+  3:
+    name: "&cУбийца титанов"
+    menu_item: WITHER_SKELETON_SKULL
+    description:
+      - "&8❖ &7Сложность: &cСложная"
+      - ""
+      - "&c⚔ &7Задание:"
+      - " &8⤷ &7Убить &c%required% &7игроков"
+      - ""
+      - "&c⚙ &7Прогресс: %status%"
+      - ""
+      - "&c⭐ &7Награда:"
+      - " &8⤷ &7720 монет"
+      - ""
+    quest_type: KILL
+    required: PLAYER
+    required_amount: 25
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "eco give %player% 2500"
+        - "give %player% diamond 2"

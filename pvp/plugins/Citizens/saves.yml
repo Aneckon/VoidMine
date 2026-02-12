@@ -1,0 +1,124 @@
+# Citizens NPC Storage
+
+last-created-npc-id: 7
+npc:
+  '0':
+    metadata:
+      cached-skin-uuid: 45294351-c8ff-42e6-8890-8cd2af98d1e7
+      cached-skin-uuid-name: help
+    name: §cПомощник
+    uuid: 1010c672-a149-4f52-9453-875db857a164
+    traits:
+      glowingtrait:
+        color: WHITE
+        glowing: true
+      location:
+        bodyYaw: 0.29136068
+        world: world
+        x: -7.5
+        y: 109.0
+        z: -3.5
+        yaw: 0.2914
+        pitch: -4.0748
+      skintrait:
+        signature: AvRnm8MqEmFqruAptc1Twu90hh17vgLERddbAbi8RVxHZ1trFwB6o/8ZPSDxO62XBx440DegA/2oD6rcFnAnrHvuQSosXyOnRGb9qde+MIgmeYPKNxl+vul6tr8Q4L5mK8rqRE1iC4cxV/htxAwzBwnwP97dCmAC/qAOepehpei3rjky0wm7t/wbjSg6fF5HOBqVQpg9h97uFiR42L8iIxagLXyjnWNnvMO9s5oHE4ewx/5dlN0ZAsHFvbt5ckzshJRJETVaia733NNe0D/ovvm5omhJ90VVLmNZX2Xk4rZ9Wnu6ha5X8xv1jpYQbi3AzbNko9zj/bqOVPl5qfI7DsqHjqtPh0tFEDC60GnYILHlAmV+vMWTpzsf3XdNMbw3MwZBtp4lW++AeAZugdj9Y5jRd6K0bWfgNRs+SR8y6iCe2zR7a2bb9ViiBMmTiDmg7374v3pFeXpaxPdb4/2Chuup8EJHAAb0EAltysymulzE5jqP8ECfFCZUEhY/I862q0NdAxa+/ky5h3DC6I6jsvOZSS8l+BOjg/RQs9hnsg+dRqvtwjgGJdZPuizi/5leO1SecHQl2bicYvocFKRd8yVX/MJcVQjg+FH6+gyGT7TC6a/VB91CISD4RvH0CwwnaFc3lVErdmhAE4BCdNHIn3+QFh4F/s6Ofofq7whgX0s=
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTc0MzI0MzIxNDEyNSwKICAicHJvZmlsZUlkIiA6ICI0NTI5NDM1MWM4ZmY0MmU2ODg5MDhjZDJhZjk4ZDFlNyIsCiAgInByb2ZpbGVOYW1lIiA6ICJIZWxwIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2QxNGI4NzdjNGVhYWNiMDQ1MTJkMjNmNjZjNDk4ZmU2N2I0MDcyNmU1NjQyNDc0OTU2Yzg3NzgzZTM1N2MwYTIiLAogICAgICAibWV0YWRhdGEiIDogewogICAgICAgICJtb2RlbCIgOiAic2xpbSIKICAgICAgfQogICAgfSwKICAgICJDQVBFIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS8yMzQwYzBlMDNkZDI0YTExYjE1YThiMzNjMmE3ZTllMzJhYmIyMDUxYjI0ODFkMGJhN2RlZmQ2MzVjYTdhOTMzIgogICAgfQogIH0KfQ==
+      owner:
+        uuid: 31fcfdd9-58e9-3d7c-893a-c80441ef34dc
+      spawned: true
+      commandtrait:
+        commands:
+          '0':
+            command: dmenu open mainmenu %player_name%
+            hand: RIGHT
+            player: false
+            npc: false
+            op: false
+            cooldown: 0
+            globalcooldown: 0
+            n: -1
+            delay: 0
+            cost: -1.0
+            experienceCost: -1
+      lookclose:
+        range: 5.0
+        enabled: true
+        perplayer: true
+        randomPitchRange:
+          '0': 0.0
+          '1': 0.0
+        randomYawRange:
+          '0': 0.0
+          '1': 360.0
+      type: PLAYER
+      scoreboardtrait:
+        color: RED
+        tags:
+          '0': CITIZENS_NPC
+    traitnames: owner,scoreboardtrait,spawned,rotationtrait,commandtrait,skintrait,lookclose,location,type,inventory
+    navigator:
+      speedmodifier: 1.0
+      avoidwater: false
+      usedefaultstuckaction: false
+  '1':
+    name: '&cАрена'
+    uuid: bce2bf43-ee35-44a9-b0dc-a9e649c90e56
+    traits:
+      type: PLAYER
+      location:
+        bodyYaw: -89.50223
+        world: world
+        x: -29.0
+        y: 109.0
+        z: -8.0E-4
+        yaw: -89.5022
+        pitch: -1.0414
+      spawned: true
+      owner:
+        uuid: 31fcfdd9-58e9-3d7c-893a-c80441ef34dc
+      scoreboardtrait:
+        tags:
+          '0': CITIZENS_NPC
+    traitnames: spawned,owner,scoreboardtrait,skintrait,location,inventory,type
+    navigator:
+      speedmodifier: 1.0
+      avoidwater: false
+      usedefaultstuckaction: false
+  '7':
+    name: '&cБаффи'
+    uuid: f915f402-4e28-455b-b7bd-d922b15b5f96
+    traits:
+      type: PLAYER
+      owner:
+        uuid: 31fcfdd9-58e9-3d7c-893a-c80441ef34dc
+      spawned: true
+      commandtrait:
+        commands:
+          '1':
+            command: buffs
+            hand: RIGHT
+            player: true
+            npc: false
+            op: false
+            cooldown: 0
+            globalcooldown: 0
+            n: -1
+            delay: 0
+            cost: -1.0
+            experienceCost: -1
+      location:
+        bodyYaw: 64.60962
+        world: world
+        x: 15.3223
+        y: 112.0625
+        z: -15.3373
+        yaw: 64.6096
+        pitch: -0.8205
+      scoreboardtrait:
+        tags:
+          '0': CITIZENS_NPC
+    traitnames: owner,spawned,scoreboardtrait,commandtrait,skintrait,location,type,inventory
+    navigator:
+      speedmodifier: 1.0
+      avoidwater: false
+      usedefaultstuckaction: false

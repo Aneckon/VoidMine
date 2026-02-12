@@ -1,0 +1,16 @@
+# DeluxeMenus 1.14.0-Release main configuration file
+#
+# A full wiki on how to use this plugin can be found at:
+# https://wiki.helpch.at/clips-plugins/deluxemenus
+
+debug: HIGHEST
+check_updates: true
+gui_menus:
+  # helpmenu:
+  #   file: helpmenu.yml
+  mainmenu:
+    file: mainmenu.yml
+  profilemenu:
+    file: profilemenu.yml
+# arenalist:
+#   file: arenalist.yml

@@ -1,0 +1,132 @@
+###################################
+#   Зілля Тіней (оновлений варіант)
+###################################
+id: SHADOW_POTION
+config_5: true
+config_update: false
+
+# Відображувана назва
+name: '&8🌀 Зілля Тіней'
+# Матеріал
+material: SPLASH_POTION
+# Візуальний "зачарований" ефект
+glow: true
+
+# ПОВЕРНУТИЙ ОПИС (lore), але з оновленими часами ефектів
+lore:
+- ''
+- '&7Дозволяє зникнути в темряві'
+- ''
+- '&8⯇ &7Невидимість &7(1.30 хв)'
+- '&8⯇ &7Швидкість I &7(30 сек)'
+- ''
+- '&8⛧ Ідеальне для втечі або засідки.'
+
+# Ховаємо зайві записи
+hiders:
+  hideEnchantments: true
+  hideUnbreakable: true
+  hideAttributes: true
+  hideUsage: true
+  hideDestroys: true
+  hidePlacedOn: true
+  hideDye: true
+  hideArmorTrim: true
+  hideAdditionalTooltip: true
+  hideToolTip: false
+
+# Система usage (щоб зілля зникло після 1 використання)
+usageFeatures:
+  usage: 1
+  usageLimit: -1
+  isRefreshableClean: true
+
+isDurabilityBasedOnUsage: false
+unbreakable: false
+disableStack: false
+keepItemOnDeath: false
+
+# Налаштування самого зілля (Splash, з кастомними ефектами)
+potionSettings:
+  potionType: WATER
+  potionEffects:
+    invisEff:
+      potionEffectType: INVISIBILITY
+      isAmbient: false
+      duration: 1800  # 90 сек. (1,5 хв) = 1800 тік
+      amplifier: 0
+      hasParticles: true
+      hasIcon: true
+    speedEff:
+      potionEffectType: SPEED
+      isAmbient: false
+      duration: 600   # 30 сек. = 600 тік
+      amplifier: 0
+      hasParticles: true
+      hasIcon: true
+
+# При бажанні можна додати інші активатори, але тут базовий випадок, як звичайне сплеш-зілля
+activators: {}
+
+dropOptions:
+  glowDrop: false
+  glowDropColor: WHITE
+  displayNameDrop: false
+
+enchantments: {}
+
+giveFirstJoin:
+  giveFirstJoin: false
+  giveFirstJoinAmount: 1
+  giveFirstJoinSlot: 0
+
+restrictions:
+  locked-in-inventory: false
+
+cancelEventIfNoPermission: false
+whitelistedWorlds: []
+variables: {}
+displayConditions:
+  playerConditions: {}
+  worldConditions: {}
+  itemConditions: {}
+  placeholdersConditions: {}
+  enableFeature: false
+
+# Решту параметрів (їжа, екіпірування, ремонт тощо) вимкнені, щоб не заважали
+food:
+  nutrition: 1
+  saturation: 1
+  isMeat: false
+  canAlwaysEat: false
+
+consumableFeatures:
+  enable: false
+  animation: EAT
+  hasConsumeParticles: false
+  consumeSeconds: 3
+
+itemRarity:
+  enableRarity: false
+  rarity: COMMON
+
+glider: false
+
+repairableFeatures:
+  enable: false
+  repairCost: 2
+
+equippableFeatures:
+  enable: false
+  slot: HEAD
+  enableSound: false
+  sound: ITEM.ARMOR.EQUIP_LEATHER
+  damageableOnHurt: false
+  dispensable: true
+  swappable: true
+  allowedEntities:
+  - PLAYER
+
+attributes: {}
+keepDefaultAttributes: false
+ignoreKeepDefaultAttributesFeature: true

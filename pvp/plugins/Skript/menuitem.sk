@@ -1,0 +1,14 @@
+on join:
+	if world of player is "world":
+		wait 1 tick
+		set slot 0 of player's inventory to book named "§4⛧ §cРежими анархії §4⛧" with lore "§7ПКМ для відкриття меню"
+
+on respawn:
+	if world of player is "world":
+		wait 1 tick
+		set slot 0 of player's inventory to book named  "§4⛧ §cРежими анархії §4⛧" with lore "§7ПКМ для відкриття меню"
+
+on rightclick:
+	if name of player's tool is "§4⛧ §cРежими анархії §4⛧":
+		cancel event
+		execute console command "dm open mainmenu %player%"

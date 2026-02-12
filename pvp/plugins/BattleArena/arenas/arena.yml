@@ -1,0 +1,108 @@
+name: Arena
+type: Match
+team-options:
+  named-teams: false
+  team-size: 1
+  team-amount: 2
+  team-selection: none
+modules:
+  - classes
+  - duels
+  - scoreboards
+  - arena-restoration
+lives:
+  enabled: false
+victory-conditions:
+  teams-alive:
+    amount: 1
+  time-limit:
+    time-limit: 5m
+events:
+  on-join:
+    - store{types=all}
+    - change-gamemode{gamemode=survival}
+    - flight{enabled=false}
+    - teleport{location=waitroom}
+    - apply-scoreboard{scoreboard=waiting}
+  on-spectate:
+    - store{types=all}
+    - change-gamemode{gamemode=spectator}
+    - flight{enabled=true}
+    - teleport{location=spectator}
+    - apply-scoreboard{scoreboard=spectator}
+  on-leave:
+    - clear-effects
+    - restore{types=all}
+    - remove-scoreboard
+    - teleport{location=spawn;world=world}
+  on-death:
+    - clear-inventory
+    - change-role{role=spectator}
+options:
+  - block-interact{enabled=true}
+  - damage-entities{option=always}
+  - keep-inventory{enabled=true}
+  - keep-experience{enabled=true}
+  - class-equip-only-selects{enabled=true}
+initial-phase: waiting
+phases:
+  waiting:
+    allow-join: true
+    allow-spectate: true
+    next-phase: countdown
+    options:
+      - damage-players{option=never}
+      - block-break{enabled=false}
+      - block-place{enabled=false}
+      - class-equipping{enabled=true}
+  countdown:
+    allow-join: true
+    allow-spectate: true
+    revert-phase: true
+    next-phase: ingame
+    countdown-time: 10s
+    options:
+      - damage-players{option=never}
+      - block-break{enabled=false}
+      - block-place{enabled=false}
+      - class-equipping{enabled=true}
+    events:
+      on-start:
+        - apply-scoreboard{scoreboard=ingame-list;selector=all}
+  ingame:
+    allow-join: false
+    allow-spectate: true
+    next-phase: victory
+    options:
+      - damage-players{option=other_team}
+      - block-break{enabled=true}
+      - block-place{enabled=true}
+      - block-interact{enabled=true}
+    events:
+      on-start:
+        - teleport{location=team_spawn}
+        - give-effects{effects=[speed{duration=300;amplifier=1}]}
+        - play-sound{sound=block.note_block.pling;pitch=2;volume=1}
+        - apply-scoreboard{scoreboard=ingame-list;selector=all}
+  victory:
+    allow-join: false
+    allow-spectate: false
+    next-phase: waiting
+    duration: 5s
+    events:
+      on-complete:
+        - leave
+        - restore-arena
+        - remove-scoreboard
+      on-victory:
+        - send-message{message=Поздравляем, ты победил!}
+        - play-sound{sound=entity.player.levelup;pitch=1;volume=1}
+        - teleport{location=spawn;world=world}
+      on-lose:
+        - send-message{message=К сожалению, ты проиграл!}
+        - play-sound{sound=block.anvil.place;pitch=0;volume=1}
+        - teleport{location=spawn;world=world}
+      on-draw:
+        - send-message{message=Ничья!}
+        - play-sound{sound=block.beacon.deactivate;pitch=0;volume=1}
+        - teleport{location=spawn;world=world}

@@ -1,0 +1,37 @@
+name: river
+arena: Arena
+type: dynamic
+world: river
+bounds:
+  min-x: -33
+  min-y: 14
+  min-z: -33
+  max-x: 32
+  max-y: 318
+  max-z: 32
+spawns:
+  waitroom:
+    x: 0.5
+    y: 110.0
+    z: 0.5
+    yaw: 89.36931
+    pitch: -4.1876106
+  spectator:
+    x: -14.523326642927394
+    y: 79.0
+    z: 18.06348662031298
+    yaw: -141.90706
+    pitch: 10.114778
+  team-spawns:
+    Default:
+      spawns:
+      - x: -14.176534018673612
+        y: 79.0
+        z: 18.81059516472738
+        yaw: -140.3776
+        pitch: 29.230894
+      - x: -10.0
+        y: 79.0
+        z: 15.0
+        yaw: 0.0
+        pitch: 0.0

@@ -1,0 +1,2 @@
+[11.02.2026 15:34:11] Bonet: Rule {ID=/op,Match='^/op\b'} caught message: /op
+[11.02.2026 15:34:15] Bonet: Rule {ID=/gm,Match='^/(gm|gamemode)'} caught message: /gm

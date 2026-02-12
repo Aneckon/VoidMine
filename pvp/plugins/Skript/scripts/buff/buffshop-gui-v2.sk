@@ -1,0 +1,497 @@
+# ============================================
+# BUFF SHOP GUI v2.0 - Система слотів
+# ============================================
+
+# ===== ДОПОМІЖНІ ФУНКЦІЇ =====
+
+function bsCreateBorder(inv: inventory):
+	set {_borders::*} to 0, 1, 2, 3, 4, 5, 6, 7, 8, 36, 37, 38, 39, 41, 42, 43, 44, 9, 17, 18, 26, 27 and 35
+	loop {_borders::*}:
+		set slot loop-value of {_inv} to black stained glass pane named " "
+
+function bsPlayClick(p: player):
+	play sound "ui.button.click" to {_p}
+
+function bsPlayError(p: player):
+	play sound "entity.villager.no" to {_p}
+
+function bsPlaySuccess(p: player):
+	play sound "entity.player.levelup" to {_p}
+
+# ===== ГОЛОВНЕ МЕНЮ МАГАЗИНУ =====
+
+function openBuffShopMain(p: player):
+	open virtual chest inventory with 5 rows named "&c🛒 Магазин Баффов" to {_p}
+	wait 1 tick
+	
+	bsCreateBorder({_p}'s current inventory)
+	
+	# Speed категорія
+	set {_speed} to head from value {buff::category::speed::icon}
+	set name of {_speed} to {buff::category::speed::name}
+	set line 1 of lore of {_speed} to "&8❖ &7Баффы на скорость"
+	set line 2 of lore of {_speed} to "&8⤷ &7передвижения"
+	set line 3 of lore of {_speed} to " "
+	set line 4 of lore of {_speed} to "&8▶ &fНажми чтобы открыть"
+	set slot 20 of {_p}'s current inventory to {_speed}
+	
+	# Defense категорія
+	set {_defense} to head from value {buff::category::defense::icon}
+	set name of {_defense} to {buff::category::defense::name}
+	set line 1 of lore of {_defense} to "&8❖ &7Баффы на защиту"
+	set line 2 of lore of {_defense} to "&8⤷ &7и выживание"
+	set line 3 of lore of {_defense} to " "
+	set line 4 of lore of {_defense} to "&8▶ &fНажми чтобы открыть"
+	set slot 22 of {_p}'s current inventory to {_defense}
+	
+	# Kill категорія
+	set {_kill} to head from value {buff::category::kill::icon}
+	set name of {_kill} to {buff::category::kill::name}
+	set line 1 of lore of {_kill} to "&8❖ &7Бонусы за убийства"
+	set line 2 of lore of {_kill} to "&8⤷ &7противников"
+	set line 3 of lore of {_kill} to " "
+	set line 4 of lore of {_kill} to "&8▶ &fНажми чтобы открыть"
+	set slot 24 of {_p}'s current inventory to {_kill}
+	
+	# Баланс
+	set {_balance} to head from value "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzRjY2I1Mjc1MGU5N2U4MzBhZWJmYThhMjFkNWRhMGQzNjRkMGZkYWQ5ZmIwY2MyMjBmZTJjYTg0MTE4NDJjMyJ9fX0="
+	set {_money} to getPlayerBalance({_p})
+	set name of {_balance} to "&c💰 Баланс"
+	set line 1 of lore of {_balance} to "&8❖ &7Ваш баланс:"
+	set line 2 of lore of {_balance} to "&8⤷ &f%{_money}% &7монет"
+	set slot 4 of {_p}'s current inventory to {_balance}
+	
+	# Назад
+	set {_back} to head from value "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTBlMGE0ZDQ4Y2Q4MjlhNmQ1ODY4OTA5ZDY0M2ZhNGFmZmQzOWU4YWU2Y2FhZjZlYzc5NjA5Y2Y3NjQ5YjFjIn19fQ=="
+	set name of {_back} to "&c⮜ Закрыть"
+	set lore of {_back} to "&8❖ &7Закрыть меню"
+	set slot 40 of {_p}'s current inventory to {_back}
+
+# ===== МЕНЮ КАТЕГОРІЇ (ПОКУПКА) =====
+
+function openBuffCategory(p: player, category: text):
+	set {_title} to {buff::category::%{_category}%::name}
+	open virtual chest inventory with 5 rows named {_title} to {_p}
+	wait 1 tick
+	
+	bsCreateBorder({_p}'s current inventory)
+	
+	# Відобразити бафи категорії
+	set {_slots::*} to 20, 22 and 24
+	set {_index} to 1
+	
+	loop {buff::list::%{_category}%::*}:
+		set {_buffId} to loop-value
+		if {_buffId} is set:
+			set {_slot} to {_slots::%{_index}%}
+			set {_item} to createBuffShopItem({_p}, {_buffId})
+			set slot {_slot} of {_p}'s current inventory to {_item}
+			add 1 to {_index}
+	
+	# Баланс
+	set {_balance} to head from value "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzRjY2I1Mjc1MGU5N2U4MzBhZWJmYThhMjFkNWRhMGQzNjRkMGZkYWQ5ZmIwY2MyMjBmZTJjYTg0MTE4NDJjMyJ9fX0="
+	set {_money} to getPlayerBalance({_p})
+	set name of {_balance} to "&c💰 Баланс"
+	set line 1 of lore of {_balance} to "&8❖ &7Ваш баланс:"
+	set line 2 of lore of {_balance} to "&8⤷ &f%{_money}% &7монет"
+	set slot 4 of {_p}'s current inventory to {_balance}
+	
+	# Назад
+	set {_back} to head from value "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTBlMGE0ZDQ4Y2Q4MjlhNmQ1ODY4OTA5ZDY0M2ZhNGFmZmQzOWU4YWU2Y2FhZjZlYzc5NjA5Y2Y3NjQ5YjFjIn19fQ=="
+	set name of {_back} to "&c⮜ Назад"
+	set line 1 of lore of {_back} to "&8❖ &7Вернуться к категориям"
+	set slot 40 of {_p}'s current inventory to {_back}
+
+# Створення предмета бафа для магазину
+function createBuffShopItem(p: player, buffId: text) :: item:
+	set {_name} to {buff::%{_buffId}%::name}
+	set {_price} to {buff::%{_buffId}%::price}
+	set {_desc1} to {buff::%{_buffId}%::desc1}
+	set {_desc2} to {buff::%{_buffId}%::desc2}
+	set {_desc3} to {buff::%{_buffId}%::desc3}
+	set {_desc4} to {buff::%{_buffId}%::desc4}
+	set {_texture} to {buff::%{_buffId}%::texture}
+	
+	set {_balance} to getPlayerBalance({_p})
+	set {_unlocked} to isBuffUnlocked({_p}, {_buffId})
+	
+	set {_item} to head from value {_texture}
+	
+	if {_unlocked} is true:
+		set name of {_item} to "&c✔ %{_name}%"
+		set line 1 of lore of {_item} to "&8❖ %{_desc1}%"
+		set line 2 of lore of {_item} to "&8⤷ %{_desc2}%"
+		set line 3 of lore of {_item} to "&8⤷ %{_desc3}%"
+		set line 4 of lore of {_item} to " "
+		set line 5 of lore of {_item} to {_desc4}
+		set line 6 of lore of {_item} to " "
+		set line 7 of lore of {_item} to "&c✔ Куплено"
+	else if {_balance} >= {_price}:
+		set name of {_item} to "&f%{_name}%"
+		set line 1 of lore of {_item} to "&8❖ %{_desc1}%"
+		set line 2 of lore of {_item} to "&8⤷ %{_desc2}%"
+		set line 3 of lore of {_item} to "&8⤷ %{_desc3}%"
+		set line 4 of lore of {_item} to " "
+		set line 5 of lore of {_item} to {_desc4}
+		set line 6 of lore of {_item} to " "
+		set line 7 of lore of {_item} to "&8▶ &fНажми чтобы купить"
+	else:
+		set name of {_item} to "&7%{_name}%"
+		set line 1 of lore of {_item} to "&8❖ %{_desc1}%"
+		set line 2 of lore of {_item} to "&8⤷ %{_desc2}%"
+		set line 3 of lore of {_item} to "&8⤷ %{_desc3}%"
+		set line 4 of lore of {_item} to " "
+		set line 5 of lore of {_item} to {_desc4}
+		set line 6 of lore of {_item} to " "
+		set line 7 of lore of {_item} to "&7✖ Недостаточно монет"
+	
+	return {_item}
+
+# ===== МЕНЮ "МОИ БАФФЫ" =====
+
+function openMyBuffsMenu(p: player):
+	open virtual chest inventory with 5 rows named "&c💼 Мои Баффы" to {_p}
+	wait 1 tick
+	
+	# Рамка
+	loop 45 times:
+		set {_sl} to loop-number - 1
+		if {_sl} is not in {10, 11, 12, 19, 20, 21, 28, 29, 30, 13, 22, 31, 4, 40}:
+			set slot {_sl} of {_p}'s current inventory to black stained glass pane named " "
+	
+	# SPEED SECTION
+	set {_speedTitle} to head from value {buff::category::speed::icon}
+	set name of {_speedTitle} to "&c🏃 БАФФЫ СКОРОСТИ"
+	set line 1 of lore of {_speedTitle} to "&8❖ &7Ваши баффы скорости"
+	set slot 10 of {_p}'s current inventory to {_speedTitle}
+	
+	set {_hasSpeed} to false
+	set {_speedSlot} to 11
+	loop {buff::list::speed::*}:
+		if isBuffUnlocked({_p}, loop-value) is true:
+			set {_hasSpeed} to true
+			set {_item} to createOwnedBuffItem({_p}, loop-value)
+			set slot {_speedSlot} of {_p}'s current inventory to {_item}
+			add 1 to {_speedSlot}
+	
+	if {_hasSpeed} is false:
+		set {_none} to gray dye
+		set name of {_none} to "&7Нет баффов"
+		set line 1 of lore of {_none} to "&8❖ &7У вас нет баффов скорости"
+		set line 2 of lore of {_none} to "&8⤷ &f/buffshop &7чтобы купить"
+		set slot 11 of {_p}'s current inventory to {_none}
+	
+	# DEFENSE SECTION
+	set {_defTitle} to head from value {buff::category::defense::icon}
+	set name of {_defTitle} to "&c🛡 БАФФЫ ЗАЩИТЫ"
+	set line 1 of lore of {_defTitle} to "&8❖ &7Ваши баффы защиты"
+	set slot 19 of {_p}'s current inventory to {_defTitle}
+	
+	set {_hasDef} to false
+	set {_defSlot} to 20
+	loop {buff::list::defense::*}:
+		if isBuffUnlocked({_p}, loop-value) is true:
+			set {_hasDef} to true
+			set {_item} to createOwnedBuffItem({_p}, loop-value)
+			set slot {_defSlot} of {_p}'s current inventory to {_item}
+			add 1 to {_defSlot}
+	
+	if {_hasDef} is false:
+		set {_none} to gray dye
+		set name of {_none} to "&7Нет баффов"
+		set line 1 of lore of {_none} to "&8❖ &7У вас нет баффов защиты"
+		set line 2 of lore of {_none} to "&8⤷ &f/buffshop &7чтобы купить"
+		set slot 20 of {_p}'s current inventory to {_none}
+	
+	# KILL SECTION
+	set {_killTitle} to head from value {buff::category::kill::icon}
+	set name of {_killTitle} to "&c💀 БОНУСЫ ЗА УБИЙСТВА"
+	set line 1 of lore of {_killTitle} to "&8❖ &7Ваши бонусы за убийства"
+	set slot 28 of {_p}'s current inventory to {_killTitle}
+	
+	set {_hasKill} to false
+	set {_killSlot} to 29
+	loop {buff::list::kill::*}:
+		if isBuffUnlocked({_p}, loop-value) is true:
+			set {_hasKill} to true
+			set {_item} to createOwnedBuffItem({_p}, loop-value)
+			set slot {_killSlot} of {_p}'s current inventory to {_item}
+			add 1 to {_killSlot}
+	
+	if {_hasKill} is false:
+		set {_none} to gray dye
+		set name of {_none} to "&7Нет баффов"
+		set line 1 of lore of {_none} to "&8❖ &7У вас нет бонусов за убийства"
+		set line 2 of lore of {_none} to "&8⤷ &f/buffshop &7чтобы купить"
+		set slot 29 of {_p}'s current inventory to {_none}
+	
+	# Статистика
+	set {_owned} to 0
+	loop {buff::all::*}:
+		if isBuffUnlocked({_p}, loop-value) is true:
+			add 1 to {_owned}
+	
+	set {_stats} to head from value "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTNhNjljM2NhYTMxMzA0ZTk5NTIzMjhjNzJjZWUwYjU3YjJhMmJkNDZjZTljNWNiODhjMDdkMTI2NjI3N2Q2YSJ9fX0="
+	set name of {_stats} to "&cℹ Статистика"
+	set line 1 of lore of {_stats} to "&8❖ &7Куплено баффов:"
+	set line 2 of lore of {_stats} to "&8⤷ &f%{_owned}%&8/&78"
+	set slot 4 of {_p}'s current inventory to {_stats}
+	
+	# Кнопка активації
+	set {_activate} to head from value "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2VkZDIwYmU5MzUyMDk0OWU2Y2U3ODlkYzRmNDNlZmFlYjI4YzcxN2VlNmJmY2JiZTAyNzgwMTQyZjcxNiJ9fX0="
+	set name of {_activate} to "&c⚡ АКТИВИРОВАТЬ БАФФЫ"
+	set line 1 of lore of {_activate} to "&8❖ &7Выбрать какие баффы"
+	set line 2 of lore of {_activate} to "&8⤷ &7использовать в бою"
+	set line 3 of lore of {_activate} to " "
+	set line 4 of lore of {_activate} to "&8▶ &fНажми чтобы открыть"
+	set slot 40 of {_p}'s current inventory to {_activate}
+
+# Створення предмета власного бафа
+function createOwnedBuffItem(p: player, buffId: text) :: item:
+	set {_name} to {buff::%{_buffId}%::name}
+	set {_desc1} to {buff::%{_buffId}%::desc1}
+	set {_desc2} to {buff::%{_buffId}%::desc2}
+	set {_desc3} to {buff::%{_buffId}%::desc3}
+	set {_tier} to {buff::%{_buffId}%::tier}
+	set {_texture} to {buff::%{_buffId}%::texture}
+	set {_category} to {buff::%{_buffId}%::category}
+	
+	set {_item} to head from value {_texture}
+	
+	set {_isActive} to isBuffActive({_p}, {_buffId})
+	
+	if {_isActive} is true:
+		set name of {_item} to "&c✔ %{_name}% &7(АКТИВЕН)"
+		set line 1 of lore of {_item} to "&8❖ %{_desc1}%"
+		set line 2 of lore of {_item} to "&8⤷ %{_desc2}%"
+		set line 3 of lore of {_item} to "&8⤷ %{_desc3}%"
+		set line 4 of lore of {_item} to " "
+		set line 5 of lore of {_item} to "&c✔ Активен в бою"
+		set line 6 of lore of {_item} to "&8Tier %{_tier}%"
+	else:
+		set name of {_item} to "&7%{_name}%"
+		set line 1 of lore of {_item} to "&8❖ %{_desc1}%"
+		set line 2 of lore of {_item} to "&8⤷ %{_desc2}%"
+		set line 3 of lore of {_item} to "&8⤷ %{_desc3}%"
+		set line 4 of lore of {_item} to " "
+		set line 5 of lore of {_item} to "&7Не активен"
+		set line 6 of lore of {_item} to "&8Tier %{_tier}%"
+	
+	return {_item}
+
+# ===== МЕНЮ ВИБОРУ АКТИВНИХ БАФІВ =====
+
+function openSelectBuffMenu(p: player):
+	set {_maxSlots} to getMaxBuffSlots({_p})
+	set {_usedSlots} to getActiveBuffSlotsCount({_p})
+	
+	open virtual chest inventory with 5 rows named "&c⚡ Активные Баффы" to {_p}
+	wait 1 tick
+	
+	bsCreateBorder({_p}'s current inventory)
+	
+	# Інформація про слоти
+	set {_slotsInfo} to nether star
+	set name of {_slotsInfo} to "&c⚡ Слоты баффов"
+	set line 1 of lore of {_slotsInfo} to "&8❖ &7Использовано слотов:"
+	set line 2 of lore of {_slotsInfo} to "&8⤷ &f%{_usedSlots}%&8/&f%{_maxSlots}%"
+	set line 3 of lore of {_slotsInfo} to " "
+	
+	if {_maxSlots} is 1:
+		set line 4 of lore of {_slotsInfo} to "&8▸ &7Тариф: &fБез доната"
+	else if {_maxSlots} is 2:
+		set line 4 of lore of {_slotsInfo} to "&8▸ &7Тариф: &fБунт"
+	else if {_maxSlots} is 3:
+		set line 4 of lore of {_slotsInfo} to "&8▸ &7Тариф: &fГнев"
+	
+	set slot 4 of {_p}'s current inventory to {_slotsInfo}
+	
+	# SPEED слот
+	set {_speedItem} to createBuffSlotItem({_p}, "speed")
+	set slot 20 of {_p}'s current inventory to {_speedItem}
+	
+	# DEFENSE слот
+	set {_defItem} to createBuffSlotItem({_p}, "defense")
+	set slot 22 of {_p}'s current inventory to {_defItem}
+	
+	# KILL слот
+	set {_killItem} to createBuffSlotItem({_p}, "kill")
+	set slot 24 of {_p}'s current inventory to {_killItem}
+	
+	# Назад
+	set {_back} to head from value "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTBlMGE0ZDQ4Y2Q4MjlhNmQ1ODY4OTA5ZDY0M2ZhNGFmZmQzOWU4YWU2Y2FhZjZlYzc5NjA5Y2Y3NjQ5YjFjIn19fQ=="
+	set name of {_back} to "&c⮜ Закрыть"
+	set lore of {_back} to "&8❖ &7Закрыть меню"
+	set slot 40 of {_p}'s current inventory to {_back}
+
+# Створення предмета слота
+function createBuffSlotItem(p: player, category: text) :: item:
+	set {_activeBuff} to {buff.active.slot.%{_p}%.%{_category}%}
+	set {_unlockedBuffs::*} to getUnlockedBuffsInCategory({_p}, {_category})
+	
+	if {_activeBuff} is set:
+		# Є активний баф
+		set {_texture} to {buff::%{_activeBuff}%::texture}
+		set {_item} to head from value {_texture}
+		
+		set {_name} to {buff::%{_activeBuff}%::name}
+		set {_desc1} to {buff::%{_activeBuff}%::desc1}
+		set {_desc2} to {buff::%{_activeBuff}%::desc2}
+		set {_desc3} to {buff::%{_activeBuff}%::desc3}
+		
+		set name of {_item} to "&c✔ %{buff::category::%{_category}%::name}%"
+		set line 1 of lore of {_item} to "&8❖ &7Активен: %{_name}%"
+		set line 2 of lore of {_item} to "&8⤷ %{_desc1}%"
+		set line 3 of lore of {_item} to "&8⤷ %{_desc2}%"
+		set line 4 of lore of {_item} to "&8⤷ %{_desc3}%"
+		set line 5 of lore of {_item} to " "
+		
+		if size of {_unlockedBuffs::*} > 1:
+			set line 6 of lore of {_item} to "&8▶ &fНажми чтобы изменить"
+		else:
+			set line 6 of lore of {_item} to "&8▶ &fНажми чтобы снять"
+	else:
+		# Немає активного бафа
+		set {_icon} to {buff::category::%{_category}%::icon}
+		set {_item} to head from value {_icon}
+		
+		# Перевірити чи є ліміт слотів
+		set {_maxSlots} to getMaxBuffSlots({_p})
+		set {_usedSlots} to getActiveBuffSlotsCount({_p})
+		set {_limitReached} to false
+		
+		if {_usedSlots} >= {_maxSlots}:
+			set {_limitReached} to true
+		
+		if {_limitReached} is true:
+			# Ліміт досягнуто - заблокований слот
+			set name of {_item} to "&8🔒 %{buff::category::%{_category}%::name}%"
+			set line 1 of lore of {_item} to "&8❖ &7Лимит слотов достигнут"
+			set line 2 of lore of {_item} to "&8⤷ &7Использовано: &f%{_usedSlots}%&8/&f%{_maxSlots}%"
+			set line 3 of lore of {_item} to " "
+			
+			if {_maxSlots} is 1:
+				set line 4 of lore of {_item} to "&8⤷ &fБунт &7для 2 слотов"
+			else if {_maxSlots} is 2:
+				set line 4 of lore of {_item} to "&8⤷ &fГнев &7для 3 слотов"
+		else if size of {_unlockedBuffs::*} > 0:
+			# Є бафи і є вільні слоти
+			set name of {_item} to "&7%{buff::category::%{_category}%::name}%"
+			set line 1 of lore of {_item} to "&8❖ &7Слот не занят"
+			set line 2 of lore of {_item} to " "
+			set line 3 of lore of {_item} to "&8▶ &fНажми чтобы выбрать"
+		else:
+			# Немає бафів
+			set name of {_item} to "&7%{buff::category::%{_category}%::name}%"
+			set line 1 of lore of {_item} to "&8❖ &7Нет купленных баффов"
+			set line 2 of lore of {_item} to " "
+			set line 3 of lore of {_item} to "&8▶ &f/buffshop &7для покупки"
+	
+	return {_item}
+
+# ===== МЕНЮ ВИБОРУ КОНКРЕТНОГО БАФА =====
+
+function openBuffSelectionMenu(p: player, category: text):
+	set {_title} to "&c⚡ Выбор: %{buff::category::%{_category}%::name}%"
+	open virtual chest inventory with 3 rows named {_title} to {_p}
+	wait 1 tick
+	
+	# Рамка
+	loop 27 times:
+		set {_sl} to loop-number - 1
+		if {_sl} is not in {10, 11, 12, 13, 14, 15, 16, 22}:
+			set slot {_sl} of {_p}'s current inventory to black stained glass pane named " "
+	
+	# Показати всі розблоковані бафи
+	set {_unlockedBuffs::*} to getUnlockedBuffsInCategory({_p}, {_category})
+	set {_slot} to 10
+	
+	loop {_unlockedBuffs::*}:
+		set {_item} to createSelectableBuffItem({_p}, loop-value)
+		set slot {_slot} of {_p}'s current inventory to {_item}
+		add 1 to {_slot}
+	
+	# Кнопка "Снять"
+	if {buff.active.slot.%{_p}%.%{_category}%} is set:
+		set {_remove} to red dye
+		set name of {_remove} to "&c✖ Снять баф"
+		set line 1 of lore of {_remove} to "&8❖ &7Убрать баф из слота"
+		set line 2 of lore of {_remove} to " "
+		set line 3 of lore of {_remove} to "&8▶ &fНажми чтобы снять"
+		set slot 16 of {_p}'s current inventory to {_remove}
+	
+	# Назад
+	set {_back} to head from value "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTBlMGE0ZDQ4Y2Q4MjlhNmQ1ODY4OTA5ZDY0M2ZhNGFmZmQzOWU4YWU2Y2FhZjZlYzc5NjA5Y2Y3NjQ5YjFjIn19fQ=="
+	set name of {_back} to "&c⮜ Назад"
+	set line 1 of lore of {_back} to "&8❖ &7Вернуться к слотам"
+	set slot 22 of {_p}'s current inventory to {_back}
+
+# Створення предмета для вибору
+function createSelectableBuffItem(p: player, buffId: text) :: item:
+	set {_name} to {buff::%{_buffId}%::name}
+	set {_desc1} to {buff::%{_buffId}%::desc1}
+	set {_desc2} to {buff::%{_buffId}%::desc2}
+	set {_desc3} to {buff::%{_buffId}%::desc3}
+	set {_tier} to {buff::%{_buffId}%::tier}
+	set {_texture} to {buff::%{_buffId}%::texture}
+	
+	set {_item} to head from value {_texture}
+	
+	set {_isActive} to isBuffActive({_p}, {_buffId})
+	
+	if {_isActive} is true:
+		set name of {_item} to "&c✔ %{_name}%"
+		set line 1 of lore of {_item} to "&8❖ %{_desc1}%"
+		set line 2 of lore of {_item} to "&8⤷ %{_desc2}%"
+		set line 3 of lore of {_item} to "&8⤷ %{_desc3}%"
+		set line 4 of lore of {_item} to " "
+		set line 5 of lore of {_item} to "&c✔ Сейчас активен"
+		set line 6 of lore of {_item} to "&8Tier %{_tier}%"
+	else:
+		set name of {_item} to "&f%{_name}%"
+		set line 1 of lore of {_item} to "&8❖ %{_desc1}%"
+		set line 2 of lore of {_item} to "&8⤷ %{_desc2}%"
+		set line 3 of lore of {_item} to "&8⤷ %{_desc3}%"
+		set line 4 of lore of {_item} to " "
+		set line 5 of lore of {_item} to "&8▶ &fНажми чтобы активировать"
+		set line 6 of lore of {_item} to "&8Tier %{_tier}%"
+	
+	return {_item}
+
+# ===== ЛОГІКА ПОКУПКИ =====
+
+function purchaseBuff(p: player, buffId: text):
+	if isBuffUnlocked({_p}, {_buffId}) is true:
+		send "&c✖ Этот бафф уже куплен!" to {_p}
+		bsPlayError({_p})
+		stop
+	
+	set {_price} to getBuffPrice({_buffId})
+	set {_balance} to getPlayerBalance({_p})
+	
+	if {_balance} < {_price}:
+		send "&c✖ Недостаточно монет! Нужно: &f%{_price}%&c, у вас: &f%{_balance}%" to {_p}
+		bsPlayError({_p})
+		stop
+	
+	set {_result} to withdrawBalance({_p}, {_price})
+	
+	if {_result} is false:
+		send "&c✖ Ошибка транзакции!" to {_p}
+		bsPlayError({_p})
+		stop
+	
+	unlockBuff({_p}, {_buffId})
+	
+	set {_name} to getBuffName({_buffId})
+	send " " to {_p}
+	send "&c&l✔ УСПЕШНО!" to {_p}
+	send "&8❖ &7Вы купили бафф: %{_name}%" to {_p}
+	send "&8⤷ &7Используйте &f/mybuffs &7чтобы активировать" to {_p}
+	send " " to {_p}
+	bsPlaySuccess({_p})
+	
+	wait 10 ticks
+	close {_p}'s inventory
+	wait 2 ticks
+	openMyBuffsMenu({_p})

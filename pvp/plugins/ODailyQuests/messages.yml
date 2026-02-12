@@ -1,0 +1,82 @@
+player_help: |
+  &c&m---&7 Команды игрока &c&m---
+  &c> &7/dq, /dq me &c- &7посмотреть свои квесты
+  &c> &7/dq reroll <index> &c- &7перегенерировать квест (требуется разрешение)
+  &c> &7/dq show <category> &c- &7посмотреть квесты категории
+
+admin_help: |
+  &c&m---&7 Команды администратора &c&m---
+  &c> &7/dqa complete <player> <index> &c- &7завершить квест игрока
+  &c> &7/dqa customcomplete <player> <type> <amount> &c- &7завершить квест кастомного типа
+  &c> &7/dqa reset <quests/total> <player> &c- &7сбросить квесты игрока
+  &c> &7/dqa add total <player> <amount> &c- &7добавить выполненные квесты игроку
+  &c> &7/dqa add total <category> <player> <amount> &c- &7добавить выполненные квесты категории
+  &c> &7/dqa remove total <player> <amount> &c- &7убрать выполненные квесты
+  &c> &7/dqa remove total <category> <player> <amount> &c- &7убрать выполненные квесты категории
+  &c> &7/dqa reroll <player> <index> &c- &7перегенерировать квест игроку
+  &c> &7/dqa set <player> <slot> <category> <file index> &c- &7установить конкретный квест
+  &c> &7/dqa show <player> &c- &7посмотреть квесты игрока
+  &c> &7/dqa open <player> &c- &7принудительно открыть интерфейс квестов
+  &c> &7/dqa convert <old format> <new format> &c- &7конвертировать формат хранения
+
+no_permission: '&cУ тебя нет прав.'
+no_permission_category: '&cУ тебя нет прав на просмотр этой категории.'
+player_only: '&cЭту команду может использовать только игрок.'
+invalid_category: '&cНеверная категория квестов.'
+invalid_player: '&cИгрок не найден или находится оффлайн.'
+invalid_quest_id: '&cУкажи корректный ID квеста.'
+quest_already_assigned: '&cЭтот квест уже назначен игроку.'
+invalid_quest_index: '&cНеверный индекс квеста.'
+invalid_amount: '&cУказано неверное количество.'
+player_quests_not_loaded: '&7Квесты игрока ещё не загружены. &cПопробуй позже.'
+already_achieved: '&cЭтот квест уже выполнен.'
+quests_in_progress: '&7У тебя ещё есть &cактивные ежедневные квесты&7!'
+all_quests_achieved_connect: '&7Ты выполнил &cвсе ежедневные квесты&7!'
+quests_renewed: '&7Твои ежедневные квесты были &cобновлены&7!'
+quests_renewed_admin: '&7Ты сбросил квесты игрока &c%target%&7.'
+quest_rerolled: '&7Ты перегенерировал квест &c№%index% &7— осталось &c%remaining%&7.'
+quest_rerolled_admin: '&7Ты перегенерировал квест &c№%index% &7игроку &c%target%&7.'
+no_available_quests_in_category: '&cВ этой категории нет доступных квестов.'
+quest_set_admin: '&7Ты установил квест &c%quest_id% &7(%quest%&r&7) в слот &c%slot% &7для &c%target%&7 в категории &c%category%&7.'
+quest_set_target: '&7Администратор установил тебе квест &c№%slot%&7: %quest%&r&7 (%quest_id%) в категории &c%category%&7.'
+add_total_admin: '&7Ты добавил &c%amount% &7выполненных квестов игроку &c%target%&7.'
+add_total_target: '&7Администратор добавил тебе &c%amount% &7выполненных квестов.'
+add_total_category_admin: '&7Ты добавил &c%amount% &7выполненных квестов в категории &c%category% &7игроку &c%target%&7.'
+add_total_category_target: '&7Администратор добавил тебе &c%amount% &7выполненных квестов в категории &c%category%&7.'
+remove_total_admin: '&7Ты убрал &c%amount% &7выполненных квестов у игрока &c%target%&7.'
+remove_total_target: '&7Администратор убрал у тебя &c%amount% &7выполненных квестов.'
+remove_total_category_admin: '&7Ты убрал &c%amount% &7выполненных квестов в категории &c%category% &7у игрока &c%target%&7.'
+remove_total_category_target: '&7Администратор убрал у тебя &c%amount% &7выполненных квестов в категории &c%category%&7.'
+total_amount_reset: '&7Администратор сбросил твоё общее количество выполненных квестов.'
+total_amount_reset_admin: '&7Ты сбросил общее количество выполненных квестов игроку &c%target%&7.'
+total_category_reset_admin: '&7Ты сбросил количество выполненных квестов в категории &c%category% &7игроку &c%target%&7.'
+total_category_reset_target: '&7Администратор сбросил количество выполненных квестов в категории &c%category%&7.'
+quest_achieved: '&7Ты завершил квест &c%questName%&7, отличная работа!'
+all_quests_achieved: '&7Ты выполнил &cвсе ежедневные квесты&7, отлично!'
+category_quests_achieved: '&7Ты завершил все квесты категории &c%category%&7!'
+not_enough_items: '&cУ тебя недостаточно предметов для выполнения квеста.'
+not_required_world: '&cТы не можешь выполнить этот квест в этом мире.'
+not_required_region: '&cТы не можешь выполнить этот квест в этом регионе.'
+reward_command: '&7Ты получаешь &cкоманду-награду&7.'
+reward_command_error: '&cОшибка при выполнении команды-награды: %command%.'
+reward_exp_levels: '&7Ты получаешь &c%rewardAmount% &7уровней опыта.'
+reward_exp_points: '&7Ты получаешь &c%rewardAmount% &7очков опыта.'
+reward_money: '&7Ты получаешь &c%rewardAmount%$&7.'
+reward_points: '&7Ты получаешь &c%rewardAmount% &7очков.'
+reward_coins_engine: '&7Ты получаешь &c%rewardAmount% %currencyName%&7.'
+new_day: '&cНовый день!'
+too_far: '&cТы слишком далеко от нужной локации.'
+bad_world: '&cНеверный мир для выполнения квеста.'
+placeholder_api_not_enabled: '&cPlaceholderAPI не включён.'
+placeholder_not_number: '&cПлейсхолдер %placeholder% не является числом.'
+cannot_complete_quest_with_off_hand: '&cВсе предметы должны находиться в основном инвентаре.'
+cannot_reroll_if_achieved: '&cНельзя перегенерировать уже выполненный квест!'
+cannot_reroll_if_max: '&cЛимит перегенерации квестов исчерпан!'
+plugin_reloaded: '&7Плагин был &cуспешно перезагружен&7!'
+error_inventory: '&cОшибка при открытии инвентаря.'
+conversion_failed: '&cКонвертация не удалась! Проверь консоль.'
+conversion_success: '&7Конвертация прошла &cуспешно&7! Перезапусти сервер.'
+check_console: '&7Проверь консоль для подробностей.'
+impossible_to_open_inventory: '&cНевозможно открыть интерфейс квестов. Плагин ещё загружается.'
+contact_admin: '&7Если проблема повторяется, обратись к &cадминистратору&7.'
+configuration_error: '&cОшибка конфигурации мешает отображению интерфейса.'

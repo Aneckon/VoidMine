@@ -1,0 +1,116 @@
+# Citizens NPC Storage
+
+last-created-npc-id: 2
+npc:
+  '0':
+    metadata:
+      cached-skin-uuid: 45294351-c8ff-42e6-8890-8cd2af98d1e7
+      cached-skin-uuid-name: help
+    name: §cПутеводитель
+    uuid: 1010c672-a149-4f52-9453-875db857a164
+    traits:
+      glowingtrait:
+        color: WHITE
+        glowing: true
+      location:
+        bodyYaw: 0.29136068
+        world: spawn
+        x: -7.5
+        y: -21.0
+        z: -3.5
+        yaw: 0.2914
+        pitch: -4.0748
+      skintrait:
+        signature: AvRnm8MqEmFqruAptc1Twu90hh17vgLERddbAbi8RVxHZ1trFwB6o/8ZPSDxO62XBx440DegA/2oD6rcFnAnrHvuQSosXyOnRGb9qde+MIgmeYPKNxl+vul6tr8Q4L5mK8rqRE1iC4cxV/htxAwzBwnwP97dCmAC/qAOepehpei3rjky0wm7t/wbjSg6fF5HOBqVQpg9h97uFiR42L8iIxagLXyjnWNnvMO9s5oHE4ewx/5dlN0ZAsHFvbt5ckzshJRJETVaia733NNe0D/ovvm5omhJ90VVLmNZX2Xk4rZ9Wnu6ha5X8xv1jpYQbi3AzbNko9zj/bqOVPl5qfI7DsqHjqtPh0tFEDC60GnYILHlAmV+vMWTpzsf3XdNMbw3MwZBtp4lW++AeAZugdj9Y5jRd6K0bWfgNRs+SR8y6iCe2zR7a2bb9ViiBMmTiDmg7374v3pFeXpaxPdb4/2Chuup8EJHAAb0EAltysymulzE5jqP8ECfFCZUEhY/I862q0NdAxa+/ky5h3DC6I6jsvOZSS8l+BOjg/RQs9hnsg+dRqvtwjgGJdZPuizi/5leO1SecHQl2bicYvocFKRd8yVX/MJcVQjg+FH6+gyGT7TC6a/VB91CISD4RvH0CwwnaFc3lVErdmhAE4BCdNHIn3+QFh4F/s6Ofofq7whgX0s=
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTc0MzI0MzIxNDEyNSwKICAicHJvZmlsZUlkIiA6ICI0NTI5NDM1MWM4ZmY0MmU2ODg5MDhjZDJhZjk4ZDFlNyIsCiAgInByb2ZpbGVOYW1lIiA6ICJIZWxwIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2QxNGI4NzdjNGVhYWNiMDQ1MTJkMjNmNjZjNDk4ZmU2N2I0MDcyNmU1NjQyNDc0OTU2Yzg3NzgzZTM1N2MwYTIiLAogICAgICAibWV0YWRhdGEiIDogewogICAgICAgICJtb2RlbCIgOiAic2xpbSIKICAgICAgfQogICAgfSwKICAgICJDQVBFIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS8yMzQwYzBlMDNkZDI0YTExYjE1YThiMzNjMmE3ZTllMzJhYmIyMDUxYjI0ODFkMGJhN2RlZmQ2MzVjYTdhOTMzIgogICAgfQogIH0KfQ==
+      owner:
+        uuid: 31fcfdd9-58e9-3d7c-893a-c80441ef34dc
+      spawned: true
+      commandtrait:
+        commands:
+          '0':
+            command: dm open mainmenu %player_name%
+            hand: RIGHT
+            player: false
+            npc: false
+            op: false
+            cooldown: 0
+            globalcooldown: 0
+            n: -1
+            delay: 0
+            cost: -1.0
+            experienceCost: -1
+      lookclose:
+        range: 5.0
+        enabled: true
+        perplayer: true
+        randomPitchRange:
+          '0': 0.0
+          '1': 0.0
+        randomYawRange:
+          '0': 0.0
+          '1': 360.0
+      type: PLAYER
+      scoreboardtrait:
+        color: RED
+        tags:
+          '0': CITIZENS_NPC
+    traitnames: owner,scoreboardtrait,spawned,rotationtrait,commandtrait,skintrait,lookclose,location,type,inventory
+    navigator:
+      speedmodifier: 1.0
+      avoidwater: false
+      usedefaultstuckaction: false
+  '1':
+    metadata:
+      cached-skin-uuid: 3314ad5c-083e-430c-badd-58152e418f13
+      cached-skin-uuid-name: shop
+    name: §cАукцион
+    uuid: a588397c-afed-45ce-88e5-a4d240246c48
+    traits:
+      location:
+        bodyYaw: 91.34601
+        world: spawn
+        x: 15.5
+        y: -17.9375
+        z: -15.5
+        yaw: 91.346
+        pitch: -3.5619
+      lookclose:
+        range: 5.0
+        enabled: true
+        perplayer: true
+        randomPitchRange:
+          '0': 0.0
+          '1': 0.0
+        randomYawRange:
+          '0': 0.0
+          '1': 360.0
+      type: PLAYER
+      spawned: true
+      commandtrait:
+        commands:
+          '0':
+            command: ah
+            hand: RIGHT
+            player: true
+            npc: false
+            op: false
+            cooldown: 0
+            globalcooldown: 0
+            n: -1
+            delay: 0
+            cost: -1.0
+            experienceCost: -1
+      skintrait:
+        signature: GLtXsFNq2IwIdFZWgA6MLhsd1tyhkkX3Vk+AJFQ+bvwxXDmP4NbWXCkVxLGV2kC5b3L3bpITcpA2fD9rrzxyC87G1ShP4zCHhuWD63719X64RwMa/KklHtTHm7NcM3LzrefCYXXuNCkwlsY5HtpmzVL1YBgtuEjf6Mpf6zTRJPCNmXOtT1c/TCh+S/pgvFpiEjS1KF5fmrTJD2CKI5zSoeGcIk3LxyGTvEkolFFziuCmshtmxJspii29r/osL/YPlQQ6yCfib6f9WLKGFoDAQF/G72lePE14S3Ffwqmwpg2/6S+lc1p/3JYzoNH6p/8WRghtIbG4rJcaBe6voeAbA5tJ8m81TVCHbKs8Ol0phhczfMM8cuSj3AHUohxzBN7kUSAvNeuEVihRVf4+XSvD3WKRjfiXEhhmhO7P6PWodNl6zcymcXKp04k75IPqI4t0FIRcHHsJ2fwG+0YdvyqGLG/pfsacW5UV6PImDQGJL1+qCeDAqGvp/cqvxn1/WbccetXzsDBEUAJlz0BGcIuQYyx6yB6IwL0VR945YNNuRM3QM6aR4UQyGU76XPZS65ITp38WTci2c3eAd6Ze9gXHHoVC+wriiGVTrXYO7d50r0OG4X9HZugcWDHLVVbUCpWo4eH1FGljNF2/Hii7D2wiIKCYd6NiLVPWMLzcQ1eN/uU=
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTc0MzI2MTEyMjk1OCwKICAicHJvZmlsZUlkIiA6ICIzMzE0YWQ1YzA4M2U0MzBjYmFkZDU4MTUyZTQxOGYxMyIsCiAgInByb2ZpbGVOYW1lIiA6ICJTaG9wIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2IwMzZiNjUwNDM5NTZkYjgxY2U4ZGY4NTI4ODE4YTkzNmZhYWQyMmQwODAwMWY5MGUzYjlhNGRiOTdjMzc2NDUiCiAgICB9CiAgfQp9
+      scoreboardtrait:
+        tags:
+          '0': CITIZENS_NPC
+      owner:
+        uuid: 31fcfdd9-58e9-3d7c-893a-c80441ef34dc
+    traitnames: owner,scoreboardtrait,spawned,rotationtrait,commandtrait,skintrait,lookclose,location,type,inventory
+    navigator:
+      speedmodifier: 1.0
+      avoidwater: false
+      usedefaultstuckaction: false

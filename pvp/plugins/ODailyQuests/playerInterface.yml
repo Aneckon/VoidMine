@@ -1,0 +1,103 @@
+player_interface:
+  size: 45
+  inventory_name: "§c✦ Ежедневные Квесты"
+  disable_status: false
+
+  status: "§8❖ §7Статус:"
+  progress: "§8⤷ §c%progress%§7/§c%required%"
+  achieved: "§a✔ Выполнено"
+  glowing_if_achieved: true
+  complete_get_type: "§8▶ §fНажми, чтобы забрать награду"
+
+  player_head:
+    enabled: true
+    slot: 5
+    item_name: '§c%player_name%'
+    item_description:
+      - '§8❖ §7Информация'
+      - ' '
+      - '§8⤷ §7Выполнено сегодня: §c%achieved%§7/§c9'
+      - '§8⤷ §7Всего выполнено: §c%odailyquests_total%'
+      - ' '
+      - '§8⏳ §7Новые квесты через: §c%drawIn%'
+
+  quests:
+    categories:
+      easy:
+        - 12
+        - 21
+        - 30
+      medium:
+        - 14
+        - 23
+        - 32
+      hard:
+        - 16
+        - 25
+        - 34
+
+  items:
+
+    close:
+      type: CLOSE
+      item:
+        material: CUSTOM_HEAD
+        texture: 3ed1aba73f639f4bc42bd48196c715197be2712c3b962c97ebf9e9ed8efa025
+        name: "§c✖ Закрыть"
+        slot: 37
+
+    info:
+      type: PLAYER_COMMAND
+      item:
+        material: CUSTOM_HEAD
+        name: '§cℹ Информация'
+        texture: 93a69c3caa31304e9952328c72cee0b57b2a2bd46ce9c5cb88c07d1266277d6a
+        lore:
+          - '§8❖ §7Каждый день'
+          - '§8⤷ §7ты получаешь новые квесты'
+          - ' '
+          - '§8❖ §7Выполняй их,'
+          - '§8⤷ §7чтобы зарабатывать деньги'
+          - ' '
+          - '§8❖ §7Закрывай категории'
+          - '§8⤷ §7и получай бонусы'
+        slot: 1
+
+    reroll:
+      type: PLAYER_COMMAND
+      item:
+        material: CUSTOM_HEAD
+        name: "§c🔄 Ежедневный реролл"
+        texture: e887cc388c8dcfcf1ba8aa5c3c102dce9cf7b1b63e786b34d4f1c3796d3e9d61
+        lore:
+          - '§8❖ §7Раз в день'
+          - '§8⤷ §7ты можешь заменить'
+          - '§8⤷ §7один квест'
+          - ' '
+          - '§8▶ §f/dq reroll <номер>'
+        slot: 9
+
+    border_dark:
+      type: FILL
+      item:
+        material: BLACK_STAINED_GLASS_PANE
+        slot:
+          - 2
+          - 3
+          - 4
+          - 6
+          - 7
+          - 8
+          - 10
+          - 18
+          - 19
+          - 27
+          - 28
+          - 36
+          - 38
+          - 39
+          - 40
+          - 41
+          - 42
+          - 43
+          - 44

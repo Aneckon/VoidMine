@@ -1,0 +1,52 @@
+# -------------------------------------------------------------------------------
+# Фильтры для русского языка
+# -------------------------------------------------------------------------------
+
+# -------- Запрет ненормативной лексики
+match \b(бля|блядь|сука|ебать|пиздец|хуй|пизда|манда)\b
+id RussianSwear
+then replace ****
+then warn &cПожалуйста, не используйте мат!
+then notify chatcontrol.notify.swear &8[&7ID {ruleID}&8] &7{player}: &f{message}
+then console log {player} нарушил правило ID {ruleID}: {message}
+
+# -------- Запрет ссылок на другие серверы и рекламу
+match \b((www\.|http://|https://|vk\.|discord\.|\.ru|\.com|\.net|\.org))\b
+id RussianAds
+then deny
+then warn &cРеклама запрещена на этом сервере!
+then notify chatcontrol.notify.ad &8[&7ID {ruleID}&8] &7{player}: &f{message}
+then console log {player} пытался прорекламировать: {message}
+
+# -------- Запрет запрещенных команд
+match ^/(op|stop|restart|ban|kick|plugins|pl|version)\b
+id RussianBannedCommands
+then deny
+then warn &cВы не можете использовать эту команду!
+then notify chatcontrol.notify.rulesalert &8[&7ID {ruleID}&8] &7{player}: &f{message}
+then console log {player} пытался использовать запрещенную команду: {message}
+
+# -------- Фильтр оскорблений персонала или сервера
+match ((админ|мод|хелпер|сервер|владелец) (тупой|лох|идиот|козел|дурак))
+id RussianStaffHate
+then warn &cНе оскорбляйте персонал или сервер!
+then deny
+then console kick {player} &cВаше поведение нарушает правила. Будьте внимательны!
+
+# -------- Смайлы и юникод
+match :\)
+then replace ☺
+match :-\)
+then replace ☺
+match :\(
+then replace ☹
+match :-\(
+then replace ☹
+match ;\)
+then replace ㋡
+match ;-\)
+then replace ㋡
+match \:star\:
+then replace ★
+match <3\b
+then replace ❤

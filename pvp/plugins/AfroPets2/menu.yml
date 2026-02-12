@@ -1,0 +1,43 @@
+menu:
+  title: "<red>🐾 Меню питомцев"
+  rows: 5
+
+  status:
+    no_permission: "<gray>У вас нет прав на этого питомца!"
+    can_use: "<gray>Нажмите, чтобы выбрать питомца!"
+
+slots:
+  filler:
+    slots: "0-8,36-44"
+    material: "BLACK_STAINED_GLASS_PANE"
+    name: " "
+
+  despawn_icon:
+    slots: "40"
+    click: "DESPAWN"
+    material: "BARRIER"
+    name: "<red>✖ Убрать питомца"
+    lore:
+      - "<dark_gray>❖ <gray>Скрыть активного питомца"
+      - " "
+      - "<dark_gray>▶ <gray>Нажмите для скрытия"
+
+  next_page_icon:
+    slots: "43"
+    click: "NEXT_PAGE"
+    material: "PLAYER_HEAD:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTliZjMyOTJlMTI2YTEwNWI1NGViYTcxM2FhMWIxNTJkNTQxYTFkODkzODgyOWM1NjM2NGQxNzhlZDIyYmYifX19"
+    name: "<red>▶ Следующая страница"
+    lore:
+      - "<dark_gray>❖ <gray>Перейти к следующим питомцам"
+      - " "
+      - "<dark_gray>▶ <gray>Нажмите для перехода"
+
+  previous_page_icon:
+    slots: "37"
+    click: "PREVIOUS_PAGE"
+    material: "PLAYER_HEAD:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmQ2OWUwNmU1ZGFkZmQ4NGU1ZjNkMWMyMTA2M2YyNTUzYjJmYTk0NWVlMWQ0ZDcxNTJmZGM1NDI1YmMxMmE5In19fQ=="
+    name: "<red>◀ Предыдущая страница"
+    lore:
+      - "<dark_gray>❖ <gray>Вернуться к предыдущим питомцам"
+      - " "
+      - "<dark_gray>▶ <gray>Нажмите для возврата"

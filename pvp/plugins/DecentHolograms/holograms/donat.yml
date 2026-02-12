@@ -1,0 +1,24 @@
+location: world:-7,500:112,3:4,5
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+  - lines:
+      - content: '&c&lДонат'
+        height: 0.4
+      - content: ''
+        height: 0.3
+      - content: '&8• &c&lБунт &7- &f50 руб'
+        height: 0.3
+      - content: '&8• &c&lКрах &7- &f100 руб'
+        height: 0.3
+      - content: '&8• &c&lГнев &7- &f250 руб'
+        height: 0.6
+      - content: '&7Получи уникальные привилегии!'
+        height: 0.4
+      - content: '#ICON: PLAYER_HEAD (eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTkzMDkzZDI4ZDFhN2VkMWQ3Zjk3YmExMzhlZjZhMWI3MmE4MzlkYjA2ZDhhYTc5OTE4MWNiZWEwZDQ5YTBhNSJ9fX0=)'
+        height: 0.6
+    actions: {}

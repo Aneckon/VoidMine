@@ -1,0 +1,220 @@
+# ============================================
+# КОНФІГУРАЦІЯ СИСТЕМИ БАФІВ v2.0
+# ============================================
+
+# ===== НАЛАШТУВАННЯ СЛОТІВ =====
+on load:
+	# Кількість слотів для різних груп гравців
+	set {buff::slots::default} to 1  # Без донату
+	set {buff::slots::bunt} to 2      # Bunt донат
+	set {buff::slots::gnev} to 3  # Gnev донат
+	
+	# ===== КАТЕГОРІЇ БАФІВ =====
+	set {buff::categories::*} to "speed", "defense" and "kill"
+	
+	# Назви категорій для відображення
+	set {buff::category::speed::name} to "&c🏃 Баффы Скорости"
+	set {buff::category::speed::icon} to "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjJhYzk5MjZkY2ZiNzY0MWExNjIxMjY5MTEyNmUwM2Q5NWQ2NDZhZDM0NWI3NWExOTIwNjFhMWE5MzlkODkwMiJ9fX0="
+	
+	set {buff::category::defense::name} to "&c🛡 Баффы Защиты"
+	set {buff::category::defense::icon} to "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjFmOTA5Y2MxYzMyZGEzYjExNjAzOTQ0ZDRmNzMxZDYzYmFhOWFkZTFlMTIxMWRkZjlmMDE1NTA5MWM1Yzk0YiJ9fX0="
+	
+	set {buff::category::kill::name} to "&c💀 Бонусы за Убийства"
+	set {buff::category::kill::icon} to "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGEwMGM1M2NmNTdjYWNjN2Y1ZThlM2ZlODRiMmY1ZGIxMjJjZDc2ZmNlZDc4MGE5NTNiOTk2MzlmYjMxOTg4MiJ9fX0="
+	
+	# ===== SPEED BUFFS =====
+	set {buff::speed1::id} to "speed1"
+	set {buff::speed1::name} to "&fСкорость I"
+	set {buff::speed1::tier} to 1
+	set {buff::speed1::price} to 500
+	set {buff::speed1::category} to "speed"
+	set {buff::speed1::desc1} to "&7Увеличивает скорость"
+	set {buff::speed1::desc2} to "&7передвижения на арене"
+	set {buff::speed1::desc3} to "&8Эффект: &fSpeed I"
+	set {buff::speed1::desc4} to "&8Tier 1 &8| &f1500 монет"
+	set {buff::speed1::texture} to "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjJhYzk5MjZkY2ZiNzY0MWExNjIxMjY5MTEyNmUwM2Q5NWQ2NDZhZDM0NWI3NWExOTIwNjFhMWE5MzlkODkwMiJ9fX0="
+	
+	set {buff::speed2::id} to "speed2"
+	set {buff::speed2::name} to "&fСкорость II"
+	set {buff::speed2::tier} to 2
+	set {buff::speed2::price} to 2000
+	set {buff::speed2::category} to "speed"
+	set {buff::speed2::desc1} to "&7Значительно увеличивает"
+	set {buff::speed2::desc2} to "&7скорость передвижения"
+	set {buff::speed2::desc3} to "&8Эффект: &fSpeed II"
+	set {buff::speed2::desc4} to "&8Tier 2 &8| &f2500 монет"
+	set {buff::speed2::texture} to "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjJhYzk5MjZkY2ZiNzY0MWExNjIxMjY5MTEyNmUwM2Q5NWQ2NDZhZDM0NWI3NWExOTIwNjFhMWE5MzlkODkwMiJ9fX0="
+	
+	set {buff::adrenaline::id} to "adrenaline"
+	set {buff::adrenaline::name} to "&fАдреналин"
+	set {buff::adrenaline::tier} to 3
+	set {buff::adrenaline::price} to 5000
+	set {buff::adrenaline::category} to "speed"
+	set {buff::adrenaline::desc1} to "&7Максимальная скорость"
+	set {buff::adrenaline::desc2} to "&7после убийства (10 сек)"
+	set {buff::adrenaline::desc3} to "&8Эффект: &fSpeed III"
+	set {buff::adrenaline::desc4} to "&8Tier 3 &8| &f6000 монет"
+	set {buff::adrenaline::texture} to "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjJhYzk5MjZkY2ZiNzY0MWExNjIxMjY5MTEyNmUwM2Q5NWQ2NDZhZDM0NWI3NWExOTIwNjFhMWE5MzlkODkwMiJ9fX0="
+	
+	# ===== DEFENSE BUFFS =====
+	set {buff::kb_resist::id} to "kb_resist"
+	set {buff::kb_resist::name} to "&fСопротивление"
+	set {buff::kb_resist::tier} to 1
+	set {buff::kb_resist::price} to 700
+	set {buff::kb_resist::category} to "defense"
+	set {buff::kb_resist::desc1} to "&7Уменьшает отбрасывание"
+	set {buff::kb_resist::desc2} to "&7от ударов"
+	set {buff::kb_resist::desc3} to "&8Эффект: &fResistance I"
+	set {buff::kb_resist::desc4} to "&8Tier 1 &8| &f1700 монет"
+	set {buff::kb_resist::texture} to "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjFmOTA5Y2MxYzMyZGEzYjExNjAzOTQ0ZDRmNzMxZDYzYmFhOWFkZTFlMTIxMWRkZjlmMDE1NTA5MWM1Yzk0YiJ9fX0="
+	
+	set {buff::bonus_hp::id} to "bonus_hp"
+	set {buff::bonus_hp::name} to "&fБонус ХП"
+	set {buff::bonus_hp::tier} to 2
+	set {buff::bonus_hp::price} to 1500
+	set {buff::bonus_hp::category} to "defense"
+	set {buff::bonus_hp::desc1} to "&7Добавляет +2 сердца"
+	set {buff::bonus_hp::desc2} to "&7в начале боя"
+	set {buff::bonus_hp::desc3} to "&8Эффект: &f+4 HP"
+	set {buff::bonus_hp::desc4} to "&8Tier 2 &8| &f2500 монет"
+	set {buff::bonus_hp::texture} to "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjFmOTA5Y2MxYzMyZGEzYjExNjAzOTQ0ZDRmNzMxZDYzYmFhOWFkZTFlMTIxMWRkZjlmMDE1NTA5MWM1Yzk0YiJ9fX0="
+	
+	set {buff::iron_skin::id} to "iron_skin"
+	set {buff::iron_skin::name} to "&fЖелезная кожа"
+	set {buff::iron_skin::tier} to 3
+	set {buff::iron_skin::price} to 6000
+	set {buff::iron_skin::category} to "defense"
+	set {buff::iron_skin::desc1} to "&7Дополнительная защита"
+	set {buff::iron_skin::desc2} to "&7от всех атак"
+	set {buff::iron_skin::desc3} to "&8Эффект: &fResistance II"
+	set {buff::iron_skin::desc4} to "&8Tier 3 &8| &f7000 монет"
+	set {buff::iron_skin::texture} to "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjFmOTA5Y2MxYzMyZGEzYjExNjAzOTQ0ZDRmNzMxZDYzYmFhOWFkZTFlMTIxMWRkZjlmMDE1NTA5MWM1Yzk0YiJ9fX0="
+	
+	# ===== KILL BONUSES =====
+	set {buff::focus::id} to "focus"
+	set {buff::focus::name} to "&fФокус"
+	set {buff::focus::tier} to 2
+	set {buff::focus::price} to 2500
+	set {buff::focus::category} to "kill"
+	set {buff::focus::desc1} to "&7Регенерация после"
+	set {buff::focus::desc2} to "&7каждого убийства"
+	set {buff::focus::desc3} to "&8Эффект: &fRegeneration II (5s)"
+	set {buff::focus::desc4} to "&8Tier 2 &8| &f5500 монет"
+	set {buff::focus::texture} to "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGEwMGM1M2NmNTdjYWNjN2Y1ZThlM2ZlODRiMmY1ZGIxMjJjZDc2ZmNlZDc4MGE5NTNiOTk2MzlmYjMxOTg4MiJ9fX0="
+	
+	set {buff::second_wind::id} to "second_wind"
+	set {buff::second_wind::name} to "&fВторое дыхание"
+	set {buff::second_wind::tier} to 3
+	set {buff::second_wind::price} to 7000
+	set {buff::second_wind::category} to "kill"
+	set {buff::second_wind::desc1} to "&7Полное восстановление"
+	set {buff::second_wind::desc2} to "&7после убийства"
+	set {buff::second_wind::desc3} to "&8Эффект: &fFull Heal + Regen V (3s)"
+	set {buff::second_wind::desc4} to "&8Tier 3 &8| &f9000 монет"
+	set {buff::second_wind::texture} to "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGEwMGM1M2NmNTdjYWNjN2Y1ZThlM2ZlODRiMmY1ZGIxMjJjZDc2ZmNlZDc4MGE5NTNiOTk2MzlmYjMxOTg4MiJ9fX0="
+	
+	# ===== СПИСКИ БАФІВ ПО КАТЕГОРІЯМ =====
+	set {buff::list::speed::*} to "speed1", "speed2" and "adrenaline"
+	set {buff::list::defense::*} to "kb_resist", "bonus_hp" and "iron_skin"
+	set {buff::list::kill::*} to "focus" and "second_wind"
+	
+	# Всі бафи для швидкого доступу
+	set {buff::all::*} to "speed1", "speed2", "adrenaline", "kb_resist", "bonus_hp", "iron_skin", "focus" and "second_wind"
+	
+	send "&c[BuffShop] &aКонфигурация v2.0 загружена!" to console
+	send "&c[BuffShop] &7Слоты: &fDefault=%{buff::slots::default}% &8| &fБунт=%{buff::slots::bunt}% &8| &fГнев=%{buff::slots::gnev}%" to console
+
+# ===== ОСНОВНІ ФУНКЦІЇ =====
+
+# Перевірка чи розблокований баф
+function isBuffUnlocked(p: player, buffId: text) :: boolean:
+	if {buff.unlocked.%{_p}%.%{_buffId}%} is true:
+		return true
+	return false
+
+# Розблокування бафа
+function unlockBuff(p: player, buffId: text):
+	set {buff.unlocked.%{_p}%.%{_buffId}%} to true
+
+# Отримати ціну бафа
+function getBuffPrice(buffId: text) :: number:
+	return {buff::%{_buffId}%::price}
+
+# Отримати назву бафа
+function getBuffName(buffId: text) :: text:
+	return {buff::%{_buffId}%::name}
+
+# Отримати категорію бафа
+function getBuffCategory(buffId: text) :: text:
+	return {buff::%{_buffId}%::category}
+
+# Отримати максимальну кількість слотів для гравця
+function getMaxBuffSlots(p: player) :: number:
+	if {_p} has permission "buffshop.gnev":
+		return {buff::slots::gnev}
+	else if {_p} has permission "buffshop.bunt":
+		return {buff::slots::bunt}
+	else:
+		return {buff::slots::default}
+
+# Отримати кількість активних слотів
+function getActiveBuffSlotsCount(p: player) :: number:
+	set {_count} to 0
+	loop {buff::categories::*}:
+		if {buff.active.slot.%{_p}%.%loop-value%} is set:
+			add 1 to {_count}
+	return {_count}
+
+# Перевірити чи гравець має хоча б один баф
+function hasAnyBuff(p: player) :: boolean:
+	loop {buff::all::*}:
+		if isBuffUnlocked({_p}, loop-value) is true:
+			return true
+	return false
+
+# Отримати всі розблоковані бафи гравця в категорії
+function getUnlockedBuffsInCategory(p: player, category: text) :: objects:
+	clear {_result::*}
+	loop {buff::list::%{_category}%::*}:
+		if isBuffUnlocked({_p}, loop-value) is true:
+			add loop-value to {_result::*}
+	return {_result::*}
+
+# Перевірити чи баф активний
+function isBuffActive(p: player, buffId: text) :: boolean:
+	set {_category} to getBuffCategory({_buffId})
+	if {buff.active.slot.%{_p}%.%{_category}%} is {_buffId}:
+		return true
+	return false
+
+# Активувати баф
+function activateBuff(p: player, buffId: text) :: boolean:
+	set {_category} to getBuffCategory({_buffId})
+	
+	# Перевірка чи розблокований
+	if isBuffUnlocked({_p}, {_buffId}) is false:
+		return false
+	
+	# Перевірка ліміту слотів (тільки якщо слот ще НЕ зайнятий)
+	if {buff.active.slot.%{_p}%.%{_category}%} is not set:
+		set {_maxSlots} to getMaxBuffSlots({_p})
+		set {_usedSlots} to getActiveBuffSlotsCount({_p})
+		
+		if {_usedSlots} >= {_maxSlots}:
+			return false
+	
+	# Встановити як активний для цієї категорії
+	set {buff.active.slot.%{_p}%.%{_category}%} to {_buffId}
+	return true
+
+# Деактивувати баф в категорії
+function deactivateBuff(p: player, category: text):
+	delete {buff.active.slot.%{_p}%.%{_category}%}
+
+# Отримати всі активні бафи
+function getActiveBuffs(p: player) :: objects:
+	clear {_result::*}
+	loop {buff::categories::*}:
+		if {buff.active.slot.%{_p}%.%loop-value%} is set:
+			add {buff.active.slot.%{_p}%.%loop-value%} to {_result::*}
+	return {_result::*}

@@ -1,0 +1,30 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 127.7.88.68
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1770140751821
+  login: 1770140609800
+money: '0'
+last-account-name: sakurai1337
+logoutlocation:
+  world: f87f58cb-b1a1-447d-a076-95c7f7a4dce7
+  world-name: ba-dynamic-d4f55d2c-efc5-430f-85ef-dee70f8bdd71
+  x: -14.176534018673612
+  y: 79.0
+  z: 18.81059516472738
+  yaw: -140.37759399414062
+  pitch: 29.230894088745117

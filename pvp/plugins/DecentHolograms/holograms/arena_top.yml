@@ -1,0 +1,38 @@
+location: world:-16,5:114:12.5
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: "&c&l⚔ ТОП АРЕНЫ ⚔"
+    height: 0.3
+  - content: ""
+    height: 0.2
+  - content: "&6&l❶ &e%bt_arena_top_kills_1_name% &8• &f%bt_arena_top_kills_1% &7убийств"
+    height: 0.25
+  - content: "&7&l❷ &f%bt_arena_top_kills_2_name% &8• &f%bt_arena_top_kills_2% &7убийств"
+    height: 0.25
+  - content: "&c&l❸ &f%bt_arena_top_kills_3_name% &8• &f%bt_arena_top_kills_3% &7убийств"
+    height: 0.25
+  - content: "&8#4 &7%bt_arena_top_kills_4_name% &8- &7%bt_arena_top_kills_4%"
+    height: 0.25
+  - content: "&8#5 &7%bt_arena_top_kills_5_name% &8- &7%bt_arena_top_kills_5%"
+    height: 0.25
+  - content: "&8#6 &7%bt_arena_top_kills_6_name% &8- &7%bt_arena_top_kills_6%"
+    height: 0.25
+  - content: "&8#7 &7%bt_arena_top_kills_7_name% &8- &7%bt_arena_top_kills_7%"
+    height: 0.25
+  - content: "&8#8 &7%bt_arena_top_kills_8_name% &8- &7%bt_arena_top_kills_8%"
+    height: 0.25
+  - content: "&8#9 &7%bt_arena_top_kills_9_name% &8- &7%bt_arena_top_kills_9%"
+    height: 0.25
+  - content: "&8#10 &7%bt_arena_top_kills_10_name% &8- &7%bt_arena_top_kills_10%"
+    height: 0.25
+  - content: ""
+    height: 0.2
+  - content: "&7Обновляется каждые &f30 сек"
+    height: 0.25
+  actions: {}

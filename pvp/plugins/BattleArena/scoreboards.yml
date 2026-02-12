@@ -1,0 +1,113 @@
+# -----------------
+# Scoreboards configuration for BattleArena
+#
+# Documentation: https://docs.battleplugins.org/books/user-guide/page/scoreboards
+# Support: https://discord.gg/tMVPVJf
+# GitHub: https://github.com/BattlePlugins/BattleArena
+# -----------------
+config-version: 1.0 # The config version, do not change!
+
+# Whether to replace the player's existing scoreboard.
+replace-scoreboard: true
+
+# The scoreboard templates to use.
+templates:
+  waiting:
+    title: "<red>VoidMine</red>"
+    refresh-time: 1s
+    lines:
+      - simple:
+          lines:
+            - " "
+            - "  <red>▛ <gray>Режим: <red>%arena%"
+            - "  <red>▍ <gray>Статус: <white>Ожидание..."
+            - "  <red>▍ <gray>Игроков: <red>%online_players%<gray>/<white>%max_players%"
+            - "  <red>▍ <gray>Карта: <white>%map%"
+            - "  <red>▙ <gray>Арена: <red>%arena%"
+            - " "
+            - "     <red>www.VoidMine.me  "
+  countdown:
+    title: "<red>VoidMine</red>"
+    refresh-time: 1s
+    lines:
+      - simple:
+          lines:
+            - " "
+            - "  <red>▛ <gray>Режим: <red>%arena%"
+            - "  <red>▍ <gray>Статус: <white>Ожидание..."
+            - "  <red>▍ <gray>Игроков: <red>%online_players%<gray>/<white>%max_players%"
+            - "  <red>▍ <gray>Карта: <white>%map%"
+            - "  <red>▙ <gray>Арена: <red>%arena%"
+            - " "
+            - "     <red>www.VoidMine.me  "
+  ingame-list:
+    title: "<red>VoidMine</red>"
+    refresh-time: 1s
+    lines:
+      - simple:
+          lines:
+            - " "
+            - "  <red>▛ <gray>Режим: <red>%arena%"
+            - "  <red>▍ <gray>Время: <white>%time_remaining_short%"
+            - "  <red>▍ <gray>Карта: <white>%map%"
+            - "  <red>▙ <gray>Игроки:"
+      - player-list:
+          max-entries: 6
+      - simple:
+          lines:
+            - " "
+            - "     <red>www.VoidMine.me"
+  ingame-list-alive:
+    title: "<red>VoidMine</red>"
+    refresh-time: 1s
+    lines:
+      - simple:
+          lines:
+            - " "
+            - "  <red>▛ <gray>Режим: <red>%arena%"
+            - "  <red>▍ <gray>Время: <white>%time_remaining_short%"
+            - "  <red>▍ <gray>Карта: <white>%map%"
+            - "  <red>▙ <gray>Живых:"
+      - player-list:
+          max-entries: 6
+          require-alive: true
+      - simple:
+          lines:
+            - " "
+            - "     <red>www.VoidMine.me"
+  ingame-top-kills:
+    title: "<red>VoidMine</red>"
+    refresh-time: 1s
+    lines:
+      - simple:
+          lines:
+            - " "
+            - "  <red>▛ <gray>Режим: <red>%arena%"
+            - "  <red>▍ <gray>Время: <white>%time_remaining_short%"
+            - "  <red>▍ <gray>Карта: <white>%map%"
+            - "  <red>▙ <gold>Топ убийств:"
+      - top-stat:
+          stat: kills
+          max-entries: 6
+      - simple:
+          lines:
+            - " "
+            - "     <red>www.VoidMine.me"
+  ingame-top-team-kills:
+    title: "<red>VoidMine</red>"
+    refresh-time: 1s
+    lines:
+      - simple:
+          lines:
+            - " "
+            - "  <red>▛ <gray>Режим: <red>%arena%"
+            - "  <red>▍ <gray>Время: <white>%time_remaining_short%"
+            - "  <red>▍ <gray>Карта: <white>%map%"
+            - "  <red>▙ <gold>Топ команд:"
+      - top-team-stat:
+          stat: kills
+          max-entries: 6
+      - simple:
+          lines:
+            - " "
+            - "     <red>www.VoidMine.me"

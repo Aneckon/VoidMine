@@ -1,0 +1,22 @@
+location: spawn:-25.472:-19.000:-0.016
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&cРандомная телепортация'
+    height: 0.5
+  - content: '&f&l▼'
+    height: 0.6
+  - content: '#ICON: PLAYER_HEAD (eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWYzODAwMDgxYWQ5OWQyOTkyZjQ4MzZmYzMyMmRiYmY4ZjAwY2Y1MzNiNGZiNzMxYWIxZWMwNmE0NDVmNjBkYiJ9fX0=)'
+    height: 0.3
+  actions:
+    left:
+    - 'COMMAND: rtp'
+    - 'MESSAGE: &aТелепортируем в случайное место...'
+    right:
+    - 'COMMAND: rtp'
+    - 'MESSAGE: &aТелепортируем в случайное место...'

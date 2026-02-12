@@ -1,0 +1,4 @@
+protection:
+  flags:
+    block-break:
+      denied: '&cЗАПРЕЩЕНО! &7Ты не имеешь права ничего делать здесь.'

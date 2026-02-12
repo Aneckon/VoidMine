@@ -1,0 +1,63 @@
+# Citizens NPC Storage
+
+last-created-npc-id: 1
+npc:
+  '1':
+    metadata:
+      cached-skin-uuid: f91abb5b-1a35-41ad-90a3-8af1340dbeab
+      cached-skin-uuid-name: menu
+      glowing: true
+    name: §cРежимы
+    uuid: 1c0e2454-e87c-4c0f-b9e4-739bfec64ee7
+    traits:
+      glowingtrait:
+        color: WHITE
+        glowing: true
+      location:
+        bodyYaw: -179.98824
+        world: world
+        x: 2.5
+        y: 97.0
+        z: 17.516
+        yaw: -179.9882
+        pitch: -1.8643
+      owner:
+        uuid: 31fcfdd9-58e9-3d7c-893a-c80441ef34dc
+      type: PLAYER
+      skintrait:
+        signature: LYWQ90rjCUUGRB5QQiMfRaeVukChObSzmslW9v9mV/py65YcKeaRDTyM7RKWTG4LhJ5hMRn/5QCOdZluYb7TpZR859a0JcOVtA+3+V/dXJyvdNYFNcxnsTcJAzSzFDWxoGwW8Z1xF8e2h2hpqQletBgGA3Q5vbuFqiKiIEJkAkIvhhzA1vWOKo2OpqafRk9qPhDNmls4EYMMKU9IovvzxIO/D+QcYanP6vBzNBkeTFNPfZ5Xi3xEacG/DIgS7aZD0VDrRO1wY1lLyFrJX4kJSikIdq7CGEp6sQhutNaK3/AnDZ9iLng4YbvYb89LOpe4LgrUNsw6S8YSx9JI8Ivfpl2H2yZWW22hppzL9RzdEP7vvZLFWDvoLqV/fISAuALH7OYeeeeTSSTN4BIaSjeV7zOiPWhCr5bKg/atIQCi+5I7ioqL0qRtlssNGRKoo5OhbUbPzMFOM+6xWtVK1hioyazYblQF4V9YRClv+QszLUYai+KW1Bz3hGEmqJWsvx7uzlklvmspk1J3i+yrx0/VtBF8Q+H21NfiK5auid4uMtPHAkLe715LdXuUMAWxgDv4Om3JBWYK7rGlaUKjbKpHpLJ/PnaHpLPthGUL4JoQu3UpID8s/PFjeJYJwQQhGaJU4SGqz2162QqaSTHJhWJGRepL0LkMbn77GvWGdQzwLDk=
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTc0MjY0NDQxMDEwMywKICAicHJvZmlsZUlkIiA6ICJmOTFhYmI1YjFhMzU0MWFkOTBhMzhhZjEzNDBkYmVhYiIsCiAgInByb2ZpbGVOYW1lIiA6ICJNZW51IiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzFkODg5ZGIxNDc2Mjk0MzA1NzM0MGE5ODY1ZmNjMDFiNzhlY2M3M2MwNmNjMzZkNjE0MWFkODFjNWVhNjlhZmIiCiAgICB9CiAgfQp9
+      scoreboardtrait:
+        color: RED
+        tags:
+          '0': CITIZENS_NPC
+      spawned: true
+      commandtrait:
+        commands:
+          '0':
+            command: dm open mainmenu %player_name%
+            hand: RIGHT
+            player: false
+            npc: false
+            op: false
+            cooldown: 0
+            globalcooldown: 0
+            n: -1
+            delay: 0
+            cost: -1.0
+            experienceCost: -1
+      lookclose:
+        range: 5.0
+        enabled: true
+        perplayer: true
+        randomPitchRange:
+          '0': 0.0
+          '1': 0.0
+        randomYawRange:
+          '0': 0.0
+          '1': 360.0
+    traitnames: owner,scoreboardtrait,spawned,rotationtrait,commandtrait,skintrait,lookclose,location,type,inventory
+    navigator:
+      speedmodifier: 1.0
+      avoidwater: false
+      usedefaultstuckaction: false

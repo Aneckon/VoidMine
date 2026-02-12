@@ -1,0 +1,9 @@
+options:
+    chat-enabled: false
+
+on chat:
+    if {chat.disabled} is set:
+        if player has permission "chat.bypass":
+            stop
+        cancel event
+        send "&8&l┃ &fЛоббі &7#1 &8&l┃ &cЧат недоступний." to player

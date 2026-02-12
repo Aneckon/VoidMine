@@ -1,0 +1,97 @@
+header-footer:
+  enabled: true
+  disable-condition: '%world%=disabledworld'
+  header:
+  - ''
+  - '&c&lVoidMine'
+  - ''
+  - '&7Режим: &cПВП #1'
+  - ''
+  - ''
+  footer:
+  - ''
+  - ''
+  - '&7Онлайн: &c%online% &7(120)'
+  - ''
+scoreboard:
+  enabled: true
+  toggle-command: /меню
+  remember-toggle-choice: false
+  hidden-by-default: false
+  use-numbers: true
+  static-number: 0
+  delay-on-join-milliseconds: 500
+  scoreboards:
+    основное:
+      title: '&cVoidMine'
+      lines:
+      - ''
+      - '  &c▛ &7Ранг: &8- &4%luckperms-suffix%'
+      - '  &c▍'
+      - '  &c▍  &7У/С: §c%statistic_deaths%☠&7/&a%statistic_player_kills%⸸'
+      - '  &c▍'
+      - '  &c▍  &7Баланс: &a%vault_eco_balance_formatted%⛃'
+      - '  &c▍'
+      - '  &c▙ &7Пинг: &f%ping% &7мс'
+      - ''
+      - '   &cwww.VoidMine.me   '
+scoreboard-teams:
+  enabled: true
+  disable-condition: '%world%=disabledworld'
+  case-sensitive-sorting: true
+  sorting-types:
+  - GROUPS:sozdatel,moderator,gnev,krah,bunt,default
+  - PLACEHOLDER_A_TO_Z:%player%
+  anti-override: true
+  enable-collision: true
+  invisible-nametags: false
+  can-see-friendly-invisibles: false
+playerlist-objective:
+  enabled: false
+  value: '%ping%'
+  fancy-value: '&7Пінг: %ping%'
+belowname-objective:
+  fancy-value-default: NPC
+  fancy-value: '&c%health%'
+  enabled: false
+assign-groups-by-permissions: false
+primary-group-finding-list:
+- sozdatel
+- moderator
+- gnev
+- krah
+- bunt
+- default
+prevent-spectator-effect:
+  enabled: false
+debug: false
+use-online-uuid-in-tablist: true
+permission-refresh-interval: 1000
+enable-redisbungee-support: true
+compensate-for-packetevents-bug: false
+global-playerlist:
+  update-latency: false
+  enabled: false
+bossbar:
+  enabled: false
+layout:
+  enabled: false
+chat:
+  enabled: false
+mysql:
+  enabled: false
+per-world-playerlist:
+  enabled: false
+ping-spoof:
+  enabled: false
+tablist-name-formatting:
+  enabled: false
+  anti-override: false
+  disable-condition: '%world%=disabledworld'
+placeholderapi-refresh-intervals:
+  default-refresh-interval: 500
+placeholders:
+  date-format: dd.MM.yyyy
+  time-format: '[HH:mm:ss / h:mm a]'
+  time-offset: 0
+  register-tab-expansion: false

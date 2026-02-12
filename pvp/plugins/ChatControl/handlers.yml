@@ -1,0 +1,41 @@
+advertisement:
+  Bypass_With_Permission: "chatcontrol.bypass.ad"
+  Ignored_In_Commands:
+    - // # WorldEdit
+    - /brush
+    - /auction
+    - /register
+    - /reg
+    - /login
+    - /l
+  
+  Player_Warn_Message: "&8[&7Система&8] &cРеклама сторонних сайтов и IP-адресов запрещена."
+  #Broadcast_Message: "&8[&7Система&8] &c{player} возможно попытался прорекламировать сервер!"
+  Console_Message: "{player} нарушил правило ID {ruleID}, фильтр {handler}: {message}"
+  
+  Staff_Alert_Message: "&8[&7Реклама / ID {ruleID}&8] &7{player}: &c{message}"
+  Staff_Alert_Permission: chatcontrol.notify.ad
+  
+  Block_Message: true
+  Write_To_File: logs/advertisements.txt
+
+
+swear:
+  Bypass_With_Permission: "chatcontrol.bypass.swear"
+  Ignored_In_Commands:
+    - // # WorldEdit
+    - /brush
+    - /auction
+    - /register
+    - /reg
+    - /login
+    - /l
+
+  Player_Warn_Message: "&8[&7Система&8] &cЗапрещено использовать нецензурную лексику."
+  Console_Message: "{player} нарушил правило ID {ruleID}, фильтр {handler}: {message}"
+  
+  Staff_Alert_Message: "&8[&7Мат / ID {ruleID}&8] &7{player}: &c{message}"
+  Staff_Alert_Permission: chatcontrol.notify.swear
+
+  Replace_Word: "*****"
+  Write_To_File: logs/swears.txt

@@ -1,0 +1,49 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 127.0.0.1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1769979137730
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1770755475481
+  login: 1770754821833
+  kits:
+    color: 1743253970232
+money: '1130000003000'
+last-account-name: Bonet
+logoutlocation:
+  world: 1a12c6b5-7f3a-4fc9-9f3e-dc3900db2147
+  world-name: world
+  x: -1.3991149124715905
+  y: 95.0
+  z: 7.533390403308683
+  yaw: 10.69384765625
+  pitch: 19.282617568969727
+lastlocation:
+  world: 94b0a8f9-6d31-449f-8593-b4bcaf7388e3
+  world-name: world
+  x: -4.337542328546885
+  y: -20.5
+  z: 2.4442458382181753
+  yaw: -107.57821655273438
+  pitch: 5.676393985748291
+homes:
+  home:
+    world: 1a12c6b5-7f3a-4fc9-9f3e-dc3900db2147
+    world-name: world
+    x: 0.2878079709082929
+    y: 110.0
+    z: 0.5655170479421345
+    yaw: 91.70660400390625
+    pitch: -2.9354772567749023

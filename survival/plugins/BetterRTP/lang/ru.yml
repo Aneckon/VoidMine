@@ -1,0 +1,86 @@
+# Translated to Russian by Logan (https://t.me/icemine_ru)
+# Updated color scheme: gray (secondary) and red (primary)
+Messages:
+  Prefix: '&8[&cVoidMine&8] '
+  Success:
+    Paid: '&aВы были телепортированы по координатам &7X: %x%, Y: %y%, Z: %z%&a за
+      &7%attempts%&a попыток и &7$%price%.'
+    Bypass: '&aВы были телепортированы по координатам &7X: %x%, Y: %y%, Z: %z%&a за
+      &7%attempts%&a попыток.'
+    Loading: '&aБезопасное место найдено. &7Прогрузка чанков...'
+    Teleport: '&aТелепортация... &7Пожалуйста, подождите, пока будет найдено безопасное
+      место.'
+  Failed:
+    Price: '&cНевозможно использовать RTP в связи с нехваткой средств! &7Вы должны
+      иметь, как минимум, $%price% на счёте.'
+    NotSafe: '&cБезопасное место не было найдено в течение &7%attempts%&c попыток!
+      Вы не были телепортированы.'
+    Hunger: '&cНевозможно телепортировать – вы слишком &7голодны!&c Поешьте прежде.'
+  Other:
+    Success: '&7%player%&a был телепортирован по координатам &7X: %x%, Y: %y%, Z:
+      %z%&a за &7%attempts%&a попыток.'
+    NotSafe: '&cБезопасное место не было найдено в течение &7%attempts%&c попыток!
+      &7%player%&c не был телепортирован.'
+    Biome: '&cПохоже, биом &7%biome%&c не существует. Попробуйте использовать TAB-список.'
+  Reload: '&aКонфиг успешно перезагружен!'
+  NoPermission:
+    Basic: '&cИзвините! Недостаточно полномочий для выполнения команды. &8Permission:
+      %permission%'
+    World: '&cК сожалению, Вам не разрешено использовать рандомную телепортацию в
+      мире &7%world%. &8Permission: %permission%'
+  DisabledWorld: '&cНевозможно использовать рандомную телепортацию - мир &7%world%&c
+    отключен!'
+  Cooldown: '&cК сожалению, рандомная телепортация будет недоступна еще &7%time%&c.'
+  Locked: '&cК сожалению, Вы истратили все свои рандомные телепортации.'
+  Invalid: '&cНеверный аргумент. Используйте: ''/%command% help'''
+  NotOnline: '&cИгрок &7%player% &cне в игре.'
+  Delay: '&aТелепортация через &7%time% &aсекунд! Не двигайтесь!'
+  Moved: '&cВы двинулись! &7Рандомная телепортация отменена!'
+  NotExist: '&cПохоже, мир &7%world%&c не существует.'
+  Already: '&cВы уже ожидаете рандомную телепортацию. Проявите терпение.'
+  Sign: '&aКомандная табличка создана. Команда: &7''&7/rtp %command%&7'''
+  Edit:
+    Error: '&cОшибка! &7Введены неверные значения.'
+    Set: '&aУспех! &7%type% установлен на %value%'
+    Remove: '&cУдалено! &7Вы удалили нестандартный мир %world%'
+
+Help:
+  Prefix: '&8━━━━&c BetterRTP &8| Помощь &8━━━━'
+  Main: ' &7▸ &c/%command% &7- телепортирует вас в рандомное место'
+  Biome: ' &7▸ &c/%command% biome <биом1, биом2...> &7- телепортирует вас в указанные
+    биомы'
+  Edit: ' &7▸ &c/%command% edit <default/world> [аргументы...] &7- настройка параметров
+    плагина'
+  Help: ' &7▸ &c/%command% help &7- отображает список команд'
+  Info: ' &7▸ &c/%command% info [world/particles/shapes/potion_effects] &7- информация
+    о параметрах'
+  Player: ' &7▸ &c/%command% player <игрок> [мир] [биом, биом...] &7- телепортирует
+    игрока'
+  Reload: ' &7▸ &c/%command% reload &7- перезагрузка плагина'
+  Settings: ' &7▸ &c/%command% settings &7- отобразить GUI и параметры'
+  Test: ' &7▸ &c/%command% test &7- протестировать эффект после телепортации'
+  Version: ' &7▸ &c/%command% version &7- отобразить текущую версию плагина'
+  World: ' &7▸ &c/%command% world <world> [biome1, biome2...] &7- телепортирует в
+    указанный мир'
+  Location: ' &7▸ &c/%command% location <location_name> &7- телепортация в конкретную
+    локацию'
+
+Usage:
+  Location: '&cИспользование&7: /%command% location <название_локации>'
+  Player: '&cИспользование&7: /%command% player <игрок> [мир] [биом1, биом2]'
+  World: '&cИспользование&7: /%command% world <мир> [биом1, биом2...]'
+  Biome: '&cИспользование&7: /%command% biome <биом1, биом2...>'
+  Edit:
+    Base: '&cИспользование&7: /%command% edit <default/world> [аргументы...]'
+    Default: '&cИспользование&7: /%command% edit default <max/min/useworldborder/center>
+      <значение>'
+    World: '&cИспользование&7: /%command% edit world <мир> <max/min/useworldborder/center>
+      <значение>'
+    PermissionGroup: '&cИспользование&7: /%command% edit permission_group <группа>
+      <мир> <max/min/useworldborder/center> <значение>'
+    Location: '&cИспользование&7: /%command% edit location <название_локации> <max/min/useworldborder/center>
+      <значение>'
+    Worldtype: '&cИспользование&7: /%command% edit world_type <мир> <NETHER/NORMAL>'
+    Override: '&cИспользование&7: /%command% edit override <мир> <мир_назначения>'
+    BlacklistedBlocks: '&cИспользование&7: /%command% edit blacklistedblocks <add/remove>
+      <id_блока>'

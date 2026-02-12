@@ -1,0 +1,80 @@
+Help:
+  Prefix: '&e&m-----&6&l BetterRTP &8| Help &e&m-----'
+  Main: ' &7- &e/%command% &7- Randomly teleports you!'
+  Biome: ' &7- &e/%command% biome <biome1, biome2...> &7- Randomly teleport withing
+    these biomes'
+  Edit: ' &7- &e/%command% edit <default/world> [args...] &7- Edit some plugin settings'
+  Help: ' &7- &e/%command% help &7- Shows help list'
+  Info: ' &7- &e/%command% info [world/particles/shapes/potion_effects] &7- View specific
+    information about plugin parameters'
+  Player: ' &7- &e/%command% player <player> [world] [biome1, biome2...] &7- Randomly
+    teleport another player'
+  Reload: ' &7- &e/%command% reload &7- Reloads the plugin'
+  Settings: ' &7- &e/%command% settings &7- Pull up a gui and edit some settings'
+  Test: ' &7- &e/%command% test &7- Test out plugin effects after a teleport without
+    moving'
+  Version: ' &7- &e/%command% version &7- View currently running version'
+  World: ' &7- &e/%command% world <world> [biome1, biome2...] &7- Randomly teleport
+    in another world'
+  Location: ' &7- &e/%command% location <location_name> &7- Rtp using a specific location'
+Usage:
+  Player: '&cUsage&7: /%command% player <player> [world] [biome1, biome2]'
+  World: '&cUsage&7: /%command% world <world> [biome1, biome2...]'
+  Biome: '&cUsage&7: /%command% biome <biome1, biome2...>'
+  Location: '&cUsage&7: /%command% location <location_name>'
+  Edit:
+    Base: '&cUsage&7: /%command% edit <default/world> [args...]'
+    Default: '&cUsage&7: /%command% edit default <max/min/useworldborder/center> <value>'
+    World: '&cUsage&7: /%command% edit customworld <world> <max/min/useworldborder/center>
+      <value>'
+    PermissionGroup: '&cUsage&7: /%command% edit permission_group <group> <world>
+      <max/min/useworldborder/center> <value>'
+    Location: '&cUsage&7: /%command% edit location <location_name> <max/min/useworldborder/center>
+      <value>'
+    Worldtype: '&cUsage&7: /%command% edit world_type <world> <NETHER/NORMAL>'
+    Override: '&cUsage&7: /%command% edit override <world> <world_to>'
+    BlacklistedBlocks: '&cUsage&7: /%command% edit blacklistedblocks <add/remove>
+      <block_id>'
+
+Messages:
+  Prefix: '&8[&7⛧ &cTest &7⛧&8] '
+  
+  Success:
+    Paid: '&4&l⛧ &cТелепортація виконана! &7Координати: &cX: %x% &7| &cY: %y% &7|
+      &cZ: %z% &8(ціна: &c$%price%&8)'
+    Bypass: '&4&l⛧ &cБезкоштовна телепортація! &7X: &c%x% &7| Y: &c%y% &7| Z: &c%z%'
+    Loading: '&8❖ &7Пошук безпечної точки... &8Завантаження чанків...'
+    Teleport: '&8❖ &7Телепортація... &8Очікування вибору місця'
+  
+  Failed:
+    Price: '&4⛔ &cНедостатньо коштів! &7Потрібно: &c$%price%'
+    NotSafe: '&4⛔ &cБезпечне місце не знайдено! &7Спроб: &c%attempts%'
+    Hunger: '&4⛔ &cГолодний! &7Підкріпись перед телепортом'
+  
+  Other:
+    Success: '&4✔ &7%player% телепортовано до &cX: %x% &7Y: &c%y% &7Z: &c%z%'
+    NotSafe: '&4⛔ &cНе вдалося знайти безпечне місце для &7%player%'
+    Biome: '&4⛔ &cБіом &7%biome% &cне існує'
+  
+  Reload: '&4✔ &cКонфіг плагіна перезавантажено'
+  
+  NoPermission:
+    Basic: '&4⛔ &cНемає дозволу: &8%permission%'
+    World: '&4⛔ &cТелепорт у цьому світі заборонено! &8%permission%'
+  
+  DisabledWorld: '&4⛔ &cСвіт &7%world% &cвідключено для RTP'
+  Cooldown: '&4⏳ &cЗачекай &7%time% &cсекунд перед наступною спробою'
+  Locked: '&4⛔ &cВичерпано всі доступні телепорти'
+  Invalid: '&4✖ &cНевірна команда! &7Використай /%command% help'
+  NotOnline: '&4⛔ &cГравець &7%player% &cне онлайн'
+  Delay: '&8⌛ &7Телепортація через &c%time% &7сек... Не рухайся!'
+  Moved: '&4✖ &cТелепортація скасована! Ти поворухнувся'
+  NotExist: '&4⛔ &cСвіт &7%world% &cне знайдено'
+  Already: '&4⏳ &cТи вже телепортуєшся...'
+  
+  Sign: '&4✔ &cТабличка створена! &7Команда: &f/rtp %command%'
+  
+  Edit:
+    Error: '&4✖ &cПомилка: &7Недопустиме значення'
+    Set: '&4✔ &cВстановлено &7%type% &8→ &c%value%'
+    Remove: '&4⛔ &cСвіт &7%world% &cвидалено з конфігу'

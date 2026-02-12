@@ -1,0 +1,30 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 127.163.169.215
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1770065192737
+  login: 1770065011896
+money: '0'
+last-account-name: kaba4okk
+logoutlocation:
+  world: 94b0a8f9-6d31-449f-8593-b4bcaf7388e3
+  world-name: world
+  x: 33.56920837343895
+  y: 114.0
+  z: 14.087648726541481
+  yaw: -127.64994812011719
+  pitch: 26.25005340576172

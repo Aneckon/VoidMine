@@ -1,0 +1,89 @@
+# ============================================
+# СИСТЕМА ПОСТІЙНОЇ DEATHMATCH АРЕНИ
+# ============================================
+
+# Запуск постійної арени при завантаженні сервера
+on load:
+	wait 5 seconds
+	startPermanentDeathmatch()
+
+# Функція запуску постійної арени
+function startPermanentDeathmatch():
+	# Встановлюємо дефолтні параметри
+	set {permanent.arena.active} to true
+	set {permanent.arena.map} to "swamp"  # Можна змінити на desert або mountain
+	set {permanent.arena.kit} to "iron"   # Дефолтний кіт
+
+# Команда для перезапуску постійної арени
+command /restartarena:
+	permission: battlearena.admin
+	trigger:
+		startPermanentDeathmatch()
+
+# Обробка кліків
+on inventory click:
+	name of event-inventory is "&c⚔ Активные Арены"
+	cancel event
+	
+	# Кнопка Назад
+	if index of event-slot is 40:
+		play sound "ui.button.click" to player
+		close player's inventory
+		execute player command "arenamenu"
+	
+	# Клік по арені
+	if index of event-slot is between 10 and 16:
+		if name of event-item contains "Арена" or "Deathmatch":
+			play sound "ui.button.click" to player
+			close player's inventory
+			
+			# Перевіряємо чи це постійна арена
+			set {_clickedMap} to {arena.data::%index of event-slot%}
+			if {_clickedMap} is set:
+				# Якщо це постійна Deathmatch арена
+				if {arena.creator::%index of event-slot%} is "SERVER":
+					execute player command "deathmatch join %{_clickedMap}%"
+				else:
+					# Інші арени (дуелі)
+					execute player command "deathmatch join"
+
+# ============================================
+# КОМАНДА ДЛЯ ЗМІНИ НАЛАШТУВАНЬ ПОСТІЙНОЇ АРЕНИ
+# ============================================
+command /setpermanentarena [<text>] [<text>]:
+	permission: battlearena.admin
+	trigger:
+		if arg-1 is not set:
+			send "&c⚔ Использование:"
+			send "&f/setpermanentarena map <swamp|desert|mountain>"
+			send "&f/setpermanentarena kit <iron|archer|netherite>"
+			send "&f/setpermanentarena toggle &7- включить/выключить"
+			stop
+		
+		if arg-1 is "map":
+			if arg-2 is "swamp" or "desert" or "mountain":
+				set {permanent.arena.map} to arg-2
+				send "&a✓ Карта постоянной арены изменена на: &f%arg-2%"
+				broadcast "&8[&c⚔&8] &7Постоянная арена перемещена на карту: &f%arg-2%"
+			else:
+				send "&c✖ Доступные карты: swamp, desert, mountain"
+		
+		else if arg-1 is "kit":
+			if arg-2 is "iron" or "archer" or "netherite":
+				set {permanent.arena.kit} to arg-2
+				send "&a✓ Стандартный кит постоянной арены изменен на: &f%arg-2%"
+			else:
+				send "&c✖ Доступные киты: iron, archer, netherite"
+		
+		else if arg-1 is "toggle":
+			if {permanent.arena.active} is true:
+				set {permanent.arena.active} to false
+				send "&c✖ Постоянная арена деактивирована"
+				broadcast "&8[&c⚔&8] &cПостоянная Deathmatch арена временно недоступна"
+			else:
+				set {permanent.arena.active} to true
+				send "&a✓ Постоянная арена активирована"
+				broadcast "&8[&c⚔&8] &aПостоянная Deathmatch арена снова доступна!"
+		
+		else:
+			send "&c✖ Неизвестная опция. Используй: map, kit, toggle"

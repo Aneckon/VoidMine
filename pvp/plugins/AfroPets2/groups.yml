@@ -1,0 +1,14 @@
+# Groups for pets, override default values
+# You can set there all values available for pets
+example_group:
+  pet-speed: 10
+  position:
+    height-offset: 0.2
+    distance-behind: 1.0
+    radians: 20
+  show_displayname: true
+  appearance:
+    scale: 0.7
+    displayname:
+      background_color: "GOLD"
+      background_opacity: 20

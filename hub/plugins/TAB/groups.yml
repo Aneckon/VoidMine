@@ -1,0 +1,30 @@
+# ===== ДОНАТ / СТАФФ ГРУППЫ =====
+
+# sozdatel:
+#   # tagprefix: "&c[СОЗДАТЕЛЬ]&r "
+
+# moderator:
+#   tagprefix: "&9[МОДЕРАТОР]&r "
+
+# gnev:
+#   tagprefix: "&4[ГНЕВ]&r "
+
+# krah:
+#   tagprefix: "&6[КРАХ]&r "
+
+# bunt:
+#   tagprefix: "&5[Бунт]&r "
+
+# # ===== ОБЫЧНЫЙ ИГРОК =====
+# default:
+#   tagprefix: "&7[ИГРОК]&r "
+
+
+# ===== ЗАПАСНОЙ ВАРИАНТ (НА ВСЯКИЙ СЛУЧАЙ) =====
+
+_DEFAULT_:
+  tabprefix: " &c• %luckperms-prefix%"
+  tagprefix: " &c• %luckperms-prefix%"
+  customtabname: "%player% "
+  tabsuffix: " %luckperms-suffix%"
+  tagsuffix: " %luckperms-suffix%"

@@ -1,0 +1,103 @@
+# Here you can create your own custom placeholders to use it in language config.
+# Key = Placeholder, Value = Replacer.
+Placeholders:
+  '%green%': '#74ea31'
+  '%gray%': '#aaa8a8'
+  '%red%': '#ea3131'
+
+Command:
+  Usage:
+  - <! prefix:"false" !>
+  - '#8c8c8c'
+  - '#c91212⛔ Помилка: #8c8c8cНевірні аргументи!'
+  - '#c91212⛔ Використання: #f24c1a/%command_label% #ea9631%command_usage%'
+  - '#8c8c8c'
+  Help:
+    List:
+    - <! prefix:"false" !>
+    - '#8c8c8c'
+    - '  #f24c1a&l%plugin_name_localized%#8c8c8c - #f24c1a&lКоманди:'
+    - '#8c8c8c'
+    - '  #c91212&l<> #8c8c8c- Обов’язково, #74ea31&l[] #8c8c8c- Необов’язково.'
+    - '#8c8c8c'
+    - '  #f24c1a/%command_label% #ea9631%command_usage% #8c8c8c- %command_description%'
+    - '#8c8c8c'
+    Desc: Показати довідку по командах.
+  CheckPerm:
+    Desc: Показати інформацію про права доступу гравця.
+    Usage: <гравець>
+  About:
+    Desc: Інформація про плагін.
+  Reload:
+    Desc: Перезапустити весь плагін.
+    Done: Усі дані та конфігурація були перезавантажені!
+
+Time:
+  Day: '%s%д.'
+  Hour: '%s%г.'
+  Min: '%s%хв.'
+  Sec: '%s%сек.'
+
+Other:
+  'Yes': '#74ea31Так'
+  'No': '#c91212Ні'
+  Any: Будь-який
+  None: Немає
+  Never: Ніколи
+  OneTimed: Один раз
+  Unlimited: Без обмежень
+  Infinity: ∞
+
+Error:
+  Player:
+    Invalid: '#c91212⛔ Гравця не знайдено.'
+    Inventory:
+      Full: '#c91212⛔ Ваш інвентар &lпереповнений#c91212!'
+    Item:
+      Drop:
+        Under:
+          You: '#c91212⛔ Предмети &lвпали на землю#c91212!'
+  World:
+    Invalid: '#c91212⛔ Світ не знайдено.'
+  Number:
+    Invalid: '#c91212⛔ %num% - не коректне число.'
+  Time:
+    Format:
+      Invalid: '#c91212⛔ %time% - недійсний формат часу.'
+  Permission:
+    Deny: '#c91212⛔ У вас немає прав для цього!'
+  Command:
+    Self: '#c91212⛔ Ви не можете виконати цю команду на себе.'
+    Sender: '#c91212⛔ Ця команда доступна лише гравцям.'
+
+Editor:
+  Tip:
+    Exit: '<! prefix:"false" !><? showText:"#8c8c8cНатисни або введи #c91212#exit" run_command:"/#exit" ?>#8c8c8cНатисни, щоб #c91212[Вийти з режиму редагування]</>'
+  Title:
+    Done: '#74ea31&l✔ Готово!'
+    Edit: '#74ea31&l< Режим редагування >'
+    Error: '#c91212&l⛔ Помилка!'
+  Error:
+    Number:
+      Generic: '#8c8c8cНевірне число!'
+      NotInt: '#8c8c8cОчікувалося #c91212ціле#8c8c8c число!'
+    Enum: '#8c8c8cНедійсний ввід!'
+  Message:
+    Value_Helper: '#ea9631[ #f24c1aДопомога зі значенням#ea9631 ]'
+    Click_Selection: '#8c8c8cНатисни, щоб вибрати #3196ea'
+    Page:
+      Previous: '#8c8c8c← Попередня сторінка'
+      Next: '#8c8c8c→ Наступна сторінка'
+  Generic:
+    Close:
+      Name: '#c91212(✕) Вихід'
+      Lore: []
+    Return:
+      Name: '#8c8c8c(↓) #e8f2f2Повернутись'
+      Lore: []
+    NextPage:
+      Name: '#8c8c8c(→) #e8f2f2Наступна'
+      Lore: []
+    PreviousPage:
+      Name: '#8c8c8c(←) #e8f2f2Попередня'
+      Lore: []
