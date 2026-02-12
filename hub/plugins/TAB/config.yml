@@ -14,7 +14,7 @@ header-footer:
   - '&7Онлайн: &c%online% &7(120)'
   - ''
 scoreboard:
-  enabled: true
+  enabled: false
   toggle-command: /меню
   remember-toggle-choice: false
   hidden-by-default: false
