@@ -116,7 +116,6 @@ scoreboards:
   save-empty-scoreboard-teams: true
   track-plugin-scoreboards: false
 server-list: true
-server-port: 25567
 spam-limiter:
   incoming-packet-threshold: 300
   recipe-spam-increment: 1
