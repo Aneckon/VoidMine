@@ -48,7 +48,7 @@ items:
     display_name: '§4Выживание'
     lore:
       - '§8❖ §7Свобода с риском'
-      - '§8⤷ §7Онлайн: §a%bungee_online_anarchy%'
+      - '§8⤷ §7Онлайн: §a%bungee_online_anarchy% §7(120)'
       - ' '
       - '§c✔ PvP §7| §c✔ Гриферство'
       - ' '
