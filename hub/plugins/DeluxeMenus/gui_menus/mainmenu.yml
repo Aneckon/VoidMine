@@ -59,7 +59,7 @@ items:
       requirements:
         is_online:
           type: string equals
-          input: '%pinger_isonline_127.0.0.1:25567%'
+          input: '%pinger_isonline_127.0.0.1:25569%'
           output: '&aOnline'
         maintenance:
           type: string equals
@@ -87,7 +87,7 @@ items:
       requirements:
         is_offline:
           type: string equals
-          input: '%pinger_isonline_127.0.0.1:25567%'
+          input: '%pinger_isonline_127.0.0.1:25569%'
           output: '&cOffline'
     left_click_commands:
       - '[sound] BLOCK_ANVIL_LAND'
@@ -112,7 +112,7 @@ items:
       requirements:
         is_online:
           type: string equals
-          input: '%pinger_isonline_127.0.0.1:25567%'
+          input: '%pinger_isonline_127.0.0.1:25569%'
           output: '&aOnline'
         maintenance:
           type: string equals
@@ -141,7 +141,7 @@ items:
       requirements:
         is_online:
           type: string equals
-          input: '%pinger_isonline_127.0.0.1:25568%'
+          input: '%pinger_isonline_127.0.0.1:25567%'
           output: '&aOnline'
         # maintenance:
         #   type: string equals
@@ -169,7 +169,7 @@ items:
       requirements:
         is_offline:
           type: string equals
-          input: '%pinger_isonline_127.0.0.1:25568%'
+          input: '%pinger_isonline_127.0.0.1:25567%'
           output: '&cOffline'
     left_click_commands:
       - '[sound] BLOCK_ANVIL_LAND'
@@ -195,7 +195,7 @@ items:
   #     requirements:
   #       is_online:
   #         type: string equals
-  #         input: '%pinger_isonline_127.0.0.1:25568%'
+  #         input: '%pinger_isonline_127.0.0.1:25567%'
   #         output: '&aOnline'
   #       maintenance:
   #         type: string equals
@@ -247,14 +247,14 @@ items:
   #     - '§8❖ §7Технический режим'
   #     - '§8⤷ §7Онлайн: §a%bungee_online_anarchy4%'
   #     - ' '
-  #     - '§7Статус: §a%pinger_online_127.0.0.1:25568%'
+  #     - '§7Статус: §a%pinger_online_127.0.0.1:25567%'
   #     - ' '
   #     - '§c⛔ Закрыто для игроков'
   #   view_requirement:
   #     requirements:
   #       is_online:
   #         type: string equals
-  #         input: '%pinger_isonline_127.0.0.1:25568%'
+  #         input: '%pinger_isonline_127.0.0.1:25567%'
   #         output: '&aOnline'
   #       maintenance:
   #         type: string equals
@@ -277,14 +277,14 @@ items:
   #     - '§8❖ §7Технический режим'
   #     - '§8⤷ §7Онлайн: §a%bungee_online_anarchy4%'
   #     - ' '
-  #     - '§7Статус: §a%pinger_online_127.0.0.1:25568%'
+  #     - '§7Статус: §a%pinger_online_127.0.0.1:25567%'
   #     - ' '
   #     - '§c⛔ Закрыто для игроков'
   #   view_requirement:
   #     requirements:
   #       is_online:
   #         type: string equals
-  #         input: '%pinger_isonline_127.0.0.1:25568%'
+  #         input: '%pinger_isonline_127.0.0.1:25567%'
   #         output: '&aOnline'
   #       maintenance:
   #         type: string equals
@@ -306,14 +306,14 @@ items:
   #   lore:
   #     - '§8❖ §7Технический режим'
   #     - ' '
-  #     - '§7Статус: §a%pinger_online_127.0.0.1:25568%'
+  #     - '§7Статус: §a%pinger_online_127.0.0.1:25567%'
   #     - ' '
   #     - '§c⛔ Закрыто для игроков'
   #   view_requirement:
   #     requirements:
   #       is_offline:
   #         type: string equals
-  #         input: '%pinger_isonline_127.0.0.1:25568%'
+  #         input: '%pinger_isonline_127.0.0.1:25567%'
   #         output: '&cOffline'
   #       maintenance:
   #         type: string equals
