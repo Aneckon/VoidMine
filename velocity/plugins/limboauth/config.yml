@@ -324,6 +324,6 @@ database:
   # Settings for Network-based database (like MySQL, PostgreSQL): 
   hostname: "127.0.0.1:3306"
   user: "luckperms"
-  password: "admin"
+  password: "alAkKi424285"
   database: "voidmine"
   connection-parameters: "?autoReconnect=true&initialTimeout=1&useSSL=false"
