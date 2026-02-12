@@ -61,7 +61,7 @@ change-tab-complete-name: false
 # This setting is ignored if EssentialsChat.jar is used, and defaults to 'true'.
 # The value of change-displayname (above) has to be true.
 # Do not edit this setting unless you know what you are doing!
-add-prefix-suffix: true
+#add-prefix-suffix: false
 
 # When this option is enabled, player prefixes will be shown in the playerlist.
 # This feature only works for Minecraft version 1.8 and higher.
@@ -147,7 +147,7 @@ drop-items-if-full: false
 
 # Essentials Mail Notification
 # Should we notify players if they have no new mail?
-notify-no-new-mail: false
+notify-no-new-mail: true
 
 # Specifies the duration (in seconds) between each time a player is notified of mail they have.
 # Useful for servers with a lot of mail traffic.
@@ -455,14 +455,14 @@ debug: false
 # For example, to set language to English, set locale to en, to use the file "messages_en.properties".
 # Don't forget to remove the # in front of the line.
 # For more information, visit https://essentialsx.net/wiki/Locale.html
-locale: ru
+#locale: en
 
 # Should EssentialsX use player's language instead of the server's when sending messages?
 # This is useful if you want to use a different language for your server than for your players.
 # For example, if you have your server set to English and a player who speaks French, you can set this to true
 # and EssentialsX will send messages in French to the player and messages in the console as English.
 # If a player's language is not known, the server's language (or one defined above) will be used.
-per-player-locale: true
+per-player-locale: false
 
 # Change the default primary and secondary colours used in EssentialsX messages.
 # Some messages may use custom colours, which will need to be edited in the appropriate message files.
@@ -763,7 +763,7 @@ max-itemlore-lines: 10
 # Should EssentialsX check for updates?
 # If set to true, EssentialsX will show notifications when a new version is available.
 # This uses the public GitHub API and no identifying information is sent or stored.
-update-check: false
+update-check: true
 
 ############################################################
 # +------------------------------------------------------+ #
@@ -900,7 +900,7 @@ sell-multipliers:
 ############################################################
 
 # Show other plugins commands in help.
-non-ess-in-help: false
+non-ess-in-help: true
 
 # Hide plugins which do not give a permission.
 # You can override a true value here for a single plugin by adding a permission to a user/group.
@@ -947,10 +947,9 @@ chat:
   # {TEAMPREFIX} - The sender's scoreboard team prefix.
   # {TEAMSUFFIX} - The sender's scoreboard team suffix.
 
-  format: '&c• {PREFIX}{DISPLAYNAME}&r {SUFFIX}» &f{MESSAGE}'
-
+  # format: '<{DISPLAYNAME}> {MESSAGE}'
   #format: '&7[{GROUP}]&r {DISPLAYNAME}&7:&r {MESSAGE}'
-  # format: '&7{PREFIX}&r {DISPLAYNAME}&r &7{SUFFIX}&r: {MESSAGE}'
+  format: '&7{PREFIX}&r {DISPLAYNAME}&r &7{SUFFIX}&r: {MESSAGE}'
 
   # You can also specify a format for each type of chat.
   #format:
@@ -960,12 +959,6 @@ chat:
 
   # You can specify a format for each group.
   group-formats:
-    # sozdatel: "&c[СОЗДАТЕЛЬ]&r {DISPLAYNAME}&7: {MESSAGE}"
-    # moderator: "&9[МОДЕРАТОР]&r {DISPLAYNAME}&7: {MESSAGE}"
-    # gnev: "&4[ГНЕВ]&r {DISPLAYNAME}&7: {MESSAGE}"
-    # krah: "&6[КРАХ]&r {DISPLAYNAME}&7: {MESSAGE}"
-    # bunt: "&5[Бунт]&r {DISPLAYNAME}&7: {MESSAGE}"
-    # default: "&7[ИГРОК]&r {DISPLAYNAME}&7: {MESSAGE}"
   #  default: '{WORLDNAME} {DISPLAYNAME}&7:&r {MESSAGE}'
   #  admins: '{WORLDNAME} &c[{GROUP}]&r {DISPLAYNAME}&7:&c {MESSAGE}'
 
