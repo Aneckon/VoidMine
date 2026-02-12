@@ -59,7 +59,7 @@ items:
       requirements:
         is_online:
           type: string equals
-          input: '%pinger_isonline_127.0.0.1:25569%'
+          input: '%pinger_isonline_127.0.0.1:25567%'
           output: '&aOnline'
         maintenance:
           type: string equals
@@ -87,7 +87,7 @@ items:
       requirements:
         is_offline:
           type: string equals
-          input: '%pinger_isonline_127.0.0.1:25569%'
+          input: '%pinger_isonline_127.0.0.1:25567%'
           output: '&cOffline'
     left_click_commands:
       - '[sound] BLOCK_ANVIL_LAND'
@@ -112,7 +112,7 @@ items:
       requirements:
         is_online:
           type: string equals
-          input: '%pinger_isonline_127.0.0.1:25569%'
+          input: '%pinger_isonline_127.0.0.1:25567%'
           output: '&aOnline'
         maintenance:
           type: string equals
