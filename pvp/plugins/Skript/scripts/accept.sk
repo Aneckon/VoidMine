@@ -40,3 +40,5 @@ command /lobby:
         if {_world} is "swamp" or "desert" or "mountain" or "river":
             send "&c✖ Спочатку вийди з арени командою /leave!"
             stop
+        
+        execute console command "server %player% hub"
