@@ -128,7 +128,7 @@ Packets:
     Allow_When_Length_Above: 0
 
 Rules:
-  Check_Chat: true
+  Check_Chat: false
   Check_Commands: true
   Check_Signs: true
   Check_Packets: true
