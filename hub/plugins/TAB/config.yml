@@ -76,8 +76,8 @@ bossbar:
   enabled: false
 layout:
   enabled: false
-chat:
-  enabled: false
+# chat:
+#   enabled: false
 mysql:
   enabled: false
 per-world-playerlist:
