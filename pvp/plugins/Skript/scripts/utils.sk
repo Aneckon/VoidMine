@@ -34,6 +34,8 @@ function clearPlayerData(p: player):
 	delete {arena.player.%{_p}%}
 	delete {arena.team.%{_p}%}
 	delete {arena.spectator.%{_p}%}
+	# ВИПРАВЛЕННЯ: Очищаємо дуель-кіти
+	delete {arena.duel.kit.%{_p}%}
 	resetArenaCreation({_p})
 
 # ============================================
@@ -95,3 +97,33 @@ function removePlayerFromArena(p: player):
 		# Перевіряємо чи арена порожня
 		if isArenaEmpty({_arenaId}) is true:
 			resetArena({_arenaId})
+
+# ============================================
+# ДОДАТКОВА ФУНКЦІЯ: Очистка кітів при виході з дуелі
+# ============================================
+function clearDuelKits(p1: player, p2: player):
+	# Очищаємо кіти обох гравців дуелі
+	delete {arena.duel.kit.%{_p1}%}
+	delete {arena.duel.kit.%{_p2}%}
+	delete {arena.pending.kit.%{_p1}%}
+	delete {arena.pending.kit.%{_p2}%}
+	
+	# Якщо це була остання дуель, очищаємо глобальний кіт
+	if checkArenaEmpty() is "yes":
+		delete {arena.global.kit}
+
+# ============================================
+# ДОДАТКОВА ФУНКЦІЯ: Отримання імені противника в дуелі
+# ============================================
+function getDuelOpponent(p: player) :: player:
+	set {_world} to "%world of {_p}%"
+	
+	# Перевіряємо чи це дуельна арена (river)
+	if {_world} is "river":
+		loop all players:
+			# Знаходимо гравця в тому ж світі, але не самого себе
+			if loop-player is not {_p}:
+				if "%world of loop-player%" is {_world}:
+					return loop-player
+	
+	return {_p}  # Якщо противника не знайдено, повертаємо самого гравця
