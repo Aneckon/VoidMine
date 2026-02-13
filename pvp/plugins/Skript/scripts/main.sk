@@ -218,7 +218,7 @@ on respawn:
 	wait 10 ticks
 	set {_world} to "%world of player%"
 	
-	if {_world} is "swamp" or {_world} is "desert" or {_world} is "river":
+	if {_world} is "swamp", "desert" or "river":
 		# Перевірка на дуель-кіт (пріоритет)
 		if {arena.duel.kit.%player%} is set:
 			giveKit(player, {arena.duel.kit.%player%})
@@ -231,7 +231,7 @@ on join:
 	wait 1 second
 	set {_world} to "%world of player%"
 	
-	if {_world} is "swamp" or {_world} is "desert" or {_world} is "river":
+	if {_world} is "swamp", "desert" or "river":
 		# Перевірка на дуель-кіт (пріоритет)
 		if {arena.duel.kit.%player%} is set:
 			giveKit(player, {arena.duel.kit.%player%})
@@ -244,7 +244,7 @@ on world change:
 	wait 10 ticks
 	set {_world} to "%event-world%"
 	
-	if {_world} is "swamp" or {_world} is "desert" or {_world} is "river":
+	if {_world} is "swamp", "desert" or "river":
 		# Перевірка на дуель-кіт (пріоритет)
 		if {arena.duel.kit.%player%} is set:
 			giveKit(player, {arena.duel.kit.%player%})
