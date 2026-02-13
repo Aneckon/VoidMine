@@ -218,43 +218,49 @@ on respawn:
 	wait 10 ticks
 	set {_world} to "%world of player%"
 	
-	# ВИПРАВЛЕННЯ: додано перевірку на динамічні арени
-	if {_world} is "swamp" or "desert" or "mountain" or "river" or {_world} contains "ba-dynamic":
-		# Перевірка на дуель-кіт (пріоритет)
-		if {arena.duel.kit.%player%} is set:
-			giveKit(player, {arena.duel.kit.%player%})
-		else if {arena.pending.kit.%player%} is set:
-			giveKit(player, {arena.pending.kit.%player%})
-		else if {arena.global.kit} is set:
-			giveKit(player, {arena.global.kit})
+	# ВИПРАВЛЕННЯ: правильний синтаксис перевірки світів
+	if {_world} is "swamp":
+		giveKitToPlayer(player)
+	else if {_world} is "desert":
+		giveKitToPlayer(player)
+	else if {_world} is "mountain":
+		giveKitToPlayer(player)
+	else if {_world} is "river":
+		giveKitToPlayer(player)
+	else if {_world} contains "ba-dynamic":
+		giveKitToPlayer(player)
 
 on join:
 	wait 1 second
 	set {_world} to "%world of player%"
 	
-	# ВИПРАВЛЕННЯ: додано перевірку на динамічні арени
-	if {_world} is "swamp" or "desert" or "mountain" or "river" or {_world} contains "ba-dynamic":
-		# Перевірка на дуель-кіт (пріоритет)
-		if {arena.duel.kit.%player%} is set:
-			giveKit(player, {arena.duel.kit.%player%})
-		else if {arena.pending.kit.%player%} is set:
-			giveKit(player, {arena.pending.kit.%player%})
-		else if {arena.global.kit} is set:
-			giveKit(player, {arena.global.kit})
+	# ВИПРАВЛЕННЯ: правильний синтаксис перевірки світів
+	if {_world} is "swamp":
+		giveKitToPlayer(player)
+	else if {_world} is "desert":
+		giveKitToPlayer(player)
+	else if {_world} is "mountain":
+		giveKitToPlayer(player)
+	else if {_world} is "river":
+		giveKitToPlayer(player)
+	else if {_world} contains "ba-dynamic":
+		giveKitToPlayer(player)
 
 on world change:
 	wait 10 ticks
 	set {_world} to "%event-world%"
 	
-	# ВИПРАВЛЕННЯ: додано перевірку на динамічні арени
-	if {_world} is "swamp" or "desert" or "mountain" or "river" or {_world} contains "ba-dynamic":
-		# Перевірка на дуель-кіт (пріоритет)
-		if {arena.duel.kit.%player%} is set:
-			giveKit(player, {arena.duel.kit.%player%})
-		else if {arena.pending.kit.%player%} is set:
-			giveKit(player, {arena.pending.kit.%player%})
-		else if {arena.global.kit} is set:
-			giveKit(player, {arena.global.kit})
+	# ВИПРАВЛЕННЯ: правильний синтаксис перевірки світів
+	if {_world} is "swamp":
+		giveKitToPlayer(player)
+	else if {_world} is "desert":
+		giveKitToPlayer(player)
+	else if {_world} is "mountain":
+		giveKitToPlayer(player)
+	else if {_world} is "river":
+		giveKitToPlayer(player)
+	else if {_world} contains "ba-dynamic":
+		giveKitToPlayer(player)
 	else:
 		clearPlayerData(player)
 
