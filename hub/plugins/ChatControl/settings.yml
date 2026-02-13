@@ -58,7 +58,7 @@ Anti_Spam:
 
 Chat:
   Formatter:
-    Enabled: true
+    Enabled: false
     Message_Format: '{pl_prefix} {player} {pl_suffix}: {message}'
     Global_Message_Format: '&8[G]&f {pl_prefix}{player}{pl_suffix}: {message}'
     Spy_Message_Format: '&8ШПИОН: [{world}]&f {pl_prefix}{player}{pl_suffix}: {message}'
