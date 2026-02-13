@@ -34,7 +34,7 @@ worlds:
     spawnLocation:
       ==: MVSpawnLocation
       x: 0.44383290894909233
-      y: -20.0
+      y: 32.0
       z: 0.47384364032203247
       pitch: -2.6143103
       yaw: 90.04797
