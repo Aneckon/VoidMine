@@ -16,6 +16,9 @@ function giveKitToPlayer(p: player):
 		giveKit({_p}, {arena.pending.kit.%{_p}%})
 	else if {arena.global.kit} is set:
 		giveKit({_p}, {arena.global.kit})
+	else:
+		# ДОДАНО: Якщо немає збереженого кіта, дати дефолтний
+		giveKit({_p}, "iron")
 
 # ============================================
 # ОДИН ОБРОБНИК ДЛЯ ВСІХ КЛІКІВ
@@ -28,28 +31,24 @@ on inventory click:
 
 	if name of event-item is "&c⮜ Назад":
 		
-		# З меню вибору карти → на головне меню
 		if {_invName} is "&c⚔ Выбор Карты":
 			playClickSound(player)
 			close player's inventory
 			wait 2 ticks
 			openMainMenu(player)
 		
-		# З меню вибору кіта → на меню карти
 		else if {_invName} is "&c⚔ Выбор Сета":
 			playClickSound(player)
 			close player's inventory
 			wait 2 ticks
 			openMapMenu(player)
 		
-		# З меню вибору гравця → на меню кіта
 		else if {_invName} is "&c⚔ Выбор Противника":
 			playClickSound(player)
 			close player's inventory
 			wait 2 ticks
 			openKitMenu(player)
 		
-		# З меню підтвердження → залежить від типу
 		else if {_invName} is "&c⚔ Подтверждение":
 			playClickSound(player)
 			close player's inventory
@@ -59,7 +58,6 @@ on inventory click:
 			else:
 				openKitMenu(player)
 		
-		# З головного меню → закрити
 		else if {_invName} is "&c⚔ Создание Арены":
 			playClickSound(player)
 			close player's inventory
@@ -102,7 +100,6 @@ on inventory click:
 			set {_maps::22} to "river"
 		else:
 			set {_maps::22} to "desert"
-		set {_maps::24} to "mountain"
 		
 		if {_maps::%{_slot}%} is set:
 			playClickSound(player)
@@ -136,7 +133,7 @@ on inventory click:
 		set {_kits::12} to "netherite"
 		
 		if {custom.kits.%player%::*} is set:
-			set {_customSlot} to 12
+			set {_customSlot} to 13
 			loop {custom.kits.%player%::*}:
 				set {_kits::%{_customSlot}%} to "custom_%loop-value%"
 				add 1 to {_customSlot}
@@ -193,8 +190,9 @@ on inventory click:
 			set {_kit} to {arena.create.%player%.kit}
 			set {_targetName} to {arena.create.%player%.target}
 			
-			# Зберігаємо кіт для поточного гравця
+			# КРИТИЧНО: Зберігаємо кіт для поточного гравця (ДЛЯ ОБОХ ТИПІВ АРЕН!)
 			set {arena.pending.kit.%player%} to {_kit}
+			set {arena.duel.kit.%player%} to {_kit}
 			set {arena.kit.given.%player%} to false
 			set {arena.global.kit} to {_kit}
 			
@@ -203,7 +201,7 @@ on inventory click:
 				send "&a⚔ Создаю Deathmatch арену на карте %{_map}%..."
 				execute player command "/deathmatch join %{_map}%"
 			else:
-				# КРИТИЧНЕ ВИПРАВЛЕННЯ: Отримуємо гравця за ім'ям
+				# Отримуємо гравця за ім'ям
 				set {_target} to {_targetName} parsed as offline player
 				
 				send "&a⚔ Отправляю вызов игроку %{_targetName}%..."
@@ -211,8 +209,6 @@ on inventory click:
 				# Зберігаємо кіт для ОБОХ гравців
 				set {arena.duel.kit.%player%} to {_kit}
 				set {arena.duel.kit.%{_target}%} to {_kit}
-				
-				# Також зберігаємо pending kit для противника
 				set {arena.pending.kit.%{_target}%} to {_kit}
 				
 				execute player command "/arena duel %{_targetName}%"
@@ -230,12 +226,9 @@ on respawn:
 	wait 10 ticks
 	set {_world} to "%world of player%"
 	
-	# ВИПРАВЛЕННЯ: правильний синтаксис перевірки світів
 	if {_world} is "swamp":
 		giveKitToPlayer(player)
 	else if {_world} is "desert":
-		giveKitToPlayer(player)
-	else if {_world} is "mountain":
 		giveKitToPlayer(player)
 	else if {_world} is "river":
 		giveKitToPlayer(player)
@@ -246,12 +239,9 @@ on join:
 	wait 1 second
 	set {_world} to "%world of player%"
 	
-	# ВИПРАВЛЕННЯ: правильний синтаксис перевірки світів
 	if {_world} is "swamp":
 		giveKitToPlayer(player)
 	else if {_world} is "desert":
-		giveKitToPlayer(player)
-	else if {_world} is "mountain":
 		giveKitToPlayer(player)
 	else if {_world} is "river":
 		giveKitToPlayer(player)
@@ -262,12 +252,9 @@ on world change:
 	wait 10 ticks
 	set {_world} to "%event-world%"
 	
-	# ВИПРАВЛЕННЯ: правильний синтаксис перевірки світів
 	if {_world} is "swamp":
 		giveKitToPlayer(player)
 	else if {_world} is "desert":
-		giveKitToPlayer(player)
-	else if {_world} is "mountain":
 		giveKitToPlayer(player)
 	else if {_world} is "river":
 		giveKitToPlayer(player)
@@ -279,22 +266,16 @@ on world change:
 on command:
 	command starts with "deathmatch leave" or "arena leave":
 		wait 5 ticks
-		# Очищаємо дуель-кіти гравця
 		delete {arena.duel.kit.%player%}
 		delete {arena.pending.kit.%player%}
 		
-		# Якщо арена порожня, очищаємо глобальний кіт
 		if checkArenaEmpty() is "yes":
 			delete {arena.global.kit}
 
 on quit:
-	# Зберігаємо противника перед виходом (для дуелей)
 	set {_opponent} to getDuelOpponent(player)
-	
-	# Очищаємо дані гравця
 	clearPlayerData(player)
 	
-	# Якщо це була дуель, очищаємо кіти противника також
 	if {_opponent} is not player:
 		delete {arena.duel.kit.%{_opponent}%}
 		delete {arena.pending.kit.%{_opponent}%}
