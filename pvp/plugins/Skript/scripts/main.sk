@@ -6,6 +6,18 @@ command /createarena:
 		openMainMenu(player)
 
 # ============================================
+# Допоміжна функція для видачі кіту
+# ============================================
+function giveKitToPlayer(p: player):
+	# Перевірка на дуель-кіт (пріоритет)
+	if {arena.duel.kit.%{_p}%} is set:
+		giveKit({_p}, {arena.duel.kit.%{_p}%})
+	else if {arena.pending.kit.%{_p}%} is set:
+		giveKit({_p}, {arena.pending.kit.%{_p}%})
+	else if {arena.global.kit} is set:
+		giveKit({_p}, {arena.global.kit})
+
+# ============================================
 # ОДИН ОБРОБНИК ДЛЯ ВСІХ КЛІКІВ
 # ============================================
 on inventory click:
