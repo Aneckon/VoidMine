@@ -16,7 +16,7 @@ npc:
         bodyYaw: 0.29136068
         world: spawn
         x: -7.5
-        y: -21.0
+        y: 29.0
         z: -3.5
         yaw: 0.2914
         pitch: -4.0748
@@ -71,7 +71,7 @@ npc:
         bodyYaw: 91.34601
         world: spawn
         x: 15.5
-        y: -17.9375
+        y: 32.2
         z: -15.5
         yaw: 91.346
         pitch: -3.5619
