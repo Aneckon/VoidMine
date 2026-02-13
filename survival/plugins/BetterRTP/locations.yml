@@ -16,3 +16,14 @@ UseLocationIfAvailable: true # Will choose a location upon `/rtp` if location(s)
 UseLocationsInSameWorld: true # Will only choose locations in same world rtp'ing in
 # If UseLocationsInSameWorld is set to true, use `betterrtp.bypass.location` to allow rtp'ing to locations in other worlds
 
+Locations:
+- main_loc:
+    World: world
+    CenterX: 100
+    CenterZ: 150
+    MaxRadius: 100
+    MinRadius: 5
+    Shape: square
+    MinY: 0
+    MaxY: 320
+    Cooldown: 300
