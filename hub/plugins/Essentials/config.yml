@@ -66,7 +66,7 @@ change-tab-complete-name: false
 # This setting is ignored if EssentialsChat.jar is used, and defaults to true.
 # The value of 'change-displayname' above must be true.
 # Do not edit this setting unless you know what you are doing!
-#add-prefix-suffix: false
+# add-prefix-suffix: false
 
 # When this option is enabled, the (tab) player list will be updated with the display name.
 # The value of 'change-displayname' above must be true.

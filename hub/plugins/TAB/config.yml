@@ -40,7 +40,7 @@ scoreboard-teams:
   disable-condition: '%world%=disabledworld'
   case-sensitive-sorting: true
   sorting-types:
-  - GROUPS:sozdatel,moderator,gnev,krah,bunt,default
+  - GROUPS:default
   - PLACEHOLDER_A_TO_Z:%player%
   anti-override: true
   enable-collision: true
@@ -76,8 +76,8 @@ bossbar:
   enabled: false
 layout:
   enabled: false
-# chat:
-#   enabled: false
+chat:
+  enabled: false
 mysql:
   enabled: false
 per-world-playerlist:
