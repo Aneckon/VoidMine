@@ -257,7 +257,7 @@ on world change:
 		stop
 	
 	# Перевірка для deathmatch
-	if {_world} is "swamp" or {_world} is "desert":
+	if {_world} is "swamp", "desert" or "river":
 		if {arena.pending.kit.%player%} is set:
 			giveKit(player, {arena.pending.kit.%player%})
 		else if {arena.global.kit} is set:
