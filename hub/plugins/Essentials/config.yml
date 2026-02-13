@@ -953,7 +953,7 @@ chat:
 
   # format: '<{DISPLAYNAME}> {MESSAGE}'
   # format: '&7[{GROUP}]&r {DISPLAYNAME}&7:&r {MESSAGE}'
-  format: '&7{GROUP}&r {DISPLAYNAME}&r}&r>> {MESSAGE}'
+  format: '&7{PREFIX}&r {DISPLAYNAME}&r>> {MESSAGE}'
 
   # You can also specify a format for each type of chat.
   #format:
