@@ -953,7 +953,7 @@ chat:
 
   # format: '<{DISPLAYNAME}> {MESSAGE}'
   # format: '&7[{GROUP}]&r {DISPLAYNAME}&7:&r {MESSAGE}'
-  format: '{luckperms-prefix}{DISPLAYNAME}&r >> {MESSAGE}'
+  format: ' &c• {PREFIX}{USERNAME}&r » &f{MESSAGE}'
 
   # You can also specify a format for each type of chat.
   #format:
