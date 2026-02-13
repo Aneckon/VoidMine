@@ -1,8 +1,7 @@
 # ============================================
-# GUI Меню
+# GUI Меню - ВИПРАВЛЕНО
 # ============================================
 
-# Головне меню вибору типу арени
 function openMainMenu(p: player):
 	resetArenaCreation({_p})
 	
@@ -16,7 +15,7 @@ function openMainMenu(p: player):
 	
 	if {_p} has permission "battlearena.command.deathmatch.create":
 		set name of {_deathmatch} to "&c⚔ Deathmatch"
-		set lore of {_deathmatch} to "&8❖ &7Режим: &fFree For All", "&8⤷ &7Все против всех", "&8⤷ &7Побеждает сильнейший", " " and "&8▶ &fНажми чтобы выбрать"
+		set lore of {_deathmatch} to "&8❖ &7Режим: &fFree For All", "&8⤷ &7Все против всех", "&8⤷ &7Карты: Swamp, Desert", " " and "&8▶ &fНажми чтобы выбрать"
 	else:
 		set name of {_deathmatch} to "&8✖ Deathmatch"
 		set lore of {_deathmatch} to "&8❖ &7Режим: &fFree For All", "&8⤷ &cДоступно только донатерам", " " and "&c⛔ У тебя нет доступа"
@@ -26,7 +25,7 @@ function openMainMenu(p: player):
 	# Duel
 	set {_duel} to head from value "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmQ4MjEwOTJjZTVlNzU1NzQ1MWM3MjNhMDM0MWU5MGI5M2UwNTY0ZTJiMDE0ODFkZTgxZWVhMjcxZjA0YzViNiJ9fX0="
 	set name of {_duel} to "&c⚔ Дуэль 1 на 1"
-	set lore of {_duel} to "&8❖ &7Режим: &fDuel", "&8⤷ &7Один на один", "&8⤷ &7Вызови противника на бой", " " and "&8▶ &fНажми чтобы выбрать"
+	set lore of {_duel} to "&8❖ &7Режим: &fDuel", "&8⤷ &7Один на один", "&8⤷ &7Карта: River", " " and "&8▶ &fНажми чтобы выбрать"
 	set slot 24 of {_p}'s current inventory to {_duel}
 	
 	# Back
@@ -35,7 +34,7 @@ function openMainMenu(p: player):
 	set lore of {_back} to "&8❖ &7Вернуться в меню арен", " " and "&8▶ &fНажми, чтобы выйти"
 	set slot 40 of {_p}'s current inventory to {_back}
 
-# Меню вибору карти
+# Меню вибору карти - ВИПРАВЛЕНО
 function openMapMenu(p: player):
 	open virtual chest inventory with 5 rows named "&c⚔ Выбор Карты" to {_p}
 	wait 1 tick
@@ -43,26 +42,22 @@ function openMapMenu(p: player):
 	createBorder({_p}'s current inventory)
 	
 	if {arena.create.%{_p}%.type} is "duel":
-		# Тільки River для дуелі
+		# ✅ ТІЛЬКИ RIVER для дуелей
 		set {_river} to head from value "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2E1ZjExZGIwMTEyNzc0Njc2NDY2ZGI1ODFkYjg2NjhmYjRiZTYzYjJmNzRhOWY1YzMwNmM4MTdhMDhkNzQ1ZiJ9fX0="
 		set name of {_river} to "&c⚔ River"
 		set lore of {_river} to "&8❖ &7Речная арена", "&8⤷ &7Дуэль 1 на 1", " " and "&8▶ &fНажми чтобы выбрать"
 		set slot 22 of {_p}'s current inventory to {_river}
 	else:
-		# Всі карти для Deathmatch
-		set {_maps::*} to "swamp::20", "desert::22" and "mountain::24"
+		# ✅ ТІЛЬКИ SWAMP І DESERT для Deathmatch
+		set {_maps::*} to "swamp::20" and "desert::22"
 		set {_names::swamp} to "Swamp"
 		set {_names::desert} to "Desert"
-		set {_names::mountain} to "Mountain"
 		set {_desc::swamp} to "Болотная"
 		set {_desc::desert} to "Пустынная"
-		set {_desc::mountain} to "Горная"
 		set {_size::swamp} to "Средняя"
 		set {_size::desert} to "Большая"
-		set {_size::mountain} to "Маленькая"
 		set {_textures::swamp} to "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2E1ZjExZGIwMTEyNzc0Njc2NDY2ZGI1ODFkYjg2NjhmYjRiZTYzYjJmNzRhOWY1YzMwNmM4MTdhMDhkNzQ1ZiJ9fX0="
 		set {_textures::desert} to "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzIwOTQwYjJlY2UyYzAzYmRmOTMxOThlZWIwNDM3ZDI1ZDVlNDk0MGI1MjAxZWMzZGQ0ZDA0ZDNlMjBkOWRlOCJ9fX0="
-		set {_textures::mountain} to "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjM1YmIzMDkxYmNjZTIyMTRmNzA2NWZjMTFkNDU0MGEyYjZkYmYxNDRmYzJiZDZjODMyMzUwNjZmMWJiYzFiZCJ9fX0="
 		
 		loop {_maps::*}:
 			set {_data::*} to loop-value split at "::"
@@ -80,14 +75,14 @@ function openMapMenu(p: player):
 	set lore of {_back} to "&8❖ &7Вернуться к выбору типа", " " and "&8▶ &fНажми, чтобы выйти"
 	set slot 40 of {_p}'s current inventory to {_back}
 
-# Меню вибору кіта (ОНОВЛЕНЕ З КАСТОМНИМИ КІТАМИ)
+# Меню вибору кіта
 function openKitMenu(p: player):
 	open virtual chest inventory with 5 rows named "&c⚔ Выбор Сета" to {_p}
 	wait 1 tick
 	
 	createBorder({_p}'s current inventory)
 	
-	# СТАНДАРТНІ КІТИ (перший ряд - слоти 10-16)
+	# СТАНДАРТНІ КІТИ
 	set {_kits::*} to "iron::10", "archer::11" and "netherite::12"
 	set {_textures::iron} to "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzQzZTgzNTg4ZTk2NWM4MzU5ZTY0YmJjN2ZlNTNmNDgxY2NhNGY3ZmM2YzI3NzE0ZTRlYWNlOWY1ZTliMDhiZCJ9fX0="
 	set {_textures::archer} to "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTU3MmY4ZjY0OGI3Y2RjYmYxOTAzZWQ0YjE1MWE0ZjI2NWI3NjQyNjI2NzRkMmI5NjE2MjExNTkzMjY1YTBkMCJ9fX0="
@@ -100,7 +95,6 @@ function openKitMenu(p: player):
 		
 		set {_item} to head from value {_textures::%{_kit}%}
 		
-		# Перевірка чи активний
 		if {player.active.kit.%{_p}%} is {_kit}:
 			set name of {_item} to "&a✓ %{kit::%{_kit}%::display}% &7(Активен)"
 		else:
@@ -111,13 +105,13 @@ function openKitMenu(p: player):
 		add "&8▶ &fНажми чтобы выбрать" to lore of {_item}
 		set slot {_slot} of {_p}'s current inventory to {_item}
 	
+	# КАСТОМНІ КІТИ
 	if {custom.kits.%{_p}%::*} is set:
 		set {_slot} to 13
 		loop {custom.kits.%{_p}%::*}:
 			set {_customKit} to loop-value
 			set {_item} to {custom.kit.%{_p}%.%{_customKit}%::display.item}
 			
-			# Перевірка чи активний
 			if {player.active.kit.%{_p}%} is "custom_%{_customKit}%":
 				set name of {_item} to "&a✓ %{_customKit}% &7(Активен)"
 			else:
@@ -172,7 +166,7 @@ function openPlayerMenu(p: player):
 	set lore of {_back} to "&8❖ &7Вернуться к выбору карты", " " and "&8▶ &fНажми, чтобы вернуться"
 	set slot 40 of {_p}'s current inventory to {_back}
 
-# Меню підтвердження# МЕНЮ ПІДТВЕРДЖЕННЯ (ОНОВЛЕНЕ)
+# Меню підтвердження
 function openConfirmMenu(p: player):
 	set {_type} to {arena.create.%{_p}%.type}
 	set {_map} to {arena.create.%{_p}%.map}
@@ -211,7 +205,7 @@ function openConfirmMenu(p: player):
 	set slot 29 of {_p}'s current inventory to {_confirm}
 	
 	# Cancel
-	set {_cancel} to head from value "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmViNTg4YjIxYTZmOThhZDFmZjRlMDg1YzU1MmRjYjA1MGVmYzljYWI0MjdmNDYwNDhmMThmYzgwMzQ3NWY3In19fQ=="
+	set {_cancel} to head from value "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmViNTg4YjIxYTZmOThhZDFmZjRlMDg1YzU1MmRjYjA1MGVmYzljYWI0MjdmNDYwNDhmMThmYzgwMzQ3NWY3In19fQ="
 	set name of {_cancel} to "&c✖ Отмена"
 	set lore of {_cancel} to "&8❖ &7Нажми чтобы отменить"
 	set slot 33 of {_p}'s current inventory to {_cancel}

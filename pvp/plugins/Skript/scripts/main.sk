@@ -218,7 +218,7 @@ on respawn:
 	wait 10 ticks
 	set {_world} to "%world of player%"
 	
-	if {_world} is "swamp", "desert" or "river":
+	if {_world} is "swamp" or "desert" or "mountain" or "river":
 		# Перевірка на дуель-кіт (пріоритет)
 		if {arena.duel.kit.%player%} is set:
 			giveKit(player, {arena.duel.kit.%player%})
@@ -231,7 +231,7 @@ on join:
 	wait 1 second
 	set {_world} to "%world of player%"
 	
-	if {_world} is "swamp", "desert" or "river":
+	if {_world} is "swamp" or "desert" or "mountain" or "river":
 		# Перевірка на дуель-кіт (пріоритет)
 		if {arena.duel.kit.%player%} is set:
 			giveKit(player, {arena.duel.kit.%player%})
@@ -244,30 +244,16 @@ on world change:
 	wait 10 ticks
 	set {_world} to "%event-world%"
 	
-	# Перевірка для river (дуель)
-	if {_world} is "river":
-		# Якщо кіта немає - встановлюємо з активного
-		if {arena.duel.kit.%player%} is not set:
-			if {player.active.kit.%player%} is set:
-				set {arena.duel.kit.%player%} to {player.active.kit.%player%}
-			else:
-				set {arena.duel.kit.%player%} to "iron"
-		
-		giveKit(player, {arena.duel.kit.%player%})
-		stop
-	
-	# Перевірка для deathmatch
-	if {_world} is "swamp", "desert" or "river":
-		if {arena.pending.kit.%player%} is set:
+	if {_world} is "swamp" or "desert" or "mountain" or "river":
+		# Перевірка на дуель-кіт (пріоритет)
+		if {arena.duel.kit.%player%} is set:
+			giveKit(player, {arena.duel.kit.%player%})
+		else if {arena.pending.kit.%player%} is set:
 			giveKit(player, {arena.pending.kit.%player%})
 		else if {arena.global.kit} is set:
 			giveKit(player, {arena.global.kit})
-		else:
-			giveKit(player, "iron")
-		stop
-	
-	# Якщо НЕ арена - очищаємо
-	clearPlayerData(player)
+	else:
+		clearPlayerData(player)
 
 on command:
 	command starts with "deathmatch leave" or "arena leave":
