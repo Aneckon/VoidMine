@@ -31,7 +31,7 @@ database:
 player_data_load_delay: 0.5
 
 # Включено: плагин не загрузится, если категории не имеют достаточного количества квестов без разрешений
-safety_mode: true
+safety_mode: false
 
 # Количество квестов на игрока по категориям
 quests_per_category:

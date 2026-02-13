@@ -47,7 +47,7 @@ Anti_Spam:
     - home
   
   Chat:
-    Delay_Between_Messages: 1
+    Delay_Between_Messages: 0
     Similar_Percentage_Block: 80
     Regex_In_Whitelist: false
     Whitelist_Similarity:
