@@ -121,10 +121,31 @@ on inventory click:
 		play sound "ui.button.click" to player
 		close player's inventory
 		execute player command "arenamenu"
+		stop
 	
 	# Клік по арені
 	if index of event-slot is between 10 and 16:
-		if name of event-item contains "Арена":
+		if name of event-item contains "Арена" or "Deathmatch":
 			play sound "ui.button.click" to player
-			close player's inventory
-			execute player command "deathmatch join"
+			
+			set {_clickedMap} to {arena.data::%index of event-slot%}
+			if {_clickedMap} is set:
+				# ✅ КРИТИЧНО: Зберігаємо активний кіт гравця перед входом!
+				if {player.active.kit.%player%} is set:
+					set {_kit} to {player.active.kit.%player%}
+				else:
+					set {_kit} to "iron"  # Дефолтний кіт
+				
+				# Зберігаємо кіт у всі можливі змінні
+				set {arena.pending.kit.%player%} to {_kit}
+				set {arena.duel.kit.%player%} to {_kit}
+				set {arena.global.kit} to {_kit}
+				
+				close player's inventory
+				
+				# Якщо це постійна Deathmatch арена
+				if {arena.creator::%index of event-slot%} is "SERVER":
+					execute player command "deathmatch join %{_clickedMap}%"
+				else:
+					# Інші арени (дуелі)
+					execute player command "deathmatch join"
