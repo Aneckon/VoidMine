@@ -179,7 +179,7 @@ on inventory click:
 			
 			set {_type} to {arena.create.%player%.type}
 			set {_kit} to {arena.create.%player%.kit}
-			set {_target} to {arena.create.%player%.target}
+			set {_targetName} to {arena.create.%player%.target}
 			
 			# Зберігаємо кіт для поточного гравця
 			set {arena.pending.kit.%player%} to {_kit}
@@ -191,13 +191,19 @@ on inventory click:
 				send "&a⚔ Создаю Deathmatch арену на карте %{_map}%..."
 				execute player command "/deathmatch join %{_map}%"
 			else:
-				send "&a⚔ Отправляю вызов игроку %{_target}%..."
-				# ВИПРАВЛЕННЯ: Зберігаємо кіт для ОБОХ гравців
+				# КРИТИЧНЕ ВИПРАВЛЕННЯ: Отримуємо гравця за ім'ям
+				set {_target} to {_targetName} parsed as offline player
+				
+				send "&a⚔ Отправляю вызов игроку %{_targetName}%..."
+				
+				# Зберігаємо кіт для ОБОХ гравців
 				set {arena.duel.kit.%player%} to {_kit}
 				set {arena.duel.kit.%{_target}%} to {_kit}
+				
 				# Також зберігаємо pending kit для противника
 				set {arena.pending.kit.%{_target}%} to {_kit}
-				execute player command "/arena duel %{_target}%"
+				
+				execute player command "/arena duel %{_targetName}%"
 		else if {_slot} is 33:
 			playClickSound(player)
 			close player's inventory
