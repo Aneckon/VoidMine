@@ -10,9 +10,6 @@
 
 verbose: false
 settings:
-  velocity-support:
-    enabled: true
-    secret: yc1zTWjZyxX5fjlkdh
   register-minecraft-debug-commands: false
   limit-armor: true
   tps-catchup: true
