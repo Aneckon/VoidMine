@@ -115,6 +115,7 @@ proxies:
 scoreboards:
   save-empty-scoreboard-teams: true
   track-plugin-scoreboards: false
+server-list: true
 spam-limiter:
   incoming-packet-threshold: 300
   recipe-spam-increment: 1
