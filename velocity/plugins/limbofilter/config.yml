@@ -97,14 +97,14 @@ main:
     # If connections per unit of time amount is bigger than the limit: online mode players will need to reconnect.
     # Else: Some attacks can consume more cpu and network, and can lead to long-lasting Mojang rate-limiting.
     # Only works if you have an auth plugin installed. In other cases you should configure need-to-reconnect parameter
-    online-mode-verify: 79
+    online-mode-verify: -1
     # Toggles check-state/check-state-non-toggled.
     # It is not recommended to enable it, if you want to protect your server from spam-bots.
     # If connections per unit of time amount is bigger than the limit: check-state will be used.
     # Else: check-state-non-toggled will be used.
     check-state-toggle: 0
     # The player will need to reconnect after passing the AntiBot check.
-    need-to-reconnect: 129
+    need-to-reconnect: -1
     # Picture in the MOTD Server Ping packet will be disabled.
     disable-motd-picture: 25
     # All the log messages from all plugins will be disabled.

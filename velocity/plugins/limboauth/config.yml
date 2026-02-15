@@ -78,9 +78,9 @@ main:
   migration-hash: AUTHME
   # Available dimensions: OVERWORLD, NETHER, THE_END
   dimension: THE_END
-  purge-cache-millis: 0
-  purge-premium-cache-millis: 0
-  purge-bruteforce-cache-millis: 0
+  purge-cache-millis: 3600000
+  purge-premium-cache-millis: 28800000
+  purge-bruteforce-cache-millis: 28800000
   # Used to ban IPs when a possible attacker incorrectly enters the password
   bruteforce-max-attempts: 10
   # QR Generator URL, set {data} placeholder
@@ -88,10 +88,10 @@ main:
   totp-issuer: "LimboAuth by Elytrium"
   bcrypt-cost: 10
   login-attempts: 3
-  ip-limit-registrations: 0
+  ip-limit-registrations: 3
   totp-recovery-codes-amount: 16
   # Time in milliseconds, when ip limit works, set to 0 for disable.
-  ip-limit-valid-time: 0
+  ip-limit-valid-time: 21600000
   # Regex of allowed nicknames
   # ^ means the start of the line, $ means the end of the line
   # [A-Za-z0-9_] is a character set of A-Z, a-z, 0-9 and _
