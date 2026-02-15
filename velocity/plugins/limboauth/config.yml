@@ -78,9 +78,9 @@ main:
   migration-hash: AUTHME
   # Available dimensions: OVERWORLD, NETHER, THE_END
   dimension: THE_END
-  purge-cache-millis: 86400000
-  purge-premium-cache-millis: 86400000
-  purge-bruteforce-cache-millis: 86400000
+  purge-cache-millis: 1000
+  purge-premium-cache-millis: 28800000
+  purge-bruteforce-cache-millis: 28800000
   # Used to ban IPs when a possible attacker incorrectly enters the password
   bruteforce-max-attempts: 10
   # QR Generator URL, set {data} placeholder
