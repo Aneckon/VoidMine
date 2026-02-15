@@ -254,8 +254,6 @@ mute-commands:
 player-commands:
   - afk
   - afk.auto
-  - back
-  - back.ondeath
   - balance
   - balance.others
   - balancetop
@@ -272,8 +270,6 @@ player-commands:
   - geoip.show
   - help
   - helpop
-  - home
-  - home.others
   - ignore
   - info
   - itemdb
@@ -293,11 +289,9 @@ player-commands:
   - protect
   - r
   - rules
-  - renamehome
   - realname
   - seen
   - sell
-  - sethome
   - setxmpp
   - signs.create.protection
   - signs.create.trade
@@ -804,7 +798,7 @@ compass-towards-home-perm: false
 
 # If no home is set, would you like to send the player to spawn?
 # If set to false, players will not be teleported when they run /home without setting a home first.
-spawn-if-no-home: true
+spawn-if-no-home: false
 
 # Should players be asked to provide confirmation for homes which they attempt to overwrite?
 confirm-home-overwrite: false
@@ -1251,7 +1245,7 @@ random-spawn-location: "none"
 random-respawn-location: "none"
 
 # Teleport all joining players to the spawnpoint
-spawn-on-join: false
+spawn-on-join: true
 # The following value of `guests` states that all players in group `guests` will be teleported to spawn when joining.
 #spawn-on-join: guests
 # The following list value states that all players in group `guests` and `admin` are to be teleported to spawn when joining. 
