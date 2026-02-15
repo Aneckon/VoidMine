@@ -22,4 +22,4 @@ on right click:
 # Команда /menu для відкриття
 command /menu:
     trigger:
-        execute console command "/dm open mainmenu %player%"
+        execute console command "dm open mainmenu %player's name%"
