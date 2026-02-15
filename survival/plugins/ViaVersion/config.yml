@@ -17,11 +17,11 @@ auto-team: true
 block-disconnect-msg: You are using an unsupported Minecraft version!
 # Block specific Minecraft protocol version numbers.
 # List of all Minecraft protocol versions: https://minecraft.wiki/w/Protocol_version, or use a generator: https://via.krusic22.com
-block-protocols: []
+block-protocols: [774, 773, 772, 771, 770, 766, 765, 764, 763, 762, 761, 760, 759, 758, 757, 756, 755, 754, 753, 751, 736, 735, 578, 575, 573, 498, 490, 485, 480, 477, 404, 401, 393, 340, 338, 335, 316, 315, 210, 110, 109, 108, 107, 47, 5, 4]
 # Easier to configure alternative to 'block-protocols'. Uses readable version strings with possible '<' and '>' prefixes.
 # An example to block 1.16.4, everything below 1.16, as well as everything above 1.17.1 would be: ["<1.16", "1.16.4", ">1.17.1"]
 # You can use both this and the block-protocols option at the same time as well.
-block-versions: ["<1.16.5", ">1.21.4"]
+block-versions: []
 # If your boss bar flickers on 1.9+, set this to 'true'. It will keep all boss bars on 100% (not recommended)
 bossbar-anti-flicker: false
 # Should we patch boss bars so they work? (Default: true, disable if you're having issues)
