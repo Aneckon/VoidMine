@@ -253,6 +253,7 @@ mute-commands:
 # To enable this feature, please set use-bukkit-permissions to false.
 player-commands:
   - afk
+  - menu
   - afk.auto
   - back
   - back.ondeath

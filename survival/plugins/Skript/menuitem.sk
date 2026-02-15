@@ -1,25 +1,14 @@
-# Видача книги при вході
 on join:
-    if {spawn::%player's uuid%} is true:
-        wait 2 ticks
-        give player 1 book named "§cРежимы" with lore "§7ПКМ для открытия меню"
-    else:
-        wait 2 ticks
-        give player 1 book named "§cРежимы" with lore "§7ПКМ для открытия меню"
+    wait 10 ticks
+    give player 1 book named "§cРежимы" with lore "§7ПКМ для открытия меню"
 
 # Видача книги при респавні
 on respawn:
-    wait 2 ticks
+    wait 10 ticks
     give player 1 book named "§cРежимы" with lore "§7ПКМ для открытия меню"
 
-# Відкриття меню правою кнопкою
-on right click:
-    if player's tool is book:
-        if name of player's tool is "§cРежимы":
-            cancel event
-            execute console command "/dm open mainmenu %player%"
-
-# Команда /menu для відкриття
-command /menu:
-    trigger:
-        execute console command "dm open mainmenu %player's name%"
+# Відкриття меню книгою
+on right click with book:
+    if name of player's tool contains "Режим":
+        cancel event
+        make player execute command "/menu"

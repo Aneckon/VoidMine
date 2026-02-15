@@ -1,7 +1,7 @@
 menu_title: '§cГлавное Меню'
 size: 45
 open_command:
-  - anarchymenu
+  - menu
 update_interval: 1
 
 items:
