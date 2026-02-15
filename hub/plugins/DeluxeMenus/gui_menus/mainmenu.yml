@@ -45,7 +45,7 @@ items:
     material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTkzMDkzZDI4ZDFhN2VkMWQ3Zjk3YmExMzhlZjZhMWI3MmE4MzlkYjA2ZDhhYTc5OTE4MWNiZWEwZDQ5YTBhNSJ9fX0=
     slot: 15
     priority: 0
-    display_name: '§4Выживание'
+    display_name: '§4Выживание 1.21 - 1.21.4'
     lore:
       - '§8❖ §7Свобода с риском'
       - '§8⤷ §7Онлайн: §a%bungee_online_anarchy% §7(120)'
