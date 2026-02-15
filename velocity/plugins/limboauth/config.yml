@@ -88,7 +88,7 @@ main:
   totp-issuer: "LimboAuth by Elytrium"
   bcrypt-cost: 10
   login-attempts: 3
-  ip-limit-registrations: 3
+  ip-limit-registrations: 0
   totp-recovery-codes-amount: 16
   # Time in milliseconds, when ip limit works, set to 0 for disable.
   ip-limit-valid-time: 0
