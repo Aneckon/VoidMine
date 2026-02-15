@@ -14,8 +14,8 @@ Anti_Bot:
     Chat: true
 
 Anti_Caps:
-  Enabled: true
-  Warn_Player: true
+  Enabled: false
+  Warn_Player: false
   Ignore_Usernames: false
   Min_Message_Length: 5
   Min_Caps_Percentage: 50
@@ -34,8 +34,8 @@ Anti_Spam:
     Ignore_First_Arguments_In_Commands: true
   
   Commands:
-    Delay_Between_Commands: 2
-    Similar_Percentage_Block: 80
+    Delay_Between_Commands: 0
+    Similar_Percentage_Block: 0
     Whitelist_Similarity:
     - tell
     - pm
@@ -47,8 +47,8 @@ Anti_Spam:
     - home
   
   Chat:
-    Delay_Between_Messages: 1
-    Similar_Percentage_Block: 80
+    Delay_Between_Messages: 0
+    Similar_Percentage_Block: 0
     Regex_In_Whitelist: false
     Whitelist_Similarity:
     - hello
@@ -59,18 +59,18 @@ Anti_Spam:
 Chat:
   Formatter:
     Enabled: false
-    Message_Format: '{pl_prefix} {player} {pl_suffix}: {message}'
-    Global_Message_Format: '&8[G]&f {pl_prefix}{player}{pl_suffix}: {message}'
-    Spy_Message_Format: '&8ШПИОН: [{world}]&f {pl_prefix}{player}{pl_suffix}: {message}'
+    Message_Format: '{pl_prefix}{player}:{pl_suffix} {message}'
+    Global_Message_Format: '&8[ГЛОБАЛЬНЫЙ]&f {pl_prefix}{player}:{pl_suffix} {message}'
+    Spy_Message_Format: '&8ШПИОН: [{world}]&f {pl_prefix}{player}:{pl_suffix} {message}'
     Ranged_Mode: false
     Range: 100.0
   
   Grammar:
     Insert_Dot:
-      Enabled: true
+      Enabled: false
       Min_Message_Length: 5
     Capitalize:
-      Enabled: true
+      Enabled: false
       Min_Message_Length: 5
 
 Clear:
@@ -128,7 +128,7 @@ Packets:
     Allow_When_Length_Above: 0
 
 Rules:
-  Check_Chat: false
+  Check_Chat: true
   Check_Commands: true
   Check_Signs: true
   Check_Packets: true

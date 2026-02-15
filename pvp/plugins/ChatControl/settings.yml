@@ -14,8 +14,8 @@ Anti_Bot:
     Chat: true
 
 Anti_Caps:
-  Enabled: true
-  Warn_Player: true
+  Enabled: false
+  Warn_Player: false
   Ignore_Usernames: false
   Min_Message_Length: 5
   Min_Caps_Percentage: 50
@@ -48,7 +48,7 @@ Anti_Spam:
   
   Chat:
     Delay_Between_Messages: 0
-    Similar_Percentage_Block: 80
+    Similar_Percentage_Block: 0
     Regex_In_Whitelist: false
     Whitelist_Similarity:
     - hello
@@ -67,10 +67,10 @@ Chat:
   
   Grammar:
     Insert_Dot:
-      Enabled: true
+      Enabled: false
       Min_Message_Length: 5
     Capitalize:
-      Enabled: true
+      Enabled: false
       Min_Message_Length: 5
 
 Clear:
